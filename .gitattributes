@@ -1,5 +1,2 @@
-*.js linguist-generated
-*.json linguist-generated
-*.svg linguist-generated
 *.md linguist-detectable
-
+.obsidian/** linguist-generated
