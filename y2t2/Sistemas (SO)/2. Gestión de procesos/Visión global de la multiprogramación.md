@@ -68,17 +68,3 @@ _Existe una llamada al sistema sin E/S 'exit' que finaliza el proceso._
 ![[Sketch 2-14-2022 3-53 PM.png]]
 
 
-
-[Sistemas Operativos (CEX)](https://www.google.com/calendar/event?eid=XzhkOWxjZ3JmZHByNmFzams2c3EzZW9waWM0cjY0b3BuY2NvbWFkcG83MHBqMGUxbmNvcTMwYzFsYzhwM2VwMWxjcGlnIHVuZGVyc2NvcmViaXNAbQ)
-
-Date & Time:Tue, Feb 8, 2022, 4:00 PM - 5:00 PM
-Location:AS-1
-Clase Expositiva
-
-[Sistemas Operativos (CEX)](https://www.google.com/calendar/event?eid=XzhkOWxjZ3JmZHByNmFzamtja3EzMGQxa2NrcjYyZDlwY2NxbTRjMWpjZ3FqaWNqNjZvb20yZGI0Y2tyNjRwajI3MHBnIHVuZGVyc2NvcmViaXNAbQ)
-
-Date & Time:Mon, Feb 14, 2022, 2:00 PM - 4:00 PM
-Location:AS-1
-Clase Expositiva
-
-
