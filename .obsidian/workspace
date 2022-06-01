@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "3b97374c6af52702",
+    "type": "split",
+    "children": [
+      {
+        "id": "b01140b8d4a3eade",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "y2t2/Sistemas (SO)/Sistemas (SO).md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "50dda0fd26ad79ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1b7130f6b0ea9b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f302320ff686a1a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b022bf09ca88e53f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#t",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "22ff9cec8883e419",
+    "type": "split",
+    "children": [
+      {
+        "id": "19df0cbf9c051535",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "738a30c23fedbdce",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "y2t2/Sistemas (SO)/Sistemas (SO).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b01140b8d4a3eade",
+  "lastOpenFiles": [
+    "y2t2/Sistemas (SO)/Sistemas (SO).md",
+    "y2t2/Computación (CN)/Interpolación.md",
+    "y2t2/Sistemas (SO)/Asignación contigua.md",
+    "y2t2/Sistemas (SO)/Prueba parcial.md",
+    "y2t2/Sistemas (SO)/Direccionamiento.md",
+    "y2t2/Sistemas (SO)/Ficheros.md",
+    "y2t2/Sistemas (SO)/Ejercicios de ficheros.md",
+    "y2t2/Sistemas (SO)/Visión global de la multiprogramación.md",
+    "y2t2/Sistemas (SO)/Repaso a las interrupciones.md",
+    "y2t2/Sistemas (SO)/Clasificación de los sistemas operativos.md"
+  ]
+}

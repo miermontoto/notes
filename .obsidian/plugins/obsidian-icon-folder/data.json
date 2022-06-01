@@ -1,0 +1,27 @@
+{
+  "settings": {
+    "migrated": true,
+    "iconPacksPath": "plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "RiDatabase2Line",
+      "FarWindowRestore",
+      "FarSquareCaretRight",
+      "FarObjectUngroup",
+      "RiTerminalWindowLine"
+    ],
+    "recentlyUsedIconsSize": 15,
+    "rules": [],
+    "extraPadding": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "y2t2/Paradigmas (TPP)": "FarObjectUngroup",
+  "y2t2/CPM": "FarWindowRestore",
+  "y2t2/Sistemas (SO)": "RiTerminalWindowLine",
+  "y2t2/Bases": "RiDatabase2Line"
+}

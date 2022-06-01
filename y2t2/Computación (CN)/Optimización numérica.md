@@ -1,0 +1,97 @@
+---
+
+Created at 2022-04-25T17:09:26+02:00
+Last updated at 2022-05-06T14:39:00+02:00
+
+Tagged: #6.-Optimización-numérica
+
+---
+
+# Optimización numérica
+
+![[Tema 6.pdf]]
+
+## Índice
+
+* Preliminares
+* Optimización en una variable
+* Optimización en ℝn sin restricciones
+
+* * *
+
+**Motivación:** encontrar mínimos y máximos relativos de f en U.
+Cuando U es un conjunto abierto, se utiliza el término **_Optimización sin restricciones._**
+
+
+
+## Teorema de Weierstrass
+
+Si K es un compacto (cerrado y acotado) y f es continua en K, entonces f alcanza un mínimo absoluto y un máximo absoluto en K.
+
+
+## Teorema 6.2
+
+* **Condición necesaria de extremo:** si x* es un extremo relativo de f, entonces el gradiente de f en x* sea 0.
+  * Un punto que cumpla esta condición reciben el nombre de puntos estacionarios o críticos.
+  * Pueden ser o no ser extremos, también pueden ser puntos de silla.
+* **Condición suficiente de mínimo:** Si la matriz hessiana es definida positivo, entonces x* es un mínimo de f.
+* **Condición suficiente de máximo:** Si la matriz hessiana es definida negativa...
+
+
+
+
+# Optimización de una variable
+
+Se trata de obtener los extremos sin utilizar la primera derivada.
+
+De una manera similar al método de bisección, se divide la función en subintervalos y se comprueba que el mínimo siga estando en dicho subintervalo.
+
+
+## Método de la sección de oro
+
+Se reduce el tamaño del intervalo en cada interación en una razón fija por phi menos uno, usando el número áureo.
+
+
+### Problema 6.1
+
+![[Sketch 4-25-2022 6-01 PM.png]]
+
+
+# Optimización sin restricciones
+
+## Método de máxima pendiente
+
+Es conocido que el gradiente determina la dirección y sentido en el que la función f crece más rápidamente en torno a x. Utilizándolo, solo hay que seguir el sentido en el que la pendiente sea máxima para aproximarnos al mínimo o al máximo, tomando pasos de distancia λ.
+
+
+### Problema 6.2
+
+![[Sketch 4-29-2022 3-41 PM.png]]
+
+
+## Método del gradiente conjugado
+
+### Problema 6.3
+
+![[Sketch 4-29-2022 4-02 PM.png]]
+
+
+# Optimización con restricciones
+
+## Método de Símplex
+
+
+
+* El método Símplex trabaja a partir de la **forma aumentada** del problema.
+  * A cada restricción se le añade una variable de holgura para elminar las desigualdades.
+  * La función a minimizar/maximizar se iguala a 0.
+* La **región factible** es el conjunto de valores que cumplen las restricciones.
+  * La solución de un problema va a estar siempre en uno de los vértices de la región.
+
+### Problema 6.5
+
+![[Sketch 5-6-2022 2-21 PM.png]]
+
+### Problema 6.6
+
+
