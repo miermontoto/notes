@@ -5,6 +5,7 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FarFileImage",
       "FasWindowRestore",
       "FasFilePdf",
       "FasArrowUp91",
@@ -29,5 +30,6 @@
   "y2t2/Sistemas (SO)": "RiTerminalWindowLine",
   "y2t2/Bases": "RiDatabase2Line",
   "y2t2/Computación (CN)": "FasArrowUp91",
-  "y2t2/Bases/Primer parcial.md": "FasFilePdf"
+  "y2t2/Bases/Primer parcial.md": "FasFilePdf",
+  "y2t2/Computación (CN)/_resources": "FarFileImage"
 }

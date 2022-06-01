@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Ajuste de datos.md",
+            "file": "y2t2/Computación (CN)/PL/Parcial 2.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392
+    "width": 373
   },
   "right": {
     "id": "22ff9cec8883e419",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Ajuste de datos.md",
+                "file": "y2t2/Computación (CN)/PL/Parcial 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +109,15 @@
   },
   "active": "d98bd30ff9afc0cb",
   "lastOpenFiles": [
+    "y2t2/Computación (CN)/PL/Parcial 2.md",
+    "y2t2/Computación (CN)/PL/_resources/image.png",
+    "y2t2/Computación (CN)/PL/_resources/image.2.png",
+    "y2t2/Computación (CN)/PL/_resources/image.1.png",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Ajuste de datos.md",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación trigonométrica.md",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación.md",
     "y2t2/Bases/2. Modelo relacional/Modelo relacional.md",
     "y2t2/Bases/1. Modelo E-R/Entidades, atributos y relaciones.md",
-    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación no contigua.md",
-    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación contigua.md",
-    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Mecanismos de gestión de la memoria real.md",
-    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/_resources/Pasted image 20220601204432.png",
-    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Drawing 2022-06-01 20.43.20.excalidraw.png"
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación no contigua.md"
   ]
 }
