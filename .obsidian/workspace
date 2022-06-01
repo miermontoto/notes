@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y2t2/Sistemas (SO)/Sistemas (SO).md",
+            "file": "y2t2/Sistemas (SO)/2. Gestión de procesos/Visión global de la multiprogramación.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y2t2/Sistemas (SO)/Sistemas (SO).md",
+                "file": "y2t2/Sistemas (SO)/2. Gestión de procesos/Visión global de la multiprogramación.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -78,6 +78,14 @@
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            }
+          },
+          {
+            "id": "db53a4463ef0aa18",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ]
@@ -89,15 +97,15 @@
   },
   "active": "b01140b8d4a3eade",
   "lastOpenFiles": [
-    "y2t2/Sistemas (SO)/Sistemas (SO).md",
-    "y2t2/Computación (CN)/Interpolación.md",
-    "y2t2/Sistemas (SO)/Asignación contigua.md",
+    "y2t2/Sistemas (SO)/2. Gestión de procesos/Visión global de la multiprogramación.md",
     "y2t2/Sistemas (SO)/Prueba parcial.md",
-    "y2t2/Sistemas (SO)/Direccionamiento.md",
-    "y2t2/Sistemas (SO)/Ficheros.md",
-    "y2t2/Sistemas (SO)/Ejercicios de ficheros.md",
-    "y2t2/Sistemas (SO)/Visión global de la multiprogramación.md",
-    "y2t2/Sistemas (SO)/Repaso a las interrupciones.md",
-    "y2t2/Sistemas (SO)/Clasificación de los sistemas operativos.md"
+    "y2t2/Sistemas (SO)/3. Coordinación/Soluciones hardware a la exclusión mutua.md",
+    "y2t2/Sistemas (SO)/3. Coordinación/Semáforos.md",
+    "y2t2/Sistemas (SO)/2. Gestión de procesos/Repaso a las interrupciones.md",
+    "y2t2/Sistemas (SO)/2. Gestión de procesos/Procesos.md",
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.2. Memoria virtual/Memoria virtual.md",
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Mecanismos de gestión de la memoria real.md",
+    "y2t2/Sistemas (SO)/2. Gestión de procesos/Hilos.md",
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Gestión de la Memoria Real.md"
   ]
 }

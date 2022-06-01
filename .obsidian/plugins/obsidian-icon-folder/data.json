@@ -5,11 +5,13 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
-      "RiDatabase2Line",
-      "FarWindowRestore",
-      "FarSquareCaretRight",
+      "FasFilePdf",
+      "FasArrowUp91",
+      "RiTerminalWindowLine",
       "FarObjectUngroup",
-      "RiTerminalWindowLine"
+      "FarSquareCaretRight",
+      "FarWindowRestore",
+      "RiDatabase2Line"
     ],
     "recentlyUsedIconsSize": 15,
     "rules": [],
@@ -23,5 +25,7 @@
   "y2t2/Paradigmas (TPP)": "FarObjectUngroup",
   "y2t2/CPM": "FarWindowRestore",
   "y2t2/Sistemas (SO)": "RiTerminalWindowLine",
-  "y2t2/Bases": "RiDatabase2Line"
+  "y2t2/Bases": "RiDatabase2Line",
+  "y2t2/Computación (CN)": "FasArrowUp91",
+  "y2t2/Bases/Primer parcial.md": "FasFilePdf"
 }
