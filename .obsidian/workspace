@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y2t2/Sistemas (SO)/2. Gestión de procesos/Visión global de la multiprogramación.md",
+            "file": "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/4. Interpolación, aprox., ajuste.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y2t2/Sistemas (SO)/2. Gestión de procesos/Visión global de la multiprogramación.md",
+                "file": "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/4. Interpolación, aprox., ajuste.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "b01140b8d4a3eade",
   "lastOpenFiles": [
+    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/4. Interpolación, aprox., ajuste.md",
+    "y2t2/Computación (CN)/_resources/Interpolación.resources/Tema 4.pdf",
+    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Ajuste de datos.md",
+    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación trigonométrica.md",
     "y2t2/Sistemas (SO)/2. Gestión de procesos/Visión global de la multiprogramación.md",
     "y2t2/Sistemas (SO)/Prueba parcial.md",
     "y2t2/Sistemas (SO)/3. Coordinación/Soluciones hardware a la exclusión mutua.md",
     "y2t2/Sistemas (SO)/3. Coordinación/Semáforos.md",
     "y2t2/Sistemas (SO)/2. Gestión de procesos/Repaso a las interrupciones.md",
-    "y2t2/Sistemas (SO)/2. Gestión de procesos/Procesos.md",
-    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.2. Memoria virtual/Memoria virtual.md",
-    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Mecanismos de gestión de la memoria real.md",
-    "y2t2/Sistemas (SO)/2. Gestión de procesos/Hilos.md",
-    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Gestión de la Memoria Real.md"
+    "y2t2/Sistemas (SO)/2. Gestión de procesos/Procesos.md"
   ]
 }
