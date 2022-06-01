@@ -16,12 +16,8 @@ Un esquema de relación se compone de:
 * Un conjunto de atributos {Ai}
 * Un conjunto de n dominios (no necesariamente distitntos) {Dj} donde cada atributo estará definido sobre un dominio.
 
-
-
 * Una relación es un conjunto de tuplas .
 * Una tupla es un conjunto de pares donde.
-
-
 
 * El conjunto de atributos se llama **grado** de la relación.
 * El conjunto de tuplas se llama **cardinalidad** de la relación.
@@ -69,12 +65,12 @@ Cada elemento del modelo E/R se convierte al modelo relacional, resultando un co
 
 ![[y2t2/Bases/_resources/Modelo_relacional.resources/image.2.png]]![[y2t2/Bases/_resources/Modelo_relacional.resources/image.3.png]]![[y2t2/Bases/_resources/Modelo_relacional.resources/image.4.png]]![[y2t2/Bases/_resources/Modelo_relacional.resources/image.5.png]]![[y2t2/Bases/_resources/Modelo_relacional.resources/image.6.png]]
 
-Para N:1:N, la tabla Participa sería (@DNIIngeniero (FK a Ingeniero), RefProyecto (FK a Proyecto), @codigoCargo (FK a Cargo))
-Para 1:N:N, la tabla Participa sería (DNIIngeniero (FK a Ingeniero), @RefProtecto (FK a Proyecto), @codigoCargo (FK a Cargo))
+Para N:1:N, la tabla Participa sería `(@DNIIngeniero (FK a Ingeniero), RefProyecto (FK a Proyecto), @codigoCargo (FK a Cargo))`
+Para 1:N:N, la tabla Participa sería `(DNIIngeniero (FK a Ingeniero), @RefProtecto (FK a Proyecto), @codigoCargo (FK a Cargo))`
 ... etc ...
 
 
-Para 1:N:1, la tabla Participa podría ser ((DNIIngeniero (FK a Ingeniero), @RefProyecto (FK a Proyecto)) (UNIQUE), @codigoCargo (FK a Cargo)) o (@DNIIngeniero (FK a Ingeniero), (@RefProyecto (FK a Proyecto), codigoCargo (FK a Cargo)) (UNIQUE))
+Para 1:N:1, la tabla Participa podría ser `((DNIIngeniero (FK a Ingeniero), @RefProyecto (FK a Proyecto)) (UNIQUE), @codigoCargo (FK a Cargo))` o `(@DNIIngeniero (FK a Ingeniero), (@RefProyecto (FK a Proyecto), codigoCargo (FK a Cargo)) (UNIQUE))`
 
 
 

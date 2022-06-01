@@ -23,27 +23,27 @@ Funciona en base al particionamiento fijo.
 ![[y2t2/Sistemas (SO)/_resources/Asignación_no_contigua.resources/image.png]]
 
 
-* **Organización física de la memoria principal**
+* ### **Organización física de la memoria principal**
   * La memoria se divide en trozos fijos, como en particiones fijas, llamados **_marcos_**.
-* **Organización lógica de los procesos**
+* ### **Organización lógica de los procesos**
   * La paginación divide en trozos a los procesos, llamados **_páginas_**.
-* **Estructuras de datos para la organización física**
-  * _Tabla de marcos_
+* ### **Estructuras de datos para la organización física**
+  * #### _Tabla de marcos_
     * Solo existe una en el sistema operativo.
     * Decir si están o no ocupados cada marco, con un valor booleano.
     * El índice es el número de marco.
-* **Estructuras de datos para la organización lógica**
-  * _Tabla de páginas_
+* ### **Estructuras de datos para la organización lógica**
+  * #### _Tabla de páginas_
     * Una por proceso.
     * Guarda el marco en el que está cada página, los bits de protección, y otros campos.
     * El índice es el número de página.
-* **Traducción de posiciónes lógicas a posiciones físicas**
+* ### Traducción de posiciónes lógicas a posiciones físicas
   * A partir de una posición `L` , se obtiene el número de página dividiendo por el tamaño de página.
   * Con ese número de página, se accede a la tabla de marcos y se obtiene el número de marco donde se encuentra la dirección `L` .
   * Por último, con el número de marco, se vuelve a multiplicar por el tamaño de marco para obtener la dirección final.
   * Una vez se tiene la dirección final, se le suma la diferencia entre la posición `L` original y el comienzo de su página, el desplazamiento.
     * El desplazamiento es el resto de la primera división realizada.
-  * Explicación "pro"
+  * ##### Explicación "pro"
     * Las direcciones lógicas son del tamaño del bus de direcciones.
     * Si el tamaño de página es de 32 bytes, se necesitan 5 bits.
     * Por lo tanto, los 5 bits de la derecha es el desplazamiento, el resto de bits es el número de página.
@@ -56,13 +56,13 @@ Funciona en base al particionamiento fijo.
     * Dos o más páginas apuntan a un solo marco (se comparte, sin duplicar).
   * Protección
     * Poner una flag de protección a cada página (R/RW, etc).
-    * ❌ No se puede llevar a cabo porque las páginas (al ser de tamaño fijo) pueden contener más de un trozo de proceso y afectar o no afectar correctamente.
+    * ❌ <mark style="background: #FF5582A6;">No se puede llevar a cabo porque las páginas (al ser de tamaño fijo) pueden contener más de un trozo de proceso y afectar o no afectar correctamente.</mark> 
 * **Ventajas / desventajas**
-  * **✅** La paginación no es visible al usuario del SO.
-  * ✅ Se elimina la fragmentación externa.
-  * ✅ La fragmentación interna solo se puede producir en la última página de cada proceso.
-  * ✅ Es fácil permitir que se comparta memoria entre procesos.
-  * ❌ No se puede proteger las páginas efectivamente.
+  * **✅** <mark style="background: #BBFABBA6;">La paginación no es visible al usuario del SO.</mark> 
+  * ✅ <mark style="background: #BBFABBA6;">Se elimina la fragmentación externa.</mark> 
+  * ✅ <mark style="background: #BBFABBA6;">La fragmentación interna solo se puede producir en la última página de cada proceso.</mark> 
+  * ✅ <mark style="background: #BBFABBA6;">Es fácil permitir que se comparta memoria entre procesos.</mark> 
+  * ❌ <mark style="background: #FF5582A6;">No se puede proteger las páginas efectivamente.</mark> 
 
 # Segmentación
 
@@ -97,43 +97,39 @@ Funciona en base al particionamiento variable.
   1. Comprobar que el segmento sea válido. (que exista el índice del segmento)
   2. Comprobar que el desplazamiento sea menor estricto que el límite del segmento.
 * **Ventajas / Inconvenientes**
-  * **✅** Bueno para compartir y proteger.
-  * ✅ Bueno dividiendo a los procesos.
-  * ❌❌  Muy malo en aprovechamiento de memoria.
+  * **✅** <mark style="background: #BBFABBA6;">Bueno para compartir y proteger.</mark> 
+  * ✅ <mark style="background: #BBFABBA6;">Bueno dividiendo a los procesos.</mark> 
+  * ❌❌ <mark style="background: #FF5582A6;">Muy malo en aprovechamiento de memoria.  </mark> 
 
 
 
 # Segmentación paginada
 
-* **Organización física de la memoria**
+* ### **Organización física de la memoria**
   * Paginación de la memoria.
-* **Organización lógica de los procesos**
+* ### **Organización lógica de los procesos**
   * División en segmentos naturales de los procesos.
   * División de cada segmento en páginas, de manera que encaje con el esquema de la memoria principal.
-* **Estructuras de datos de la organización física**
+* ### **Estructuras de datos de la organización física**
   * Igual que en paginación.
-* **Estructuras de datos de la organización lógica**
+* ### **Estructuras de datos de la organización lógica**
   * Cada proceso tiene una tabla de segmentos y tantas tablas de páginas como segmentos haya.
   * Cada tabla de segmentos tiene un nuevo campo que reemplaza al campo 'base', que es `RBTP` , que indica la dirección de la tabla de páginas de cada segmentos.
   * Las tablas de páginas funcionan igual que en paginación.
-* **Protección y traducción**
-  * Protección
-    
+* ### **Protección y traducción**
+  * #### Protección
     * _Igual que en segmentación._
-    
     1. Validar el número de segmento.
     2. Comprobar que el desplazamiento sea menor que el límite del segmento.
-  * Traducción
-    
+  * #### Traducción
     * _Igual que en paginación._
-    
     1. Dividir el desplazamiento en `p`  y `d'` .
     2. Acceder al marco número `p`.
     3. Obtener su dirección base y sumarle `d'` .
-* **Ventajas / desventajas**
-  * **✅** Fácil compartición
-  * **✅** Fácil protección
-  * **✅** Fácil ampliación de las estructuras de datos
-  * **✅** Visión del proceso tal y como lo ve el usuario
-  * **~** Solo hay fragmentación interna en la última página de cada proceso.
-  * ❌ Bastante complejo.
+* ### **Ventajas / desventajas**
+  * **✅** <mark style="background: #BBFABBA6;">Fácil compartición</mark> 
+  * **✅** <mark style="background: #BBFABBA6;">Fácil protección</mark> 
+  * **✅** <mark style="background: #BBFABBA6;">Fácil ampliación de las estructuras de datos</mark> 
+  * **✅** <mark style="background: #BBFABBA6;">Visión del proceso tal y como lo ve el usuario</mark> 
+  * <mark style="background: #FFF3A3A6;">~  Solo hay fragmentación interna en la última página de cada proceso.</mark> 
+  * ❌ <mark style="background: #FF5582A6;">Bastante complejo.</mark> 

@@ -32,8 +32,8 @@ Tagged: #4.-Memoria-principal
   * Siguiente ajuste
     * Por primer ajuste, pero empezando a buscar desde el último que se colocó, en vez de desde 0.
 
-# Particiones fijas
 
+# Particiones fijas
 * **Organización física de la memoria principal**
   * División de la memoria en varios trozos (particiones)
   * No hay limitación en cuanto al número de ellas, ni al tamaño.
@@ -86,13 +86,13 @@ Tagged: #4.-Memoria-principal
   * Si se utiliza el mejor ajuste, se ordena la lista de huecos por el tamaño de manera ascendente.
   * Si se utiliza el peor ajuste, se ordena la lista de huecos por el tamaño de manera descendente.
 * **Ventajas / desventajas**
-  * ✅ No hay límite de tamaño de los procesos.
-  * ✅ El grado de multiprogramación no está tan limitado (pueden caber más programas en RAM en un momento dado).
-  * ❌ Fragmentación externa.
+  * ✅ <mark style="background: #BBFABBA6;">No hay límite de tamaño de los procesos.</mark> 
+  * ✅ <mark style="background: #BBFABBA6;">El grado de multiprogramación no está tan limitado (pueden caber más programas en RAM en un momento dado).</mark> 
+  * ❌ <mark style="background: #FF5582A6;">Fragmentación externa.</mark> 
     * Tiene soluciones.
       * Condensación: solución parcial, se hace siempre. (O(1))
         * Se fusionan huecos que estén juntos.
       * Compactación: solución óptima, se hace cada cierto tiempo. (O(n2))
         * Todos los procesos van al principio de la memoria.
         * Solo queda un hueco, al final de la memoria.
-  * ❌ Más complicado de programar.
+  * ❌ <mark style="background: #BBFABBA6;">Más complicado de programar.</mark> 

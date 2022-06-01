@@ -118,20 +118,15 @@ Para que se pueda resolver el sistema de 4n coeficientes y 4n-2 ecuaciones, se a
 
 ### Spline natural / libre
 
-
-
 ### Condición no un nulo
-
-interp1 en MATLAB.
+`interp1` en MATLAB.
 
 
 ### Spline sujeto
+`spline` en MATLAB.
 
-spline en MATLAB.
 
-
-## Acotación del error
-
+## Acotación dewel error
 ![[y2t2/Computación (CN)/_resources/Interpolación.resources/image.9.png]]
 
 
