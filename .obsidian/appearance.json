@@ -1,4 +1,7 @@
 {
   "translucency": false,
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "cssTheme": "Atom",
+  "theme": "obsidian",
+  "textFontFamily": "Menlo,Fira Code"
 }

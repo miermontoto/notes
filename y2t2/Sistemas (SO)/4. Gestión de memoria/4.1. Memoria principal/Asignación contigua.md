@@ -25,9 +25,9 @@ Tagged: #4.-Memoria-principal
 * **Estrategias de asignación**
   * Primer ajuste
     * El primer hueco en el que entra.
-  * Mejor ajuste
+  * <mark style="background: #BBFABBA6;">Mejor ajuste</mark> 
     * De todos los huecos en el que entra, se elige el más pequeño.
-  * Peor ajuste
+  * <mark style="background: #FF5582A6;">Peor ajuste</mark> 
     * De todos los huecos en el que entra, se elige el más grande.
   * Siguiente ajuste
     * Por primer ajuste, pero empezando a buscar desde el último que se colocó, en vez de desde 0.
@@ -53,11 +53,11 @@ Tagged: #4.-Memoria-principal
   * Cola  de entrada de procesos a memoria principal.
     * Una única cola parra todas las particiones.
 * **Ventajas / desventajas**
-  * **❌** Tamaño de proceso limitado al de la mayor partición.
-  * ❌ El grado de multiprogramación máximo de este sistema es el número de particiones menos uno.
-  * ❌❌  Fragmentación interna
+  * **❌** <mark style="background: #FF5582A6;">Tamaño de proceso limitado al de la mayor partición.</mark> 
+  * ❌ <mark style="background: #FF5582A6;">El grado de multiprogramación máximo de este sistema es el número de particiones menos uno.</mark> 
+  * ❌❌  <mark style="background: #FF5582A6;">Fragmentación interna</mark> 
     * Se pierde espacio en cada partición debido a que el proceso es más pequeño que la partición.
-  * ✅ Sencilla implementación
+  * ✅ <mark style="background: #BBFABBA6;">Sencilla implementación</mark> 
 
 
 

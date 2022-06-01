@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "b01140b8d4a3eade",
+        "id": "d98bd30ff9afc0cb",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/4. Interpolación, aprox., ajuste.md",
+            "file": "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación contigua.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#t",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 392
   },
   "right": {
     "id": "22ff9cec8883e419",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/4. Interpolación, aprox., ajuste.md",
+                "file": "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación contigua.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,25 +87,37 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "812cc57bc5271088",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "b01140b8d4a3eade",
+  "active": "d98bd30ff9afc0cb",
   "lastOpenFiles": [
-    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/4. Interpolación, aprox., ajuste.md",
-    "y2t2/Computación (CN)/_resources/Interpolación.resources/Tema 4.pdf",
-    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Ajuste de datos.md",
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación contigua.md",
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Drawing 2022-06-01 20.43.20.excalidraw.png",
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Drawing 2022-06-01 20.43.20.excalidraw.md",
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación no contigua.md",
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Mecanismos de gestión de la memoria real.md",
+    "y2t2/CPM/CPM.md",
+    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación.md",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación trigonométrica.md",
-    "y2t2/Sistemas (SO)/2. Gestión de procesos/Visión global de la multiprogramación.md",
-    "y2t2/Sistemas (SO)/Prueba parcial.md",
-    "y2t2/Sistemas (SO)/3. Coordinación/Soluciones hardware a la exclusión mutua.md",
-    "y2t2/Sistemas (SO)/3. Coordinación/Semáforos.md",
-    "y2t2/Sistemas (SO)/2. Gestión de procesos/Repaso a las interrupciones.md",
-    "y2t2/Sistemas (SO)/2. Gestión de procesos/Procesos.md"
+    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Ajuste de datos.md",
+    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Aproximación continua.md"
   ]
 }

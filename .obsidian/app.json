@@ -10,5 +10,10 @@
     "es-ES"
   ],
   "spellcheck": false,
-  "fileSortOrder": "byCreatedTime"
+  "fileSortOrder": "byCreatedTime",
+  "trashOption": "system",
+  "newFileLocation": "current",
+  "newLinkFormat": "shortest",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./_resources"
 }
