@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación contigua.md",
+            "file": "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación no contigua.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación contigua.md",
+                "file": "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación no contigua.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +109,15 @@
   },
   "active": "d98bd30ff9afc0cb",
   "lastOpenFiles": [
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación no contigua.md",
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/_resources/Pasted image 20220601204432.png",
     "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación contigua.md",
+    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Mecanismos de gestión de la memoria real.md",
     "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Drawing 2022-06-01 20.43.20.excalidraw.png",
     "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Drawing 2022-06-01 20.43.20.excalidraw.md",
-    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Asignación no contigua.md",
-    "y2t2/Sistemas (SO)/4. Gestión de memoria/4.1. Memoria principal/Mecanismos de gestión de la memoria real.md",
     "y2t2/CPM/CPM.md",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación.md",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación trigonométrica.md",
-    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Ajuste de datos.md",
-    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Aproximación continua.md"
+    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Ajuste de datos.md"
   ]
 }
