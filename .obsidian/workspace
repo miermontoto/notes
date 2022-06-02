@@ -33,7 +33,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y2t2/Computación (CN)/CEX/5. Integración numérica/Cuadratura gaussiana.md",
+            "file": "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación.md",
             "mode": "source",
             "source": false
           }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y2t2/Computación (CN)/CEX/5. Integración numérica/Cuadratura gaussiana.md",
+                "file": "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,9 +133,9 @@
   },
   "active": "e3a93a259187155a",
   "lastOpenFiles": [
+    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación.md",
     "y2t2/Computación (CN)/CEX/5. Integración numérica/Cuadratura gaussiana.md",
     "y2t2/Computación (CN)/CEX/5. Integración numérica/Integración numérica.md",
-    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación.md",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Ajuste de datos.md",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Interpolación trigonométrica.md",
     "y2t2/Computación (CN)/CEX/6. Optimización numérica.md",

@@ -67,7 +67,7 @@ El polinomio de interpolación de Lagrange se expresa por:
 
 ### Problema 4.4
 
-- [ ] ![[Sketch 3-11-2022 3-32 PM.png]]
+![[Sketch 3-11-2022 3-32 PM.png]]
 
 
 ## Estudio de error en la interpolación de Lagrange
