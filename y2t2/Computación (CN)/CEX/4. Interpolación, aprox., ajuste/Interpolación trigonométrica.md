@@ -22,11 +22,15 @@ Aproximación suave y periódica de funciones que también lo son.
 
 
 ### Mediante polinomios trigonométricos
-![[y2t2/Computación (CN)/_resources/Interpolación_trigonométrica.resources/image.png]]
+![[y2t2/Computación (CN)/_resources/Interpolación_trigonométrica.resources/image.png|1000]]
 
 
 ### Mediante exponenciales complejas
-![[y2t2/Computación (CN)/_resources/Interpolación_trigonométrica.resources/image.2.png]]![[y2t2/Computación (CN)/_resources/Interpolación_trigonométrica.resources/image.3.png]]![[y2t2/Computación (CN)/_resources/Interpolación_trigonométrica.resources/image.4.png]]![[y2t2/Computación (CN)/_resources/Interpolación_trigonométrica.resources/image.5.png]]
+![[y2t2/Computación (CN)/_resources/Interpolación_trigonométrica.resources/image.2.png|1000]]
+![[y2t2/Computación (CN)/_resources/Interpolación_trigonométrica.resources/image.3.png|1000]]
+![[y2t2/Computación (CN)/_resources/Interpolación_trigonométrica.resources/image.4.png|1000]]
+![[y2t2/Computación (CN)/_resources/Interpolación_trigonométrica.resources/image.5.png|1000]]
+
 
 ### Problema 4.11
 ![[Sketch 3-25-2022 3-42 PM.png]]
@@ -38,12 +42,5 @@ Para c ≠ 0, el método anterior funciona y se reemplaza t por (t - c).
 
 ### Problema 4.12
 ![[Sketch 3-25-2022 4-10 PM.png]]
-
-
-[Computación Numérica (CEX)](https://www.google.com/calendar/event?eid=XzhkOWxjZ3JmZHByNmFzams2Z3AzMGNyMjYwcGpjZGI1NjhwNjRjMWo2ZGo2Y2QxajcwcG02ZGo2YzRyM2VwaGpjZ3FnIHVuZGVyc2NvcmViaXNAbQ)
-
-Date & Time:Fri, Mar 25, 2022, 3:00 PM - 5:00 PM
-Location:AS-1
-Antonio Palacio Muñiz Clase Expositiva
 
 

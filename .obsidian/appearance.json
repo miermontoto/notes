@@ -3,5 +3,8 @@
   "baseFontSize": 16,
   "cssTheme": "",
   "theme": "obsidian",
-  "textFontFamily": "Menlo,Fira Code"
+  "textFontFamily": "Menlo",
+  "enabledCssSnippets": [
+    "math"
+  ]
 }
