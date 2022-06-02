@@ -14,16 +14,6 @@
             "source": false
           }
         }
-      },
-      {
-        "id": "47e213fe883da797",
-        "type": "leaf",
-        "state": {
-          "type": "excalidraw",
-          "state": {
-            "file": "y2t2/Computación (CN)/CEX/5. Integración numérica/_resources/Integración numérica 2022-06-02 12.09.38.excalidraw.md"
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -79,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y2t2/Computación (CN)/CEX/5. Integración numérica/_resources/Integración numérica 2022-06-02 12.09.38.excalidraw.md",
+                "file": "y2t2/Computación (CN)/CEX/5. Integración numérica/Integración numérica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,10 +107,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "47e213fe883da797",
+  "active": "6f7754175486c4ae",
   "lastOpenFiles": [
-    "y2t2/Computación (CN)/CEX/5. Integración numérica/_resources/Integración numérica 2022-06-02 12.09.38.excalidraw.md",
     "y2t2/Computación (CN)/CEX/5. Integración numérica/Integración numérica.md",
+    "y2t2/Computación (CN)/CEX/5. Integración numérica/_resources/Integración numérica 2022-06-02 12.09.38.excalidraw.md",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Aproximación continua.md",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Drawing 2022-06-01 16.07.15.excalidraw.png.md",
     "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Ajuste de datos.md",

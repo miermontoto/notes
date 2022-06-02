@@ -64,7 +64,7 @@ Si se aplica a un polinomio de grado menor o igual que 3, la solución es siempr
 
 ### Ejercicio 5.1
 ![[Sketch 4-4-2022 5-43 PM.png]]
-![[Integración numérica 2022-06-02 12.09.38.excalidraw]]
+![[Integración numérica 2022-06-02 12.09.38.excalidraw|1000]]
 
 ### Ejercicio 5.2
 ![[Sketch 4-4-2022 5-59 PM.png]]
