@@ -13,7 +13,7 @@
   "fileSortOrder": "byCreatedTime",
   "trashOption": "system",
   "newFileLocation": "current",
-  "newLinkFormat": "shortest",
+  "newLinkFormat": "relative",
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "./_resources"
 }
