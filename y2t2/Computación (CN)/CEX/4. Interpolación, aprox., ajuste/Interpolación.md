@@ -15,7 +15,6 @@ Tagged: #4.-Interpolación--aprox.--ajuste
 * * *
 
 # Interpolación
-
 Dada una función f, hallar otra función que aproxime a f en un intervalo. El objetivo es buscar una función polinómica que sea más fácil de resolver y calcular que la función original.
 
 
@@ -26,14 +25,12 @@ Dada una función f, hallar otra función que aproxime a f en un intervalo. El o
 
 
 ## Problema de interpolación de Lagrange
-
 ![[y2t2/Computación (CN)/_resources/Interpolación.resources/image.png]]
 
 El problema de interpolación de Lagrange tiene solución única que llamaremos polinomio de interpolación de Lagrange. SIEMPRE se tiene una solución, aunque no siempre será igual de precisa.
 
 
 ### Problema 4.1
-
 ![[Sketch 3-11-2022 2-25 PM.png]]![[Sketch 3-11-2022 2-30 PM.png]]
 
 
@@ -70,7 +67,7 @@ El polinomio de interpolación de Lagrange se expresa por:
 
 ### Problema 4.4
 
-![[Sketch 3-11-2022 3-32 PM.png]]
+- [ ] ![[Sketch 3-11-2022 3-32 PM.png]]
 
 
 ## Estudio de error en la interpolación de Lagrange
@@ -104,12 +101,10 @@ Cada polinomio debe de ser de grado menor o igual que uno.
 
 
 # Splines cúbicos
-
 Igual que con polinomios, pero con grado menor o igual que 3.
 
 
 ### Problema 4.8
-
 ![[Sketch 3-21-2022 5-45 PM.png]]
 Para que se pueda resolver el sistema de 4n coeficientes y 4n-2 ecuaciones, se añaden condiciones.
 

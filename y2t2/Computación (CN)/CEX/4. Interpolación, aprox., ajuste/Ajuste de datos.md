@@ -12,6 +12,7 @@ Buscar una función que se ajuste a unos datos minimizando la suma de los errore
 
 ![[y2t2/Computación (CN)/_resources/Ajuste_de_datos.resources/image.png]]![[y2t2/Computación (CN)/_resources/Ajuste_de_datos.resources/image.1.png]]
 
+## Ajuste por mínimos cuadrados
 
 ### Problema 4.14
 ![[Sketch 3-28-2022 5-23 PM.png]]

@@ -15,12 +15,12 @@ La elección óptima de los nodos conduce a las raíces de los polinomios de Leg
 La fórmula de cuadratura gaussiana con n nodos en un intervalo [a, b] es exacta para todo polinomio de grado k <= 2n - 1.
 
 
-### Ejemplo 5.2
+### Ejercicio 5.5
 
 ![[Sketch 4-22-2022 2-45 PM.png]]
 
 
-### Ejemplo 5.3
+### Ejercicio 5.6
 
-![[Sketch 4-22-2022 2-53 PM.png]]
+![[Sketch 4-22-2022 2-53 PM.png|800]]
 

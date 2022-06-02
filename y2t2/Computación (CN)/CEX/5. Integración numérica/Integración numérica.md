@@ -71,19 +71,17 @@ Si se aplica a un polinomio de grado menor o igual que 3, la solución es siempr
 
 
 # Fórmulas de cuadratura compuestas
-
 Lo mismo, pero aplicado a intervalos.
 Se aplica una fórmula en cada uno de los subintervalos.
 
 
 ## Regla del trapecio compuesta
-
-![[y2t2/Computación (CN)/_resources/Integración_numérica.resources/image.6.png]]
+![[y2t2/Computación (CN)/_resources/Integración_numérica.resources/image.6.png|1000]]
 
 
 ## Regla de Simpson compuesta
-
-![[y2t2/Computación (CN)/_resources/Integración_numérica.resources/image.7.png]]![[y2t2/Computación (CN)/_resources/Integración_numérica.resources/image.8.png]]
+![[y2t2/Computación (CN)/_resources/Integración_numérica.resources/image.7.png|1000]]
+![[y2t2/Computación (CN)/_resources/Integración_numérica.resources/image.8.png|1000]]
 donde m es el número de intervalos:
 ![[Sketch 4-18-2022 5-35 PM.png]]
 
@@ -93,7 +91,6 @@ donde m es el número de intervalos:
 
 
 
-### Problema 5.2
-
+### Ejercicio 5.3
 ![[Sketch 4-18-2022 5-59 PM.png]]
 
