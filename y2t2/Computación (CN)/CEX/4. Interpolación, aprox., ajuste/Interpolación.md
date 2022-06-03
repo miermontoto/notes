@@ -40,13 +40,11 @@ El problema de interpolación de Lagrange tiene solución única que llamaremos 
 
 
 ### Forma de Lagrange
-
 El polinomio de interpolación de Lagrange se expresa por:
-![[y2t2/Computación (CN)/_resources/Interpolación.resources/image.2.png]]
+$$ P_n(x) = f(x_0)l_0(x) + \cdots + f(x_n)l_n(x)$$
 
 
 ### Problema 4.2
-
 ![[Sketch 3-11-2022 2-39 PM.png]]![[Sketch 3-11-2022 2-48 PM.png]]
 
 
@@ -56,47 +54,39 @@ El polinomio de interpolación de Lagrange se expresa por:
 
 
 ### Cálculo de las diferencias divididas
-
-![[y2t2/Computación (CN)/_resources/Interpolación.resources/image.6.png]]![[Sketch 3-11-2022 3-01 PM.png]]
+![[Sketch 3-11-2022 3-01 PM.png]]
 
 
 ### Problema 4.3
-
 ![[Sketch 3-11-2022 3-27 PM.png]]
 
 
 ### Problema 4.4
-
 ![[Sketch 3-11-2022 3-32 PM.png]]
 
 
 ## Estudio de error en la interpolación de Lagrange
-
 ![[y2t2/Computación (CN)/_resources/Interpolación.resources/image.7.png]]
 
 
 ### Problema 4.5
-
 ![[Sketch 3-11-2022 3-49 PM.png]]
 
 
 ## Nodos de Chebyshev
-
 ![[Sketch 3-11-2022 4-36 PM.png]]
 
 
 ## Interpolación lineal a trozos
-
 Cada polinomio debe de ser de grado menor o igual que uno.
 
 
 ### Polinomio de interpolación mediante Newton
-
 ![[y2t2/Computación (CN)/_resources/Interpolación.resources/image.8.png]]
 **H es el paso entre los nodos.**
 
-### Problema 4.7
 
+### Problema 4.7
 ![[Sketch 3-21-2022 5-20 PM.png]]![[Sketch 3-21-2022 5-28 PM.png]]
 
 
