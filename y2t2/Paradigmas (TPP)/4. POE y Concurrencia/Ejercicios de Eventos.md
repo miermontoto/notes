@@ -23,6 +23,4 @@ Tagged: #4.-POE
 
 ![[EjercicioMáquinaDiscos.java]]
 
-### 
-
 

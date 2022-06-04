@@ -18,7 +18,6 @@ Tagged: #4.-POE
 
 
 ### Comienzo de ejecución
-
 `start()`
 
 
@@ -32,32 +31,16 @@ Tagged: #4.-POE
 ## Estados
 
 
-
 ## Exclusión mutua
-
 Para garantizar la exclusión mutua, solo uno puede acceder a la variable compartida en un mismo instante.
 
 
 ### Interbloqueo
 
 ### Interbloqueo activo
-
 Los hilos siguen corriendo, pero no hay progreso en el sistema.
 
 ### Inanición
-
 Hay ciertos hilos que nunca llegan a la CPU.
-
-[Tecnologías y Paradigmas de la Programación (CEX)](https://www.google.com/calendar/event?eid=XzhkOWxjZ3JmZHByNmFzamtjNWdqZ2UxbjZjcG1hZHI0Y29vamNwaGxjOWdtNmM5aTY0b2o4bzlwNzVoM2djcjY2dGgwIHVuZGVyc2NvcmViaXNAbQ)
-
-Date & Time:Mon, Mar 28, 2022, 4:00 PM - 5:00 PM
-Location:AS-1
-Clase Expositiva
-
-[Tecnologías y Paradigmas de la Programación (CEX)](https://www.google.com/calendar/event?eid=XzhkOWxjZ3JmZHByNmFzamtjNG82Y2NwbmNoajM4Y3BqNmRpamVkYjU2aGhtY29objY5aTM0cGhoNjRvamNkcG42b29nIHVuZGVyc2NvcmViaXNAbQ)
-
-Date & Time:Mon, Apr 4, 2022, 4:00 PM - 5:00 PM
-Location:AS-1
-Clase Expositiva
 
 

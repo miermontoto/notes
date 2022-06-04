@@ -31,7 +31,7 @@ Son polinomios de grado _n_ igualados a cero con coeficientes reales.
 ### Ejercicio 2.3.
 
 ![[Sketch 2-18-2022 3-32 PM.png]]
-
+![[_resources/Ecuaciones algebráicas 2022-06-04 21.20.22.excalidraw]]
 
 # Algoritmo de Horner
 
