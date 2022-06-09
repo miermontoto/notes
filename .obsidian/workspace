@@ -9,19 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Programación orientada a eventos.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "98d7576c715acab1",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "y2t2/Paradigmas (TPP)/2. FOS y Currying/Expresiones Lambda.md",
+            "file": "others/Deporte/Ejercicio.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y2t2/Paradigmas (TPP)/2. FOS y Currying/Expresiones Lambda.md",
+                "file": "others/Deporte/Ejercicio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,24 +100,24 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "98d7576c715acab1",
+  "active": "fab6d733da74dedc",
   "lastOpenFiles": [
+    "others/Deporte/Ejercicio.md",
+    "others/Deporte/Escalada.md",
+    "others/Escalada/2022-06-09.md",
     "y2t2/Paradigmas (TPP)/2. FOS y Currying/Expresiones Lambda.md",
-    "y2t2/Computación (CN)/CEX/5. Integración numérica/Integración numérica.md",
+    "others/EBAU 2020.md",
+    "y2t2/Paradigmas (TPP)/2. FOS y Currying/Currying.md",
     "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Programación orientada a eventos.md",
-    "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Ejercicios de Eventos.md",
-    "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Concurrencia.md",
-    "y2t2/Computación (CN)/PL/Parcial 2.md",
-    "y2t2/Computación (CN)/CEX/2. Métodos numéricos para ecuaciones/_resources/Ecuaciones algebráicas 2022-06-04 21.20.22.excalidraw.md",
-    "y2t2/Computación (CN)/CEX/2. Métodos numéricos para ecuaciones/Ecuaciones algebráicas.md",
-    "y2t2/Computación (CN)/Computación (CN).md",
-    "y2t2/Computación (CN)/CEX/4. Interpolación, aprox., ajuste/Aproximación continua.md"
+    "others/_resources/EBAU 2020 2022-06-09 18.10.15.excalidraw.md",
+    "y2t2/Computación (CN)/CEX/5. Integración numérica/Integración numérica.md",
+    "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Ejercicios de Eventos.md"
   ]
 }
