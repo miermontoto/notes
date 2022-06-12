@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y2t2/CPM/3. Accesibilidad/Accesibilidad.md",
+            "file": "others/Deporte/Escalada.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y2t2/CPM/3. Accesibilidad/Accesibilidad.md",
+                "file": "others/Deporte/Escalada.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,9 +109,9 @@
   },
   "active": "fab6d733da74dedc",
   "lastOpenFiles": [
+    "others/Deporte/Escalada.md",
     "y2t2/CPM/3. Accesibilidad/Accesibilidad.md",
     "y2t2/CPM/3. Accesibilidad/Heurística & 8 reglas de oro.md",
-    "others/Deporte/Escalada.md",
     "others/Deporte/Ejercicio.md",
     "others/Escalada/2022-06-09.md",
     "y2t2/Paradigmas (TPP)/2. FOS y Currying/Expresiones Lambda.md",
