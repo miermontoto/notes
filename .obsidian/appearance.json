@@ -1,7 +1,7 @@
 {
   "translucency": false,
   "baseFontSize": 16,
-  "cssTheme": "Dracula for Obsidian",
+  "cssTheme": "Prism",
   "theme": "obsidian",
   "textFontFamily": "Menlo",
   "enabledCssSnippets": [

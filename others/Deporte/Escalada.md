@@ -9,8 +9,9 @@
 | [[2022-06-19]] | 11:00 | Pol. Oñón | 7          | 3                | 0               | 0              | 2                      | 1                      | 10.25       | dió por culo el hijo de Ángela                                                                     |
 
 ## Boulder
-| día | hora | lugar | nº problemas | notas | 
-| --- | ---- | ----- | ------------ | ----- |
+| día            | hora  | lugar   | notas               |
+| -------------- | ----- | ------- | ------------------- |
+| [[2022-06-21]] | 10:30 | OneMove | escalé bastante mal | 
 
 
 ## Roca
