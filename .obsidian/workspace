@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "others/Deporte/Escalada.md",
+            "file": "others/Minecraft.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "others/Deporte/Escalada.md",
+                "file": "others/Minecraft.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +109,15 @@
   },
   "active": "fab6d733da74dedc",
   "lastOpenFiles": [
+    "others/Minecraft.md",
     "others/Deporte/Escalada.md",
+    "others/Deporte/Ejercicio.md",
     "y2t2/CPM/3. Accesibilidad/Accesibilidad.md",
     "y2t2/CPM/3. Accesibilidad/Heurística & 8 reglas de oro.md",
-    "others/Deporte/Ejercicio.md",
     "others/Escalada/2022-06-09.md",
     "y2t2/Paradigmas (TPP)/2. FOS y Currying/Expresiones Lambda.md",
     "others/EBAU 2020.md",
     "y2t2/Paradigmas (TPP)/2. FOS y Currying/Currying.md",
-    "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Programación orientada a eventos.md",
-    "others/_resources/EBAU 2020 2022-06-09 18.10.15.excalidraw.md"
+    "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Programación orientada a eventos.md"
   ]
 }
