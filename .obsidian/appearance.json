@@ -3,8 +3,10 @@
   "baseFontSize": 16,
   "cssTheme": "Prism",
   "theme": "obsidian",
-  "textFontFamily": "Menlo",
+  "textFontFamily": "SF Pro Text,FuraCode Nerd Font",
   "enabledCssSnippets": [
     "math"
-  ]
+  ],
+  "interfaceFontFamily": "SF Pro Display,SF Pro Text",
+  "monospaceFontFamily": "SF Mono"
 }

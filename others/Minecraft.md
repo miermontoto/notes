@@ -20,7 +20,6 @@
 - Sharpness V
 - Lure III
 - Depth Strider III
-- Feather Falling IV
 - Power V
 
 # Ideas

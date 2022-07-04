@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "others/Minecraft.md",
+            "file": "others/Comprar.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "others/Minecraft.md",
+                "file": "others/Comprar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +109,7 @@
   },
   "active": "fab6d733da74dedc",
   "lastOpenFiles": [
+    "others/Comprar.md",
     "others/Minecraft.md",
     "others/Deporte/Escalada.md",
     "others/Deporte/Ejercicio.md",
@@ -117,7 +118,6 @@
     "others/Escalada/2022-06-09.md",
     "y2t2/Paradigmas (TPP)/2. FOS y Currying/Expresiones Lambda.md",
     "others/EBAU 2020.md",
-    "y2t2/Paradigmas (TPP)/2. FOS y Currying/Currying.md",
-    "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Programación orientada a eventos.md"
+    "y2t2/Paradigmas (TPP)/2. FOS y Currying/Currying.md"
   ]
 }
