@@ -19,6 +19,3 @@ Tagged: #4.-POE
 | apilaA(x) | 1   | 1   | 3   | ANP | 3   |
 | apilaB(x) | 1   | 1   | 4   | 4   | ANP |
 | apilaC(x) | ANP | 2   | 2   | 2   | 2   |
-
-
-![[EjercicioMáquinaDiscos.java]]

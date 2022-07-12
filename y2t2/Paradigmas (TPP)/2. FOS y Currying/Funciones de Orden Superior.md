@@ -8,13 +8,7 @@ Tagged: #2.-FOS-y-Currying
 ---
 
 # Funciones de Orden Superior
-**_Archivo con ejemplos y ejercicios de la primera sesión:_**
-![[iva.rkt]]
-
-### 
-
 ### Definición
-
 Una función se dice de orden superior si:
 
 * alguno de sus argumentos es una función.
@@ -24,15 +18,13 @@ Una función se dice de orden superior si:
 
 
 ### Ventajas
-
 * ✓ Programas más concisos sin perder generalidad.
 * ✓ Programas genéricos, funciones parametrizadas por medio de otras funciones.
 * ✓ Alto nivel de reutilización.
 * ✓ Generación automática de código.
 
 
-```
-# Scheme
+```scheme
 ; genera-iva :: Real → (Real → Real)
 (define (genera-iva tipo)
     (lambda(base) (* base (+ 1 (tipo)))))
@@ -51,7 +43,6 @@ Una función se dice de orden superior si:
 # F.O.S. definidas sobre listas
 
 ## Filter
-
 Filtra elementos no deseados de una lista.
 `(filter <función-test> <list>)`
 
@@ -64,10 +55,11 @@ Filtra elementos no deseados de una lista.
 
 
 ## Take-while
+Devuelve el prefijo de una lista. 
+>[!WARNING]
+>Requiere `srfi/1`.
 
-Devuelve el prefijo de una lista. ⚠️_Requiere `srfi/1`._
 `(take-while <función-test> <list>)`
-
 ```
 > (take-while positive? '(1 2 -3 4 5))
 (1 2)
@@ -75,10 +67,11 @@ Devuelve el prefijo de una lista. ⚠️_Requiere `srfi/1`._
 
 
 ## Drop-while
+Devuelve el sufijo de una lista. 
+>[!WARNING]
+>Requiere `srfi/1`.
 
-Devuelve el sufijo de una lista. ⚠️_Requiere `srfi/1`._
 `(drop-while <función-test> <list>)`
-
 ```
 > (drop-while symbol? '(Ana Gutiérrez Espina 24 M 5.6 1239 Algoritmia))
 (24 M 5.6 1239 Algoritmia)

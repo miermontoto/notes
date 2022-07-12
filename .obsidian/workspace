@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Ejercicios de Eventos.md",
+            "file": "others/Deporte/Escalada.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Ejercicios de Eventos.md",
+                "file": "others/Deporte/Escalada.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +109,15 @@
   },
   "active": "fab6d733da74dedc",
   "lastOpenFiles": [
-    "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Ejercicios de Eventos.md",
-    "others/Comprar.md",
-    "others/Minecraft.md",
     "others/Deporte/Escalada.md",
-    "others/Deporte/Ejercicio.md",
-    "y2t2/CPM/3. Accesibilidad/Accesibilidad.md",
-    "y2t2/CPM/3. Accesibilidad/Heurística & 8 reglas de oro.md",
-    "others/Escalada/2022-06-09.md",
+    "y2t2/Sistemas (SO)/3. Coordinación/Coordinación y sincronización de procesos (Intro).md",
+    "y2t2/Sistemas (SO)/Sistemas (SO).md",
+    "others/Comprar.md",
+    "y2t2/Paradigmas (TPP)/2. FOS y Currying/Funciones de Orden Superior.md",
     "y2t2/Paradigmas (TPP)/2. FOS y Currying/Expresiones Lambda.md",
-    "others/EBAU 2020.md"
+    "y2t2/Paradigmas (TPP)/2. FOS y Currying/Currying.md",
+    "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Ejercicios de Eventos.md",
+    "others/Minecraft.md",
+    "others/Deporte/Ejercicio.md"
   ]
 }

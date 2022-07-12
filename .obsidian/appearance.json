@@ -1,7 +1,7 @@
 {
   "translucency": false,
   "baseFontSize": 16,
-  "cssTheme": "Prism",
+  "cssTheme": "",
   "theme": "obsidian",
   "textFontFamily": "SF Pro Text,FuraCode Nerd Font",
   "enabledCssSnippets": [
