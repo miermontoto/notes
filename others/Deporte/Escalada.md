@@ -13,10 +13,11 @@
 |                |       |           |            |                  |                 |                |                        |                        |             |                                                                      |
 
 ## Boulder
-| día            | hora  | lugar   | notas               |
-| -------------- | ----- | ------- | ------------------- |
-| [[2022-06-21]] | 10:30 | OneMove | escalé bastante mal |
-| [[2022-07-07]]       | 17:30 | OneMove        | amarillas difíciles                    |
+| día            | hora  | lugar     | notas               |
+| -------------- | ----- | --------- | ------------------- |
+| [[2022-06-21]] | 10:30 | OneMove   | escalé bastante mal |
+| [[2022-07-07]] | 17:30 | OneMove   | amarillas difíciles |
+| [[2022-07-19]] | 12:00 | Pol. Oñón | yo solo                    |
 
 
 ## Roca
