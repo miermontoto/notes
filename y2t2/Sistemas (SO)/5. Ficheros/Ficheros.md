@@ -26,11 +26,9 @@ Tagged: #5.-Ficheros
 Módulo del SO encargado del manejo y organización de ficheros.
 
 ### En nivel superior
-
 Implementa operaciones.
 
 ### En nivel inferior
-
 Administra la memoria secundaria.
 
 
@@ -173,17 +171,12 @@ Los bloques de datos de un fichero no tienen porqué estar seguidos ni en orden.
 
 * **El BDF contiene un cierto nº fijo de nº de bloques.**
 * Existen entradas:
-  * Directas
-
-				Tiene tanto números de enteros que representan los tantos primeros números de bloque del fichero.
-
-* Indirectas
-
-				Una entrada indirecta significa que hay que ir al bloque de datos que represente la entrada, y dentro de él están todos los datos siguientes a él.
-
-* Nivel de anidamiento
-
-						El nivel de anidamiento informa de la cantidad de niveles de bloques que hay que aniden los bloques que hay que leer.
+	* **Directas**
+		Tiene tanto números de enteros que representan los tantos primeros números de bloque del fichero.
+	* **Indirectas**
+		Una entrada indirecta significa que hay que ir al bloque de datos que represente la entrada, y dentro de él están todos los datos siguientes a él.
+	* **Nivel de anidamiento**
+		El nivel de anidamiento informa de la cantidad de niveles de bloques que hay que aniden los bloques que hay que leer.
 
 * Simple
 * Doble
@@ -191,12 +184,10 @@ Los bloques de datos de un fichero no tienen porqué estar seguidos ni en orden.
 * ...
 
 ## Consistencia del sistema de archivos
-
 Tiene que haber técnicas que permitan comprobar la consistencia del sistema para evitar la degradación y la pérdida de información:
 
 
 ### fsck
-
 Dos tablas:
 
 **De bloques:**

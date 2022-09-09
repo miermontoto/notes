@@ -9,10 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "others/Comprar.md",
+            "file": "y2t2/Computación (CN)/CEX/5. Integración numérica/Cuadratura gaussiana.md",
             "mode": "source",
             "source": false
           }
+        }
+      },
+      {
+        "id": "caa555e92bc23c71",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "others/Comprar.md",
+                "file": "y2t2/Computación (CN)/CEX/5. Integración numérica/Cuadratura gaussiana.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +117,15 @@
   },
   "active": "fab6d733da74dedc",
   "lastOpenFiles": [
-    "others/Minecraft.md",
-    "others/Comprar.md",
-    "others/Deporte/Escalada.md",
-    "others/Deporte/Ejercicio.md",
-    "y2t2/Sistemas (SO)/3. Coordinación/Coordinación y sincronización de procesos (Intro).md",
-    "y2t2/Sistemas (SO)/Sistemas (SO).md",
-    "y2t2/Paradigmas (TPP)/2. FOS y Currying/Funciones de Orden Superior.md",
-    "y2t2/Paradigmas (TPP)/2. FOS y Currying/Expresiones Lambda.md",
-    "y2t2/Paradigmas (TPP)/2. FOS y Currying/Currying.md",
-    "y2t2/Paradigmas (TPP)/4. POE y Concurrencia/Ejercicios de Eventos.md"
+    "y2t2/Computacion/5. Integración numérica/Sketch 4-22-2022 2-45 PM.png.md",
+    "y2t2/Computación (CN)/CEX/5. Integración numérica/Cuadratura gaussiana.md",
+    "y2t2/Computación (CN)/CEX/5. Integración numérica/Integración numérica.md",
+    "y2t2/Computación (CN)/_resources/Cuadratura_gaussiana.resources/Sketch 4-22-2022 2-45 PM.png",
+    "y2t2/Computación (CN)/CEX/6. Optimización numérica.md",
+    "y2t2/Sistemas (SO)/5. Ficheros/Ficheros.md",
+    "y2t2/Sistemas (SO)/5. Ficheros/Untitled.md",
+    "y2t2/Sistemas (SO)/5. Ficheros/Ejercicios de ficheros.md",
+    "y2t2/Sistemas (SO)/Prueba parcial.md",
+    "y2t2/CPM/2. GUIDE.md"
   ]
 }

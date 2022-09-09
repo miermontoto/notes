@@ -8,8 +8,8 @@ Tagged: #1.-Bases-de-Prg.-Func.
 ---
 
 # Bases de Programación Funcional (ON→EN)
-# Características generales 
 
+# Características generales 
 * Es programación declarativa. Se definen funciones y se utiliza lenguaje matemático. 
 * Se centra en la _Evaluación._ 
 * No presenta asignaciones. 
@@ -17,7 +17,6 @@ Tagged: #1.-Bases-de-Prg.-Func.
 * Funciones fácilmente paralelizables. 
 
 # Conceptos fundamentales 
-
 * **Datos simbólicos** 
   * Gran flexibilidad 
   * Listas y átomos 
@@ -32,7 +31,6 @@ Tagged: #1.-Bases-de-Prg.-Func.
   * Modificar y parametrizar tanto datos como código. 
 
 # Lenguajes funcionales 
-
 * LISP (List Processing) 
   * Primer lenguaje funcional. 
   * Lenguaje híbrido (Funcional / imperativo) 
@@ -50,13 +48,11 @@ Tagged: #1.-Bases-de-Prg.-Func.
 Una regla de correspondencia que asocia a cada miembro de un dominio dado un único miembro en una imagen dada. 
 
 ## Tipos de función 
-
 * **Parcial** sobre su dominio, si hay al menos un valor en su dominio para el cual el valor de la imagen correspondiente está indefinido. 
 * **Total** sobre su dominio, si está definida para todo él. 
 * **Estricta**, si la imagen de un valor indefinido del dominio es indefinido. 
 
 ## Tipos de evaluación 
-
 * **Perezosa,** si se evalúa primero la función y posteriormente se evalúan los valores necesarios. 
 * **Agresiva / Ansiosa,** si primero se evalúan todos los valores y por último la función. 
 
