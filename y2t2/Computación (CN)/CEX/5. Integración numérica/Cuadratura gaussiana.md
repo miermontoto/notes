@@ -1,4 +1,5 @@
----
+
+Upgraded:---
 
 Created at 2022-04-22T14:07:27+02:00
 Last updated at 2022-04-29T15:41:41+02:00
@@ -18,7 +19,5 @@ La fórmula de cuadratura gaussiana con n nodos en un intervalo [a, b] es exacta
 ![[../../_resources/Cuadratura_gaussiana.resources/Sketch 4-22-2022 2-45 PM.png]]
 
 
-### Ejercicio 5.6
-
+### <mark style="background: #BBFABBA6;">Ejercicio 5.6</mark> 
 ![[Sketch 4-22-2022 2-53 PM.png|800]]
-
