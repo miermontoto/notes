@@ -30,7 +30,7 @@ m es el grado del polinomio, hay n puntos.
 
 
 ### Problema 4.16
-![[Ajuste de datos 2022-06-02 10.55.57.excalidraw|1000]]
+![[_resources/Ajuste de datos 2022-06-02 10.55.57.excalidraw|1000]]
 
 
 ## Ajuste trigonométrico
