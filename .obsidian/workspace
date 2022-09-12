@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Ingeniería de Software/Ingeniería de Software.md",
+            "file": "y3t1/Redes de Computadores/Redes de Computadores.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y3t1/Ingeniería de Software/Ingeniería de Software.md",
+                "file": "y3t1/Redes de Computadores/Redes de Computadores.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +109,7 @@
   },
   "active": "719959af22cbe498",
   "lastOpenFiles": [
+    "y3t1/Ingeniería de Software/Ingeniería de Software.md",
     "y3t1/Configuración (CES)/1. Introducción.md",
     "y3t1/Configuración (CES)/Untitled.md",
     "y3t1/Configuración (CES)/Configuración (CES).md",
@@ -117,7 +118,6 @@
     "y2t2/Computación (CN)/CEX/5. Integración numérica/Cuadratura gaussiana.md",
     "y2t2/Computación (CN)/CEX/6. Optimización numérica.md",
     "others/Minecraft.md",
-    "y2t2/Computación (CN)/CEX/5. Integración numérica/_resources/Cuadratura gaussiana 2022-09-09 11.36.50.excalidraw.md",
-    "y2t2/Computación (CN)/CEX/5. Integración numérica/Integración numérica.md"
+    "y2t2/Computación (CN)/CEX/5. Integración numérica/_resources/Cuadratura gaussiana 2022-09-09 11.36.50.excalidraw.md"
   ]
 }
