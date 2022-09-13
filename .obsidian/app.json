@@ -10,7 +10,7 @@
     "es-ES"
   ],
   "spellcheck": false,
-  "fileSortOrder": "byCreatedTime",
+  "fileSortOrder": "byCreatedTimeReverse",
   "trashOption": "system",
   "newFileLocation": "current",
   "newLinkFormat": "relative",
