@@ -4,37 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "14bf399a730aa08b",
-        "type": "split",
-        "children": [
-          {
-            "id": "719959af22cbe498",
-            "type": "leaf",
-            "dimension": 67.69690927218345,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "y3t1/Configuración (CES)/2. Carga de trabajo de un sistema.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc3c74eb8e3f417a",
-            "type": "leaf",
-            "dimension": 32.30309072781655,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "y3t1/Configuración (CES)/2. Carga de trabajo de un sistema.md",
-                "mode": "source",
-                "source": false
-              }
-            }
+        "id": "fdf0be694ac6f5c9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "y3t1/PCP/1. Evaluación de prestaciones.md",
+            "mode": "source",
+            "source": false
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -90,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y3t1/Configuración (CES)/2. Carga de trabajo de un sistema.md",
+                "file": "y3t1/PCP/1. Evaluación de prestaciones.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "719959af22cbe498",
+  "active": "fdf0be694ac6f5c9",
   "lastOpenFiles": [
-    "y3t1/Administración de Sistemas/1. Instalación, administración básica y configuración del arranque.md",
-    "y3t1/Configuración (CES)/1. Introducción.md",
-    "y3t1/Configuración (CES)/2. Carga de trabajo de un sistema.md",
-    "y2t2/Sistemas (SO)/5. Ficheros/Ficheros.md",
-    "y2t2/Sistemas (SO)/Sistemas (SO).md",
-    "y3t1/Redes de Computadores/1. Introducción a las redes de computadores.md",
-    "y3t1/Redes de Computadores/1. Introducción a las redes de computadores/Intro a Redes.md",
-    "y3t1/Redes de Computadores/Redes de Computadores.md",
+    "y3t1/PCP/_resources/1. Evaluación de prestaciones 2022-09-15 12.41.53.excalidraw.md",
     "y3t1/PCP/1. Evaluación de prestaciones.md",
-    "y3t1/PCP/PCP.md"
+    "y3t1/PCP/_resources/1. Evaluación de prestaciones 2022-09-15 12.35.38.excalidraw.md",
+    "y3t1/PCP/_resources/1. Evaluación de prestaciones 2022-09-15 12.24.22.excalidraw.md",
+    "y3t1/PCP/_resources/Pasted image 20220915122408.png",
+    "y3t1/PCP/_resources/1. Evaluación de prestaciones 2022-09-15 12.13.25.excalidraw.md",
+    "y3t1/Ingeniería de Software/1. Introducción.md",
+    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Tipos de patrones (HUB).md",
+    "y3t1/Configuración (CES)/2. Carga de trabajo de un sistema.md",
+    "y3t1/Administración de Sistemas/1. Instalación, administración básica y configuración del arranque.md"
   ]
 }
