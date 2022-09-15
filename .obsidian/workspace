@@ -4,16 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "719959af22cbe498",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "y3t1/Configuración (CES)/2. Carga de trabajo de un sistema.md",
-            "mode": "source",
-            "source": false
+        "id": "14bf399a730aa08b",
+        "type": "split",
+        "children": [
+          {
+            "id": "719959af22cbe498",
+            "type": "leaf",
+            "dimension": 67.69690927218345,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "y3t1/Configuración (CES)/2. Carga de trabajo de un sistema.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fc3c74eb8e3f417a",
+            "type": "leaf",
+            "dimension": 32.30309072781655,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "y3t1/Configuración (CES)/2. Carga de trabajo de un sistema.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -109,15 +130,15 @@
   },
   "active": "719959af22cbe498",
   "lastOpenFiles": [
+    "y3t1/Administración de Sistemas/1. Instalación, administración básica y configuración del arranque.md",
     "y3t1/Configuración (CES)/1. Introducción.md",
+    "y3t1/Configuración (CES)/2. Carga de trabajo de un sistema.md",
     "y2t2/Sistemas (SO)/5. Ficheros/Ficheros.md",
     "y2t2/Sistemas (SO)/Sistemas (SO).md",
-    "y3t1/Administración de Sistemas/1. Instalación, administración básica y configuración del arranque.md",
     "y3t1/Redes de Computadores/1. Introducción a las redes de computadores.md",
     "y3t1/Redes de Computadores/1. Introducción a las redes de computadores/Intro a Redes.md",
     "y3t1/Redes de Computadores/Redes de Computadores.md",
     "y3t1/PCP/1. Evaluación de prestaciones.md",
-    "y3t1/PCP/PCP.md",
-    "y3t1/Ingeniería de Software/Ingeniería de Software.md"
+    "y3t1/PCP/PCP.md"
   ]
 }
