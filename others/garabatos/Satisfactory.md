@@ -1,0 +1,1 @@
+![[_resources/Satisfactory 2022-09-13 19.08.48.excalidraw]]
