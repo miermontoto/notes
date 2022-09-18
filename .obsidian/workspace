@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mínimos",
+                "query": "tag:#proceso",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8f302320ff686a1a",
+  "active": "dfaf0fc072830dff",
   "lastOpenFiles": [
+    "y3t1/Redes de Computadores/1. Introducción a las redes de computadores.md",
+    "y3t1/Redes de Computadores/Redes de Computadores.md",
+    "y3t1/Administración de Sistemas/1. Instalación, administración básica y configuración del arranque.md",
     "y3t1/Configuración (CES)/2. Carga de trabajo de un sistema.md",
+    "y3t1/Configuración (CES)/1. Introducción.md",
+    "y3t1/Ingeniería de Software (ISoft)/2. Estudio de Viabilidad del Sistema (EVS).md",
+    "y3t1/PCP/1. Evaluación de prestaciones.md",
     "y3t1/Ingeniería de Software (ISoft)/Ingeniería de Software (ISoft).md",
     "y3t1/Ingeniería de Software (ISoft)/Ingeniería de Software.md",
-    "y3t1/Ingeniería de Software (ISoft)/2. Estudio de Viabilidad del Sistema (EVS).md",
-    "others/garabatos/epiTimer.md",
-    "others/garabatos/Satisfactory.md",
-    "others/garabatos/_resources/Untitled 2022-09-16 15.12.45.excalidraw.md",
-    "others/Minecraft.md",
-    "others/Comprar.md",
-    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Patrones creacionales.md"
+    "others/garabatos/epiTimer.md"
   ]
 }
