@@ -88,5 +88,29 @@
       ],
       "key": "."
     }
+  ],
+  "cmenu-plugin:subscript": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "cmenu-plugin:superscript": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "cmenu-plugin:underline": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "U"
+    }
   ]
 }
