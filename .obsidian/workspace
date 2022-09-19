@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "fcf8ca8d83467c04",
+        "id": "dfaf0fc072830dff",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Redes de Computadores/1. Introducción/Protocolos y arquitectura de protocolos.md",
+            "file": "y2t2/Paradigmas (TPP)/3. Patrones de diseño/3. Patrones de diseño.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Métrica_V3",
+                "query": "tag:#proceso",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y3t1/Redes de Computadores/1. Introducción/Protocolos y arquitectura de protocolos.md",
+                "file": "y2t2/Paradigmas (TPP)/3. Patrones de diseño/3. Patrones de diseño.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,25 +98,45 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "f4aee3f403b015a4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f39aebbd1f465305",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "fcf8ca8d83467c04",
+  "active": "8f302320ff686a1a",
   "lastOpenFiles": [
-    "y3t1/Redes de Computadores/1. Introducción/1. Introducción.md",
-    "y3t1/Redes de Computadores/1. Introducción/Visión general de las redes.md",
-    "y3t1/Redes de Computadores/1. Introducción/Clasificación de las redes.md",
-    "y3t1/Redes de Computadores/1. Introducción/Protocolos y arquitectura de protocolos.md",
-    "y3t1/Ingeniería de Software (ISoft)/2. EVS/Caso de estudio.md",
-    "y3t1/Ingeniería de Software (ISoft)/2. EVS/Estudio de Viabilidad del Sistema (EVS).md",
+    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Patrones estructurales.md",
+    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Patrones de comportamiento.md",
+    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Patrones creacionales.md",
+    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/3. Patrones de diseño.md",
+    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Tipos de patrones (HUB).md",
+    "y3t1/PCP/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
+    "y3t1/PCP/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
     "y3t1/Ingeniería de Software (ISoft)/1. Introducción/1. Introducción.md",
-    "y3t1/Configuración (CES)/2. Medición de prestaciones/Carga de trabajo de un sistema.md",
-    "y2t2/Paradigmas (TPP)/1. Bases de Programación Funcional/Bases de Programación Funcional (ON→EN).md",
-    "y3t1/PCP/1. Evaluación de prestaciones.md"
+    "y3t1/Ingeniería de Software (ISoft)/2. EVS/Caso de estudio.md",
+    "y3t1/Ingeniería de Software (ISoft)/2. EVS/Estudio de Viabilidad del Sistema (EVS).md"
   ]
 }

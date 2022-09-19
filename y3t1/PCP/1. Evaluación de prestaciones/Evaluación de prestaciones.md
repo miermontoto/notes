@@ -81,13 +81,7 @@ $$S(n,p) = \frac{T(n)}{T(n,p)}$$
 
 ### Eficiencia
 <mark style="background: #ADCCFFA6;">El speedup partido por p, para que se acote entre 0 y 1.</mark> $$0 \leq E(n,p) = \frac{S(n,p)}{p} \leq 1$$
-### <mark style="background: #BBFABBA6;">Ejemplos</mark> 
-![[_resources/Pasted image 20220915121311.png|1000]]
-![[_resources/1. Evaluación de prestaciones 2022-09-15 12.13.25.excalidraw]]
-
-
-![[_resources/1. Evaluación de prestaciones 2022-09-15 12.24.22.excalidraw]]![[_resources/1. Evaluación de prestaciones 2022-09-15 12.35.38.excalidraw]]
-![[_resources/1. Evaluación de prestaciones 2022-09-15 12.41.53.excalidraw]]
+## [[Ejemplos y ejercicios]]
 
 ## Modelos de rendimiento
 ### Ley de Amdahl

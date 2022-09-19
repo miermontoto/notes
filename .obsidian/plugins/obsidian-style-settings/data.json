@@ -21,7 +21,7 @@
   "things-style@@full-file-names": true,
   "things-style@@links-int-on": true,
   "things-style@@default-font-color": true,
-  "things-style@@cursor": "crosshair",
+  "things-style@@cursor": "pointer",
   "things-style@@h4-weight": 600,
   "things-style@@h5-weight": 600,
   "things-style@@h6-weight": 600,

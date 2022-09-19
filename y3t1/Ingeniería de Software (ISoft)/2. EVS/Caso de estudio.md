@@ -51,7 +51,7 @@ Orientación a bases de datos.
 
 Un buen catálogo de requisitos tiene todos los requisitos identificados únicamente.
 
-## EVS4, 5, 6
+## EVS 4, 5, 6
 ### Descripción / valoración de alternativas
 - Sistemas similares
 	- Posibilidad de integración de nuevas funcionalidades.
