@@ -70,7 +70,7 @@ Una carga que se comporta igual que la carga real pero puede repetirse obteniend
 ---
 
 ## Introducción al modelado y generación de cargas
-![[_resources/Pasted image 20220915103319.png]]
+![[../1. Introducción/_resources/Pasted image 20220915103319.png]]
 
 --- 
 
