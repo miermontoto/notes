@@ -1,7 +1,7 @@
 {
   "settings": {
     "migrated": true,
-    "iconPacksPath": "plugins/obsidian-icon-folder/icons",
+    "iconPacksPath": ".obsidian/icons/",
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
@@ -36,8 +36,6 @@
   "y2t2/Sistemas (SO)": "RiTerminalWindowLine",
   "y2t2/Bases": "RiDatabase2Line",
   "y2t2/Computación (CN)": "FasArrowUp91",
-  "y2t2/Bases/Primer parcial.md": "FasFilePdf",
-  "y2t2/Computación (CN)/_resources": "FarFileImage",
   "y3t1/Configuración (CES)": "FasStopwatch",
   "y3t1/Ingeniería de Software (ISoft)": "FarComments",
   "y3t1/Administración de Sistemas": "RiServerFill",

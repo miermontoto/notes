@@ -2,8 +2,8 @@
 
 ## Antecedentes
 - **Tiempo de Ejeución Secuencial:** tiempo que tarda en ejeuctarse el programa en una sola unidad de proceso.
-	- El análisis se hace en flops (operaciones flotantes por segundo)
->[!ERROR]
+	- El análisis se hace en [[#FLOPs]] (operaciones flotantes por segundo).
+>[!ERROR]- No relevante
 >No es importante para el análisis, es más importante el tiempo de ejec. paralelo.
 
 - La medición del **rendimiento** de un problema se realiza utilizando solo el tamaño del problema y el número de procesadores.
@@ -98,7 +98,8 @@ Aplicando esto, si el algoritmo es:
 
 Haciendo manipulaciones algebráicas: $$S(n,p) = \frac{1}{(1-FP)+\frac{PF}{p}}$$donde PF es el % de fracción paralela (en tanto por uno).
 Se define como **rendimiento efectivo** (RE) de un algoritmo paralelo como:
-![[_resources/Pasted image 20220915125543.png]]
+$$RE_{dp}=\frac{1}{(1-PF)+\frac{PF}{p}}\times clock_{GHz}\times (AVX|FMA)$$
+$$RE_{dp}=\frac{1}{(1-PF)+\frac{PF}{p}}\times clock_{GHz}\times\frac{nºflop}{ciclo}$$
 
 ---
 

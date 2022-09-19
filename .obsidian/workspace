@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y2t2/Paradigmas (TPP)/3. Patrones de diseño/3. Patrones de diseño.md",
+            "file": "y3t1/Redes de Computadores/1. Introducción/_about_.md",
             "mode": "source",
+            "backlinks": false,
             "source": false
           }
         }
@@ -27,7 +28,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8f302320ff686a1a",
+            "id": "60e0d278280a16c5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -35,12 +36,12 @@
             }
           },
           {
-            "id": "b022bf09ca88e53f",
+            "id": "433ce1a35960bd81",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#proceso",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -64,23 +65,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "738a30c23fedbdce",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "y2t2/Paradigmas (TPP)/3. Patrones de diseño/3. Patrones de diseño.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
             "id": "db53a4463ef0aa18",
             "type": "leaf",
             "state": {
@@ -89,22 +73,12 @@
             }
           },
           {
-            "id": "812cc57bc5271088",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
             "id": "f4aee3f403b015a4",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "y3t1/Redes de Computadores/1. Introducción/_about_.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,7 +89,20 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "y3t1/Redes de Computadores/1. Introducción/_about_.md"
+              }
+            }
+          },
+          {
+            "id": "f04ed5c059d8f4c6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
             }
           }
         ],
@@ -126,17 +113,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8f302320ff686a1a",
+  "active": "dfaf0fc072830dff",
   "lastOpenFiles": [
-    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Patrones estructurales.md",
-    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Patrones de comportamiento.md",
-    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Patrones creacionales.md",
-    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/3. Patrones de diseño.md",
-    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Tipos de patrones (HUB).md",
-    "y3t1/PCP/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
-    "y3t1/PCP/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
-    "y3t1/Ingeniería de Software (ISoft)/1. Introducción/1. Introducción.md",
+    "y3t1/Redes de Computadores/1. Introducción/Visión general de las redes.md",
+    "y3t1/Redes de Computadores/1. Introducción/_about_.md",
+    "y3t1/Configuración (CES)/_about_.md",
+    "y3t1/Ingeniería de Software (ISoft)/_about_.md",
     "y3t1/Ingeniería de Software (ISoft)/2. EVS/Caso de estudio.md",
-    "y3t1/Ingeniería de Software (ISoft)/2. EVS/Estudio de Viabilidad del Sistema (EVS).md"
+    "y3t1/Ingeniería de Software (ISoft)/2. EVS/Estudio de Viabilidad del Sistema (EVS).md",
+    "y3t1/Ingeniería de Software (ISoft)/1. Introducción/_about_.md",
+    "y3t1/PCP/1. Evaluación de prestaciones/_about_.md",
+    "y3t1/Redes de Computadores/1. Introducción/Protocolos y arquitectura de protocolos.md",
+    "y3t1/PCP/1. Evaluación de prestaciones/Evaluación de prestaciones.md"
   ]
 }

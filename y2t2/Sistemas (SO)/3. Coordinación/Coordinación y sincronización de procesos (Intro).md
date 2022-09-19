@@ -12,9 +12,8 @@ PDF:
 ![[03 Coordinación y sincronización de procesos - Tra.pdf]]
 
 
-|     |     |
+| Q    | A    |
 | --- | --- |
-| Q   | A   |
 | ¿Si hay concurrencia hay paralelismo? | No. |
 | ¿Si hay paralelismo hay concurrencia? | Sí. |
 | ¿Un programador tiene que lidiar con el diseño concurrente aunque su programa no lo tenga si se ejecuta en un sistema operativo multiprogramado? | No, el SO lidia con los problemas de concurrencia en su lugar. |
@@ -40,7 +39,6 @@ PDF:
 * * *
 
 # Introducción
-
 
 
 ## Procesos concurrentes

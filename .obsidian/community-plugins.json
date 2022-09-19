@@ -7,12 +7,16 @@
   "obsidian-excalidraw-plugin",
   "obsidian-icon-folder",
   "nldates-obsidian",
-  "folder-note-core",
   "obsidian-git",
   "cm-editor-syntax-highlight-obsidian",
   "hotkeysplus-obsidian",
   "obsidian-style-settings",
   "tag-wrangler",
   "obsidian-minimal-settings",
-  "cmenu-plugin"
+  "cmenu-plugin",
+  "obsidian-mind-map",
+  "obsidian-kanban",
+  "folder-note-core",
+  "settings-search",
+  "janitor"
 ]

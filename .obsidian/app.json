@@ -15,5 +15,7 @@
   "newFileLocation": "current",
   "newLinkFormat": "relative",
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "./_resources"
+  "attachmentFolderPath": "./_resources",
+  "foldIndent": true,
+  "foldHeading": false
 }
