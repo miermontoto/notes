@@ -1,3 +1,4 @@
+#Métrica_V3 #EVS 
 # EVS - Estudio de Viabilidad del Sistema
 ![[_resources/ISOF - 2 - Metrica - EVS Proceso.pdf]]
 
