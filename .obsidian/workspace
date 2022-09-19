@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Ingeniería de Software (ISoft)/2. EVS/Caso de estudio.md",
+            "file": "y3t1/Redes de Computadores/1. Introducción/Protocolos y arquitectura de protocolos.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/2. EVS/Caso de estudio.md",
+                "file": "y3t1/Redes de Computadores/1. Introducción/Protocolos y arquitectura de protocolos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,8 +99,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -109,15 +108,15 @@
   },
   "active": "fcf8ca8d83467c04",
   "lastOpenFiles": [
+    "y3t1/Redes de Computadores/1. Introducción/1. Introducción.md",
+    "y3t1/Redes de Computadores/1. Introducción/Visión general de las redes.md",
+    "y3t1/Redes de Computadores/1. Introducción/Clasificación de las redes.md",
+    "y3t1/Redes de Computadores/1. Introducción/Protocolos y arquitectura de protocolos.md",
+    "y3t1/Ingeniería de Software (ISoft)/2. EVS/Caso de estudio.md",
     "y3t1/Ingeniería de Software (ISoft)/2. EVS/Estudio de Viabilidad del Sistema (EVS).md",
     "y3t1/Ingeniería de Software (ISoft)/1. Introducción/1. Introducción.md",
-    "y3t1/Ingeniería de Software (ISoft)/2. EVS/Caso de estudio.md",
     "y3t1/Configuración (CES)/2. Medición de prestaciones/Carga de trabajo de un sistema.md",
     "y2t2/Paradigmas (TPP)/1. Bases de Programación Funcional/Bases de Programación Funcional (ON→EN).md",
-    "y3t1/PCP/1. Evaluación de prestaciones.md",
-    "y3t1/Configuración (CES)/1. Introducción/1. Introducción.md",
-    "y3t1/Configuración (CES)/2. Medición de prestaciones/Monitores.md",
-    "y3t1/Configuración (CES)/Configuración (CES).md",
-    "y3t1/Configuración (CES)/1. Introducción.md"
+    "y3t1/PCP/1. Evaluación de prestaciones.md"
   ]
 }

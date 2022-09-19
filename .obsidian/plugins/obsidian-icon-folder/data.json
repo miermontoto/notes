@@ -5,20 +5,26 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasNetworkWired",
+      "FasChartLine",
+      "RiServerFill",
+      "FarComments",
+      "FasStopwatch",
       "FarFileImage",
       "FasWindowRestore",
       "FasFilePdf",
       "FasArrowUp91",
-      "RiTerminalWindowLine",
-      "FarObjectUngroup",
-      "FarSquareCaretRight",
-      "FarWindowRestore",
-      "RiDatabase2Line",
-      "FasObjectUngroup"
+      "RiTerminalWindowLine"
     ],
-    "recentlyUsedIconsSize": 15,
+    "recentlyUsedIconsSize": 10,
     "rules": [],
     "extraPadding": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    },
+    "extraMargin": {
       "top": 2,
       "right": 2,
       "bottom": 2,
@@ -31,5 +37,10 @@
   "y2t2/Bases": "RiDatabase2Line",
   "y2t2/Computación (CN)": "FasArrowUp91",
   "y2t2/Bases/Primer parcial.md": "FasFilePdf",
-  "y2t2/Computación (CN)/_resources": "FarFileImage"
+  "y2t2/Computación (CN)/_resources": "FarFileImage",
+  "y3t1/Configuración (CES)": "FasStopwatch",
+  "y3t1/Ingeniería de Software (ISoft)": "FarComments",
+  "y3t1/Administración de Sistemas": "RiServerFill",
+  "y3t1/PCP": "FasChartLine",
+  "y3t1/Redes de Computadores": "FasNetworkWired"
 }
