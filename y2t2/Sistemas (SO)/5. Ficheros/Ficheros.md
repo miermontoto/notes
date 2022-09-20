@@ -22,7 +22,6 @@ Tagged: #5.-Ficheros
 * * *
 
 # Intro
-
 Módulo del SO encargado del manejo y organización de ficheros.
 
 ### En nivel superior
@@ -33,7 +32,6 @@ Administra la memoria secundaria.
 
 
 # Ficheros
-
 Secuencia estructurada de bytes. El SO solo ve bytes, no puede interpretarlo.
 
 
@@ -72,11 +70,10 @@ El sistema de directorios es jerárquico, diferente en UNIX y en Windows.
 # Estructuras de datos para la gestión de ficheros
 
 
-
 ## Bloque descriptor de fichero (BDF)
+<mark style="background: #ADCCFFA6;">Estructura de datos que contiene todo lo que se necesita saber sobre un fichero.</mark>
 
-Estructura de datos que contiene todo lo que se necesita saber sobre un fichero:
-
+Contiene:
 * Identificador interno
 * Número de nombres
 * Tipo
@@ -91,7 +88,6 @@ Estructura de datos que contiene todo lo que se necesita saber sobre un fichero:
 
 
 ## Tabla única de ficheros abiertos del sistema
-
 Almacena:
 
 * Los BDFs de cada fichero abierto en memoria.
@@ -105,7 +101,6 @@ Es la operación 'open' la que carga entradas nuevas en la tabla de ficheros abi
 
 
 ## Tabla de BDFs en RAM (opcional)
-
 Mantiene una copia de los BDFs de fichero. Solo hay una en el sistema y es opcional.
 
 **Objetivo:** evitar que se cargue varias veces el BDF en memoria.
@@ -117,28 +112,22 @@ Tiene dos campos:
 
 Si esta tabla no existe, la tabla de ficheros abiertos del sistema carga un BDF por entrada.
 
-
 ## Tabla de descriptores por proceso / Tabla de ficheros por proceso
-
 Contiene punteros a entradas de la Tabla de Ficheros Abiertos del sistema.
 Es la tabla de ficheros abiertos por proceso.
 
 Al iniciar un proceso, se crean tres entradas para la entrada, salida y error estándar.
 
 
-
 # Implementación del sistema de ficheros
-
 Un sistema de ficheros es un modo de organización de la información (ficheros) en memoria secundaria.
 
 ## Estructura del sistema de ficheros
-
 Cada partición de un dispositivo de almacenamiento puede contener un sistema de ficheros.
 Para ello, es necesario dar formato a la partición.
 
 
 ## Tamaño de bloque de datos
-
 * La mediana del tamaño de ficheros varía entre 1KB y 4KB (en función del sistema de ficheros).
   * Bloque grande
     * Fragmentación interna grande
@@ -147,20 +136,16 @@ Para ello, es necesario dar formato a la partición.
     * Mayor tamaño de las estructuras de datos
 
 ## Implementación de ficheros
-
 Los datos de los ficheros se almacenan en memoria secundaria en los bloques de datos.
-
 Los bloques de datos de un fichero no tienen porqué estar seguidos ni en orden. (_se necesitan obtener en orden al acceder al fichero_)
 
 ### Asignación por lista enlazada
-
 * Una parte del bloque de datos contiene el nº del siguiente.
 * **El BDF solo tiene el primer número de bloque.**
 
 
 
 ### Asignación por lista enlazada utilizando una tabla
-
 * Existe una tabla por partición en memoria principal que contiene el número del siguiente bloque con respecto a cada bloque de la partición
 * **BDF contiene el primer número de cada fichero.**
 * Para leer secuencialmente, una vez accedido al primer bloque se lee el siguiente accediendo a su entrada en la tabla.
@@ -168,7 +153,6 @@ Los bloques de datos de un fichero no tienen porqué estar seguidos ni en orden.
 
 
 ### Asignación indexada
-
 * **El BDF contiene un cierto nº fijo de nº de bloques.**
 * Existen entradas:
 	* **Directas**
@@ -195,29 +179,23 @@ Coge todos los ficheros y obtiene todos los bloques. Con cada bloque, se rellena
 Al comparar ambas tablas, se obtienen inconsistencias.
 
 ## Implementación de directorios
-
 Un directorio es una tabla ordenada, que contiene el nombre de los ficheros que contiene y su BDF, directa o indirectamente.
 A través de esta información, se consiguen los BDFs de los ficheros. Además, esto permite el acceso relativo a ficheros.
 
 Hay dos opciones para guardar siempre el BDF de la raíz (que permite obtener el resto de ficheros):
-
 * tenerlo siempre en memoria.
 * que el directorio raíz empiece en una zona exacta.
-
 
 
 ## Gestión de bloques libres
 
 ### Lista enlazada
-
 Los bloques libres se encadenan en una lista enlazada. Se utilizan los propios bloques para almacenar la información.
 En memoria se almacena solo el primer elemento de la lista.
 
 
 ### Mapa de bits
-
 Para sistemas de archivos pequeños.
-
 
 * Partición de N bloques usa un mapa de N bits.
 * 1 = libre, 0 = ocupado.
