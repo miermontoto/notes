@@ -83,8 +83,32 @@ Ejemplos de tipo de servicio:
 
 ## Modelo OSI
 Modelo de capas ideado a principio de los 80. Por aquel entonces, el modelo OSI fue superado por el ya existente modelo TCP/IP.
-Incluye capas separadas: sesión y presentación.
+Incluye capas separadas: sesión y presentación:
+- **Presentación:** define el formato de datos a intercambiar (sintaxis y semántica). Compresión de datos, criptografía, ...
+	- **Sesión:** tarea de sincronización para el intercambio de datos.  Establece puntos de restauración del sistema y recuperación de datos.
+
+| ![[_resources/Pasted image 20220920110612.png]] | ![[_resources/Pasted image 20220920111309.png]] |
 
 
+## Funcionamiento de la arquitectura de protocolos
+| ![[_resources/Pasted image 20220920111848.png]] \| ![[_resources/Pasted image 20220920111939.png\|800]] |
 
+### Elementos de interconexión en la arquitectura
+- **Router:** encamina datagramas examinando su dirección IP.
+	- Cada puerto del router pertenece a una red física diferente y tiene su propia dirección IP  y dirección MAC.
+- **Switch:** encamina tramas examinando su dirección MAC.
+	- Todos los puertos del switch peretenecen a la misma red física y cada uno de ellos tiene su propia dirección MAC.
+- **Hub:** transmite bits por todos los puertos.
 
+### Ejemplo final
+- **Aplicación:** Get \<url\> HTTP
+- **Transporte:**
+	- **Cabecera del segmento:** Puerto origen (3250, navegador), puerto destino (80, servidor web)
+	- **Cuerpo del segmento:** mensaje
+- **Internet:**
+	- **Cabecera del datagrama:** IP origen (PC), IP destino (servidor)
+	- **Cuerpo del datagrama:** segmento TCP
+- **Acceso a la red:** 
+	- **Cabecera de la trama:** MAC origen (PC), MAC destino (mi router)
+	- **Cuerpo de la trama:** datagrama IP
+- Ciclar entre la capa Internet y la capa Enlace hasta llegar a la IP destino.
