@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "dfaf0fc072830dff",
+        "id": "73eb4ec71d0fe96b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Redes de Computadores/1. Introducción/_about_.md",
+            "file": "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Redes de Computadores/1. Introducción/_about_.md",
+                "file": "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Redes de Computadores/1. Introducción/_about_.md"
+                "file": "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md"
               }
             }
           },
@@ -113,17 +113,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dfaf0fc072830dff",
+  "active": "73eb4ec71d0fe96b",
   "lastOpenFiles": [
-    "y3t1/Redes de Computadores/1. Introducción/Visión general de las redes.md",
-    "y3t1/Redes de Computadores/1. Introducción/_about_.md",
-    "y3t1/Configuración (CES)/_about_.md",
-    "y3t1/Ingeniería de Software (ISoft)/_about_.md",
-    "y3t1/Ingeniería de Software (ISoft)/2. EVS/Caso de estudio.md",
-    "y3t1/Ingeniería de Software (ISoft)/2. EVS/Estudio de Viabilidad del Sistema (EVS).md",
-    "y3t1/Ingeniería de Software (ISoft)/1. Introducción/_about_.md",
+    "y3t1/PCP/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
+    "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
     "y3t1/PCP/1. Evaluación de prestaciones/_about_.md",
-    "y3t1/Redes de Computadores/1. Introducción/Protocolos y arquitectura de protocolos.md",
-    "y3t1/PCP/1. Evaluación de prestaciones/Evaluación de prestaciones.md"
+    "y3t1/PCP/1. Evaluación de prestaciones/_resources/Evaluación de prestaciones 2022-09-20 10.12.07.excalidraw.md",
+    "y3t1/PCP/1. Evaluación de prestaciones/_resources/Evaluación de prestaciones 2022-09-20 09.54.24.excalidraw.md",
+    "y3t1/PCP/1. Evaluación de prestaciones/_resources/Evaluación de prestaciones 2022-09-20 09.44.21.excalidraw.md",
+    "y3t1/PCP/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
+    "y3t1/PCP/1. Evaluación de prestaciones/_resources/Evaluación de prestaciones 2022-09-20 09.20.23.excalidraw.md",
+    "y3t1/Redes de Computadores/1. Introducción/_about_.md",
+    "y3t1/Redes de Computadores/1. Introducción/Visión general de las redes.md"
   ]
 }

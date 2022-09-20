@@ -81,7 +81,7 @@ $$S(n,p) = \frac{T(n)}{T(n,p)}$$
 
 ### Eficiencia
 <mark style="background: #ADCCFFA6;">El speedup partido por p, para que se acote entre 0 y 1.</mark> $$0 \leq E(n,p) = \frac{S(n,p)}{p} \leq 1$$
-## [[Ejemplos y ejercicios]]
+### [[Ejemplos y ejercicios]]
 
 ## Modelos de rendimiento
 ### Ley de Amdahl
@@ -101,11 +101,67 @@ Se define como **rendimiento efectivo** (RE) de un algoritmo paralelo como:
 $$RE_{dp}=\frac{1}{(1-PF)+\frac{PF}{p}}\times clock_{GHz}\times (AVX|FMA)$$
 $$RE_{dp}=\frac{1}{(1-PF)+\frac{PF}{p}}\times clock_{GHz}\times\frac{nºflop}{ciclo}$$
 
----
-
 ### Resumen
 - La eficiencia decrece monótonamente al aumentar el número de procesadores y mantener constante el tamaño del problema.
 - El tiempo de ejecución puede aumentar al crecer el valor de *p*.
 - No es productivo usar más procesadores que una cantidad determinadad para un problema fijo.
 - Los conceptos de speedup y eficiencia permiten conocer la mejora y el grado de aprovechamiento que un algoritmo paralelo hace de una determinada configuración.
 - No obstante, ambos parámetros son dependientes de *n* y *p*. Las conclusiones pueden no ser las mismas cuando algunos de estos parámetros cambie, es decir, cuando escala *n* junto a *p*.
+
+## Modelos de Isorendimiento
+<mark style="background: #ADCCFFA6;">Muestran cómo se adapta el algoritmo cuando crecen <i>n</i> y <i>p</i>.</mark>
+
+### Función de Isotiemo
+**Métrica/prestaciones:** tiempo.
+**Recursos:** número de procesadores.
+
+### Función de Isoeficiencia
+**Métrica/prestaciones:** eficiencia.
+**Recursos:** número de procesadores.
+
+¿Cómo debe crecer el tamaño del problema (ω) en función de p para mantener la eficiencia constante?
+
+#### Algoritmo Escalable
+<mark style="background: #ADCCFFA6;">Aquel cuya función de isoeficiencia es lineal respecto al número de procesadores.</mark>
+
+### Escalabilidad
+#### Procedimiento de cálculo #1:
+- Fijar la eficiencia a un valor deseado y despejar la carga computacional ω.
+- A menor aumento de ω al aumentar *p*, mayor escalabilidad.
+
+
+##### <mark style="background: #BBFABBA6;">Ejemplo</mark>
+![[_resources/Pasted image 20220920092201.png|1050]]
+![[_resources/Pasted image 20220920092245.png|1050]]
+
+#### Procedimiento de cálculo #2:
+![[_resources/Pasted image 20220920092539.png|1050]]
+
+
+##### <mark style="background: #BBFABBA6;">Ejercicios</mark>
+![[_resources/Evaluación de prestaciones 2022-09-20 09.44.21.excalidraw]]
+![[_resources/Evaluación de prestaciones 2022-09-20 09.54.24.excalidraw]]
+
+### Eficiencia escalable
+Como el objetivo es mantener la eficiencia constante, se hacen crecer a las dos variables en la misma proporción.
+Si la eficiencia es constante, esacala. $$E_{scl}(W,r) = \frac{T_{paralelo}(W,1)}{T_{paralelo}(rW,r)} o \frac{T(W)}{T_{paralelo}(rW,r)}$$
+Es buena estrategia multiplicar por dos.
+
+## Sistemas híbridos / heterogéneos
+<mark style="background: #ADCCFFA6;">Sistemas confirmados por ítems de distinta naturaleza.</mark>
+Cada ítem tiene su propia constante.
+
+#### <mark style="background: #BBFABBA6;">Ejemplo</mark>
+Sea un clúster con 𝑝 ordenadores iguales conectados a una red, con T𝑠 la constante de establecimiento y T𝑤
+la inversa del ancho de banda. Cada ordenador tiene una CPU con 𝑘 núcleos, con T𝑐 la constante de cálculo.
+Cada ordenador tiene la misma GPU de apoyo, siendo T𝑐<sub>FPU</sub> , T𝑠<sub>GPU</sub> y T𝑤<sub>GPU</sub> las constantes de cálculo y de
+comunicaciones CPU/GPU, respectivamente. La GPU es 9x más potente que la CPU. Sea T𝑛 = 𝑛<sup>2</sup>T𝑐 y un
+diseño paralelo sin dependencias externas donde todos los elementos realizan la misma computación. Se
+pide: 
+	A) tiempo de ejecución paralelo de cada ordenador
+	B) tiempo de ejecución del sistema si el coste de las comunicaciones CPU/GPU es 0
+	C) análisis de la Escalabilidad y Eficiencia Escalada desde b).
+
+Se envía y se recibe la misma cantidad de datos de la GPU, no hay dependencias externas y reparto balanceado de tiempo de cálculo entre CPU y GPU.<sup>*</sup>
+
+![[_resources/Evaluación de prestaciones 2022-09-20 10.12.07.excalidraw]]
