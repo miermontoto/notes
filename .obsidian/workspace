@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Administración de Sistemas/2. Bloque de discos/Discos.md",
+            "file": "y3t1/Configuración (CES)/2. Medición de prestaciones/Instrumentación.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Administración de Sistemas/2. Bloque de discos/Discos.md",
+                "file": "y3t1/Configuración (CES)/2. Medición de prestaciones/Instrumentación.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Administración de Sistemas/2. Bloque de discos/Discos.md"
+                "file": "y3t1/Configuración (CES)/2. Medición de prestaciones/Instrumentación.md"
               }
             }
           },
@@ -115,15 +115,15 @@
   },
   "active": "73eb4ec71d0fe96b",
   "lastOpenFiles": [
+    "y3t1/Configuración (CES)/2. Medición de prestaciones/_resources/Instrumentación 2022-09-22 10.06.27.excalidraw.md",
+    "y3t1/Configuración (CES)/2. Medición de prestaciones/Instrumentación.md",
+    "y3t1/Administración de Sistemas/2. Bloque de discos/Discos.md",
     "y3t1/Administración de Sistemas/1. Instalación y configuración básica/Introducción.md",
     "y3t1/Configuración (CES)/2. Medición de prestaciones/Visualización.md",
     "y2t2/Sistemas (SO)/4. Gestión de memoria/4.2. Memoria virtual/Memoria virtual.md",
     "y2t2/Sistemas (SO)/5. Ficheros/Ficheros.md",
     "y3t1/Configuración (CES)/_about_.md",
     "y3t1/Redes de Computadores/1. Introducción/Protocolos y arquitectura de protocolos.md",
-    "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
-    "y3t1/PCP/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
-    "y3t1/PCP/1. Evaluación de prestaciones/_about_.md",
-    "y3t1/PCP/1. Evaluación de prestaciones/_resources/Evaluación de prestaciones 2022-09-20 10.12.07.excalidraw.md"
+    "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md"
   ]
 }
