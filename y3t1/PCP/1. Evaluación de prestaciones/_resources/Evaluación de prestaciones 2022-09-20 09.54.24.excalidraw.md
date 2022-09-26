@@ -10,7 +10,7 @@ tags: [excalidraw]
 # Text Elements
 
 # Embedded files
-565d6aa350f7365ef6903fbb42f971dc22109cf0: [[y3t1/PCP/1. Evaluación de prestaciones/_resources/_resources/Pasted Image 20220920095439_729.png]]
+565d6aa350f7365ef6903fbb42f971dc22109cf0: [[Pasted Image 20220920095439_729.png]]
 
 %%
 # Drawing
