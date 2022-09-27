@@ -147,8 +147,8 @@ Determinar dónde y en qué orden se debe ejecutar.
 
 **Objetivo:** reducir el tiempo de ejecución.
 
->	[!FAQ] Sobre el examen
->	Este punto solo entra de manera teórica.
+> [!FAQ] Sobre el examen
+> Este punto solo entra de manera teórica.
 
 #### Estrategias Gneerales de Asignación
 - Asignación estática o planificación determinista
