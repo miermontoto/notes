@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Redes de Computadores/2. Nivel físico/Nivel físico.md",
+            "file": "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Redes de Computadores/2. Nivel físico/Nivel físico.md",
+                "file": "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Redes de Computadores/2. Nivel físico/Nivel físico.md"
+                "file": "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md"
               }
             }
           },
@@ -115,15 +115,15 @@
   },
   "active": "60c4b44801987e71",
   "lastOpenFiles": [
+    "y3t1/PCP/2. Diseño de algoritmos paralelos/_resources/Diseño de algoritmos paralelos 2022-09-27 09.27.36.excalidraw.md",
+    "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
+    "y3t1/Redes de Computadores/2. Nivel físico/Nivel físico.md",
     "y3t1/Redes de Computadores/1. Introducción/_about_.md",
     "y3t1/Redes de Computadores/_about_.md",
     "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/Análisis del Sistema de Información - ASI.md",
     "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/Casos de Uso.md",
     "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/EVS/Estudio de Viabilidad del Sistema (EVS).md",
-    "y3t1/PCP/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
     "y3t1/PCP/2. Diseño de algoritmos paralelos/_resources/Diseño de algoritmos paralelos 2022-09-22 12.36.22.excalidraw.md",
-    "y3t1/PCP/2. Diseño de algoritmos paralelos/_resources/Diseño de algoritmos paralelos 2022-09-22 12.28.28.excalidraw.md",
-    "y3t1/PCP/2. Diseño de algoritmos paralelos/_resources/Diseño de algoritmos paralelos 2022-09-22 12.14.06.excalidraw.md",
-    "y3t1/Configuración (CES)/2. Medición de prestaciones/Instrumentación.md"
+    "y3t1/PCP/2. Diseño de algoritmos paralelos/_resources/Diseño de algoritmos paralelos 2022-09-22 12.28.28.excalidraw.md"
   ]
 }

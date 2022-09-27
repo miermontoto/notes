@@ -10,7 +10,7 @@ tags: [excalidraw]
 # Text Elements
 
 # Embedded files
-52204d01080e1abd5962fc45bb5397f524faed35: [[y3t1/PCP/2. Diseño de algoritmos paralelos/_resources/_resources/Pasted Image 20220922123626_246.png]]
+52204d01080e1abd5962fc45bb5397f524faed35: [[Pasted Image 20220922123626_246.png]]
 
 %%
 # Drawing
