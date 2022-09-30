@@ -68,7 +68,7 @@ $$C(n,p) = pT(n,p)$$
 ### Sobrecarga / Overhead
 <mark style="background: #ADCCFFA6;">Expresa el coste añadido con respecto al algoritmo secuencial, es decir, el tiempo extra que los procesadores colectivamente consumen respecto al tiempo del algoritmo secuencial óptimo.</mark> 
 $$T_0(n,p) = C(n,p) - T(n)$$
----
+
 
 ## Speedup y Eficiencia
 ### Speedup
@@ -81,7 +81,7 @@ $$S(n,p) = \frac{T(n)}{T(n,p)}$$
 
 ### Eficiencia
 <mark style="background: #ADCCFFA6;">El speedup partido por p, para que se acote entre 0 y 1.</mark> $$0 \leq E(n,p) = \frac{S(n,p)}{p} \leq 1$$
-### [[Ejemplos y ejercicios]]
+### [[Ejemplos y ejercicios#Ejercicios Speedup|Ejercicios de speedup]]
 
 ## Modelos de rendimiento
 ### Ley de Amdahl
@@ -129,18 +129,10 @@ $$RE_{dp}=\frac{1}{(1-PF)+\frac{PF}{p}}\times clock_{GHz}\times\frac{nºflop}{ci
 - Fijar la eficiencia a un valor deseado y despejar la carga computacional ω.
 - A menor aumento de ω al aumentar *p*, mayor escalabilidad.
 
-
-##### <mark style="background: #BBFABBA6;">Ejemplo</mark>
-![[_resources/Pasted image 20220920092201.png|1050]]
-![[_resources/Pasted image 20220920092245.png|1050]]
-
 #### Procedimiento de cálculo #2:
 ![[_resources/Pasted image 20220920092539.png|1050]]
 
-
-##### <mark style="background: #BBFABBA6;">Ejercicios</mark>
-![[_resources/Evaluación de prestaciones 2022-09-20 09.44.21.excalidraw]]
-![[_resources/Evaluación de prestaciones 2022-09-20 09.54.24.excalidraw]]
+### [[Ejemplos y ejercicios#Ejercicios Escalabilidad|Ejercicios de escalabilidad]]
 
 ### Eficiencia escalable
 Como el objetivo es mantener la eficiencia constante, se hacen crecer a las dos variables en la misma proporción.
