@@ -1,0 +1,1 @@
+![[_resources/prac01 2022-09-30 09.44.57.excalidraw]]
