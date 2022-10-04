@@ -21,8 +21,8 @@
 4. **Contención:** se accede a datos comunes o datos que están en el mismo bloque de memoria. Si son lecturas, puede no haber problemas.
 5. **False Sharing:** en sistemas con CC, si un hilo modifica un dato que está en el mismo bloque de caché con datos necesarios para otros hilos, para mantener la coherencia se invalida todo el bloque.
 
-## OpenMP
-### Modelos de ejecución de OpenMP
+# OpenMP
+## Modelos de ejecución de OpenMP
 - OpenMP no destruye los hilos inactivos, los deja en estado de espera para ser reutilizados en la siguiente región paralela.
 - Los hilos creados por una directiva forman un equipo (*team*).
 - Memoria compartida con ***relaxed-consistency:*** la visión temporal de la información que tienen los hilos puede no ser consistente con la información almacenada en memoria.
@@ -32,3 +32,52 @@
 	- Tanto para paralelismo de grano fino como grueso.
 	- Permite optimizaciones provenientes del compilador.
 
+## Recursos de programación
+
+### Variables de entorno
+- **OMP_NUM_THREADS** fija el número de hilos para regiones paralelas.
+- **OMP_NESTED** determina el paralelismo anidado.
+
+### Directivas
+Órdenes para el compilador.
+`#pragma omp <directiva> [ckausula [...]]`
+
+### Compilación condicionada
+```c
+#ifdef_OPENMP
+...
+#endif
+```
+
+### Funciones
+`#include <omp.h>`
+
+- int **omp_get_dynamic**(void): devuelve 0 si no está activado el ajuste dinámico de hilos.
+	- void **omp_set_dynamic**(int)
+- int **omp_get_nested**(void): devuelve 0 si no está activado el paralelismo anidado.
+	- void **omp_set_nested**(int)
+- int **omp_in_parallel**(void): devuelve 0 si es llamada fuera de una región paralela.
+- int **omp_get_num_procs**(void)
+- int **omp_get_max_threads**(void)
+- int **omp_get_num_threads**(void)
+	- void **omp_set_num_threads**(void)
+- int **omp_get_thread_num**(void)
+
+### Constructor Parallel
+```c
+#pragma omp parallel [cláusulas]
+{
+	// código
+}
+```
+
+- La tarea del hilo maestro de la región secuencial que ejecuta la directiva es crear un grupo de hilos (*team*).
+- Durante la directiva, el número de hilos en el *team* no cambia.
+- El hilo maestro es el *0*. El resto de hilos se numeran de 1 a n-1.
+- Creadao el *team*, el hilo maestro crea implícitamente tantas tareas como hilos tenga el equipo.
+- A cada tarea se le asigna una fracción del código.
+- Cada tarea es asignada a un hilo diferente del team en modo "**tied**".
+- Suspende la ejecución de la tarea creadora y cada hilo inicia la ejecución de su tarea.
+- No hay sincronismo implícito del los hilos dentro de la región.
+- Hay sincronismo implícito de salida. El maestro continúa y el resto se destruyen o se dejan inactivos.
+- Los hilos pueden ejecutar diferentes sentencias mediante comprobaciones lógicas.
