@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
+            "file": "y3t1/Administración de Sistemas/2. Gestión de discos/Copias de seguridad.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
+                "file": "y3t1/Administración de Sistemas/2. Gestión de discos/Copias de seguridad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md"
+                "file": "y3t1/Administración de Sistemas/2. Gestión de discos/Copias de seguridad.md"
               }
             }
           },
@@ -115,15 +115,15 @@
   },
   "active": "73eb4ec71d0fe96b",
   "lastOpenFiles": [
-    "y3t1/Configuración (CES)/2. Medición de prestaciones/Untitled.md",
+    "y3t1/Administración de Sistemas/2. Gestión de discos/Gestión de discos.md",
+    "y3t1/Administración de Sistemas/2. Gestión de discos/Copias de seguridad.md",
+    "y3t1/Administración de Sistemas/1. Instalación y configuración básica/Introducción.md",
+    "y3t1/Administración de Sistemas/2. Gestión de discos/Discos lógicos.md",
+    "y3t1/Administración de Sistemas/2. Gestión de discos/Estructura de directorios Linux.md",
     "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
+    "y3t1/Configuración (CES)/2. Medición de prestaciones/Untitled.md",
     "y3t1/Ingeniería de Software (ISoft)/1. Introducción/Introducción.md",
     "y3t1/Ingeniería de Software (ISoft)/1. Introducción/_about_.md",
-    "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/Proceso de análisis.md",
-    "y3t1/Redes de Computadores/2. Nivel físico/Nivel físico.md",
-    "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md",
-    "y3t1/PCP/PL/prac01.md",
-    "others/garabatos/_resources/Satisfactory 2022-10-03 13.07.36.excalidraw.md",
-    "others/garabatos/Satisfactory.md"
+    "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/Proceso de análisis.md"
   ]
 }
