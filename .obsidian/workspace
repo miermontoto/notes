@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md",
+            "file": "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md",
+                "file": "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md"
+                "file": "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md"
               }
             }
           },
@@ -115,15 +115,15 @@
   },
   "active": "73eb4ec71d0fe96b",
   "lastOpenFiles": [
-    "y3t1/PCP/PL/prac01.md",
-    "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md",
+    "y3t1/Configuración (CES)/2. Medición de prestaciones/Untitled.md",
+    "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
+    "y3t1/Ingeniería de Software (ISoft)/1. Introducción/Introducción.md",
+    "y3t1/Ingeniería de Software (ISoft)/1. Introducción/_about_.md",
+    "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/Proceso de análisis.md",
     "y3t1/Redes de Computadores/2. Nivel físico/Nivel físico.md",
+    "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md",
+    "y3t1/PCP/PL/prac01.md",
     "others/garabatos/_resources/Satisfactory 2022-10-03 13.07.36.excalidraw.md",
-    "others/garabatos/Satisfactory.md",
-    "y3t1/Ingeniería de Software (ISoft)/Proceso de análisis.md",
-    "others/garabatos/_resources/Satisfactory 2022-10-02 14.48.12.excalidraw.md",
-    "y3t1/PCP/PL/_resources/prac01 2022-09-30 09.44.57.excalidraw.md",
-    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Patrones de comportamiento.md",
-    "y2t2/Paradigmas (TPP)/3. Patrones de diseño/Patrones estructurales.md"
+    "others/garabatos/Satisfactory.md"
   ]
 }

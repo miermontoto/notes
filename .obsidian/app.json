@@ -17,5 +17,11 @@
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "./_resources",
   "foldIndent": true,
-  "foldHeading": false
+  "foldHeading": false,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

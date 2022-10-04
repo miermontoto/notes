@@ -2,11 +2,11 @@
 
 ## Índice
 1. [[#Introducción]]
-2. Señales en el dominio de la frecuencia
-3. Capacidad del canal
-4. Medios de transmisión
-5. Esquemas de codificación y modulación
-6. Multiplexación
+2. [[#Señales en el dominio de la frecuencia]]
+3. [[#Capacidad de canal]]
+4. [[#Medios de transmisión]]
+5. [[#Esquemas de codificación y modulación]]
+6. [[#Multiplexación]]
 
 ---
 
@@ -193,8 +193,86 @@ $$Frecuencia\times Longitud\space de\space onda=c$$
 			- 0: transición al principio del intervalo del bit.
 			- 1: ausencia de transición al principio del intervalo del bit.
 		- Es un esquema de codificación diferencial.
+![[_resources/Pasted image 20221004103818.png]]
+
+### Datos analógicos → Señal digital
+#### Digitalización
+Transformación de datos analógicos en señales digitales.
+
+- **Modulación por codificación de impulsos (PCM)**
+	1. Determinar la frecuencia de muestreo → teorema del muestreo de Nyquist.
+		- Si una señal se muestrea a intervalos regulares de tiempo con una frecuencia mayor que el doble de la frecuencia más alta de la señal, las muestras botenidas contienen toda la información de la señal original.
+	2. Determinar el nº de bits que va a codificar cada muestra.
+		- Determina el nº de niveles de cuantificación.
+	3. Muestrear la señal a intervalos regulares, según el teorema de muestreo de Nyquist.
+		- Se obtienen las muestras PAM (analógicas).
+	4. Codificar cada PAM con el código pinario que le corresponde a su nivel de cuantificación.
+![[_resources/Pasted image 20221004103909.png|950]]
 
 ## Modulación
 - Envío de datos analógicos o digitales mediantes señales analógicas.
 - Necesario adaptar a una señal analógica, generalmente en paso banda.
 
+### Datos digitales → Señal analógica
+- Los datos se codifican mediante una señal llamada "moduladora".
+- La señal modulada modifica los parámetros de la señal portadora.
+- Técnicas:
+	- Desplazamiento de amplitud (ASK)
+	- Desplazamiento de frecuencia (FSK)
+	- Desplazamiento de fase (PSK)
+
+#### Técnicas
+##### Desplazamiento de amplitud
+Los valores binarios se representan mediante dos amplitudes de portadora. $$s(t) = \begin{cases} 1& A \times cos(2\pi f_c t)\\0& 0 \end{cases}$$
+##### Desplazamiento de frecuencia
+Los valores binarios se representan mediante dos frecuencias de portadora. $$s(t)=\begin{cases}1&A\times\cos(2\pi f_1t) \\0&A\times\cos(2\pi f_2t)\end{cases}$$
+##### Desplazamiento de fase
+Los valores binarios se representan mediante dos fases de portadora. $$s(t)=\begin{cases}1&A\times\cos(2\pi f_ct+\pi) \\0&A\times\cos(2\pi f_ct)\end{cases}$$
+![[_resources/Pasted image 20221004104210.png]]
+
+
+#### Razones para modular las señales analógicas
+- Desplazar el espectro de frecuencias a la señal a una más adecuada para la transmisión.
+	- A mayor frecuencia, mayor velocidad de transmisión.
+- Permite la multiplexación por división de frecuencias.
+
+#### Tipos de modulación
+- En amplitud (AM)
+- En frecuencias (FM)
+- En fase (PM)
+
+![[_resources/Pasted image 20221004104517.png]]
+
+# Multiplexación
+<mark style="background: #ADCCFFA6;">Técnica que permite la transmisión de datos procedente de varias fuentes sobre un mismo medio de transmisión.</mark>
+
+**Objetivo:** aprovechar al máximo las capacidades del medio compartido.
+
+## Multiplexación por división de frecuencias (FDM)
+**Requisitos:**
+- Señales analógicas (independientemente de su contenido)
+- Ancho de banda del medio > suma del ancho de banda de las señales de las fuentes.
+
+**Procedimiento:**
+	Modular cada señal de entrada con una señal portadora distinta.
+
+## Multiplexación por división en el tiempo síncrona (TDM)
+**Requisitos:**
+- Señales que representen datos digitales.
+- Velocidad de transmisión del medio > suma de las velocidades de transmisión de las fuentes.
+
+**Procedimiento:**
+- División del tiempo en ranuras temporales.
+	- Las ranuras temporales se pre-asignan y fijan a las distintas fuentes.
+	- Las ranuras temporales se asignan incluso si no hay datos.
+	- Las ranuras temporales no se tienen que distribuir de manera igualitaria entre las fuentes.
+- Inserción de los datos de las fuentes en las ranuras temporales.
+
+![[_resources/Pasted image 20221004105706.png]]
+
+
+## Multiplexación por división en el tiempo estadística (STDM)
+- Si alguna de las fuentes no transmite en FDM o TDM se desperdicia ancho de banda.
+- Con STDM se distribuyen las ranuras temporales de forma dinámica.
+- El multiplexor sondea qué fuentes tienen datos y se llena las ranuras con unas pocas fuentes.
+- Si hay exceso de datos, estos se guardan en buffers.
