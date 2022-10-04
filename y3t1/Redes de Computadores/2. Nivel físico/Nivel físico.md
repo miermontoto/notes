@@ -110,6 +110,7 @@ Un valor elevado de SNR implica una alta calidad de la señal → serán necesar
 - **Guiado:** (cable coaxial, par trenzado, fibra...)
 - **No guiado:** (microondas, wifi...)
 
+## Medios guiados
 ### Par trenzado
 Hilos de cobre aislados y entrelazados.
 
@@ -127,3 +128,73 @@ Hilos de cobre aislados y entrelazados.
 - Está forrado con una cubierta aislante.
 - Capacidades de Tbps en miles de kilómetros
 - Tradicionalmente usado en enlaces de larga distancia aunque su uso está cada vez más extendido.
+
+
+## Medios no guiados
+#### Espectro electromagnético
+$$Frecuencia\times Longitud\space de\space onda=c$$
+
+### Ondas de radio
+- Señales con frecuencias desde ~1MHz hasta ~1GHz.
+- Se propaga en todas las direcciones.
+- Proporcionan poco ancho de banda a gran distancia.
+- Tienen un coste alto debido a las bajas frecuencias, pero es asumible por la gran cantidad de usuarios.
+- Utilizado en la distribución de radio, televisión, telefonía móvil...
+
+### Microondas
+- Señales con frecuencias desde ~1GHz hasta ~300GHz.
+- Se pueden utilizar antenas direccionales para propagar en forma de haz.
+	- Mucho ancho de banda a gran distancia.
+	- Se necesitan antenas orientadas tanto en transmisión como en recepción.
+	- Pueden usarse con satélites (1-10GHz) o en la tierra (1-40GHz).
+	- Utilizadas en enlaces de larga distancia, televisión por satélite, etc.
+- También se pueden utilizar antenas omnidireccionales
+	- Ancho de banda medio a media distancia.
+	- Utilizado en WiFI, redes locales, etc.
+	- No se necesitan antenas orientadas.
+	- Bajo coste.
+
+### Infrarrojos
+- Señales con frecuencias desde ~300GHz hasta ~400THz.
+- La señal se propaga en línea recta y es reflejada/absorbida por las paredes.
+- Poco ancho de banda y a poca distancia.
+- Utilizado en conexión de dispositivos, redes locales, etc.
+- Bajo coste.
+
+# Esquemas de codificación y modulación
+## Codificación
+- Enviar datos analógicos o digitales mediante señales digitales.
+- Si es necesario, la señal se convierte a digital.
+- Se puede hacer en banda base o paso banda.
+
+### Datos digitales → Señal digital
+- **Non Return to Zero (*NRZ*):** utiliza 0 para representar el 0 y un voltaje positivo para representar el 1.
+- **Non Return to Zero Low (*NRZ-L*):** utiliza 0 para representar el uno y un voltaje positivo para representar el 0.
+- **Non Return to Zero Inverted (*NRZI*):** cuando aparece un 1, el voltaje varía.
+	- Más robusto ante el ruido, pero muy sensible a fallos.
+
+- **Binario multinivel**
+	- Utiliza más de dos niveles de señal.
+	- <u>Bipolar-AMI (Alternate Mask Inversion)</u>
+		- Se utiliza un voltaje nulo para representar el 0.
+		- Se utiliza un voltaje  ±V de forma alterna para representar el 1.
+		- No hay problemas de sincronización para detectar cadenas largas de 1.
+		- Sigue existiendo dicho problema para detectar cadenas largas de 0s.
+		- Ayuda a detectar posibles errores.
+
+- **Códigos bifase**
+	- <u>Manchester</u>
+		- Transición en mitad del intervalo de duración del bit.
+		- La transición sirve como procedimiento de sincronización y de transmisión de datos:
+			- 0: transición de alto a bajo en mitad del intervalo.
+			- 1: transición de bajo a alto en mitad del intervalo.
+	- <u>Manchester diferencial</u>
+		- La transmisión a mitad del intervalo se utiliza tan solo para proporcionar sincronización.
+			- 0: transición al principio del intervalo del bit.
+			- 1: ausencia de transición al principio del intervalo del bit.
+		- Es un esquema de codificación diferencial.
+
+## Modulación
+- Envío de datos analógicos o digitales mediantes señales analógicas.
+- Necesario adaptar a una señal analógica, generalmente en paso banda.
+
