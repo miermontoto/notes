@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/PCP/PL/prac02.md",
+            "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (2).md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/PCP/PL/prac02.md",
+                "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (2).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/PCP/PL/prac02.md"
+                "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (2).md"
               }
             }
           },
@@ -115,15 +115,15 @@
   },
   "active": "665a6607c8dd4a25",
   "lastOpenFiles": [
+    "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (1).md",
+    "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (2).md",
     "y3t1/Ingeniería de Software (ISoft)/PL/ASI, diagramas de casos de uso.md",
+    "y3t1/PCP/PL/prac02.md",
     "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md",
     "y3t1/Configuración (CES)/3. Evaluación de prestaciones/Modelado de sistemas.md",
     "y3t1/Administración de Sistemas/2. Gestión de discos/Discos lógicos.md",
     "y3t1/Configuración (CES)/3. Evaluación de prestaciones/Comparación de sistemas.md",
     "y3t1/Administración de Sistemas/3. Gestión de usuarios/Sistemas de administración.md",
-    "y3t1/Ingeniería de Software (ISoft)/PL/_resources/ASI, diagramas de casos de uso 2022-10-05 13.56.34.excalidraw.md",
-    "y3t1/Ingeniería de Software (ISoft)/PL/_resources/ASI, diagramas de casos de uso 2022-10-05 01.21.08.excalidraw.md",
-    "y3t1/Ingeniería de Software (ISoft)/PL/_resources/ASI, diagramas de casos de uso 2022-10-04 19.42.16.excalidraw.md",
-    "y3t1/Ingeniería de Software (ISoft)/PL/_resources/ASI, diagramas de casos de uso 2022-10-05 01.05.38.excalidraw.md"
+    "y3t1/Ingeniería de Software (ISoft)/PL/_resources/ASI, diagramas de casos de uso 2022-10-05 13.56.34.excalidraw.md"
   ]
 }
