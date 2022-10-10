@@ -104,3 +104,48 @@ Es necesario acotar del alguna forma el inicio y el final de la trama. Las técn
 - Códigos de Hamming
 - Códigos de Reed-Salomon
 
+# Técnicas ARQ
+## Solicitud de repetición automática
+Conjunto de técnicas para la transmisión de datos a través de un enlace que combinan distintos mecanismos de control de flujo y control de errores.
+
+Técnicas más comunes:
+- ARQ de parada y espera
+- ARQ de ventana deslizante con rechazo simple
+- ARQ de ventana deslizante con rechazo selectivo
+
+
+## ARQ de parada y espera
+- Basado en la técnica de parada y espera estudiada previamente.
+- Se utilizan temporizadores para el reenvío de las tramas no asentidas.
+- Eliminación de duplicados.
+- 
+![[_resources/Pasted image 20221010132204.png]]
+
+
+## ARQ con ventana deslizante y rechazo simple
+- Basado en control de flujo mediante ventana deslizante.
+- Receptor solicita retransmisión de trama dañada o perdida.
+- Emisor repite trama solicitada y las que había enviado tras ella.
+- Eliminación de duplicados.
+- Las tramas fuera de orden se descartan.
+- Se puede solicitar el reenvío de confirmaciones.
+
+![[_resources/Pasted image 20221010132230.png]]
+
+### Limitaciones en el tamaño de la ventana
+Si se utilizan *k* bits para el número de secuencia, el tamaño máximo de la ventana es 2<sup>k</sup> -1.
+
+
+### ARQ con ventana deslizante y rechazo selectivo
+- Basado en control de flujo mediante ventana deslizante.
+- Receptor solicita retransmisión de trama dañada o perdida.
+- Emisor solo repite la trama solicitada.
+- Las tramas fuera de orden pueden almacenarse.
+- Se puede solicitar el reenvío de confirmaciones.
+- Eliminación de duplicados.
+
+![[_resources/Pasted image 20221010134435.png]]
+
+### Limitaciones en el tamaño de la ventana
+Si se utilizan *k* bits para el número de secuencia, el tamaño máximo de la ventana es 2<sup>k-1</sup>.
+

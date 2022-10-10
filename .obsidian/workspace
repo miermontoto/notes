@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (2).md",
+            "file": "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (2).md",
+                "file": "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (2).md"
+                "file": "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md"
               }
             }
           },
@@ -115,8 +115,8 @@
   },
   "active": "665a6607c8dd4a25",
   "lastOpenFiles": [
-    "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (1).md",
     "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (2).md",
+    "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/ASI/ASI (1).md",
     "y3t1/Ingeniería de Software (ISoft)/PL/ASI, diagramas de casos de uso.md",
     "y3t1/PCP/PL/prac02.md",
     "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md",
