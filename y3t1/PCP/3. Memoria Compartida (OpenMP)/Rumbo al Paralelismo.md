@@ -81,3 +81,73 @@
 - No hay sincronismo implícito del los hilos dentro de la región.
 - Hay sincronismo implícito de salida. El maestro continúa y el resto se destruyen o se dejan inactivos.
 - Los hilos pueden ejecutar diferentes sentencias mediante comprobaciones lógicas.
+
+## Worksharing Constructs (WC)
+### Propiedades
+- Un WC es un constructor de trabajo compartido.
+- No hay sincronismo de entrada pero sí de salida, salvo uso de `nowait`.
+- Los WC no implican ejecución paralela.
+
+### Tipos
+De bucles, de secciones y single.
+
+### Cláusulas
+- `private`, `firstprivate`, `reduction`, `shared`, `nowait`.
+- `lastprivte(lista)`: el valor final de las variables de la lista es el que tendrían al final de la ejecución del secuencial equivalente.
+- `ordered`: ordena secuencialmente las iteraciones entre los hilos.
+- `collapse(valor)`: número de bucles léxicamente consecutivos que serán asociados al WC.
+- `schedule(tipo, [chunk_size])`: controla cómo se distribuye el trabajo entre los hilos.
+	- Tipo ***static***
+		- Por defecto. Antes de iniciar la ejecución divide el trabajo en un número de bloques.
+	- Tipo ***dynamic***
+		- Cada hilo recibe un bloque y, al terminar, solicita más.
+		- Más sobrecarga pero mejor balanceo.
+	- Tipo ***guided***
+		- Como *dynamic*, pero el tamaño va decreciendo exponencialmente, proporcional a la carga de trabajo que falte por realizar y al número de hilos, desde un valor inicial hasta un final.
+	- Tipo ***runtime***
+		- Se decide en tiempo de ejecución, en función de la variable de entorno `OMP_SCHEDULE`.
+	- Tipo ***auto***
+
+### WC FOR
+```c
+#pragma omp for [cláusulas]
+	for loop
+```
+- Útil en descomposiciones de datos "regulares": paralelismod e datos.
+- No implica ejecución paralela, simplemente la ejecución de las iteraciones por los hilos del equipo (team).
+- Por defecto, la variable de control es privada.
+- Si se usa `collapse(n)`, los espacios de iteración de los *n* primeros *for* se fusionarán en uno mayor.
+
+`schedule([modificador [, modificador]: ] ...)
+**modificador** puede ser *monotonic*, *nonmonotonic* o *simd*.
+
+`linear(list [: step list])
+
+### WC SECTIONS
+```c
+#pragma omp sections [cláusulas]
+{
+	[#pragma omp section]
+		structured block
+	[#pragma omp section]
+		structured block
+	...
+}
+```
+- Útil en descomposiciones funcionales: constructor no iterativo.
+- Si el número de hilos es menor alguno ejecutará varias seciones. Si es mayor, algunos no ejecutarán nada.
+- La política de asignación de las secciones a los hilos depende de la implementación. Sincronismo implícito al final salvo que se use `nowait`.
+- Todos los *structured block* deben ir precedidos por la directiva *section* excepto el primero, que es opcional.
+
+### WC SINGLE
+```c
+#pragma omp single [cláusulas]
+	structured block
+```
+Garantiza que solo el hilo que alcance el constructor ejecute el código.
+
+
+## Combined Constructors (CC)
+Combinan constructores de paralelismo con otro tipo de constructores (WC, SIMD, TASK, ...)
+
+Las cláusulas admisibles para cada CC serán las de los mecanismos representados.
