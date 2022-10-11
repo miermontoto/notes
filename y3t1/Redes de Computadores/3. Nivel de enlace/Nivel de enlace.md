@@ -149,3 +149,181 @@ Si se utilizan *k* bits para el número de secuencia, el tamaño máximo de la v
 ### Limitaciones en el tamaño de la ventana
 Si se utilizan *k* bits para el número de secuencia, el tamaño máximo de la ventana es 2<sup>k-1</sup>.
 
+# Redes de área local
+[[../1. Introducción/Clasificación de las redes#Redes LAN|Redes LAN]]
+
+
+## Hubs y switches
+
+### Hub (concentrador)
+Retransmite la señal a todas las salidas.
+
+### Switch (conmutador)
+- Retransmite la señal solo por la salida adecuada.
+- Utiliza una tabla de direccionamiento para conocer las MACs de los dispositivos.
+- Conmutador lento: comprueba el CRC de la trama.
+- Conmutador rápido: retransmite la trama en cuanto se identifica la dirección de salida.
+
+# Control de acceso al medio
+## Utilización del medio compartido
+- Las estaciones transmiten de forma independiente.
+- Se utiliza un mismo medio de transmisión.
+- Cuando dos estaciones transmiten a la vez, se produce una colisión: es necesario retransmitir.
+- La gestión se realiza en una subcapa conocida como MAC.
+- Se busca optimizar el uso del canal sin saturarlo.
+
+## Clasificación técnicas MAC
+### Centralizadas
+Una sola gestión getsiona el acceso.
+
+- Lógica de acceso sencilla.
+- No es necesario coordinarse entre estaciones.
+
+### Descentralizadas
+Varias estaciones gestionan el acceso.
+
+- Más robustas ante fallos.
+- No se produce cuello de botella en la gestión.
+
+
+### Síncronas
+- Se pre-asigna una capacidad para cada conexión.
+- No adecuado para LANs: cantidad muy variable de elementos conectados y tráfico a ráfagas.
+- Se utilizan técnicas de multiplexación.
+- Casos de uso: radio, tv, ...
+
+### Asíncronas / dinámicas
+Se consigue en cada trama la capacidad necesaria para ella.
+
+## Modelado del tráfico
+- Tráfico fuente (**I**): tráfico que las máquinas intentan transmitir.
+- Tráfico cursado (**S**): tráfico que la red consigue entregar.
+- Tráfico en la red (**G**): tráfico que circula por la red.
+
+
+![[_resources/Pasted image 20221011104915.png]]
+
+- En todos los casos, `S = G · Probabilidad éxito`.
+- Si no se producen colisiones, `S = G = I`, de lo contrario, `G > S` y `G > I`.
+- Si la red está saturada, `S < I`, de lo contrario `I = S`.
+
+## Tipos de técnicas asíncronas
+### Contienda
+- Las estaciones compiten por transmitir.
+- Gestión distribuida.
+- Bueno si la carga es baja y el tráfico a bajas.
+
+### Rotación
+- Las estaciones transmiten de acuerdo a una serie de turnos.
+- Puede ser centralizada o distribuida.
+- Adecuado si hay muchas estaciones y mucha carga.
+
+### Reserva
+- Las estaciones reservan parte de la capacidad del canal.
+- Puede ser centralizada o distribuida.
+- Bueno si hay pocas estaciones y mucha carga.
+
+## Técnicas de contienda
+- Cuando se tienen datos, las estaciones intentan transmitir.
+- Se tiene que escuchar el medio de transmisión.
+- Es posible que se produzcan colisiones.
+- En caso de colisión, es necesario:
+	- Detectar la colisión.
+	- Decidir cuándo retransmitir.
+
+### ALOHA
+- Protocolo muy sencillo que transmite cuando se tienen datos.
+- Si hay colisión, se espera un tiempo aleatorio y se vuelve a transmitir.
+- Rendimiento con fuentes infinitas y llegadas exponenciales.
+- Rendimiento: $S=G\times e^{-2G}$
+
+- Para transmitir una trama con éxito, no se puede solapar con niguna otra trama.- 
+- Si hay alguna otra trama en el canal, ambas se pierden, aunque coincidan mínimamente.
+- Con tramas de tamaño constante *t*, una trama es culnerable durante 2t.
+
+
+### ALOHA ranurado
+- El tiempo se divide en ranuras de tamaño *t*.
+- Solamente se puede comenzar a transmitir al comienzo de cada ranura.
+- La probabilidad de colisión es menor, solo si hay otra transmisión en la misma ranura.
+- Rendimiento: $S=G\times e^{-G}$
+
+### CSMA (*Carrier Sense Multiple Access*)
+- Las estaciones están escuchando el medio de transmisión.
+- Esperan a que el canal esté libre para empezar a transmitir.
+- Motivos para las colisiones:
+	- Dos estaciones empiezan a transmitir a la vez al acabar otra.
+	- Debido al retardo de propagación.
+
+> [!FAQ]- Para el test
+> Es importante diferenciar entre los tipos.
+
+#### Persistente-1
+**Funcionamiento**
+- Si está ocupado, se espera hasta que esté libre.
+- Si está vacío, se transmite.
+- Si hay colisión:
+	- Se espera un tiempo aleatorio.
+	- Se vuelve al primer paso.
+
+**Problema**
+Se suelen producir colisiones al final de los envíos de las tramas.
+
+#### No persistente
+- Si está ocupado:
+	- Se espera un tiempo aleatorio.
+	- Se vuelve al primer paso.
+- Si está vacío, se transmite.
+- Si hay colisión:
+	- Se espera un tiempo aleatorio.
+	- Se vuelve al primer paso.
+
+**Problema**
+Medio desaprovechado justo tras el fin de una transmisión.
+
+#### persistente-p
+**Funcionamiento**
+- Si está ocupado, espera hasta que quede libre.
+- Si está vacio:
+	- Transmiten con probabilidad p.
+	- Se vuelve al primer paso con probabilidad (1-p).
+- Si hay colisión:
+	- Se espera un tiempo aleatorio.
+	- Se vuelve al primer paso.
+
+Se busca un equilibrio entre reducir el número de colisiones y el tiempo de desocupación.
+
+### CSMA/CD
+El problema común de las técnicas CSMA es que el medio permanece inutilizable durante el tiempo que dos tramas colisionan.
+
+CSMA/CD detecta las colisiones y abortan el envío de las tramas cuando ocurren.
+
+### MACA (*Multiple Access with Collision Avoidance*)
+Las técnicas CSMA no son adecuadas para redes inalámbricas, puesto que es difícil detectar colisiones, puede haber estaciones ocultas, etc.
+
+- No se escucha el medio para detectar clisiones.
+- Evita colisiones entre estaciones que no se ven.
+
+**Problemas**
+- Las colisiones no son detectadas por la capa MAC.
+- Se reenvían cuando lo detectan las capas superiores, mucho después de la colisión.
+
+**Funcionamiento**
+- Se utilizan RTS (*Request to send*) y CTS (*Clear to send*) para bloquear el medio.
+- Si se produce colisión durante el envío, se espera durante un tiempo aleatorio antes del reintento.
+
+## Técnicas de rotacíon
+- Las máquinas transmiten en orden → no se producen colisiones.
+
+### Técnicas basadas en sondeo (centralizadas)
+- Una estación controladora da el turno al resto de estaciones.
+- Las estaciones informan a la controladora al acabar.
+
+### Técnicas basadas en el paso de testigo (distribuidas)
+- Existe una trama que hace de testigo.
+- La estación que tiene el testigo puede transmitir.
+- El testigo se pasa al acabar de transmitir o pasar un tiempo distribuido.
+
+
+
+

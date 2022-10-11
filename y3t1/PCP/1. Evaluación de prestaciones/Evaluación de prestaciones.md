@@ -74,7 +74,7 @@ $$T_0(n,p) = C(n,p) - T(n)$$
 ### Speedup
 <mark style="background: #ADCCFFA6;">Expresa la ganancia de velocidad del paralelo al secuencial.</mark> 
 $$S(n,p) = \frac{T(n)}{T(n,p)}$$
-- Todo algoritmo paralelo se puede simular en una máquina secuencial ejecutando en serie los pasos paralelos. **Por lo tanto, S(n,p) está acotada por:** $$T(n,1) \leq pT(n,p) → 0 \leq S(n,p) \leq p$$
+- Todo algoritmo paralelo se puede simular en una máquina secuencial ejecutando en serie los pasos paralelos. **Por lo tanto, S(n,p) está acotada por:** $T(n,1) \leq pT(n,p) → 0 \leq S(n,p) \leq p$
 - Si vale *p*, **speedup lineal**. La carga está balanceada, las comunicaciones no penalizan, perfecto.
 - Si vale menos que *p*, **speedup sublineal.** Hay dependencia de datos, no siempre es posible dividir el problema en p subproblemas concurrentes...
 - Si vale más que *p*, **speedup superlienal.** El algoritmo secuencial no es óptimo, se ha incurrido en un error de cálculo o hay efectos colaterales(caché...)
@@ -86,14 +86,14 @@ $$S(n,p) = \frac{T(n)}{T(n,p)}$$
 ## Modelos de rendimiento
 ### Ley de Amdahl
 - Mide el incremento de velocidad máximo de los algoritmos paralelos (speedup).
-- El tiempo de ejecución de un algoritmo se expresa como $$t(n) = \alpha(n) + \beta(n)$$ donde ɑ(n) es el tiempo de la parte secuencial, no paralelizable y β(n) es el tiempo de la parte paralelizable.
-- El tiempo paralelo se puede definir como $$t(n,p) = \alpha(n) + \frac{\beta(n)}{p}$$
+- El tiempo de ejecución de un algoritmo se expresa como $t(n) = \alpha(n) + \beta(n)$, donde ɑ(n) es el tiempo de la parte secuencial, no paralelizable y β(n) es el tiempo de la parte paralelizable.
+- El tiempo paralelo se puede definir como $t(n,p) = \alpha(n) + \frac{\beta(n)}{p}$
 
-Sea ɑ(n) + β(n) = 1, entonces $$S(n,p) = \frac{T(n)}{T(n,p)} = \frac{p}{(p-1)\alpha(n)+1} \leq \frac{1}{\alpha(n)} $$
+Sea $\alpha (n)+\beta (n)=1$, entonces $S(n,p) = \frac{T(n)}{T(n,p)} = \frac{p}{(p-1)\alpha(n)+1} \leq \frac{1}{\alpha(n)}$
 
 Aplicando esto, si el algoritmo es: 
-	- paralelizable en un 90%: $$S(n,p) = \frac{p}{(p-1)0.1 + 1} \lt \frac{1}{0.1} = 10$$
-	- paralelizable en un 50%: $$S(n,p) = \frac{p}{(p-1)0.5 + 1} \lt \frac{1}{0.5} = 2$$
+	- paralelizable en un 90%: $S(n,p) = \frac{p}{(p-1)0.1 + 1} \lt \frac{1}{0.1} = 10$
+	- paralelizable en un 50%: $S(n,p) = \frac{p}{(p-1)0.5 + 1} \lt \frac{1}{0.5} = 2$$
 ![[_resources/Pasted image 20220915125305.png]]
 
 Haciendo manipulaciones algebráicas: $$S(n,p) = \frac{1}{(1-FP)+\frac{PF}{p}}$$donde PF es el % de fracción paralela (en tanto por uno).
