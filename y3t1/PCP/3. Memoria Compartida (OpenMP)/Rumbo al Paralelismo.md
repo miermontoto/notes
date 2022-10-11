@@ -151,3 +151,57 @@ Garantiza que solo el hilo que alcance el constructor ejecute el código.
 Combinan constructores de paralelismo con otro tipo de constructores (WC, SIMD, TASK, ...)
 
 Las cláusulas admisibles para cada CC serán las de los mecanismos representados.
+
+### CSIMD
+*No vectoriza si no se usa junto a `inline`.*
+
+
+### CTASK
+Útil para paralelismo no estructurado (ej: bucles con condición de parada dependiente de los datos, tamaños no conocidos inicialmente, ...)
+
+**Definiciones previas**
+- <u>Explicit task</u>, tarea generada por el constructor *task*.
+- <u>Implicit task</u>, tarea gneerada por el constructor parallel, regiones de paralelismo implícito.
+- <u>Tied task</u>, tarea cuya ejecución (suspendida previamente) solo puede ser reanudada por el hilo que suspendió su ejecución. Por defecto.
+- <u>Untied task</u>, cualquier hilo puede reaundar la tarea.
+- <u>Undeferred task</u>, tarea que suspende su ejecución para crear y ejecutar una nueva. Reanuda su ejecución cuando termine la nueva.
+- <u>Included task</u>, lo mismo que undeferred, ejecución inmediata por el hilo.
+
+**Filosofía**
+- Los *Task Scheduling Points (TSP)*  permiten reanudar y suspender la ejecución de tareas. Son "barreras".
+	- Cuando un hilo alcanza un TSP, puede conmutar, iniciar o reanudar cualquier tarea pendiente.
+- La terminación correcta de las tareas se garantiza con los constructores de sincronización explícitos o por los implícitios existentes en algunas directivas/constructores.
+- Las variables *threadprivate* pueden tener su contenido modificado por cualquier tarea ejecutada por el mismo hilo.
+- El comportamiento *shared* por defecto no es aplicable a *task*.
+
+
+#### taskyield
+Suspende la ejecución de la tarea.
+
+#### taskwait
+Es un *TSP*. Suspende la ejecución de la tarea hasta que todas las tareas creadas en la misma región concluyan.
+
+#### taskgroup
+Un grupo de tareas con un *TSP* al final.
+
+#### Taskloop
+Las iteraciones del bucle, o bucles si se usa `collapse`, se ejecutarán en paralelo usando *tasks*. por defecto, *taskloop* crea de forma implícita un *taskgroup*.
+
+## Synchronizing Constructors
+
+### master
+Solo el hilo maestro ejecuta el código. No hay esperas implícitas para el resto de los hilos.
+
+### barrier
+Espera o sincronización explícita para todos los hilos.
+
+### critical
+Delimitador de secciones críticas.
+
+| # hilos   | no bloq.        | si bloq.         |
+| --------- | --------------- | ---------------- |
+| 1, master | `master`        | `master barrier` |
+| 1, cq     | `single nowait` | `single`         |
+| todos     | `atomic`        | `critical`       |
+
+
