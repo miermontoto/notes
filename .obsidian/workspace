@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/Diagramas de clases.md",
+            "file": "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "semáforo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/Diagramas de clases.md",
+                "file": "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/Diagramas de clases.md"
+                "file": "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md"
               }
             }
           },
@@ -129,6 +129,7 @@
   },
   "active": "617c617e72aa643b",
   "lastOpenFiles": [
+    "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/Diagramas de clases.md",
     "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/2.2. ASI/ASI (2).md",
     "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/Casos de Uso.md",
     "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
@@ -137,7 +138,6 @@
     "y2t2/Computación (CN)/CEX/6. Optimización numérica.md",
     "y3t1/Configuración (CES)/3. Evaluación de prestaciones/Modelado de sistemas.md",
     "y3t1/Administración de Sistemas/3. Gestión de usuarios/Sistemas de administración.md",
-    "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
-    "y3t1/PCP/1. Evaluación de prestaciones/Evaluación de prestaciones.md"
+    "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md"
   ]
 }

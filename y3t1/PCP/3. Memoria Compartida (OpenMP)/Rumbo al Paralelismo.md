@@ -198,10 +198,54 @@ Espera o sincronización explícita para todos los hilos.
 ### critical
 Delimitador de secciones críticas.
 
+### atomic
+Asegura la ejecución de varios hilos paralelos de forma atómica. Es más eficiente que critical.
+
 | # hilos   | no bloq.        | si bloq.         |
 | --------- | --------------- | ---------------- |
 | 1, master | `master`        | `master barrier` |
 | 1, cq     | `single nowait` | `single`         |
 | todos     | `atomic`        | `critical`       |
+
+## Funciones de bloqueo
+Cerrojos explícitos. Semáforos.
+
+`void omp_init_lock(omp_lock_t *lock)`
+Crear una llave o cerrojo. Se crea en estado *unlocked*.
+
+`void omp_destroy_lock(omp_lock_t *lock)`
+Destruye una llave o cerrojo.
+
+`void omp_set_lock(omp_lock_t *lock)`
+Bloquea una llave o cerrojo.
+
+`void omp_unset_lock(omp_lock_t *lock)`
+Desbloquea una llave o cerrojo.
+
+`int omp_test_lock(omp_lock_t *lock)`
+Devuelve el estado de una llave o cerrojo. *No bloqueante*
+
+Al usar las funciones con `_nest_`, se pueden utilizar múltiples veces por tarea.
+
+## Otros
+### flush
+Actualiza la visión temporal de memoria de las variables contenidas en la lista del hilo que la ejecuta.
+
+### threadprivate
+Variables a replicar a cada hilo. 
+Convierte variables globales en locales y persistentes a los hilos a través de las múltplies reigones paralelas.
+Solo se inicializan al principio.
+
+- **copyin**
+- **copyprivate**
+
+### declare reduction
+Permite definir nuevos operadores de reducción para ser usados en la cláusula *reduction*.
+
+> [!INFO]- Poco relevante
+> "No va a caer en el examen."
+
+### ordered
+Los hilos ejecutan el *structured block* siguiendo el orden natural de las iteraciones del bucle secuencial.
 
 
