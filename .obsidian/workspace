@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
+            "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/Diagramas de clases.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
+                "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/Diagramas de clases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md"
+                "file": "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/Diagramas de clases.md"
               }
             }
           },
@@ -129,15 +129,15 @@
   },
   "active": "617c617e72aa643b",
   "lastOpenFiles": [
-    "y3t1/Configuración (CES)/4. Modelado de rendimiento/_resources/Modelado analítico 2022-10-13 10.43.43.excalidraw.md",
+    "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/2.2. ASI/ASI (2).md",
+    "y3t1/Ingeniería de Software (ISoft)/2. Proceso de análisis y técnicas/Casos de Uso.md",
     "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
+    "y3t1/Configuración (CES)/4. Modelado de rendimiento/_resources/Modelado analítico 2022-10-13 10.43.43.excalidraw.md",
     "y3t1/Configuración (CES)/3. Evaluación de prestaciones/Diseño y análisis de experimentos.md",
     "y2t2/Computación (CN)/CEX/6. Optimización numérica.md",
     "y3t1/Configuración (CES)/3. Evaluación de prestaciones/Modelado de sistemas.md",
     "y3t1/Administración de Sistemas/3. Gestión de usuarios/Sistemas de administración.md",
     "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
-    "y3t1/PCP/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
-    "y3t1/PCP/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
-    "y3t1/Redes de Computadores/1. Introducción/Clasificación de las redes.md"
+    "y3t1/PCP/1. Evaluación de prestaciones/Evaluación de prestaciones.md"
   ]
 }
