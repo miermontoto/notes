@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "665a6607c8dd4a25",
+        "id": "617c617e72aa643b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "y3t1/Configuración (CES)/3. Evaluación de prestaciones/Diseño y análisis de experimentos.md",
+            "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Configuración (CES)/3. Evaluación de prestaciones/Diseño y análisis de experimentos.md",
+                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Configuración (CES)/3. Evaluación de prestaciones/Diseño y análisis de experimentos.md"
+                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md"
               }
             }
           },
@@ -127,17 +127,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "665a6607c8dd4a25",
+  "active": "617c617e72aa643b",
   "lastOpenFiles": [
-    "y2t2/Computación (CN)/CEX/6. Optimización numérica.md",
+    "y3t1/Configuración (CES)/4. Modelado de rendimiento/_resources/Modelado analítico 2022-10-13 10.43.43.excalidraw.md",
+    "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
     "y3t1/Configuración (CES)/3. Evaluación de prestaciones/Diseño y análisis de experimentos.md",
+    "y2t2/Computación (CN)/CEX/6. Optimización numérica.md",
     "y3t1/Configuración (CES)/3. Evaluación de prestaciones/Modelado de sistemas.md",
     "y3t1/Administración de Sistemas/3. Gestión de usuarios/Sistemas de administración.md",
     "y3t1/Redes de Computadores/3. Nivel de enlace/Nivel de enlace.md",
     "y3t1/PCP/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
     "y3t1/PCP/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
-    "y3t1/Redes de Computadores/1. Introducción/Clasificación de las redes.md",
-    "y3t1/Redes de Computadores/1. Introducción/Visión general de las redes.md",
-    "y3t1/PCP/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md"
+    "y3t1/Redes de Computadores/1. Introducción/Clasificación de las redes.md"
   ]
 }

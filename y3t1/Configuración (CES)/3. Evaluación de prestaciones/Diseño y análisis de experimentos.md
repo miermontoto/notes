@@ -93,3 +93,23 @@ Puesto que algunos efectos no pueden calcularse, se genera una "confusión".
 
 ## Experimentos con un factor
 Otro tipo de análisis de experimentos con un objetivo distinto. En lugar de obtener la influencia de cada uno de los factores, se obtiene la influencia de un solo factor.
+
+No existe un límite al número de niveles que puede tomar el factor.
+$$y_{ij}=\mu+\alpha_{j}+e_{ij}$$
+- mu es el valor promedio.
+- alpha sub j es el efecto de la alternativa j
+- e sub ij es el térimno de error.
+- y sub ij es la respuesta i al nivel j.
+
+### Ejemplo
+![[_resources/Pasted image 20221013101310.png]]
+
+### Estimación de los Errores Experimentales
+El error en cada caso se calcula como diferencia entre la respuesta indicada por el modelo y la respuesta obtenida de la medida real: $SSE=\sum^r_{i=1}\sum^a_{j=1}e^2_{ij}$.
+
+### Asignación de la Variación
+
+### Análisis de Varianza (ANOVA)
+![[_resources/Pasted image 20221013101930.png]]
+
+tres hojas, primera diseño experimental.
