@@ -3,10 +3,11 @@
   "baseFontSize": 16,
   "cssTheme": "Things",
   "theme": "moonstone",
-  "textFontFamily": "SF Pro Text,FuraCode Nerd Font",
+  "textFontFamily": "SF Pro Text",
   "enabledCssSnippets": [
     "math"
   ],
   "interfaceFontFamily": "SF Pro Display,SF Pro Text",
-  "monospaceFontFamily": "SF Mono"
+  "monospaceFontFamily": "SF Mono",
+  "accentColor": ""
 }

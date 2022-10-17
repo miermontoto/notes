@@ -17,17 +17,13 @@
   "Yin and Yang@@strong-color@@dark": "#ADAFFF",
   "Yin and Yang@@text-highlight-rgb@@dark": "#B3BCF2",
   "Yin and Yang@@l-accent": "#AFB4FF",
-  "things-style@@minimal-icons-off": false,
-  "things-style@@full-file-names": true,
-  "things-style@@links-int-on": true,
   "things-style@@default-font-color": true,
-  "things-style@@cursor": "default",
   "things-style@@h4-weight": 600,
   "things-style@@h5-weight": 600,
   "things-style@@h6-weight": 600,
-  "things-style@@h1": "2.5em",
-  "things-style@@h2": "1.7em",
-  "things-style@@h3": "1.3em",
-  "things-style@@h4": "1em",
-  "things-style@@h5": "0.95em"
+  "things-style@@h2-color": "#000000",
+  "things-style@@h3-color": "#000000",
+  "things-style@@h4-color": "#000000",
+  "things-style@@h4-transform": "none",
+  "things-style@@h5-color": "#000000"
 }

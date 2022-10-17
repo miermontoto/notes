@@ -4,17 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "617c617e72aa643b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/Técnica/Técnicas de modelado dinámico.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": false
+        "id": "c561b1928e96d5f6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "617c617e72aa643b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -32,7 +38,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "byCreatedTimeReverse"
+              }
             }
           },
           {
@@ -54,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.5
+    "width": 322.5
   },
   "right": {
     "id": "22ff9cec8883e419",
@@ -78,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/Técnica/Técnicas de modelado dinámico.md",
+                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -90,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/Técnica/Técnicas de modelado dinámico.md"
+                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md"
               }
             }
           },
@@ -127,10 +135,13 @@
     "width": 300,
     "collapsed": true
   },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
   "active": "617c617e72aa643b",
   "lastOpenFiles": [
-    "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/Técnica/Diagramas de clases.md",
     "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/Técnica/Técnicas de modelado dinámico.md",
+    "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/Técnica/Diagramas de clases.md",
     "y3t1/Redes de Computadores/PL/Práctica 1. Conexión física.md",
     "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
     "y3t1/Redes de Computadores/CEX/3. Nivel de enlace/Nivel de enlace.md",
