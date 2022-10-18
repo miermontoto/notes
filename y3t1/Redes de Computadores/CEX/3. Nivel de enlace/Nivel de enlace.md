@@ -324,6 +324,88 @@ Las técnicas CSMA no son adecuadas para redes inalámbricas, puesto que es dif�
 - La estación que tiene el testigo puede transmitir.
 - El testigo se pasa al acabar de transmitir o pasar un tiempo distribuido.
 
+### Token ring
+- Utiliza una topología en anillo.
+- Se basa en el uso de un testigo para efectuar la transmisión.
+- Una estación espera a tener el testigo para enviar sus tramas.
+- Cuando la trama pasa por la estación de destino, esta la copia y la mantiene en el anillo.
+- Una vez que las tramas vuelven a la estacióin de origen, esta libera el testigo y lo pone de nuevo en el anillo.
+- ![[_resources/Pasted image 20221017131341.png]]
+
+## Tećnicas de reserva
+El tiempo se divide en diferentes instantes:
+- Periodos de contención
+	- Las estaciones indican que quieren transmitir.
+- Periodos de transmisión
+	- Las estaciones transmiten los datos en los instantes que han reservado previamente.
+
+No se producen colisiones, ya que no se transmite a la vez.
+
+### Mapa de bits
+- El periodo de contención se divide en ranuras de reserva. 
+	- Cuando tiene datos para transmitir, rellena su ranura con un "1".
+- En el peridodo de transmisión:
+	- Se espera tanto tiempo como tramas fueron reservadas.
+	- Las tramas se transmiten en orden.
+
+# Estándares IEEE 802
+Se encargan de definir los estándares más utilizados hoy en día.
+
+- 802.3 (Ethernet)
+- 802.11 (WiFi)
+- 802.15 (WPAN - Bluetooth, Zigbee)
+- 802.16 (WiMax)
+
+Se utiliza en los niveles más bajos del modelo OSI.
+![[_resources/Pasted image 20221017133347.png]]
+
+## Subcapa de control de enlace lógico
+- Tiene que comunicarse con la capa de red y la capa MAC.
+- Se encarga de la gestión de flujo, unificar diferentes especificaciones de la capa MAC, agrupación de bits, etc.
+- Ofrece tres tipos de servicios:
+	- No orientado a conexión sin confirmación
+	- No orientado a conexión con confirmación
+	- Orientado a conexión con confirmación
+- En IEE 802.2 se implementa el protocolo *Logic Link Control* (LLC).
+
+## Subcapa de control de acceso al medio
+- Gestiona el acceso al medio compartido.
+	- Dicha gestión cambia en función del estándar 802 utilizado.
+- Direcciona las MACs de origen y destino en el propio medio compartido.
+- Detecta errores de entramado o interferencias en los bits.
+- Justo por encima del nivel físico.
+
+## 802.3 Ethernet
+### Formato de trama
+![[_resources/Pasted image 20221017133523.png]]
+- **Preámbulo**: siete veces seguidas la cadena `10101010`
+	- Permite sincronización.
+	- ***Start of Frame* o comienzo de trama**
+		- La última secuencia del preámbulo `10101011`, para indicar que se inicia la trama
+		- Direcciones de origen y destino: direcciones MAC de las máquinas que emiten y reciben.
+- **Direcciones de destino y origen**: las dos direcciones MAC del destino y el origen.
+- **Longitud**: tamaño del campo de datos LLC.
+- **Datos**: información recibida de la capa LLC.
+- **Relleno:** bytes añadidos por si la trama no tiene el tamaño mínimo para evitar colisiones.
+- **Suma de verificación**: se utiliza para calcular el CRC y comprobar que no ha ocurrido ningún error en la transmisión.
+	- Se utilizan todos los campos excepto el preámbulo y la propia suma de verificación.
+
+### Intervalo de contención
+Tiempo mínimo necesario para que una estación que empieza a transmitir se de cuenta de una colisión mientras está transmitiendo.
+
+El intervalo de contención es dos veces el tiempo de propagación del canal, de modo que se asegura que si se produce una colisión, el emisor sigue escuchando el medio y la detecta sin importar en qué punto del camino ocurra.
+
+### CSMA/CD con retroceso exponencial binario
+Sirve para determinar el tiempo de espera después de una colisión.
+
+- Tras *k* colisiones, con $k\leq 10$ se espera $n\times t_{prop}$ con *n* elegido entre 0 y 2<sup>k</sup>-1.
+- Tras *k* colisiones, con $10\lt k\leq 16$, se espera $n\times t_{prop}$ con *n* elegido entre 0 y 1023.
+- Si hay más de 16 colisiones, se desiste.
+
+
+
+
+
 
 
 
