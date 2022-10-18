@@ -2,7 +2,7 @@
   "translucency": false,
   "baseFontSize": 16,
   "cssTheme": "Things",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "textFontFamily": "SF Pro Text,FuraCode Nerd Font",
   "enabledCssSnippets": [
     "math"
