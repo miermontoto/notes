@@ -1,6 +1,6 @@
 ![[_resources/Tema 3 - Enlace.pdf]]
  
- ## Índice
+## Índice
 1. Introducción
 2. Delimitación de tramas
 3. Control de flujo
@@ -359,7 +359,8 @@ Se encargan de definir los estándares más utilizados hoy en día.
 Se utiliza en los niveles más bajos del modelo OSI.
 ![[_resources/Pasted image 20221017133347.png]]
 
-## Subcapa de control de enlace lógico
+## Subcapas específicas
+### Subcapa de control de enlace lógico
 - Tiene que comunicarse con la capa de red y la capa MAC.
 - Se encarga de la gestión de flujo, unificar diferentes especificaciones de la capa MAC, agrupación de bits, etc.
 - Ofrece tres tipos de servicios:
@@ -368,7 +369,7 @@ Se utiliza en los niveles más bajos del modelo OSI.
 	- Orientado a conexión con confirmación
 - En IEE 802.2 se implementa el protocolo *Logic Link Control* (LLC).
 
-## Subcapa de control de acceso al medio
+### Subcapa de control de acceso al medio
 - Gestiona el acceso al medio compartido.
 	- Dicha gestión cambia en función del estándar 802 utilizado.
 - Direcciona las MACs de origen y destino en el propio medio compartido.
@@ -401,6 +402,100 @@ Sirve para determinar el tiempo de espera después de una colisión.
 - Tras *k* colisiones, con $k\leq 10$ se espera $n\times t_{prop}$ con *n* elegido entre 0 y 2<sup>k</sup>-1.
 - Tras *k* colisiones, con $10\lt k\leq 16$, se espera $n\times t_{prop}$ con *n* elegido entre 0 y 1023.
 - Si hay más de 16 colisiones, se desiste.
+
+### Direcciones MAC
+- Cada tarjeta tiene asociada una dirección MAC.
+- Está compuesta por 48 bits representados en hexadecimal en grupos de 8.
+- Los tres primeros octetos identifican al fabricante.
+- Cada tarjeta tiene una dirección de red única.
+
+### Ethernet conmutada - Switches
+Originalmente se colocaban repetidores y concentradores para aumentar el tamaño de la red, conocidos como *hubs*. Aunque cada máquina estuviera conectada a un cable diferente, el *hub* repetiría la señal por todos los cables, por lo que realmente las estaciones estarían compartiendo el medio.
+
+Los *switches* repiten la trama solo por la salida correspondiente.
+
+- Son una solución más compleja y cara, aunque se han abaratado y son los más utilizados actualmente.
+- Los *switches* permiten separar dominios de colisión, mejorando el rendimiento de la red.
+- Poseen tablas en las que relacionan las interfaces de salida con direcciones MAC.
+- En el caso de enviarse una dirección de difusión, la retransmitiría por todas las salidas.
+
+### ARP (*Address Resolution Protocol*)
+Se encarga de obtener las direcciones MAC de las máquinas, a partir de una dirección IP.
+
+- Se implementa en equipos que también poseen nivel de red.
+- Almacenan unas tablas que relacionan MACs con IP.
+- Su variante inversa es RARP (*Reverse Address Resolution Protocol*), que asigna direcciones IP a partir de las MAC.
+	- En desuso, principalmente sustituido por DHCP.
+
+### Actualizaciones
+- *Fast Ethernet* - 802.3u
+	- Aumenta la velocidad hasta 100Mbps
+	- Incluye autonegociación para facilitar la retrocompatibilidad.
+- *Gigabit Ethernet* - 802.3ab
+	- Alcanza 1Gbps
+	- Extensión de portadora y ráfagas de trama para ampliar el rango de alcance de la red.
+- *X Gigabit Ethernet* y *Terabit Ethernet*
+	- Mejoras sucesivas que amplían la velocidad y el alcance de las redes de tipo Ethernet.
+	- Utiliza fibra óptica en lugar de par trenzado.
+
+## 802.11 WiFi
+Define un estándar de comunicaciones inalámbrico de corto alcance.
+
+- Es necesario utilizar bandas del espectro electromagnético que estén libres.
+- Requiere de diferentes técnicas de acceso al medio que Ethernet u otros estándares cableados.
+- Al igual que otros estándares, divide el nivel de enlace en dos subcapas, buscando aislar al nivel de red.
+- Puede utilizarse para conectarse a la red de Internet o para crear una red local.
+	- Elemento clave: *access point* (AP).
+
+### Servicios
+- **Asociación**: permite a una estación conectarse a un AP o a otra estación.
+- **Disociación**: permite que una estación notifique su intención de abandonar una celda.
+- **Reasociación**: cambiar de un AP a otro sin necesidad de desasociarse.
+- **Autenticación:** identificar a una estación para saber si puede o no conectarse a la red.
+	- WEP (*Wired Equivalent Privacy*)
+	- WPA (*WiFi Protected Access*)
+
+### Capa física
+- Utiliza los espectros de 2.4GHz y 5GHz.
+- Ha evolucionado utilizando canales con anchos de banda desde 20 hasta 160 MHz.
+- *Multiple Input - Multiple Output* (MIMO)
+- Multiplexación por división de frecuencias ortogonales (OFDM - *Orthogonal frequency-division multiplexing*)
+- Mejoras en la eficiencia y el alcance, usado también en redes de telefonía móvil.
+
+### Capa acceso al medio
+- No se puede escuchar y transmitir a la vez.
+	- Señal de llegada mucho más débil que la de la transmitida.
+- Se utilizan confirmaciones de recepción.
+
+#### CSMA/CA - CSMA con evitación de colisiones (*Collision Avoidance*)
+- Cuando se tiene una trama para transmitir, se escucha el medio y, si está libre, se transmite.
+- Si está ocupado, se espera a que acabe y se espera un tiempo aleatorio para transmitir.
+- Si durante la espera aleatoria alguien transmite, el tiempo de espera se pausa.
+
+- CSMA/CA se complementa con NAV(*Network Allocation Vector*)
+- Permite evitar el problema de las estaciones ocultas.
+
+### Formato de trama
+![[_resources/Pasted image 20221018131934.png]]
+
+#### Control de trama
+- **Versión**: ahora mismo 00.
+- **Tipo**: gestión (00), control (01), datos (10).
+- **Subtipo**: RTS (1011), CTS (1100), ACK (1101) ...
+- **Para/De**: definen si el envío es entre estaciones, APs o viceversa.
+- **Más fragmentos**: indica si la trama se ha partido para enviarse.
+- **Reintentar**: especifica si la trama es un reenvío.
+- **Administración de energía**: utilizada por el emisor para indicar que va a entrar en modo de ahorro de energía.
+- **Protegida**: especifica si la trama está cifrada.
+- **Orden**: indica al receptor que la capa superior espera que la secuencie llegue en riguroso orden.
+
+#### Otros parámetros
+- **Duración**: tiempo de espera de las demás estaciones antes de comprobar el canal (NAV).
+- **Direcciones**: origen, destino y desitno fuera de la red local.
+- **Secuencia**: numera las tramas para detectar duplicados.
+- **Datos**: información pasada por la capa superior.
+- **Suma de verificación**: comprobación de llegada correcta de la trama.
+
 
 
 
