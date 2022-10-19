@@ -13,41 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Graphics Processing Unit (GPU) + NVIDIA.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e738341422926dd9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "y3t1/Redes de Computadores/CEX/3. Nivel de enlace/Nivel de enlace.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8ab88d37c0077a31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (1).md",
+                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (1).md",
+                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (1).md"
+                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md"
               }
             }
           },
@@ -145,22 +118,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "8ab88d37c0077a31",
+  "active": "ee96c323a8a6401e",
   "lastOpenFiles": [
+    "y3t1/Configuración (CES)/4. Modelado de rendimiento/_resources/Modelado analítico 2022-10-18 13.24.08.excalidraw.md",
+    "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
+    "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Graphics Processing Unit (GPU) + NVIDIA.md",
+    "y3t1/Administración de Sistemas/4. Configuración de red/Configuración de red.md",
+    "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (1).md",
+    "y3t1/Administración de Sistemas/4. Configuración de red/DHCP.md",
     "y3t1/Redes de Computadores/CEX/3. Nivel de enlace/Nivel de enlace.md",
     "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Compute Unified Device Architecture (CUDA).md",
     "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Untitled.md",
-    "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Graphics Processing Unit (GPU) + NVIDIA.md",
-    "y3t1/Redes de Computadores/CEX/3. Nivel de enlace/Untitled.md",
-    "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
-    "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/Técnica/Técnicas de modelado dinámico.md",
-    "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/Técnica/Diagramas de clases.md",
-    "y3t1/Redes de Computadores/PL/Práctica 1. Conexión física.md",
-    "y3t1/Redes de Computadores/Untitled.md"
+    "y3t1/Redes de Computadores/CEX/3. Nivel de enlace/Untitled.md"
   ]
 }

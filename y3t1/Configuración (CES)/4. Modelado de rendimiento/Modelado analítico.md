@@ -111,3 +111,80 @@ Son redes de este tipo las que cumplen:
 - Distribución de servicio exponencial para FCFS.
 - El tiempo de servicio solo depende del estado de la cola.
 - En redes abiertas, las llegadas están distribuidas exponencialmente. NO se permiten llegadas en grupo.
+
+# Leyes operacionales
+Los problemas de análisis de prestaciones de los computadores pueden resolverse empleando relaciones sencillas que no requieran hipótesis sobre distribuciones.
+
+Considerando el sistema como una caja negra, durante un tiempo *T* podemos medir:
+- Número de tareas que han llegado al sistema: A<sub>i</sub>
+- Número de tareas que han recibido servicio: C<sub>i</sub>
+- Intervalo de tiempo durante el cual el sistema está ocupado: B<sub>i</sub>
+
+A partir de estas cuatro medidas se pueden definir las siguientes relaciones:
+- **Cadencia de llegada**: $\lambda_i={A_i\over T}\space\frac{\text{Nº de llegadas}}{\text{Periodo de medida}}$
+- **Productividad**: $X_i={C_i\over T}\space\frac{\text{Nº tareas completadas}}{\text{Periodo de medida}}$
+- **Utilización**: $U_i={B_i\over T}\space\frac{\text{Tiempo de ocupación}}{\text{Periodo de medida}}$
+- **Tiempo medio de servicio**: $S_i={B_i\over C_i}\space\frac{\text{Tiempo de ocupación}}{\text{Nº tareas completadas}}$
+
+## 1ª Ley de Utilización
+Permite establecer una relación alternativa para la utilización:
+$$U_i={B_i\over T}={C_i\over T}\times{B_i\over C_i}\rightarrow U_i=X_i\times S_i$$
+
+## 2ª Ley de flujo forzado
+Relaciona la productividad del sistema con las productividades de los dispositivos individuales.
+
+Considerando:
+- que existe un balance o equilibrio de flujo ($A_i=C_i$)
+- que se define la *razón de visitas*, V<sub>i</sub>, como la relación entre el número de tareas que entran y el número de veces que las tareas pasa n por un dispositivo concreto, es decir:
+$$V_i={C_i\over C_0}\space\frac{\text{Nº tareas por el dispositivo}}{\text{Nº tareas del exterior}}$$
+- Se define la productividad global del sistema: $$X={C_0\over T}\space\frac{\text{Nº tareas completadas}}{\text{Tiempo total}}$$
+
+Teniendo en cuenta lo anterior, la productividad de un dispositivo puede escribirse como:
+$$X_i={C_i\over T}={C_i\over C_0}\times{C_0\over T}\rightarrow X_i=V_i\times X$$
+Teniendo en cuenta la relación anterior en la ley de utilización:
+- $U_i=X_i\times S_i$
+- $U_i=X\times V_i\times S_i$
+- $U_i=X\times D_i$
+
+Al término $D_i=V_i\times S_i$ se le denomina **demanda total de servicio** del dispositivo *i* para una tarea.
+El elemento con mayor <i>D<sub>i</sub></i> será el más utilizado y se denomina **cuello de botella**.
+
+### <mark style="background: #BBFABBA6;">Problema</mark>
+<mark style="background: #BBFABBA6;">En un sistema de tiempo compartido, se registra el
+siguiente perfil de los programas de usuario. Cada programa
+requiere 5 segundos de tiempo de CPU y hace 80 peticiones de
+E/S al disco A y 100 peticiones E/S al disco B. El tiempo
+promedio de reflexión de los usuarios fue de 18 segundos. De las
+especificaciones de los dispositivos sabemos que el disco A
+emplea 50 milisegundos para satisfacer una petición de E/S y el
+disco B emplea 30 milisegundos por petición. Con 17 terminales
+activas, se observó que la productividad del disco A es de 15.70
+peticiones E/S por segundo. Queremos calcular la productividad
+del sistema y la utilización de los dispositivos.
+Nota: cada paso por un dispositivo de E/S implica un paso por la
+CPU.</mark>
+![[_resources/Modelado analítico 2022-10-18 13.24.08.excalidraw]]
+
+## 3ª Ley de Little
+Permite establecer una relación entre elementos y tiempo. La única consideración es que exista flujo equilibrado de las tareas.
+
+> [!WARNING]- Poco relevante
+
+## 4ª Ley general del tiempo de respuesta
+El tiempo de respuesta total de un sistema es: $$R=\sum^M_{i=1}R_i\times V_i$$
+
+## 5ª Ley del tiempo de respuesta interactivo
+En un sistema interactivo (terminales conectadas a un servidor), se cumple que:
+- el usuario envía una petición y el sistema *R* tarda en responder.
+- el usuario piensa durante un tiempo *Z* (tiempo de reflexión) antes de enviar otra petición. Tiempo por petición (R+Z).
+- cada usuario hace $T\over R+Z$ peticiones.
+- existen *N* usuarios (# terminales).
+
+La productividad del sistema será: $$X={\text{Nºtotal de peticiones}\over\text{Tiempo total}}={N\times[T/(R+Z)]\over T}={N\over (R+Z)}$$
+Despejando el tiempo de respuesta: $R=(N/X)-Z$
+
+### Análisis de cuellos de botella
+El *bottleneck* es el elemento con mayor demanda y el que limita el rendimiento del sistema.
+Se pueden establecer unos límites asintóticos tanto para la productividad como para el tiempo de respuesta del sistema.
+
+![[_resources/Pasted image 20221018134135.png]]
