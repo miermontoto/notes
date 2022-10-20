@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
+                "file": "y3t1/Administración de Sistemas/4. Configuración de red/Configuración de red.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
+                "file": "y3t1/Administración de Sistemas/4. Configuración de red/Configuración de red.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md"
+                "file": "y3t1/Administración de Sistemas/4. Configuración de red/Configuración de red.md"
               }
             }
           },
@@ -126,8 +126,8 @@
   },
   "active": "ee96c323a8a6401e",
   "lastOpenFiles": [
-    "y3t1/Configuración (CES)/4. Modelado de rendimiento/_resources/Modelado analítico 2022-10-18 13.24.08.excalidraw.md",
     "y3t1/Configuración (CES)/4. Modelado de rendimiento/Modelado analítico.md",
+    "y3t1/Configuración (CES)/4. Modelado de rendimiento/_resources/Modelado analítico 2022-10-18 13.24.08.excalidraw.md",
     "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Graphics Processing Unit (GPU) + NVIDIA.md",
     "y3t1/Administración de Sistemas/4. Configuración de red/Configuración de red.md",
     "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (1).md",
