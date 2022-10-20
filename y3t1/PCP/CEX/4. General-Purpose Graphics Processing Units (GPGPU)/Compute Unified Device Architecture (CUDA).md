@@ -24,3 +24,27 @@ CUDA es C/C++ más extensiones:
 El compilador es `nvcc`. Separa los códigos CPU y GPU. Compila en dos etapas:
 - **Virtual** genera código PTX (*Parallel Thread eXecution*)
 - **Física** genera binarios para ambas partes.
+
+## Modelo organizativo
+- Distintos kernels se pueden ejecutar simultáneamente.
+- El kernel es ejecutado por hilos. Los hilos ejecutan el mismo código sobre diferentes datos basándose en su id.
+- Los hilos se agrupan en bloques.
+- Los hilos del mismo bloque pueden **sincronizarse** y **compartir** datos.
+- Los bloques no pueden sincronizarse entre sí: se ejeuctan en cualqueir orden, secuencial o paralelo.
+- Los kernels son asíncronos respsecto a la CPU (retorno inmediato del control),
+- Los kernels del mismo strema no comienzan so ejecución hasta que no hayan finalizado todas las llamadas CUDA anteriores.
+- Los kernels no finalizan hasta que finalizan todos sus hilos.
+
+- En CUDA, se usan grids o bloques 2D en lugar de almacenar y operar con los datos en 1D.
+	- La manera de separar matrices en bloques y estos bloques en hilos funciona mejor con matrices y tensores que con vectores: se utilizan más cores, por lo que es más rápido.
+	- La localidad en GPU es igual de importante que en CPU, aunque se entiende de otra manera.
+
+## Modelo de programación
+- GPU → GPC → SM → Core CUDA
+- Bloque → Warp → Hilo
+- Dato → Hilo
+
+- Cada hilo que ejecuta el kernel recibe un *id*.
+- Existe, o puede existir, una relación entre el dato y el *id*.
+- A este *id* se accede dentro del kernel a través de variables intrínsecas (`threadIdx`)
+- 
