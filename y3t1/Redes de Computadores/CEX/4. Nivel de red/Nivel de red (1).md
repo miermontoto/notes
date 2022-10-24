@@ -54,3 +54,39 @@ Encaminamiento de paquetes desde el origen hasta el destino.
 - **Desplazamiento del fragmento**: indica a qué parte del paquete pertenece el fragmento. Los fragmentos excepto el último deben ser múltiplos de 8 bytes.
 - **Tiempo de vida (TtL)**: contador que indica cuál es el protocolo de la capa superior al que pasar el paquete.
 - **Suma de verificación:** asegura que la cabecera no ha llegado corrompida por el camino. Es necesario recalcularla en cada salto.
+- **Direcciones IP de origen y destino**.
+- **Opciones**: permite añadir nuevas características no incluidas en la cabecera original.
+	- Seguridad: evitar enrutar paquetes a través de ciertas redes.
+	- Enrutamiento estricto: indicar todos los saltos desde el origen al destino.
+	- Registrar ruta: almacenar las IPs de todos los saltos realizados.
+
+## Direccionamiento IP
+![[_resources/Pasted image 20221024131509.png]]
+
+> [!WARNING]- Un ejercicio garantizado en el examen.
+
+
+### Tipos de direcciones
+- **Unicast**: dirección que identifica a un interfaz de red de una máquina.
+- **Multicast**: dirección que identifica a un grupo de interfaces de red en distintas máquinas.
+- **Broadcast**: dirección que identifica a todas las interfaces de una determinada red.
+	- Nunca aparecerá como dirección origen.
+- **Públicas**: direcciones visibles en Internet.
+- **Privadas**: direccioens que no son visibles en Internet.
+- **Estáticas**: direcciones que no cambian en cada conexión.
+- **Dinámicas**: direcciones que pueden cambiar en cada conexión.
+
+### Clases de direccionamiento
+![[_resources/Pasted image 20221024133213.png]]
+
+- Dirección base de red: dirección que identifica a la red
+	- Tiene todos los bits de la parte de host a 0.
+	- Se obtiene realizando un AND bit a bit entre la dirección IP y la máscara de subred.
+- Dirección de broadcast
+	- Tiene todos los bits de la parte de host a 1.
+	- Se obtiene realizando un OR bit a bit entre la dirección IP y el complemento a 1 de la máscara.
+- El resto de direcciones libres se peuden asignar a los diferentes hosts.
+- Direcciones libres para *n* bits → 2<sup>n</sup>-2
+
+Para generar subredes, se puede expandir la máscara:
+| ![[_resources/Pasted image 20221024135221.png|560]] | ![[_resources/Pasted image 20221024135235.png|560]] | 

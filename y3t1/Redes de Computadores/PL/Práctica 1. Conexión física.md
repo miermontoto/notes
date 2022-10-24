@@ -1,21 +1,3 @@
-# Tipos de Conexión Física
-- Wired
-	- <mark style="background: #BBFABBA6;">Alta seguridad</mark>
-	- <mark style="background: #BBFABBA6;">Grandes velocidades</mark>
-	- <mark style="background: #BBFABBA6;">Barata</mark>
-	- <mark style="background: #BBFABBA6;">"Plug-and-play"</mark>
-	- <mark style="background: #FF5582A6;">Es un cable</mark>
-- Wireless
-	- <mark style="background: #BBFABBA6;">Movilidad</mark>
-	- <mark style="background: #BBFABBA6;">No es un cable</mark>
-	- <mark style="background: #FF5582A6;">Alcance limitado</mark>
-	- <mark style="background: #FF5582A6;">Menor seguridad</mark>
-	- <mark style="background: #FF5582A6;">Vulnerable a interferencias</mark>
-	- <mark style="background: #FF5582A6;">Menor velocidad</mark>
-
-*No son excluyentes.*
-
-
 ## Conexiones Cableadas
 Dos tipos de interfaces red (NIC) para los dispositivos red, definidos por el estándar Ethernet (IEEE 802.3):
 - MDI → Medium-dependent interface.
