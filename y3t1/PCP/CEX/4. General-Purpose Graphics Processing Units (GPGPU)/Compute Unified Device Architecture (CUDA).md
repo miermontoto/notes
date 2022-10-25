@@ -30,14 +30,22 @@ El compilador es `nvcc`. Separa los códigos CPU y GPU. Compila en dos etapas:
 - El kernel es ejecutado por hilos. Los hilos ejecutan el mismo código sobre diferentes datos basándose en su id.
 - Los hilos se agrupan en bloques.
 - Los hilos del mismo bloque pueden **sincronizarse** y **compartir** datos.
-- Los bloques no pueden sincronizarse entre sí: se ejeuctan en cualqueir orden, secuencial o paralelo.
-- Los kernels son asíncronos respsecto a la CPU (retorno inmediato del control),
+- Los bloques no pueden sincronizarse entre sí: se ejeuctan en cualquier orden, secuencial o paralelo.
+- <u>Los kernels son asíncronos respecto a la CPU (retorno inmediato del control).</u>
 - Los kernels del mismo strema no comienzan so ejecución hasta que no hayan finalizado todas las llamadas CUDA anteriores.
 - Los kernels no finalizan hasta que finalizan todos sus hilos.
 
 - En CUDA, se usan grids o bloques 2D en lugar de almacenar y operar con los datos en 1D.
 	- La manera de separar matrices en bloques y estos bloques en hilos funciona mejor con matrices y tensores que con vectores: se utilizan más cores, por lo que es más rápido.
 	- La localidad en GPU es igual de importante que en CPU, aunque se entiende de otra manera.
+
+### Jerarquía de memoria
+- Los hilos CUDA pueden acceder a los datos desde múltiples espacios de memoria durante su ejecución.
+- Cada hilo tiene su memoria local privada. Todos tienen acceso a la memoria global.
+- Cada bloque de hilos tiene su espacio de memoria compartida (*shared*) entre hilos de un mismo bloque.
+- Las GPUs tienen cachés L1 y L2. La L1 comparte espacio con la shared.
+- Las memorias de texturas y constantes son espacios de memoria adicionales accesibles a todos los hilos.
+- Los espacios de memoria global, texturas y constantes tienen el mismo ciclo de vida que la aplicación.
 
 ## Modelo de programación
 - GPU → GPC → SM → Core CUDA
@@ -47,4 +55,108 @@ El compilador es `nvcc`. Separa los códigos CPU y GPU. Compila en dos etapas:
 - Cada hilo que ejecuta el kernel recibe un *id*.
 - Existe, o puede existir, una relación entre el dato y el *id*.
 - A este *id* se accede dentro del kernel a través de variables intrínsecas (`threadIdx`)
-- 
+
+
+### Control de errores
+En CUDA no se devuelven ni se lanzan errores.
+`cudaGetLastError()` almacena el último error lanzado por la GPU.
+
+### Eventos
+Puesto que las llamadas al kernel son asíncronas, se puede utilizar `cudaDevideSyncrhonize()` o `cudaMemcpy()` que son síncronas para evitar devolver el control a la CPU.
+
+Pero también se pueden utilizar eventos: `cudaEvent_t` → `cudaEventCreate()` → `cudaEventRecord()` → `cudaEventSynchronize()` → `cudaEventElapsedTime()` → `cudaEventDestroy()`.
+
+### Reserva de memoria
+- **Para reservar:** `cudaMalloc()`, `cudaMallocPitch()`, `cudaMalloc3D()`, `cudaMallocHost()`.
+- **Para liberar:** `cudaFree()`, `cudaFreeHost()`.
+- **Para inicializar:** `cudaMemset()`.
+- **Para copiar:** `cudaMemcpy()`, `cudaMemcpyAsync()`.
+	- Hay que indicar el tipo: *DeviceToDevice*, *DeviceToHost*, *HostToDevice*, *HostToHost, *Default*...
+- **Para prebuscar:** `cudaMemPrefetchAsync()`...
+
+#### Ejemplo clásico
+```C
+int main() {
+	double *Host_Mat, *Device_Mat;
+	int size = m*n*sizeof(double);
+
+	Host_Mat = (double *) calloc (size);
+	cudaMalloc = ((void **) &Device_Mat, size);
+
+	cudaMemcpy(Device_Mat, Host_Mat, size, cudaMemcpyHostToDevice);
+	// trabajo en CPU y GPU
+	cudaMemcpy(Host_Mat, Device_Mat, size, cudaMemcpyDeviceToHost);
+
+	cudaFree(Device_Mat);
+	free(Host_Mat);
+}
+```
+
+### Pinned memory
+`cudaHostALloc(void ** ptr, size_t size, unsigned int flag);
+
+Reserva memoria en la RAM del host y accesible a la PGU.
+- Es de tipo page-locked, que acelera las transferencias de información.
+- Su uso excesivo puede degradar el rendimiento.
+- Tiene limitaciones y problemas de estabilidad si no se utiliza correctamente.
+
+```C
+float *a;
+float *d_a;
+
+cudaHostAlloc((void **) &a, vytes, cudaHostAllocMapped);
+cudahostGetDevicePointer((void **) &d_a, (void *) a, 0);
+kernel<<<...>>>(..., d_a);
+```
+
+#### Ejemplo clásico II
+```C
+int main() {
+	double *Host_Mat, *Device_Mat;
+	int size = m*n*sizeof(double);
+
+	cudaHostAlloc((void **) &Host_Mat, size, cudaHostAllocMapped);
+	cudaHostGetDevicePointer((void **) &Device_Mat, (void *) Host_Map, 0);
+
+	cudaMemcpy(Device_Mat, Host_Mat, size, cudaMemcpyHostToDevice);
+	// trabajo en CPU y GPU
+	cudaMemcpy(Host_Mat, Device_Mat, size, cudaMemcpyDeviceToHost);
+
+	cudaFreeHost(Host_Mat);
+}
+```
+
+### Unified memory
+`cudaMallocManaged(void** devPtr, size_t size, unsigned int flag)`
+
+La reserva se hace en cualquier memoria, accesible por la GPU y la CPU.
+- Las transferencias son invisibles al programador.
+- Solían tener problemas en arquitecturas previas, pero ahora merece más la pena que la estructura clásica de memoria.
+
+**Flags:**
+- *cudaMemAttachGlobal*: accesible por cualquier strema en cualquier dispositivo.
+- *cudaMemAttachHost*: no accesible por dispositivos con attributo *cudaDevAttrConcurrentManagedAccess* con valor 0.
+
+#### Ejemplo clásico III
+```C
+int main() {
+	double *Mat;
+	int size = m*n*sizeof(double);
+
+	cudaMallocManaged(&Mat, size);
+	// trabajo en CPU y GPU
+	cudaDeviceSynchronize();
+
+	cudaFree(Mat);
+}
+```
+
+### Memoria de constantes
+Memorias rápidas preparadas para lectura, no para escritura.
+```C
+__constant__ double foo[5];
+double bar[5] = {1.0, 4.0, 6.0, 4.0, 1.0};
+cudaMemcpyToSymbol(foo, bar, sizeof(bar));
+```
+
+### Shared memory
