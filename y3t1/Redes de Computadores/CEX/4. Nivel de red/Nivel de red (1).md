@@ -89,4 +89,67 @@ Encaminamiento de paquetes desde el origen hasta el destino.
 - Direcciones libres para *n* bits → 2<sup>n</sup>-2
 
 Para generar subredes, se puede expandir la máscara:
-| ![[_resources/Pasted image 20221024135221.png|560]] | ![[_resources/Pasted image 20221024135235.png|560]] | 
+| ![[_resources/Pasted image 20221024135221.png\|560]] | ![[_resources/Pasted image 20221024135235.png\|560]] |
+| ---------------------------------------------------- | ---------------------------------------------------- |
+
+#### <mark style="background: #BBFABBA6;">Ejemplo 2</mark>
+![[_resources/Nivel de red (1) 2022-10-25 10.13.21.excalidraw]]
+
+### Protocolo NAT
+- Gestiona la posible escasez de direciones IP dentro de una subred.
+- Utiliza el campo de puerto de las cabeceras de nivel de transporte.
+
+## IPv6
+- Implementa mejoras sobre IPv4.
+- Aumenta la cantidad de direcciones existentes en Internet.
+- Compatible hacia atrás, pero IPv4 no es plenamente compatible con él.
+- NO muy ampliamente extendido.
+- Utiliza direcciones agrupadas en 8 bytes y escritas en hexadecimal: `8000:0000:0000:0000:0123:4567:89AB:CDEF`
+
+## Segmentación y reensamblado
+- Las redes individuales pueden especificar tamaños máximos de paquetes diferentes.
+- Se debe conocer: MTU (*Maximum Transfer Unit*) del nivel de enlace.
+- Segmentar si el tamaño del datagrama es mayor que el MTU:
+	- Se generan varios datagramas.
+	- El tamaño de los datagramas no es fijo.
+	- La segmentación puede producirse en el emisor o por culpa de un router intermedio.
+		- El nuevo datagrama contiene un offset que indica la porción de datos enviado en este paquete en relación al paquete original.
+- Se segmenta en el origen o por el camino y se reensambla en el destino.
+- Si se pierden paquetes, se descarta el reensamblaje.
+	- Será la capa de transporte la encargada de pedir el reenvío.
+	- Tiempo de vida para el reensamblado: asignar un tiempo al recibir el primer segmento. Si el tiempo expira sin completar el reensamblaje, se descarta.
+	- Tiempo de vida del datagrama: si expira el tiempo de vida de un fragmento, se descarta el reensamblaje.
+
+# Redes de datagramas y circuitos virtuales
+
+## Redes de datagramas
+- Proporcionan un servicio de red no orientado a conexión.
+- Cada paquete puede seguir una ruta distinta a lo largo de la red.
+
+- No se determina una ruta anticipadamente.
+- Cada datagrama se <u>encamina independientemente</u> con lo que puede seguir rutas diferentes.
+- Los nodos mantienen una <u>tabla de encaminamiento</u> con las redes conocidas para encaminar los paquetes en función de su red de destino.
+- El datagrama deberá contener la dirección completa del destinatario y del origen.
+
+### Ventajas
+- No consume recursos en el establecimiento de la conexión.
+- Tiempo nulo de establecimiento de conexión.
+- Robustez ante caídas de red.
+- Más difícill interceptar los mensajes completos (seguridad).
+- No neecsita almacenar la información sobre múltiples circuitos virtuales.
+
+
+## Redes de circuitos virtuales
+- Proporcionan un servicio de red orientado a conexión.
+- Los paquetes siguen el mismo "circuito virtual" a lo largo de toda la red.
+
+- Establecen una ruta predeterminada al inicio de cada conexión.
+- Se almacenan los siguientes nodos en una tabla.
+- Los nodos no necesitan calcular la ruta cada vez que llega un paquete.
+- Todos los paquetes circulan por la misma ruta.
+- Una vez que se termina la conexión, se liberan los recursos.
+
+### Ventajas
+- No se genera sobrecarga por el cálculo de las rutas en cada nodo.
+- Paquetes más ligeros al no utilizar direcciones completas.
+- Mayor fiabilidad y QoS.

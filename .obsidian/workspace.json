@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "e184f61ec0602b4a",
+        "id": "f8d95ed79dfbfd25",
         "type": "tabs",
         "children": [
           {
-            "id": "e0f4baed1b2911bb",
+            "id": "c88d466ac747f03b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Compute Unified Device Architecture (CUDA).md",
+                "file": "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (1).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a4ff2a841bab1b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (2).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Compute Unified Device Architecture (CUDA).md",
+                "file": "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (2).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Compute Unified Device Architecture (CUDA).md"
+                "file": "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (2).md"
               }
             }
           },
@@ -124,17 +138,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "e0f4baed1b2911bb",
+  "active": "7a4ff2a841bab1b5",
   "lastOpenFiles": [
     "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (1).md",
-    "y3t1/Redes de Computadores/PL/Práctica 2. Introducción a Packet Tracer.md",
+    "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (2).md",
+    "y2t2/Computación (CN)/CEX/6. Optimización numérica.md",
+    "y3t1/Redes de Computadores/CEX/4. Nivel de red/_resources/Nivel de red (1) 2022-10-25 10.13.21.excalidraw.md",
     "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Compute Unified Device Architecture (CUDA).md",
+    "y3t1/Redes de Computadores/PL/Práctica 2. Introducción a Packet Tracer.md",
     "y3t1/Redes de Computadores/PL/Práctica 1. Conexión física.md",
     "y3t1/Redes de Computadores/PL/Práctica 2. Tutorial de Packet Tracer.md",
     "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/2.2. ASI/ASI (3).md",
-    "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/2.2. ASI/ASI (2).md",
-    "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/2.2. ASI/Proceso de análisis.md",
-    "y3t1/Configuración (CES)/4. Modelado de rendimiento/Simulación de sistemas.md",
-    "y3t1/Administración de Sistemas/4. Configuración de red/Configuración de red.md"
+    "y3t1/Ingeniería de Software (ISoft)/CEX/2. Proceso de análisis y técnicas/2.2. ASI/ASI (2).md"
   ]
 }
