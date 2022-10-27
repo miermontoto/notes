@@ -16,3 +16,10 @@
 ##### <mark style="background: #BBFABBA6;">Ejercicios</mark>
 ![[_resources/Evaluación de prestaciones 2022-09-20 09.44.21.excalidraw]]
 ![[_resources/Evaluación de prestaciones 2022-09-20 09.54.24.excalidraw]]
+
+### <mark style="background: #BBFABBA6;">Ejercicio "fin carrera"</mark>
+Dadas dos matrices cuadradas de dimensiones n (n es par) se pretende resolver el problema: "aplicar un conjunto de reotaciones de 90º sobre una de las matrices".
+
+Aplicar de forma rigurosa las fases de diseño para obtener un algoritmo paralelo óptimo para el cálculo del máximo.
+Calcular sus tiempos de ejeucición secuencial, el paralelo, la eficiencia...
+![[_resources/Ejemplos y ejercicios 2022-10-27 11.28.57.excalidraw]]

@@ -70,7 +70,7 @@ Fijarse en los datos del dominio, no en el cálculo.
 #### Descomposición Funcional
 Lo contrario a [[#Descomposición del dominio]].
 
-### 2. Comunicaciones
+### (2) Comunicaciones
 Las tareas creadas se pueden ejecutar concurrentemente, pero no de forma independiente.
 
 Las comunicaciones, cuando es funcional, hay muchos nodos y pocas flechas.
@@ -150,7 +150,7 @@ Determinar dónde y en qué orden se debe ejecutar.
 > [!FAQ] Sobre el examen
 > Este punto solo entra de manera teórica.
 
-#### Estrategias Gneerales de Asignación
+#### Estrategias Generales de Asignación
 - Asignación estática o planificación determinista
 	- Las decisiones de asignación se toman antes de la ejecución.
 	- Sencillo de usar y no añade sobrecarga.

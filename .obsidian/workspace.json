@@ -8,43 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fcb24bf90adc4fb1",
+            "id": "fb70208af71e2f0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/Configuración (CES)/4. Modelado de rendimiento/Simulación de sistemas.md",
+                "file": "y3t1/PCP/CEX/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "dd715cf335dd5f69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "y3t1/Configuración (CES)/PL/JMT resultados.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bcf9c2f5eb8a0041",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "y3t1/Configuración (CES)/2. Medición de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 09.11.44.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Configuración (CES)/2. Medición de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 09.11.44.excalidraw.md",
+                "file": "y3t1/PCP/CEX/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Configuración (CES)/2. Medición de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 09.11.44.excalidraw.md"
+                "file": "y3t1/PCP/CEX/1. Evaluación de prestaciones/Ejemplos y ejercicios.md"
               }
             }
           },
@@ -145,20 +121,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "bcf9c2f5eb8a0041",
+  "active": "fb70208af71e2f0c",
   "lastOpenFiles": [
+    "y3t1/PCP/CEX/1. Evaluación de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 11.28.57.excalidraw.md",
+    "y3t1/PCP/CEX/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
+    "y3t1/PCP/CEX/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
+    "y3t1/PCP/CEX/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
+    "y3t1/Administración de Sistemas/PA/Docker.md",
     "y3t1/Configuración (CES)/2. Medición de prestaciones/Ejemplos y ejercicios.md",
-    "y3t1/Configuración (CES)/2. Medición de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 09.05.01.excalidraw.md",
-    "y3t1/Configuración (CES)/PL/JMT resultados.md",
     "y3t1/Configuración (CES)/4. Modelado de rendimiento/Simulación de sistemas.md",
-    "y3t1/Administración de Sistemas/5. Servicios de red/Servicios de red.md",
-    "y3t1/Administración de Sistemas/5. Servicios de red/Correo electrónico y protocolos.md",
-    "y3t1/Administración de Sistemas/5. Servicios de red/Servicios web en Linux.md",
-    "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (2).md",
-    "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (1).md",
-    "y2t2/Computación (CN)/CEX/6. Optimización numérica.md"
+    "y3t1/Configuración (CES)/PL/JMT resultados.md",
+    "y3t1/Configuración (CES)/2. Medición de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 09.11.44.excalidraw.md",
+    "y3t1/Configuración (CES)/2. Medición de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 09.05.01.excalidraw.md"
   ]
 }
