@@ -1,0 +1,1 @@
+![[_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw]]

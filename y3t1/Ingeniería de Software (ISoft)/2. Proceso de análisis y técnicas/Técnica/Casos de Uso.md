@@ -1,5 +1,5 @@
 # Casos de Uso
-![[2.1. EVS/_resources/ISOF - 2 - Tecnica - CUs.pdf]]
+![[../2.1. EVS/_resources/ISOF - 2 - Tecnica - CUs.pdf]]
 
 ---
 

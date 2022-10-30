@@ -19,8 +19,32 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6e07e9d45c4f82b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "y3t1/Administración de Sistemas/PA/Docker.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "77e37094ecfd2ded",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "others/quick/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/PCP/CEX/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
+                "file": "others/quick/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/PCP/CEX/1. Evaluación de prestaciones/Ejemplos y ejercicios.md"
+                "file": "others/quick/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.png"
               }
             }
           },
@@ -121,17 +145,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fb70208af71e2f0c",
+  "active": "60e0d278280a16c5",
   "lastOpenFiles": [
-    "y3t1/PCP/CEX/1. Evaluación de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 11.28.57.excalidraw.md",
-    "y3t1/PCP/CEX/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
-    "y3t1/PCP/CEX/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
-    "y3t1/PCP/CEX/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
+    "others/quick/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.md",
+    "others/quick/Admin, prac5, topología.md",
     "y3t1/Administración de Sistemas/PA/Docker.md",
-    "y3t1/Configuración (CES)/2. Medición de prestaciones/Ejemplos y ejercicios.md",
-    "y3t1/Configuración (CES)/4. Modelado de rendimiento/Simulación de sistemas.md",
-    "y3t1/Configuración (CES)/PL/JMT resultados.md",
-    "y3t1/Configuración (CES)/2. Medición de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 09.11.44.excalidraw.md",
-    "y3t1/Configuración (CES)/2. Medición de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 09.05.01.excalidraw.md"
+    "others/quick/ASI, diagramas de casos de uso.md",
+    "y3t1/PCP/PL/prac02.md",
+    "y3t1/PCP/PL/prac01.md",
+    "y3t1/PCP/CEX/3. Memoria Compartida (OpenMP)/Rumbo al Paralelismo.md",
+    "y3t1/PCP/CEX/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
+    "y3t1/PCP/CEX/1. Evaluación de prestaciones/_resources/Ejemplos y ejercicios 2022-10-27 11.28.57.excalidraw.md",
+    "y3t1/PCP/CEX/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md"
   ]
 }
