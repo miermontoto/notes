@@ -70,7 +70,7 @@ Fijarse en los datos del dominio, no en el cálculo.
 #### Descomposición Funcional
 Lo contrario a [[#Descomposición del dominio]].
 
-### (2) Comunicaciones
+### (2) Comunicar
 Las tareas creadas se pueden ejecutar concurrentemente, pero no de forma independiente.
 
 Las comunicaciones, cuando es funcional, hay muchos nodos y pocas flechas.
@@ -100,7 +100,7 @@ Las comunicaciones, en el dominio, es justo lo contrario.
 | ![[_resources/Pasted image 20220927095521.png|700]] | ![[_resources/Pasted image 20220927095547.png|700]] |
 
 
-### 3. Agrupar
+### (3) Agrupar
 - Las prestaciones se degradan por dependencias, alto porcentaje de tiempo secuencial, comunucaciones, mala distribución de la carga...
 - Aumenta la ganularidad de las tareas puede mejorar la eficiencia de los algoritmos paralelos.
 - **Objetivo:** reducir costes, minimizar comunicaciones.
@@ -110,7 +110,7 @@ Las comunicaciones, en el dominio, es justo lo contrario.
 - Minimizar el teimpo de comunicación.
 - Minimizar el tiempo de ocio.
 
-#### EStrategias
+#### Estrategias
 - **Minimizar volumen de datos transferidos**
 - **Reducir la frecuencia de interacciones**
 
@@ -140,7 +140,7 @@ El número de comunicaciones que requiere cada tarea es proporcional a la superf
 - Agrupar tareas que no se pueden ejecutar concurrentemente disminuye el número de comunicaciones sin degradar el nivel de paralelismo.
 - <mark style="background: #FFB86CA6;">!!!!</mark>
 
-### 4. Asignar
+### (4) Asignar
 Determinar dónde y en qué orden se debe ejecutar.
 - En diseño: asignar o planificar tareas en procesos.
 - En ejecución: asignar procesos a procesadores.
@@ -151,9 +151,9 @@ Determinar dónde y en qué orden se debe ejecutar.
 > Este punto solo entra de manera teórica.
 
 #### Estrategias Generales de Asignación
-- Asignación estática o planificación determinista
-	- Las decisiones de asignación se toman antes de la ejecución.
-	- Sencillo de usar y no añade sobrecarga.
+##### Asignación estática o planificación determinista
+- Las decisiones de asignación se toman antes de la ejecución.
+- Sencillo de usar y no añade sobrecarga.
 
 ##### Asignación dinámica
 - Se realiza en tiempo de ejecución, de forma centralizada o distribuida.

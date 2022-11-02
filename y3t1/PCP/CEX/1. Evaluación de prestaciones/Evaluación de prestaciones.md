@@ -1,5 +1,3 @@
-# Evaluación de prestaciones
-
 ## Antecedentes
 - **Tiempo de Ejeución Secuencial:** tiempo que tarda en ejeuctarse el programa en una sola unidad de proceso.
 	- El análisis se hace en [[#FLOPs]] (operaciones flotantes por segundo).
