@@ -1,5 +1,3 @@
-# Fundamentos del Diseño de Algoritmos
-**Paralelizar.** Dividir el problema en subproblemas susceptibles de resolverse a la vez (concurrente).
 
 # Estrategias
 - **Grafos de dependencias:** descomposición, análisis, optimización, asignación, ...

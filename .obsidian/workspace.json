@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5eb8917754d0a03b",
+            "id": "fb70208af71e2f0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/_about_.md",
+                "file": "y3t1/PCP/CEX/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,25 +21,12 @@
             }
           },
           {
-            "id": "ee7f8fa4fecd9b85",
+            "id": "0e4718965a2e4949",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/Otros/PA3.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e77176516460581a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "y3t1/PCP/CEX/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
+                "file": "y3t1/PCP/CEX/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -76,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "semáforo",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/Otros/PA3.md",
+                "file": "y3t1/PCP/CEX/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "y3t1/Ingeniería de Software (ISoft)/Otros/PA3.md"
+                "file": "y3t1/PCP/CEX/1. Evaluación de prestaciones/Evaluación de prestaciones.md"
               }
             }
           },
@@ -145,20 +132,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "ee7f8fa4fecd9b85",
+  "active": "0e4718965a2e4949",
   "lastOpenFiles": [
-    "y3t1/Ingeniería de Software (ISoft)/_about_.md",
-    "y3t1/Administración de Sistemas/PA/Cloud Computing.md",
+    "y3t1/PCP/CEX/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
     "y3t1/PCP/CEX/1. Evaluación de prestaciones/Evaluación de prestaciones.md",
     "y3t1/PCP/CEX/1. Evaluación de prestaciones/Ejemplos y ejercicios.md",
-    "y3t1/Configuración (CES)/PA/PA2.md",
-    "y3t1/Configuración (CES)/PL/JMT resultados.md",
-    "y3t1/Redes de Computadores/PA/_resources/PA3 - T4 2022-10-31 13.50.25.excalidraw.md",
-    "y3t1/Redes de Computadores/PA/PA3 - T4.md",
-    "y3t1/Redes de Computadores/PA/_resources/PA3 - T4 2022-10-31 13.36.31.excalidraw.md",
-    "y3t1/Redes de Computadores/PA/_resources/PA3 - T4 2022-10-31 13.28.22.excalidraw.md"
+    "y3t1/PCP/PL/prac02.md",
+    "y3t1/PCP/PL/prac01.md",
+    "y3t1/Configuración (CES)/_about_.md",
+    "y3t1/Administración de Sistemas/PA/Docker.md",
+    "others/quick/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.png",
+    "y3t1/Ingeniería de Software (ISoft)/3. Proceso de diseño/Diseño (DSI).md",
+    "y3t1/Ingeniería de Software (ISoft)/3. Proceso de diseño/Construcción (CSI).md"
   ]
 }

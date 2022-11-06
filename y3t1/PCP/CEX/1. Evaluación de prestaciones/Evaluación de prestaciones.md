@@ -1,8 +1,6 @@
 ## Antecedentes
 - **Tiempo de Ejeución Secuencial:** tiempo que tarda en ejeuctarse el programa en una sola unidad de proceso.
 	- El análisis se hace en [[#FLOPs]] (operaciones flotantes por segundo).
->[!ERROR]- No relevante
->No es importante para el análisis, es más importante el tiempo de ejec. paralelo.
 
 - La medición del **rendimiento** de un problema se realiza utilizando solo el tamaño del problema y el número de procesadores.
 - Se tienen en cuenta mediciones empíricas, en combinaciones con el modelo teórico.
@@ -91,7 +89,7 @@ Sea $\alpha (n)+\beta (n)=1$, entonces $S(n,p) = \frac{T(n)}{T(n,p)} = \frac{p}{
 
 Aplicando esto, si el algoritmo es: 
 	- paralelizable en un 90%: $S(n,p) = \frac{p}{(p-1)0.1 + 1} \lt \frac{1}{0.1} = 10$
-	- paralelizable en un 50%: $S(n,p) = \frac{p}{(p-1)0.5 + 1} \lt \frac{1}{0.5} = 2$$
+	- paralelizable en un 50%: $S(n,p) = \frac{p}{(p-1)0.5 + 1} \lt \frac{1}{0.5} = 2$
 ![[_resources/Pasted image 20220915125305.png]]
 
 Haciendo manipulaciones algebráicas: $$S(n,p) = \frac{1}{(1-FP)+\frac{PF}{p}}$$donde PF es el % de fracción paralela (en tanto por uno).
@@ -128,7 +126,7 @@ $$RE_{dp}=\frac{1}{(1-PF)+\frac{PF}{p}}\times clock_{GHz}\times\frac{nºflop}{ci
 - A menor aumento de ω al aumentar *p*, mayor escalabilidad.
 
 #### Procedimiento de cálculo #2:
-![[_resources/Pasted image 20220920092539.png|1050]]
+![[_resources/Pasted image 20220920092539.png]]
 
 ### [[Ejemplos y ejercicios#Ejercicios Escalabilidad|Ejercicios de escalabilidad]]
 
