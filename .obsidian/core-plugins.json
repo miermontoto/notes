@@ -2,13 +2,11 @@
   "file-explorer",
   "global-search",
   "switcher",
-  "outgoing-link",
-  "tag-pane",
   "page-preview",
   "command-palette",
   "editor-status",
-  "outline",
   "word-count",
+  "slides",
   "audio-recorder",
   "file-recovery"
 ]

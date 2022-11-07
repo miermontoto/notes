@@ -7,7 +7,7 @@ Existen tres tipos principales de medios de cobre que se utilizan en redes:
 - Par trenzado no blindado (UTP)
 	- Cuatro pares de hilos codificados por color y trenzados.
 	- La mala terminación del cable puede suponer un mal rendimiento.
-	- ![[_resources/Pasted image 20221017094947.png|850]]
+	- ![[Pasted image 20221017094947.png|850]]
 | Tipo de cable             | Estándar                            | Capa de aplicación                              |
 | ------------------------- | ----------------------------------- | ----------------------------------------------- |
 | Cable directo de Ethernet | Extremos con estándares iguales.    | Conecta un host de red a un dispositivo de red. |

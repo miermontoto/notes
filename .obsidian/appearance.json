@@ -1,5 +1,12 @@
 {
   "accentColor": "",
   "theme": "moonstone",
-  "cssTheme": "Things"
+  "cssTheme": "Things",
+  "interfaceFontFamily": "SF Pro Display",
+  "textFontFamily": "SF Pro Text",
+  "monospaceFontFamily": "JetBrains Mono",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "math"
+  ]
 }

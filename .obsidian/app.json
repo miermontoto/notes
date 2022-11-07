@@ -1,27 +1,14 @@
 {
-  "legacyEditor": false,
-  "livePreview": true,
-  "promptDelete": false,
   "alwaysUpdateLinks": true,
+  "promptDelete": false,
   "readableLineLength": false,
+  "strictLineBreaks": false,
+  "showFrontmatter": false,
+  "foldHeading": true,
   "showLineNumber": false,
-  "spellcheckLanguages": [
-    "en-US",
-    "es-ES"
-  ],
-  "spellcheck": false,
-  "fileSortOrder": "byCreatedTimeReverse",
-  "trashOption": "system",
+  "showIndentGuide": true,
+  "autoPairMarkdown": false,
   "newFileLocation": "current",
   "newLinkFormat": "relative",
-  "showUnsupportedFiles": true,
-  "attachmentFolderPath": "./_resources",
-  "foldIndent": true,
-  "foldHeading": false,
-  "pdfExportSettings": {
-    "pageSize": "A4",
-    "landscape": false,
-    "margin": "0",
-    "downscalePercent": 100
-  }
+  "attachmentFolderPath": "./_resources"
 }
