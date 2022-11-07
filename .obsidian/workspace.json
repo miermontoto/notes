@@ -4,16 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "344e382546b0bf4b",
+        "id": "ad93f8f0653ffe6a",
         "type": "tabs",
         "children": [
           {
-            "id": "b0ebb13aeac11fbc",
+            "id": "fb70208af71e2f0c",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "y3t1/Redes de Computadores/Otros/_resources/(PA) Tema 2 (PA1) 2022-11-07 13.48.06.excalidraw.md"
+                "file": "y3t1/Administración de Sistemas/Otros/(PL) prac5, topología.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
@@ -46,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "semáforo",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.51103591918945
+    "width": 322.5
   },
   "right": {
     "id": "22ff9cec8883e419",
@@ -76,25 +79,58 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "f4aee3f403b015a4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "y3t1/Administración de Sistemas/Otros/(PL) prac5, topología.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f39aebbd1f465305",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "y3t1/Administración de Sistemas/Otros/(PL) prac5, topología.md"
+              }
+            }
+          },
+          {
+            "id": "f04ed5c059d8f4c6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "b0ebb13aeac11fbc",
+  "active": "60e0d278280a16c5",
   "lastOpenFiles": [
-    "y3t1/Redes de Computadores/Otros/(PA) Tema 2 (PA1).md",
-    "y3t1/Redes de Computadores/Otros/_resources/(PA) Tema 2 (PA1) 2022-11-07 13.43.41.excalidraw.md",
-    "y3t1/Redes de Computadores/Otros/_resources/(PA) Tema 2 (PA1) 2022-11-07 13.36.46.excalidraw.md",
-    "y3t1/Redes de Computadores/Otros/_resources/(PA) Tema 2 (PA1) 2022-11-07 13.29.08.excalidraw.md",
-    "y3t1/Redes de Computadores/Otros/_resources/(PA) Tema 2 (PA1) 2022-11-07 13.26.19.excalidraw.md",
+    "y3t1/PCP/CEX/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
+    "y3t1/Administración de Sistemas/Otros/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.png",
+    "y3t1/Administración de Sistemas/Otros/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.md",
+    "y3t1/Redes de Computadores/Otros/(PL) Práctica1.md",
+    "y3t1/Redes de Computadores/Otros/(PL) Entrega1.md",
     "y3t1/Redes de Computadores/Otros/(PA) Tema 4 (PA3).md",
-    "y3t1/Redes de Computadores/Otros/_resources/(PA) Tema 2 (PA1) 2022-11-07 13.23.55.excalidraw.md",
-    "y3t1/Ingeniería de Software (ISoft)/CEX/3. Proceso de diseño/Técnicas de diseño.md",
-    "y3t1/Redes de Computadores/Otros/_resources/(PA) Tema 2 (PA1) 2022-11-07 13.13.04.excalidraw.md",
-    "y3t1/Redes de Computadores/Otros/(PL) Práctica4.md"
+    "y3t1/Redes de Computadores/Otros/(PA) Tema 2 (PA1).md",
+    "y3t1/Redes de Computadores/Otros/Práctica 1. Conexión física.md",
+    "y3t1/Redes de Computadores/Otros/PA3 - T4.md",
+    "y3t1/Redes de Computadores/Otros/IPs práctica 4.md"
   ]
 }

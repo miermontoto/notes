@@ -14,4 +14,4 @@ Existen tres tipos principales de medios de cobre que se utilizan en redes:
 | Cruzado Ethernet          | Extremos con estándares diferentes. | Conecta dos hosts de red o dos dispositivos de red.
 - Par trenzado blindado (STP)
 - <strike>Coaxial</strike>
-	- Fibra óptica
+- Fibra óptica

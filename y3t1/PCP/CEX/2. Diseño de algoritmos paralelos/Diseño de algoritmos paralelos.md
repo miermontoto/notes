@@ -1,4 +1,6 @@
+MDI-X → Medium-dependent interface crossover.
 
+Existen tres tipos prin
 # Estrategias
 - **Grafos de dependencias:** descomposición, análisis, optimización, asignación, ...
 - **Esquemas algorítmicos**
