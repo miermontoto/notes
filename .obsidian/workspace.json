@@ -19,8 +19,48 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "352761e050b15e0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Garantía de funcionamiento (dependability).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a06680c72f9e195e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Técnicas de modelado y predicción de la garantía de funcionamiento.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "24abe02891a49d5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/RAID?.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,17 +138,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fb70208af71e2f0c",
+  "active": "24abe02891a49d5f",
   "lastOpenFiles": [
-    "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Correo electrónico y protocolos.md",
+    "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Técnicas de modelado y predicción de la garantía de funcionamiento.md",
+    "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Garantía de funcionamiento (dependability).md",
     "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Servicios de red.md",
+    "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Correo electrónico y protocolos.md",
     "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Servicios web en Linux.md",
     "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (2).md",
     "y3t1/Redes de Computadores/Otros/_resources/(PA) Tema 2 (PA1) 2022-11-07 13.48.06.excalidraw.md",
     "y3t1/Redes de Computadores/Otros/(PA) Tema 2 (PA1).md",
     "y3t1/Administración de Sistemas/Otros/(PL) prac5, topología.md",
-    "y3t1/PCP/CEX/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
-    "y3t1/Administración de Sistemas/Otros/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.png",
-    "y3t1/Administración de Sistemas/Otros/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.md"
+    "y3t1/PCP/CEX/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md"
   ]
 }
