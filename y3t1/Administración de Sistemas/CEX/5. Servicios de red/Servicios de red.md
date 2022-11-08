@@ -15,3 +15,5 @@ Opciones:
 # Samba
 Compartición de archivos con Windows.
 
+# DNS
+
