@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/Administración de Sistemas/Otros/(PL) prac5, topología.md",
+                "file": "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (2).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -81,28 +81,6 @@
             }
           },
           {
-            "id": "f4aee3f403b015a4",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "y3t1/Administración de Sistemas/Otros/(PL) prac5, topología.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "f39aebbd1f465305",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "y3t1/Administración de Sistemas/Otros/(PL) prac5, topología.md"
-              }
-            }
-          },
-          {
             "id": "f04ed5c059d8f4c6",
             "type": "leaf",
             "state": {
@@ -113,24 +91,24 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "60e0d278280a16c5",
+  "active": "fb70208af71e2f0c",
   "lastOpenFiles": [
+    "y3t1/Redes de Computadores/Otros/_resources/(PA) Tema 2 (PA1) 2022-11-07 13.48.06.excalidraw.md",
+    "y3t1/Redes de Computadores/Otros/(PA) Tema 2 (PA1).md",
+    "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (2).md",
+    "y3t1/Administración de Sistemas/Otros/(PL) prac5, topología.md",
     "y3t1/PCP/CEX/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md",
     "y3t1/Administración de Sistemas/Otros/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.png",
     "y3t1/Administración de Sistemas/Otros/_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw.md",
     "y3t1/Redes de Computadores/Otros/(PL) Práctica1.md",
     "y3t1/Redes de Computadores/Otros/(PL) Entrega1.md",
-    "y3t1/Redes de Computadores/Otros/(PA) Tema 4 (PA3).md",
-    "y3t1/Redes de Computadores/Otros/(PA) Tema 2 (PA1).md",
-    "y3t1/Redes de Computadores/Otros/Práctica 1. Conexión física.md",
-    "y3t1/Redes de Computadores/Otros/PA3 - T4.md",
-    "y3t1/Redes de Computadores/Otros/IPs práctica 4.md"
+    "y3t1/Redes de Computadores/Otros/(PA) Tema 4 (PA3).md"
   ]
 }

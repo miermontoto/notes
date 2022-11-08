@@ -63,3 +63,74 @@ Se utilizan protocolos de encaminamiento para obtener la mejor ruta posible.
 - Los diferentes nodos almacenan información de por dónde tienen que enrutar el tráfico.
 - Las métricas de la distancia pueden ser variables: retardo, velocidad, distancia...
 - Algoritmo de Dijkstra
+
+### Algoritmo de la patata caliente
+- Enviar los datagramas por la cola de la menor longitud.
+- Combinar la carag de la línea con la dirección preferida de envío.
+- Equilibra las cargas entre las redes.
+
+### Algoritmo de aprendizaje hacia atrás
+- Cada paquete tiene un contador que se incrementa cada vez que se da un salto.
+- Si un nodo recibe un paquete por la línea k de H y tiene un 4 en el contador, sabe que enviando por esa línea estará como mucho a 4 saltos.
+
+### Algoritmo de inundación
+- Cada nodo envía el paquete por todas las líneas excepto por la que llegó.
+- Los paquetes enviados cuentan con un contador que se decrementa por cada salto que da.
+- Se pueden implementar mejoras para evitar reenviar paquetes repetidos.
+- El emisor necesita conocer la distancia al receptor, o al menos el tamaño máximo de la red.
+
+#### <mark style="background: #BBFABBA6;">Ventajas</mark>
+- Extremadamente robusto.
+- Al menos una copia ha llegado por el camino más corto posible. Útil para establecer un circuito virtual.
+- Se recorren todos los nodos de la red.
+
+#### <mark style="background: #FF5582A6;">Inconvenientes</mark>
+- Se genera demasiado tráfico.
+
+### Algoritmo de vector de distancias
+- Todos los enrutadores de la red mantienen una tabla con el resto de nodos de la red, el siguiente nodo de envío y una métrica que indicas cuánto tardan en alcanzarlos.
+- Se pretende encontrar el camino más corto entre todos los nodos de la red.
+- Al inicio del algoritmo, los nodos solo conocen la métrica con sus vecinos, mientras que la métrica con el resto se considera infinita.
+- Los nodos vecinos intercambian información de forma periódica.
+- Después de varias iteraciones, todos los nodos completan una tabla con información de toda la red.
+- Es necesario ajustar la frecuencia de los intercambios.
+- El algoritmo se adapta muy bien a las mejoras en las redes.
+- Tiene una convergencia muy lenta en el caso de caída de algún nodo - tiende a infinito.
+
+### Algoritmo de estado de enlace
+- Es el más utilizado en Internet a día de hoy.
+- Sigue cinco pasos:
+	1. Descubrir a los nodos vecinos y conocer su dirección.
+	2. Establecer el coste hasta cada uno de ellos.
+	3. Crear un paquete para transmitir esa información.
+	4. Difundir ese paquete por todas las interfaces.
+	5. Calcular la ruta más corta utilizando la información recibida.
+- Todos los nodos reciben todos los paquetes.
+- Es un elemento clave decidir cuando se reenvía.
+
+## Encaminamiento jerárquico
+- Para redes de gran tamaño, no es viable que todos los nodos conozcan a todos → Encaminamiento mediante sistemas jerárquicos.
+- Existen una serie de nodos, que conectan redes entre sí.
+- Puede poseer múltiples niveles y cada uno de ellos utilizar un mecanismo de encaminamiento diferente.
+	- Interior Routing Protocol (IGP)
+	- Exterior Routing Protocol (EGP)
+
+# Control de congestión
+**Congestión:** se produce cuando el tráfico enviado a la red, se aproxima a su capacidad máxima.
+- Elevados tiempos de entrega de paquetes.
+- Paquetes perdidos o descartados.
+- Se produce en un nodo y se propaga hacia atrás.
+
+## Causas
+- Las diferentes nodos no tienen capacidad de procesar todo el tráfico.
+- Las líneas no tienen capacidad para enviar todos los paquetes.
+- Las colas de los nodos poseen memoria limitada.
+- Es necesario realizar un control que no sature la red y provoque elevadas pérdidas de rendimiento.
+- Diferente a control de flujo.
+	- Afecta a a toda la red, no solo a extremos.
+	- Controlar el flujo puede ayudar a controlar la congestión.
+
+## Métodos de control de congestión
+### De ciclo abierto o pasivos
+
+### De ciclo cerrado o activos
