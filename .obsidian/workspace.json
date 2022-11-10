@@ -47,12 +47,12 @@
             }
           },
           {
-            "id": "24abe02891a49d5f",
+            "id": "b74b17f3d5f4d6b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/RAID?.md",
+                "file": "y3t1/PCP/Otros/PA/PA1.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -138,17 +138,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "24abe02891a49d5f",
+  "active": "b74b17f3d5f4d6b2",
   "lastOpenFiles": [
+    "y3t1/PCP/Otros/PA/_resources/PA1 2022-11-10 11.32.48.excalidraw.md",
+    "y3t1/PCP/Otros/PA/PA1.md",
+    "y3t1/PCP/Otros/PA/_resources/PA1 2022-11-10 11.29.19.excalidraw.md",
+    "y3t1/PCP/Otros/PA/_resources/PA1 2022-11-10 11.13.53.excalidraw.md",
     "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Técnicas de modelado y predicción de la garantía de funcionamiento.md",
+    "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/RAID?.md",
     "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Garantía de funcionamiento (dependability).md",
     "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Servicios de red.md",
     "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Correo electrónico y protocolos.md",
-    "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Servicios web en Linux.md",
-    "y3t1/Redes de Computadores/CEX/4. Nivel de red/Nivel de red (2).md",
-    "y3t1/Redes de Computadores/Otros/_resources/(PA) Tema 2 (PA1) 2022-11-07 13.48.06.excalidraw.md",
-    "y3t1/Redes de Computadores/Otros/(PA) Tema 2 (PA1).md",
-    "y3t1/Administración de Sistemas/Otros/(PL) prac5, topología.md",
-    "y3t1/PCP/CEX/2. Diseño de algoritmos paralelos/Diseño de algoritmos paralelos.md"
+    "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Servicios web en Linux.md"
   ]
 }
