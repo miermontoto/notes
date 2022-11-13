@@ -37,7 +37,7 @@ Sea n el número de raíces de f, n≥ 1 ∧ n≤1  ⇒ **f tiene una única ra
   * [a₁, x₁] si f(a₁)f(x₁) < 0.
   * [x₁, b₁] si f(a₁)f(x₁) > 0.
 
-		y se vuelve a dividir el intervalo en x₂.
+	y se vuelve a dividir el intervalo en x₂.
 
 * Al cabo de n etapas, se obtiene un intervalo [an, bn] que verifica:
   * Su longitud es la mitad que el anterior.
