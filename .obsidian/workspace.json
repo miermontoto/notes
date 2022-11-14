@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ad93f8f0653ffe6a",
+        "id": "742370a482f80726",
         "type": "tabs",
         "children": [
           {
-            "id": "fb70208af71e2f0c",
+            "id": "3db190706ff2ecb7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Servicios de red.md",
+                "file": "y3t1/PCP/Otros/PL/prac04.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,38 +21,12 @@
             }
           },
           {
-            "id": "352761e050b15e0c",
+            "id": "cd9978c010fcdd48",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Garantía de funcionamiento (dependability).md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a06680c72f9e195e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Técnicas de modelado y predicción de la garantía de funcionamiento.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b74b17f3d5f4d6b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "y3t1/PCP/Otros/PA/PA1.md",
+                "file": "y3t1/Ingeniería de Software (ISoft)/CEX/3. Proceso de diseño/Arquitectura.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -60,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -138,17 +112,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b74b17f3d5f4d6b2",
+  "active": "cd9978c010fcdd48",
   "lastOpenFiles": [
-    "y3t1/PCP/Otros/PA/_resources/PA1 2022-11-10 11.32.48.excalidraw.md",
-    "y3t1/PCP/Otros/PA/PA1.md",
-    "y3t1/PCP/Otros/PA/_resources/PA1 2022-11-10 11.29.19.excalidraw.md",
-    "y3t1/PCP/Otros/PA/_resources/PA1 2022-11-10 11.13.53.excalidraw.md",
-    "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Técnicas de modelado y predicción de la garantía de funcionamiento.md",
-    "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/RAID?.md",
-    "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Garantía de funcionamiento (dependability).md",
+    "y3t1/PCP/Otros/PL/prac04.md",
+    "y3t1/PCP/Otros/PL/_resources/prac04 2022-11-04 09.17.34.excalidraw.md",
+    "y3t1/Ingeniería de Software (ISoft)/Otros/PA2, parte 1.md",
     "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Servicios de red.md",
-    "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Correo electrónico y protocolos.md",
-    "y3t1/Administración de Sistemas/CEX/5. Servicios de red/Servicios web en Linux.md"
+    "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Garantía de funcionamiento (dependability).md",
+    "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Técnicas de modelado y predicción de la garantía de funcionamiento.md",
+    "y3t1/PCP/Otros/PA/PA1.md",
+    "y3t1/PCP/Otros/PA/_resources/PA1 2022-11-10 11.32.48.excalidraw.md",
+    "y3t1/PCP/Otros/PA/_resources/PA1 2022-11-10 11.29.19.excalidraw.md",
+    "y3t1/PCP/Otros/PA/_resources/PA1 2022-11-10 11.13.53.excalidraw.md"
   ]
 }

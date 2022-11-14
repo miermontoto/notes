@@ -1,0 +1,1 @@
+![[_resources/03.1_PA_Tecnicas_diseño_TR alumnos.pdf]]
