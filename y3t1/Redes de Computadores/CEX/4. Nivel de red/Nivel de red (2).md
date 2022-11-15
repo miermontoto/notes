@@ -132,5 +132,107 @@ Se utilizan protocolos de encaminamiento para obtener la mejor ruta posible.
 
 ## Métodos de control de congestión
 ### De ciclo abierto o pasivos
+- Realizar un buen diseño de la red
+- Seleccionar a priori qué trafico aceptar y descartar
+- Regular el tráfico para que sea predecible
 
 ### De ciclo cerrado o activos
+- Las decisiones se toman cuando aparece la congestión
+- Consta de tres fases:
+	- **Monitorización**: controlar diferentes parámetros de la red.
+		- Longitud promedio de las colas
+		- Nº de paquetes para los que vencen los temporizadores
+		- Retardo promedio de los paquetes
+		- Porcentaje de paquetes descartados por falta de memoria o capacidad de red.
+	- **Envío de información**: informar a todos los nodos afectados que se produce congestión.
+		- El nodo que detecta la congestión envía un paquete especial notificando del problema al origen del tráfico.
+		- Utiliza un campo (bit) del paquete para que los encaminadores avisen de la congestión a sus vecinos.
+		- Host o encaminadores envían periódicamente paquetes de sondeo preguntando por el estado de la congestión.
+		- Importante controlar el tiempo de reacción
+			- Demasiado pronto: el sistema oscilará y nunca convergerá.
+			- Demasiado tarde: el aviso ya no será útil.
+	- **Ajuste del sistema**: introducir diferentes cambios en el sistema para reducir la congestión.
+		- **Alternativas**
+			- Balancear el tráfico entre rutas
+			- Utilizar encaminadores de respaldo, utilizados para la tolerancia a fallos, para encaminar el tráfico
+			- Reducir la inyección de paquetes en la red
+			- Negación de servicio a usuarios
+			- Descartar paquetes
+
+#### Detección temprana aleatoria
+*Random Early Detection (RED)*
+
+- Se aprovecha de la reducción del flujo de datos de TCP cuando se pierden paquetes.
+
+**Opciones:**
+- Cuando se reciben señales de congestión en el propio nodo, se empiezan a descartar paquetes de forma aleatoria.
+- Al reducirse el tamaño de la ventana de transmisión, se reduce el flujo.
+	-  Supone una mejora respectoa  descartar paquetes cuando se llena el buffer, aunque requiere un mayor ajuste.
+
+#### Regulación de tráfico
+Mantener una tasa de encolamiento baja.
+- Es dependiente del tipo de tráfico que se tenga.
+- Si se pasa de un determinado umbral, se toman medidas.
+
+- Envío de paquetes reguladores, que controlen la cantidad de tráfico que se genera.
+	- Puede ser hasta el nodo origen o salto a salto.
+- Notificación explícita de congestión (bit *ECN* en cabecera IP)
+
+#### Control de admisión - Circuitos virtuales
+- No se establecen nuevas rutas hasta que la red pueda trabajar con el tráfico que ya tiene.
+- Puede ser complejo estimar la cantidad de tráfico que la red puede manejar, especialmente en el tráfico a ráfagas.
+- Se pueden buscar rutas alternativas no congestionadas.
+![[_resources/Pasted image 20221115104823.png]]
+
+
+#### Desprendimiento de carag
+- Es la técnica más agresiva, ya que descarta paquetes completos.
+- Se aprovecha de la señalización de los paquetes para saber qué tráfico descartar.
+	- En algunos casos es interesante descarar los paquetes más nuevos y en otros los más viejos.
+- Los paquetes suelen formar parte de categorías de transmisión: normal, urgente, no descartar...
+
+# Calidad de servicio (QoS)
+- No todas las aplicaciones pueden utilizar un servicio sin garantía alguna.
+- La mejor forma de proporcionar una QoS alta es mediante *sobreprovisionamiento*, que es demasiado caro.
+- La capa de red puede proporcionar algunas mejoras extra que aumenten la QoS.
+
+**Parámetros principales**
+- Ancho de banda
+- Retardo 
+- Variación del retardo (*jitter*)
+- Pérdidas
+
+## Modelado de tráfico
+Garantizar un tráfico estable pese a las variaciones en la red.
+
+**Leaky Bucket** y **Token Bucket**
+![[_resources/Pasted image 20221115110433.png]]
+
+## Gestión de paquetes en cola
+### Método FIFO
+- Muy sencillo de implementar
+- Utilizar en el descarte RED
+- No es muy útil para proporcionar una buena QoS
+
+### Método LIFO
+- Casi tan simple como FIFO y poco óptimo
+- Permite priorizar el tráfico más reciente, interesante para aplicaciones de tiempo real.
+
+### Sistemas con prioridad
+- Cada nodo posee varias colas con diferentes prioridades.
+- Los paquetes van a cada una de las diferentes colas, en función de la prioridad que tenga.
+- Las colas de mayor prioridad se vacían primero.
+- *Problema: es posible que las colas con menos prioridad no sean atendidas nunca.*
+
+### Encolamiento circular (*Round Robin*)
+- Todas las tareas van recibiendo el mismo tiempo de procesamiento
+- Una de las implementaciones más comunes
+- Pueden utilizarse variaciones con prioridades, con apropiación, ...
+- Es el que tiene una implementación más compleja.
+
+## Garantía de QoS
+- Es necesario combinar todas las técnicas estudiadas previamente.
+- Los algoritmos de encaminameinto basarán sus decisiones según los parámetros que posean los diferentes nodos.
+	- Teoría de colas: proporciona los retardos promedio en cada nodo en función de la carga.
+- Si la red considera que puede gestionar el tráfico y proporcionar la QoS pedida, aceptará la conexión. De lo contrario, puede rechazarla.
+
