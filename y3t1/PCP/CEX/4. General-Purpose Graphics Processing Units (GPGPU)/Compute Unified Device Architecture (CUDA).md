@@ -160,3 +160,50 @@ cudaMemcpyToSymbol(foo, bar, sizeof(bar));
 ```
 
 ### Shared memory
+Memoria caché compartida a nivel de bloque. `__shared__`
+
+- Está dividia en *bancos* (32), cada banco tiene grupos de palabras de 32 bits. Puede servir dichas parlabras cada 2 ciclos de reloj.
+- Si se intenta acceder múltiples veces de manera simultánea al mismo banco se generan *conflictos de acceso* y se produce *serialización* en el acceso.
+
+```C
+__global__ void EjemploShared(float* A, float *F, ...) {
+	__shared float copia[(256+2)*3];
+	int i = blockDim.x * blockIdx.x + threadIdx.x;
+	int j = blockDim.y * blockIdx.y;
+
+	// escribir datos a memoria compartida
+	copia[threadIdx.x + 2] = A[t];
+	t += N;
+	copia[dim + threadIdx.x + 2] = A[t];
+	...
+	__syncthreads();
+	...
+	temp += copia[t] * F[0];
+}
+```
+
+
+#### Ejemplo A * x = y
+```C
+__global__ void MatdotVecSh(double *A, double *x, double *v, int rows, int cols) {
+	int j, i=blockIdx.x * blockDim.x + threadIdx.x;
+	extern __shared__ double sh_x[];
+	double tmp=0.0;
+	if (i < rows) {
+		if (threadIdx.x == 0) {
+			for (j=0; j < cols; j++) { sh_x[j] = x[j]; }
+		}
+		__syncthreads();
+		for (j=0; j < cols; j++) {
+			tmp += A[i*cols+j] * sh_x[j];
+		}
+	}
+	v[i] = tmp;
+}
+
+int main() {
+	dim3 TpBlock (XXX, 1, 1);
+	dim3 Nblocks (ZZZ, 1, 1);
+	MatdotVecSh<<<Nblocks, TpBlock, n*sizeof(double)>>>(A, x, v, rows, cols);
+}
+```

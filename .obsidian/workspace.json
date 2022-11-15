@@ -11,22 +11,17 @@
             "id": "3db190706ff2ecb7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "y3t1/PCP/Otros/PL/prac04.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "full-calendar-view",
+              "state": {}
             }
           },
           {
-            "id": "cd9978c010fcdd48",
+            "id": "f434c0264ecb6c08",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "y3t1/Redes de Computadores/Otros/PA/Tema 3 (PA3).md",
+                "file": "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Compute Unified Device Architecture (CUDA).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -93,17 +88,6 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
-          },
-          {
-            "id": "f04ed5c059d8f4c6",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
           }
         ]
       }
@@ -112,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cd9978c010fcdd48",
+  "active": "db53a4463ef0aa18",
   "lastOpenFiles": [
-    "y3t1/Redes de Computadores/Otros/PA/Untitled.md",
+    "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Compute Unified Device Architecture (CUDA).md",
+    "y3t1/PCP/CEX/4. General-Purpose Graphics Processing Units (GPGPU)/Graphics Processing Unit (GPU) + NVIDIA.md",
+    "y3t1/PCP/Otros/PL/prac04.md",
     "y3t1/Redes de Computadores/Otros/PA/Tema 3 (PA3).md",
+    "y3t1/Redes de Computadores/Otros/PA/Untitled.md",
     "y3t1/Ingeniería de Software (ISoft)/CEX/3. Proceso de diseño/Arquitectura.md",
     "y3t1/Redes de Computadores/Otros/PA/_resources/Tema 2 - Extra (PA3) 2022-11-14 13.09.05.excalidraw.md",
     "y3t1/Redes de Computadores/Otros/PA/Tema 2 - Extra (PA3).md",
     "y3t1/Redes de Computadores/Otros/PA/Tema 4 (PA1).md",
-    "y3t1/Redes de Computadores/Otros/PA/Tema 2 (PA2).md",
-    "y3t1/PCP/Otros/PL/prac04.md",
-    "y3t1/PCP/Otros/PL/_resources/prac04 2022-11-04 09.17.34.excalidraw.md",
-    "y3t1/Ingeniería de Software (ISoft)/Otros/PA2, parte 1.md"
+    "y3t1/Redes de Computadores/Otros/PA/Tema 2 (PA2).md"
   ]
 }

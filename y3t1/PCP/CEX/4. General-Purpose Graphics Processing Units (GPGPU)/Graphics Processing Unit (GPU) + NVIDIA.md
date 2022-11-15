@@ -3,7 +3,6 @@
 ---
 
 # Arquitecutra
-**Cores:**
 - FP32: núcleos de procesamiento de cálculo.
 - INT32: núcleos de cálculo de direcciones.
 - TTC (*3rd gen Tensor Core*): multiplicación y acumulación de matrices.
