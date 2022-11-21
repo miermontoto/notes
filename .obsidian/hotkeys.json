@@ -63,14 +63,6 @@
       "key": "7"
     }
   ],
-  "obsidian-git:push2": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Enter"
-    }
-  ],
   "editor:toggle-checklist-status": [],
   "obsidian-git:commit": [
     {
@@ -111,6 +103,14 @@
         "Mod"
       ],
       "key": "U"
+    }
+  ],
+  "obsidian-git:push2": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "-"
     }
   ]
 }
