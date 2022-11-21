@@ -95,7 +95,7 @@ int main() {
 ### Pinned memory
 `cudaHostALloc(void ** ptr, size_t size, unsigned int flag);
 
-Reserva memoria en la RAM del host y accesible a la PGU.
+Reserva memoria en la RAM del host y accesible a la GPU.
 - Es de tipo page-locked, que acelera las transferencias de información.
 - Su uso excesivo puede degradar el rendimiento.
 - Tiene limitaciones y problemas de estabilidad si no se utiliza correctamente.
