@@ -71,3 +71,55 @@ Emisor y receptor acuerdan y confirman los números de inicio de secuencia.
 
 #### Pérdida o retraso de los paquetes en la liberación
 ![[_resources/Pasted image 20221115114842.png]]
+
+## Control de congestión
+- Evitar la saturación del sistema por enviar una cantidad de paquetes mayor de la que admite.
+- Tarea compartida por las capas de red y de transporte.
+- Principales causas:
+	- Ancho de banda y fiabilidad de la red
+	- Capacidad del receptor
+
+### Parada y espera
+- El emisor envía un paquete y espera la confirmación del receptor para enviar el siguiente.
+- No son necesarios buffers y únicamente se almacena el último paquete enviado.
+
+### Ventana deslizante
+- El emisor mantiene una lista con los *W* números de secuencia de los paquetes que puede transmitir → *Ventana emisora de tamaño W*
+- El receptor mantiene una lista con los *W* números de secuencia de los paquetes que está autorizado a recibir → *Ventana receptora de tamaño W*
+- Como los paquetes pueden perderse, el emisor guarda una copia de todos los paquetes que están enviados pero no asentidos por si hay que reenviarlos.
+
+#### Asentimientos
+- Cada asentimiento puede asentir a un grupo de paquetes o hacerlo de forma individual.
+- Controlan el flujo y notifican el resultado de la transmisión de un paquete.
+- Indican el número de paquete que se espera en la siguiente transmisión.
+
+# Protocolo UDP
+- *User Datagram Protocol*
+- Protocolo no orientado a conexión.
+	- Cada segmento se trata de forma independiente de los demás.
+- Es un protocolo no fiable → ofrece un servicio "best effort".
+	- Sus mensajes pueden llegar fuera de secuencia o perderse.
+- No se envían asentimientos: se reduce el tráfico de la red.
+- No controla la congestión.
+- Reduce la información suplementaria a enviar.
+
+- Proporciona interfaz intermedia entre la capa de aplicación y la de red.
+	- <u>Gestión del uso de los puertos.</u>
+	- Puede proporcionar control de errores.
+- Adecuado para situaciones con requisitos de conexión bajos
+	- Servicio DNS
+	- Vídeo bajo demanda
+	- Radio por internet
+	- VoIP
+	- Modelos cliente-servidor
+
+## Cabecera
+![[_resources/Pasted image 20221122103048.png]]
+
+- **Punto de origen:** contiene el número de puerto por si es necesario responder al origen.
+- **Puerto de destino:** contiene el número de puerto del destino.
+- **Longitud:** longitud de los datos del datagrama IP.
+- **Suma de comprobación:** asegura la integridad del datagrama. Se calcula utilizando la cabecera UDP y el campo de todos.
+
+## Remote Procedure Call (RPC)
+Hacer que una llamada a un procedimiento remoto sea parecida a un procedimiento local.
