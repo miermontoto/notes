@@ -1,3 +1,7 @@
+![[_resources/CUDA.pdf]]
+
+---
+
 ## Procedimiento
 - Se divide el problema en sub-problemas "grandes" que pueden ejecutarse en paralelo de manera independiente (**bloques de hilos**).
 - Se divide cada sub-problema en piezas más finas que se resuelven concurrentemente y cooperativamente (**hilos**).
@@ -25,7 +29,7 @@ El compilador es `nvcc`. Separa los códigos CPU y GPU. Compila en dos etapas:
 - **Virtual** genera código PTX (*Parallel Thread eXecution*)
 - **Física** genera binarios para ambas partes.
 
-## Modelo organizativo
+# Modelo organizativo
 - Distintos kernels se pueden ejecutar simultáneamente.
 - El kernel es ejecutado por hilos. Los hilos ejecutan el mismo código sobre diferentes datos basándose en su id.
 - Los hilos se agrupan en bloques.
@@ -39,7 +43,7 @@ El compilador es `nvcc`. Separa los códigos CPU y GPU. Compila en dos etapas:
 	- La manera de separar matrices en bloques y estos bloques en hilos funciona mejor con matrices y tensores que con vectores: se utilizan más cores, por lo que es más rápido.
 	- La localidad en GPU es igual de importante que en CPU, aunque se entiende de otra manera.
 
-### Jerarquía de memoria
+## Jerarquía de memoria
 - Los hilos CUDA pueden acceder a los datos desde múltiples espacios de memoria durante su ejecución.
 - Cada hilo tiene su memoria local privada. Todos tienen acceso a la memoria global.
 - Cada bloque de hilos tiene su espacio de memoria compartida (*shared*) entre hilos de un mismo bloque.
@@ -47,7 +51,7 @@ El compilador es `nvcc`. Separa los códigos CPU y GPU. Compila en dos etapas:
 - Las memorias de texturas y constantes son espacios de memoria adicionales accesibles a todos los hilos.
 - Los espacios de memoria global, texturas y constantes tienen el mismo ciclo de vida que la aplicación.
 
-## Modelo de programación
+# Modelo de programación
 - GPU → GPC → SM → Core CUDA
 - Bloque → Warp → Hilo
 - Dato → Hilo
@@ -57,16 +61,16 @@ El compilador es `nvcc`. Separa los códigos CPU y GPU. Compila en dos etapas:
 - A este *id* se accede dentro del kernel a través de variables intrínsecas (`threadIdx`)
 
 
-### Control de errores
+## Control de errores
 En CUDA no se devuelven ni se lanzan errores.
 `cudaGetLastError()` almacena el último error lanzado por la GPU.
 
-### Eventos
+## Eventos
 Puesto que las llamadas al kernel son asíncronas, se puede utilizar `cudaDevideSyncrhonize()` o `cudaMemcpy()` que son síncronas para evitar devolver el control a la CPU.
 
 Pero también se pueden utilizar eventos: `cudaEvent_t` → `cudaEventCreate()` → `cudaEventRecord()` → `cudaEventSynchronize()` → `cudaEventElapsedTime()` → `cudaEventDestroy()`.
 
-### Reserva de memoria
+## Reserva de memoria
 - **Para reservar:** `cudaMalloc()`, `cudaMallocPitch()`, `cudaMalloc3D()`, `cudaMallocHost()`.
 - **Para liberar:** `cudaFree()`, `cudaFreeHost()`.
 - **Para inicializar:** `cudaMemset()`.
@@ -207,3 +211,15 @@ int main() {
 	MatdotVecSh<<<Nblocks, TpBlock, n*sizeof(double)>>>(A, x, v, rows, cols);
 }
 ```
+
+
+## Niveles de concurrencia
+- Las siguientes operaciones se pueden ejecutar simultáneamente entre sí:
+	- Computación en el host (CPU)
+	- Ejecución de kernels en el device (GPU)
+	- Tranferencia de información del host al device y viceversa.
+	- Transferencia de datos dentro del mismo subsistema.
+	- Transferencia de datos entre varios devices.
+- El nivel de concurrencia alcanzado depende de las características y de la CC del dispositivo.
+- En las transferencias de datos con *pinned* y en la ejecución de los kernels.
+- En la copia de datos entre la CPU y las GPUs

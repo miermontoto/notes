@@ -1,4 +1,5 @@
-![[_resources/Tema 4. GPUs-CUDA.pdf]]
+
+![[_resources/GPUs.pdf]]
 
 ---
 
