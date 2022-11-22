@@ -1,27 +1,39 @@
-# Lista de deseos
+en orden
+
 ## Tech
-### Teclado
-- [Razer Huntsman V2 TKL (óptico), ES Razer Red](https://www.amazon.es/dp/B097F3GVH4/), 150€ [[2022-07-04]] thru Amazon
-- [Ducky Mecha Mini, ES MX Brown](https://www.vsgamers.es/en/product/gaming-ducky-mecha-mini-rgb-mx-brown), 102€ [[2022-07-04]] thru VSgamers
-- [Razer Blackwidow V3 65% (wireless), ES Razer Yellow](https://www.razer.com/es-es/gaming-keyboards/Razer-BlackWidow-V3-Mini-HyperSpeed/RZ03-03890900-R311), 190€ [[2022-07-04]] thru Razer ES
+### Móviles
+- [Pixel 7 Pro](https://www.amazon.es/Google-Pixel-Pro-Tel%C3%A9fono-teleobjetivo/dp/B0BDK2CZ8N?qu=eyJxc2MiOiIzLjE1IiwicXNhIjoiMi4zNSIsInFzcCI6IjEuNjkifQ%3D%3D), 900€
+	- más grande, 120hz vs 90hz. 12GB RAM vs 8GB. más brillante, mejor pantalla, 1440p vs 1080p. cámara extra (no relevante)
+- [Pixel 7](https://www.amazon.es/Google-Pixel-smartphone-objetivo-duraci%C3%B3n/dp/B0BDJFKY7B?qu=eyJxc2MiOiIzLjE1IiwicXNhIjoiMi4zNSIsInFzcCI6IjEuNjkifQ%3D%3D), 650€
+	- mejor relación calidad/precio
+- iPhone 12, 13, 14 ¿?
+	- peor relación calidad/precio, no me permite desarrollar la aplicación.
+- [nothing phone(1)](https://www.pccomponentes.com/nothing-phone-1-12-256gb-blanco-libre), 520€, 12gb 256gb
+	- menor calidad, peor pantalla, peor software. no merece la pena?
+
+### Periféricos
+- **MOONDROP Dash 75, 300?€**
+- [Razer Huntsman V2 TKL (óptico), ES Razer Red](https://www.amazon.es/dp/B097F3GVH4/), 135€
+- Razer Blackwidow V3, ES Razer Green, 99€
+- [Logitech Pro X superlight](https://www.pccomponentes.com/logitech-pro-x-superlight-raton-gaming-25600dpi-blanco), ~95€
+
+### Componentes
+- [Corsair LL120 RGB x3](https://www.amazon.es/dp/B07LF1B1Y8/?psc=1), 85€
 
 ### Driving
-#### Rims
-- [TM Open Wheel Rim](https://www.amazon.es/Thrustmaster-TM-Open-Wheel-Addon/dp/B07NZWDH7B?psc=1), 133€ [[2022-07-04]] thru Amazon
-- [TM SF1000 (el sueño)](https://www.amazon.es/Thrustmaster-Formula-Ferrari-Pantalla-PlayStation/dp/B08VH3ZGM4?psc=1), 400€ [[2022-07-04]] (se vendió a 380€ en [vsgamers](https://www.vsgamers.es/en/product/steering-wheel-racing-collector-thrustmaster-ferrari-sf1000-edition-wheel-add-on)) thru Amazon
-
-#### Pedales
-- [TM T-LCM (de célula)](https://www.amazon.es/Thrustmaster-T-LCM-Pedals-profesionales-magn%C3%A9ticos/dp/B07YFDL1JW?psc=1), 221€ [[2022-07-04]], ridículamente caro ahora mismo, thru Amazon
-- [TM T3PM (magnéticos)](https://www.amazon.es/ThrustMaster-T3PM-Pedales-Magn%C3%A9ticos-4060210/dp/B099XN5YBB?psc=1), ~130€ [[2022-07-04]] thru Amazon
-
-#### Otros
-- [TM TH8A](https://www.amazon.es/Thrustmaster-TH8A-SHIFTER-Add-Multiplataforma/dp/B005L0Z2BQ?psc=1), 175€ [[2022-07-04]] thru Amazon
-- [Playseat Challenge](https://www.playseatstore.com/playseat-challenge.html), 250€ [[2022-07-04]] thru Playseat
+- [Playseat Challenge](https://www.playseatstore.com/product/playseat-evolution-white), 250€
+- [Cosas de Fanatec](_resources/fanatec.png), ~1000€
 
 ### Otros
-- [Corsair LL120 RGB x3](https://www.amazon.es/dp/B07LF1B1Y8/?psc=1), 85€ [[2022-07-04]] thru Amazon
+- *MacBook Air/Pro ¿?, con M1/M2*
+- *Equipo de música ¿?*
+- *Otra pantalla ¿?*
 
 ## IRL
+### Sneakers
+- [Adidas 4DFWD 2](https://www.adidas.es/zapatilla-adidas-4dfwd-2-running/GX9247.html), 220€
+- *Jordan 1, 3, 4...*
+
 ### Libros
 - [Disrupting the Game, Reggie](https://www.amazon.es/Disrupting-Game-Bronx-Top-Nintendo/dp/1400226716), 20€ [[2022-07-04]] thru Amazon
 - [A Promised Land, Barack Obama](https://www.amazon.es/Promised-Land-Large-Print-Random/dp/0525633766), 40€ [[2022-07-04]] thru Amazon
