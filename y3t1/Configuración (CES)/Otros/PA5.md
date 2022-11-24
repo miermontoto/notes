@@ -3,7 +3,6 @@ $${IP_m\over IP_b}={\mu_m\over\mu_b}={1/S_m\over 1/S_b}\rightarrow S_m={IP_b\ove
 
 
 $$\text{CPU: }{IP_m\over IP_b}={\mu_m\over\mu_b}={N_m/S_m\over N_b/S_b}\rightarrow S_m={N_m\times IP_b\over N_b\times IP_m}\times S_b$$
-
 ---
 
 $$X\geq{N\over R_{max}+z}={400\over0.16+5}=77.52pet/s$$
