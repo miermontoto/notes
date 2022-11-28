@@ -1,3 +1,4 @@
+c
 ## Ejercicio 1
 ### En modo interactivo
 > **Ejecutar “./VecAdd1 –2000 32 2000 21”. No olvidar el signo menos del primer 2000. ¿Qué observas?**
