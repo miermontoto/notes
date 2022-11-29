@@ -39,3 +39,51 @@ La coalescencia es la localidad espacial de la GPU.
 - Sincronizaciones (barreras) a nivel de warp.
 
 ## Streams
+- Secuencia de comandos que se ejecutan en orden (equivalente a cola FIFO).
+- Si no se especifica, los comandos van al stream por defecto, que siempre existe.
+- Los streams se ejecutan concurrentemente entre sí.
+- Cada hilo CPU puede tener su "stream por defecto" independiente (`nvcc --default-stream=perthread`).
+
+![[_resources/Pasted image 20221129092105.png]]
+
+```C
+// Creando
+cudaStream_t *streams=(cudaStream_t*)malloc(nstr*sizeof(cudaStream_t));
+for (int i=0; i<nstr; i++)
+	cudaStreamCreate(&(streams[i]));
+
+// Lanzamiento asíncrono de los kernels cada uno con sus propios datos
+for (int i=0; i<nstr; i++)
+	kernel<<<blocks, threads, 0, streams[i]>>>(dA + (i*n/nstr), dB, niters);
+
+// Lanzamiento asíncrono de las copias. No empiezan hasta el fin de su kernel
+for (int i=0; i<nstr; i++)
+	cudaMemcpyAsync(hA + (i*n/nstr), dA + (i*n/nstr), size/nstr, cudaMemcpyDeviceToHost, streams[i]);
+
+// Liberar recursos
+for (int i=0; i<nstr; i++)
+	cudaStreamDestroy(streams[i]);
+```
+
+
+## Dinamismo
+Los kernels pueden lanzar, a su vez, la ejecución de otros kernels.
+
+## Reducción paralela en CUDA
+<mark style="background: #FFB86CA6;">Importante que sea eficiente.</mark>
+
+- Enfoque basado en divide y vencerás a nivel de bloque de hilo.
+- Importante para poder lanzar múltiples bloques.
+	- Poder procesar estructurase de datos muy grandes.
+	- Para mantener ocupados todos los SMs de la GPU.
+	- Cada bloque reduce una parte de la estructura.
+
+## Conclusiones
+- Las GPUs solo sirven en ciertos contextos, cuando hay muchos datos.
+- Buscar en internet.
+- Cuidado con las dependencias: calcular el propietario. `_syncthreads` si no.
+- Grano fino a la GPU, grano grueso a la CPU.
+- No es tan importante que los hilos tengan más o menos carga, lo que importa es tener a la GPU trabajando al 100%.
+- Casi todos los programas son compute-bound, así que no hay que preocuparse por la memoria.
+- Casi siempre hay que usar fuerza bruta.
+- Como estrategia general, empezar por 256 hilos por bloque, luego ir subiendo y bajando en múltiplos de 32.

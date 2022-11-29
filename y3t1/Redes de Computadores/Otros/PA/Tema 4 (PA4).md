@@ -56,3 +56,6 @@ Nº dir. malgastadas
 - 25
 - 15
 - 3
+
+### Ejercicio 5
+![[_resources/Tema 4 (PA4) 2022-11-28 13.14.02.excalidraw]]
