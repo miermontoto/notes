@@ -209,4 +209,94 @@ Hacer que una llamada a un procedimiento remoto sea parecida a un procedimiento 
 
 
 ### Eficiencia y control de flujo
+- Se utiliza un sistema de ventana deslizante para gestionar el flujo.
+- Se utiliza un tamaño de ventana variable controlado por el receptor.
+- Se utiliza el sistema de superposición para el ahorro de ancho de banda consumido por los ACKs.
 
+### Control de errores
+- Entrega los datos sin errores.
+- Suma de comprobación.
+
+### Control del flujo mediante ventana deslizante
+- La ventana es de tamaño variable y está controlada por el receptor.
+- No controla el número de segmentos recibidos, sino el número de bytes.
+- Ventana del emisor: número de bytes que puede enviar sin recibir asentimiento.
+- Ventana del receptor: número de bytes que peude aceptar.
+- Las respuestas transportan el número de bytes recibidos correctamente y el tamaño de la ventana receptora, que puede aumentar o disminuir.
+- <u>Se pueden realizar asentimientos acumulativos con el objetivo de reducir el ancho de banda utilizado.</u>
+
+![[_resources/Pasted image 20221129103519.png]]
+
+- Los datos con el flag URG siempre pueden enviarse.
+- Si la ventana está llena, puede enviarse un segmento de tamaño 1 byte.
+- **Algoritmo de Naggle**: adecuado para situaciones de envío con paquetes pequeños.
+	- Se envía el primer segmento de información que llegue.
+	- La nueva información se almacena en un buffer hasta que llegue la confirmación.
+	- Reducir el gasto de ancho de banda por culpa de las cabeceras.
+
+## Control de la congestión
+- El **reloj de confirmación de recepción** (*ack clock*)
+	- La velocidad de la red por la que se emite está limitada a su nodo más lento.
+	- El emisor necesita adaptar su velocidad a la máxima permitida por dicho enlace.
+	- ![[_resources/Pasted image 20221129105058.png]]
+- Utilización de **temporizadores** para evitar sobrecarga de la red.
+	- <u><i>Retransmission Time Out</i> (RTO)</u>
+		- Tiempo que se espera antes de reenviar un segmento.
+		- ![[_resources/Pasted image 20221129105912.png]]
+	- <u>Temporizador de Persistencia</u>
+		- El receptor envía un ACK con tamaño de ventana 0.
+		- Cuando actualiza el tamaño de ventana, el paquete se pierde.
+		- El emisor envía un mensaje de sondeo para forzar que el receptor le confirme el tamaño de ventana.
+	- <u>Temporizador <i>Keep Alive</i></u>
+		- Después de tiempo sin mensajes, una de las partes envía un mensaje vacío para confirmar que el otro extremo sigue activo.
+- **Ventana de congestión**
+	- Máximo número de bytes que el emisor puede poner en la red.
+	- Funciona en paralelo con la ventana deslizante del control de flujo - el valor más pequeño de ambas se corresponde con el valor de la ventana que se vaya a utilizar.
+	- Hay que obtener su valor óptimo para evitar saturar la red.
+	- El valor ideal puede variar y es necesario que la ventana se adapte a dicho tamaño.
+	- Se intentan utilizar reglas *AIMD*.
+- **Algoritmos de control**
+	- <u>Inicio lento</u>
+		- Al inicio de la transmisión, se envía un único segmento.
+		- Una vez que llega corretamente la confirmación, se envían dos segmentos.
+		- Cuando llegan nuevamente las confirmaciones, se duplica de nuevo el tamaño de ventana - cuatr segmentos.
+		- La operación se repite hasta que ocurra algún evento que indique que hay congestión en la red.
+		- Incremento exponencial - la ventana de congestión puede crecer muy rápido.
+		- Un crecimiento excesivamente rápido hace que sea muy difícil encontrar el tamaño de ventana ideal.
+		- Se puede establecer un umbral de inicio lento, a partir del cual el incremento pasa a ser lineal y no exponencial.
+		- Cada vez que llegan todas las confirmaciones, el tamaño de la ventana se incrementa en un solo segmento en lugar de duplicarse.
+		- Este umbral va aumentando cada vez que aumenta el tamaño de la ventana.
+		- Esto permite encontrar de una forma más precisa el tamaño ideal de la ventana.
+	- Retransmisión rápida
+	- <u>Recuperación rápida</u>
+		- Se detecta que hay congestión en la red.
+		- El valor de la ventana de congestión se reinicia.
+		- No se utiliza una ventana de tamaño uno, sino una nueva ventana con la mitad del tamaño que la actual.
+	- <u>Asentimiento selectivo</u>
+		- El campo ACK de la cabecera indica el último paquete que se ha recibido en orden y correctamente.
+		- Mediante el campo `options` se pueden hacer asentimientos selectivos de tramas que llegan fuera de ordne.
+		- Se pueden graupar paquetes consecutivos que puedan haber llegado fuera de orden.
+		- Ayuda en la velocidad de recuperación ante pérdidas, pero es un complemento a las técnicas anteriores.
+		- ![[_resources/Pasted image 20221129115626.png]]
+
+### Pérdida de paquetes
+**¿Cómo detectar que se pierde un paquete?**
+- Salta uno de los temporizadores RTO - se considera que el paquete se ha perdido o que llegará demasiado tarde.
+- Se reciben tres asentimientos repetidos.
+
+**¿Cómo actuar cuando se pierde un paquete?**
+- Reiniciar el valor de la ventana de congestión.
+- Dividir entre dos el valor del umbral de inicio lento.
+- Repetir el proceso para ir aumentando el valor de la ventana hasta que peuda volver a aparecer congestión.
+
+### TCP Tahoe
+- Implementa inicio lento.
+- Utiliza umbral de inicio lento.
+- Detecta pérdida de paquetes mediante RTO y ACKs repetidos.
+- Cuando se pierde un paquete, reinicia el valor de la ventana de congestión de un segmento y el umbral de inicio lento a la mitad del valor actual.
+
+## Problemas y futuro
+- Desarrollado en los 80 y apenas ha sufrido cambios significativos.
+- El aumento de las velocidades de las redes ha supuesto un problema muy importante.
+- Debido a su amplia implementacióin, es muy complicado cambiarlo por nuevos protocolos.
+- El control de la congestión aún debe ser mejorado.
