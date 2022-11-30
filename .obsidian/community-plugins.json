@@ -5,7 +5,6 @@
   "obsidian-emoji-toolbar",
   "obsidian-excalidraw-plugin",
   "obsidian-icon-folder",
-  "nldates-obsidian",
   "obsidian-git",
   "cm-editor-syntax-highlight-obsidian",
   "hotkeysplus-obsidian",
@@ -16,5 +15,5 @@
   "settings-search",
   "janitor",
   "typing-speed",
-  "obsidian-full-calendar"
+  "obsidian-jupyter"
 ]
