@@ -22,4 +22,4 @@ Puesto que es reparable, la disponibilidad es estacionaria independientemente de
 Se calcula la fiabilidad no reparable o la fiabilidad equivalente reparable de todos los componentes.
 
 ***Virtualización de los sistemas 2 y 3***
-Añadir tantos sistemas operativos como se eliminen y añadir un sistema operativo de virtualización, normalmente con mucho MTTF.
+Añadir tantos sistemas operativos como se eliminen y añadir un sistema operativo de virtualización, normalmente con mucho MTTF.<mark style="background: #ADCCFFA6;"></mark>
