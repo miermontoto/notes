@@ -1,6 +1,6 @@
 _resources/Entregable1 2022-11-22 18.56.57.excalidraw]]
 
-![[![[_resources/Pasted image 20221127193347![[_resources/PA - Sesión 2 - Enunciado.pdf]]
+![[_resources/PA - Sesión 2 - Enunciado.pdf]]
 
 ---
 
