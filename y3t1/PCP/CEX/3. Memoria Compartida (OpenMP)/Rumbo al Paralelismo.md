@@ -1,3 +1,7 @@
+![[_resources/Modelos Memoria Compartida_OpenMP.pdf]]
+
+---
+
 # Modelos para Memoria Compartida
 **Paralelismo de Datos:** tener muchas tareas en número sobre una estructura muy sencilla.
 **Paralelismo de Tareas:** pocas divisiones del problema, cada una de ellas con mucha computación.
@@ -113,9 +117,9 @@ De bucles, de secciones y single.
 #pragma omp for [cláusulas]
 	for loop
 ```
-- Útil en descomposiciones de datos "regulares": paralelismod e datos.
+- Útil en descomposiciones de datos "regulares": paralelismo de datos.
 - No implica ejecución paralela, simplemente la ejecución de las iteraciones por los hilos del equipo (team).
-- Por defecto, la variable de control es privada.
+- Por defecto, la variable de control ecs privada.
 - Si se usa `collapse(n)`, los espacios de iteración de los *n* primeros *for* se fusionarán en uno mayor.
 
 `schedule([modificador [, modificador]: ] ...)
