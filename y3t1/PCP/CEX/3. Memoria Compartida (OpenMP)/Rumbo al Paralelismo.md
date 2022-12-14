@@ -133,7 +133,7 @@ De bucles, de secciones y single.
 {
 	[#pragma omp section]
 		structured block
-	[#pragma omp section]
+	#pragma omp section
 		structured block
 	...
 }
@@ -191,7 +191,7 @@ Un grupo de tareas con un *TSP* al final.
 #### Taskloop
 Las iteraciones del bucle, o bucles si se usa `collapse`, se ejecutarán en paralelo usando *tasks*. por defecto, *taskloop* crea de forma implícita un *taskgroup*.
 
-## Synchronizing Constructors
+## Synchronizing Constructors (SC)
 
 ### master
 Solo el hilo maestro ejecuta el código. No hay esperas implícitas para el resto de los hilos.
