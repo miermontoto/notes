@@ -1,5 +1,4 @@
 
-
 ![[_resources/Redes de Computadores - PA4.pdf]]
 
 ---
