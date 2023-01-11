@@ -1,10 +1,8 @@
-#Métrica_V3 #EVS 
-# EVS - Estudio de Viabilidad del Sistema
 ![[_resources/ISOF - 2 - Metrica - EVS Proceso.pdf]]
 
 ---
 
-# Intro a #Métrica_V3
+# Intro a Métrica V3
 ## Estructura principal
 - Procesos
 - Actividades
@@ -27,7 +25,6 @@
 ---
 
 # EVS
-
 ## Concepto
 **Objetivo:** analizar las necesidades del cliente/usuario (requisitos) para proponer una solución a corto plazo.
 **Resultado:** definición de uno o varios proyectos (o abandono).
@@ -79,5 +76,5 @@ Existen requisitos:
 - Imprescindible: diálogo con los usuarios.
 - Imprescindible: conocer el funcionamiento actual del sistema.
 - El EVS es previo al proyecto y se utiliza para definir lo que se va a contratar.
-- EN proyectos con riesgo bajo y una alternativa razonable, centrar el esfuerzo en los requisitos.
+- En proyectos con riesgo bajo y una alternativa razonable, centrar el esfuerzo en los requisitos.
 - Siempre hay diferentes alternativas técnicas y funcionales. Evaluarlas y decidir sobre cada una.

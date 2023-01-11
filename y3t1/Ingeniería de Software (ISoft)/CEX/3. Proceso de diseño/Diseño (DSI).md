@@ -2,7 +2,6 @@
 
 ---
 
-
 ## Objetivos del proceso
 - La arquitectura del sistema.
 - El detalle de los subsistemas.

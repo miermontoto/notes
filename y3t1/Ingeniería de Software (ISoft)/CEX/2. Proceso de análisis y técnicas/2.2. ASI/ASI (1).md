@@ -1,4 +1,3 @@
-
 ![[_resources/ISOF - 2 - Metrica - ASI - 1.pdf]]
 
 ---

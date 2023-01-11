@@ -17,9 +17,7 @@ Deben especificarse textualmente mediante uno o varios flujos:
 - Flujos alternativos
 
 ## Flujos
-
 **Caso de uso:** título.
-
 **Objetivo:** acción del caso de uso.
 
 **Flujo (primer borrador):**

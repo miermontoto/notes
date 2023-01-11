@@ -1,4 +1,3 @@
-#Métrica_V3 #EVS
 ## EVS1 - Objetivos, alcance, primeros requisitos
 **Objetivo general del cliente:** construcción de software para la gestión del ciclo completo (inscripción, pago, cronometraje, resultados) relativo al control de participantes en carreras populares y trail.
 
@@ -21,7 +20,6 @@ Actores para todos los procesos, cómo se obtienen y se utilizan los datos...
 
 ### Clasificación general
 Orientación a bases de datos.
-#Modelo_E/R
 
 ### Análisis de stakeholders
 - Atleta

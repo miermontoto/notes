@@ -11,8 +11,7 @@ Descomponer el sistema en subsistemas para facilitar el análisis.
 Identificar las clases cuyos objetos se necesitan para realizar un caso de uso y describir su comportamiento mediante interacción de dichos objetos.
 *Se hace para cada uno de los casos de uso.*
 
-###  Modelo de dominio
-#Modelo_de_dominio
+### Modelo de dominio
 - Ojo a GDPR: cómo eliminar datos.
 - Revisar cardinalidades. *"algún cero"*
 - Herencias: muy pocas, siempre al final de la creación del modelo de dominio
@@ -24,7 +23,6 @@ Grafo de estados. Cada nodo debe de tener al menos un caso de uso. Borrados y pa
 
 ## ASI 5: Análisis de clases
 Describir cada una de las clases.
-
 
 ## Técnicas
 - Diagramas de paquetes
@@ -45,7 +43,7 @@ Describir cada una de las clases.
 - **Tres modelos**
 	- Modelo funcional → *casos de uso*
 	- Modelo dominio → *bases de datos*
-	- Modelo de interacción con usuario → prototipos de pantallas
+	- Modelo de interacción con usuario → *prototipos de pantallas*
 - **Todos los modelos deben representar al sistema.**
 - **Análisis final**
 	- ¿Es completa la especificación?

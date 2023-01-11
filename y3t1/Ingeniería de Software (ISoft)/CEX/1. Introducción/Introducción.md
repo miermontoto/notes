@@ -1,5 +1,4 @@
-#Métrica_V3 
-# Introducción
+![[_resources/ISOF - 1 - Introduccion.pdf]]
 ## Proceso
 - Proceso
 - Metodología

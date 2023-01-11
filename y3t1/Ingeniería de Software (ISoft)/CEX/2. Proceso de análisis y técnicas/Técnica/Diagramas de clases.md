@@ -1,4 +1,4 @@
-![[../_resources/ISOF - 2 - Tecnica - DCLA.pdf]]
+![[_resources/ISOF - 2 - Tecnica - DCLA.pdf]]
 
 ---
 
@@ -8,13 +8,12 @@
 - Desarrollan información.
 
 Clases, relaciones.
-
 Clases con UML. La menor herencia posible.
 
 ## Diagramas de objetos
 Muestran casos particulares de diagramas de clases.
 Los elementos que aparecerán serán objetos concretos obtenidos a partir de la instanciación de las clases a las que pertenecen.
-![[../_resources/Pasted image 20221013113702.png]]
+![[_resources/Pasted image 20221013113702.png]]
 
 ## Paquetes
 Permiten dividir un modelo en partes.

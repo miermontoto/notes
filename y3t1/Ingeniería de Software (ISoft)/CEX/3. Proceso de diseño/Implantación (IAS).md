@@ -1,4 +1,4 @@
-enerse en consideración que la materia, así como su distribución en las difer## Objetivos del proceso
+## Objetivos del proceso
 
 
 ## Relación con otros procesos
