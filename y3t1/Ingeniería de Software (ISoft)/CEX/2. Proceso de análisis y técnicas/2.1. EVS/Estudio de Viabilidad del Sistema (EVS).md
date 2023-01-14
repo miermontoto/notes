@@ -37,7 +37,6 @@
 ---
 
 ## Actividades
-
 ### EVS 1: Establecimiento del alcance del sistema
 **Objetivo:** comprender qué desea el cliente/usuario.
 
@@ -71,7 +70,7 @@ Existen requisitos:
 ---
 
 ## Resumen
-**Objetivo:** delimiar lo que se precias, plantear una solución.
+**Objetivo:** delimitar lo que se precisa, plantear una solución.
 
 - Imprescindible: diálogo con los usuarios.
 - Imprescindible: conocer el funcionamiento actual del sistema.

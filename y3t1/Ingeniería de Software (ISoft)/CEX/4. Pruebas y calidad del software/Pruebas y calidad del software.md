@@ -11,7 +11,6 @@
 - Resultado con lados inválidos (triángulo no válido)
 - Resultado con permutaciones del último caso (triángulo no válido)
 
-
 ## Características de calidad
 - Funcionalidad
 - Fiabilidad
