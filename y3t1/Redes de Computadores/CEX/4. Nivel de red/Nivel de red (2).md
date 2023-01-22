@@ -66,7 +66,7 @@ Se utilizan protocolos de encaminamiento para obtener la mejor ruta posible.
 
 ### Algoritmo de la patata caliente
 - Enviar los datagramas por la cola de la menor longitud.
-- Combinar la carag de la línea con la dirección preferida de envío.
+- Combinar la carga de la línea con la dirección preferida de envío.
 - Equilibra las cargas entre las redes.
 
 ### Algoritmo de aprendizaje hacia atrás

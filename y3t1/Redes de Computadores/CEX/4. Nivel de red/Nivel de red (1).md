@@ -136,7 +136,7 @@ Para generar subredes, se puede expandir la máscara:
 - Tiempo nulo de establecimiento de conexión.
 - Robustez ante caídas de red.
 - Más difícill interceptar los mensajes completos (seguridad).
-- No neecsita almacenar la información sobre múltiples circuitos virtuales.
+- No necesita almacenar la información sobre múltiples circuitos virtuales.
 
 
 ## Redes de circuitos virtuales

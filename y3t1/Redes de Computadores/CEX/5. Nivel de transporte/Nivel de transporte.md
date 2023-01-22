@@ -145,8 +145,6 @@ Hacer que una llamada a un procedimiento remoto sea parecida a un procedimiento 
 
 >[!warning]- Importante
 
-
-
 - Protocolo orientado a conexión:
 	- 3 fases: establecimiento de conexión, transferencia, cierre de conexión.
 - Proporciona una capa fiable por encima del protocolo IP:

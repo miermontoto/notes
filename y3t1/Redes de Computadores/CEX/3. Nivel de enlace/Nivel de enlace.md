@@ -7,7 +7,7 @@
 4. Control de errores
 5. Técnicas ARQ
 6. Redes de área local
-7. Coontrol de acceso al medio
+7. Control de acceso al medio
 8. Modelo de referencia IEEE 802
 
 ---
@@ -136,7 +136,7 @@ Técnicas más comunes:
 Si se utilizan *k* bits para el número de secuencia, el tamaño máximo de la ventana es 2<sup>k</sup> -1.
 
 
-### ARQ con ventana deslizante y rechazo selectivo
+## ARQ con ventana deslizante y rechazo selectivo
 - Basado en control de flujo mediante ventana deslizante.
 - Receptor solicita retransmisión de trama dañada o perdida.
 - Emisor solo repite la trama solicitada.
@@ -244,7 +244,6 @@ Se consigue en cada trama la capacidad necesaria para ella.
 - El tiempo se divide en ranuras de tamaño *t*.
 - Solamente se puede comenzar a transmitir al comienzo de cada ranura.
 - La probabilidad de colisión es menor, solo si hay otra transmisión en la misma ranura.
-- Rendimiento: $S=G\times e^{-G}$
 
 ### CSMA (*Carrier Sense Multiple Access*)
 - Las estaciones están escuchando el medio de transmisión.

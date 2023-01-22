@@ -5,7 +5,7 @@
   "interfaceFontFamily": "SF Pro Display",
   "textFontFamily": "SF Pro Text",
   "monospaceFontFamily": "JetBrains Mono",
-  "baseFontSize": 16,
+  "baseFontSize": 15,
   "enabledCssSnippets": [
     "math"
   ]
