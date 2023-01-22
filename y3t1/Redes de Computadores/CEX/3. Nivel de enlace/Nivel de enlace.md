@@ -118,7 +118,7 @@ Técnicas más comunes:
 - Basado en la técnica de parada y espera estudiada previamente.
 - Se utilizan temporizadores para el reenvío de las tramas no asentidas.
 - Eliminación de duplicados.
-- 
+
 ![[_resources/Pasted image 20221010132204.png]]
 
 
@@ -175,16 +175,15 @@ Retransmite la señal a todas las salidas.
 ## Clasificación técnicas MAC
 ### Centralizadas
 Una sola gestión getsiona el acceso.
-
 - Lógica de acceso sencilla.
 - No es necesario coordinarse entre estaciones.
 
 ### Descentralizadas
 Varias estaciones gestionan el acceso.
-
 - Más robustas ante fallos.
 - No se produce cuello de botella en la gestión.
 
+---
 
 ### Síncronas
 - Se pre-asigna una capacidad para cada conexión.
@@ -235,11 +234,10 @@ Se consigue en cada trama la capacidad necesaria para ella.
 - Protocolo muy sencillo que transmite cuando se tienen datos.
 - Si hay colisión, se espera un tiempo aleatorio y se vuelve a transmitir.
 - Rendimiento con fuentes infinitas y llegadas exponenciales.
-- Rendimiento: $S=G\times e^{-2G}$
 
 - Para transmitir una trama con éxito, no se puede solapar con niguna otra trama.- 
 - Si hay alguna otra trama en el canal, ambas se pierden, aunque coincidan mínimamente.
-- Con tramas de tamaño constante *t*, una trama es culnerable durante 2t.
+- Con tramas de tamaño constante *t*, una trama es vulnerable durante 2t.
 
 
 ### ALOHA ranurado
@@ -281,7 +279,7 @@ Se suelen producir colisiones al final de los envíos de las tramas.
 **Problema**
 Medio desaprovechado justo tras el fin de una transmisión.
 
-#### persistente-p
+#### Persistente-p
 **Funcionamiento**
 - Si está ocupado, espera hasta que quede libre.
 - Si está vacio:
@@ -329,15 +327,13 @@ Las técnicas CSMA no son adecuadas para redes inalámbricas, puesto que es dif�
 - Se basa en el uso de un testigo para efectuar la transmisión.
 - Una estación espera a tener el testigo para enviar sus tramas.
 - Cuando la trama pasa por la estación de destino, esta la copia y la mantiene en el anillo.
-- Una vez que las tramas vuelven a la estacióin de origen, esta libera el testigo y lo pone de nuevo en el anillo.
+- Una vez que las tramas vuelven a la estación de origen, esta libera el testigo y lo pone de nuevo en el anillo.
 - ![[_resources/Pasted image 20221017131341.png]]
 
 ## Tećnicas de reserva
 El tiempo se divide en diferentes instantes:
-- Periodos de contención
-	- Las estaciones indican que quieren transmitir.
-- Periodos de transmisión
-	- Las estaciones transmiten los datos en los instantes que han reservado previamente.
+- **Periodos de contención**: las estaciones indican que quieren transmitir.
+- **Periodos de transmisión**: las estaciones transmiten los datos en los instantes que han reservado previamente.
 
 No se producen colisiones, ya que no se transmite a la vez.
 

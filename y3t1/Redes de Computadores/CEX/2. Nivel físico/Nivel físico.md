@@ -54,7 +54,7 @@ Señales adicionales que se insertan entre el emisor y el receptor.
 ### Métodos de análisis de una señal
 #### Dominio del tiempo
 - Variaciones temporales de la señal.
-- Se analizan los paráemtros `amplitud`, `frecuencia` y `base`.
+- Se analizan los parámetros `amplitud`, `frecuencia` y `base`.
 
 #### Dominio de la frecuencia
 - Se descompone la señal en componentes sinusoidales de diferentes frecuencias (*Análisis de Fourier*)
@@ -177,7 +177,7 @@ $$Frecuencia\times Longitud\space de\space onda=c$$
 	- Utiliza más de dos niveles de señal.
 	- <u>Bipolar-AMI (Alternate Mask Inversion)</u>
 		- Se utiliza un voltaje nulo para representar el 0.
-		- Se utiliza un voltaje  ±V de forma alterna para representar el 1.
+		- Se utiliza un voltaje ±V de forma alterna para representar el 1.
 		- No hay problemas de sincronización para detectar cadenas largas de 1.
 		- Sigue existiendo dicho problema para detectar cadenas largas de 0s.
 		- Ayuda a detectar posibles errores.

@@ -1,3 +1,2 @@
 - Es importante conocer teoría de la segunda parte (más de una pregunta para el test)
 - De la primera parte, es importante IP.
-- 
