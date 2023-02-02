@@ -5,16 +5,16 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiOpenai",
+      "RiComputerLine",
+      "RiFilePaperFill",
+      "RiDeviceServerLine",
       "FasEthernet",
       "FasNetwork-wired",
       "FasNetworkWired",
       "FasChartLine",
       "RiServerFill",
-      "FarComments",
-      "FasStopwatch",
-      "FarFileImage",
-      "FasWindowRestore",
-      "FasFilePdf"
+      "FarComments"
     ],
     "recentlyUsedIconsSize": 10,
     "rules": [],
@@ -41,5 +41,10 @@
   "y3t1/Ingeniería de Software (ISoft)": "FarComments",
   "y3t1/Administración de Sistemas": "RiServerFill",
   "y3t1/PCP": "FasChartLine",
-  "y3t1/Redes de Computadores": "FasNetworkWired"
+  "y3t1/Redes de Computadores": "FasNetworkWired",
+  "y3t2/Ingeniería de Redes": "FasEthernet",
+  "y3t2/Infraestructura Informática": "RiDeviceServerLine",
+  "y3t2/Sistemas de Información (SI)": "RiFilePaperFill",
+  "y3t2/Sistemas Distribuidos": "RiComputerLine",
+  "y3t2/Sistemas Inteligentes": "SiOpenai"
 }
