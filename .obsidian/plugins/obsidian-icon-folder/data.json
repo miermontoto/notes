@@ -1,10 +1,12 @@
 {
   "settings": {
     "migrated": true,
-    "iconPacksPath": ".obsidian/icons/",
+    "iconPacksPath": ".obsidian/icons",
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasEthernet",
+      "FasNetwork-wired",
       "FasNetworkWired",
       "FasChartLine",
       "RiServerFill",
@@ -12,9 +14,7 @@
       "FasStopwatch",
       "FarFileImage",
       "FasWindowRestore",
-      "FasFilePdf",
-      "FasArrowUp91",
-      "RiTerminalWindowLine"
+      "FasFilePdf"
     ],
     "recentlyUsedIconsSize": 10,
     "rules": [],
