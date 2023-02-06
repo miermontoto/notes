@@ -16,3 +16,15 @@ El objetivo es separar el espacio mediante una función. Se busca llevar el espa
 	- También mide lo parecido que son dos vectores.
 	- Se puede utilizar con cualquier número de dimensiones.
 - Maximizar márgenes.
+
+### Distancia de un hiperplano a un punto
+Medir la distancia es importante porque la distancia es proporcional a la certeza de asignar una clase a un dato.
+
+$$d(x, Hyperplane) = {<w,x>+b\over ||w||}$$
+
+## Optimización y márgenes
+![[_resources/ML4 - SVM 2023-02-06 10.52.00.excalidraw]]
+
+
+## Resolución
+Puesto que el objetivo es optimizar una función convexa, existe una solución única. Además, existen optimizadores muy rápidos.
