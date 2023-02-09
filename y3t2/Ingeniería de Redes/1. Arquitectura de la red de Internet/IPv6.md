@@ -58,6 +58,7 @@ La predicción del futuro es incierta.
 
 ### Espacio de direccionamiento
 128 bits en campo de direcciones
+![[_resources/IPv6 2023-02-09 11.52.14.excalidraw]]*
 
 ### Ámbito de direccionamiento
 - link-local
@@ -76,3 +77,9 @@ La predicción del futuro es incierta.
 - `::` indica múltiples grupos de 16 bits cero
 	- Solo puede aparecer una vez.
 - Los ceros a la izquierda se pueden suponer.
+
+
+### Autoconfiguración
+En el momento que se conecta un equipo a una red:
+- Ya se obtiene una dirección local. `fe80::<mac>`
+- Tras un RA (que porta los prefijos del router), obtiene una dirección global. `<prefijo>:<mac/random>`
