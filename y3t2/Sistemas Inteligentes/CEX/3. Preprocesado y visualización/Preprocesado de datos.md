@@ -1,3 +1,7 @@
+![[_resources/T3_Preprocesado.pdf]]
+
+---
+
 # Introducción
 ## Concepto
 <mark style="background: #ADCCFFA6;">Tratamiento de datos para mejorar su calidad (errores, columnas irrelevantes, incongruencias...)</mark>
