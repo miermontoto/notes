@@ -1,9 +1,7 @@
+*Juan Francisco Mier Montoto, UO283319*
+*Sistemas de Información, EPI Gijón 22-23*
+
 ---
-author: Juan Francisco Mier Montoto
-date: 2023-02-12
-info: SI @ GIITIN, EPI Gijón, 22-23
----
-*Juan Francisco Mier Montoto, EPI Gijón 22-23*
 
 ## 1. Realizar un `merge` de una rama de trabajo en `master` (sin conflictos) cuando `master` ha sido modificado después de hacer el branch
 ### Estado de la rama `master` previo a los merges

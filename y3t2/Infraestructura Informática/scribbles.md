@@ -1,0 +1,1 @@
+![[_resources/scribbles 2023-02-13 09.18.41.excalidraw]]
