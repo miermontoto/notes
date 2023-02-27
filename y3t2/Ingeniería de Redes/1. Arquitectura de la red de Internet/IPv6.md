@@ -67,7 +67,7 @@ La predicción del futuro es incierta.
 
 ### Tipos de direcciones
 - **Unicast:** identificador de una interfaz. Un paquete enviado a una dirección unicast es entregado en la interfaz identificada por esa dirección.
-- **Anycast:** identificador de un conjunto de interfaces. Un paquete enviado a una direcicón anycast es entregado a una de las intefaces identificadas por esa dirección.
+- **Anycast:** identificador de un conjunto de interfaces. Un paquete enviado a una direcci´ anycast es entregado a una de las intefaces identificadas por esa dirección.
 - **Multicast:** identificador de un conjunto de interfaces. Un paquete enviado a una dirección anycast es entregado a todas las interfaces identificadas por esa dirección.
 
 ### Notación de direcciones
