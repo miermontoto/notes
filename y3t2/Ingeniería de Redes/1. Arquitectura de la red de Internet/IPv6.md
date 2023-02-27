@@ -1,4 +1,4 @@
-![[../2. Interconexión de redes/_resources/IRD_IPv6_v2.pdf]]
+![[_resources/IRD_IPv6_v2.pdf]]
 
 ---
 

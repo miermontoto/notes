@@ -95,7 +95,7 @@ var TypingSpeedPlugin = class extends import_obsidian.Plugin {
       this.statusBarItemEl.setText("");
       this.addSettingTab(new TypingSpeedSettingTab(this.app, this));
       this.registerDomEvent(document, "keydown", (evt) => {
-        const keyRegex = /^[A-Za-z,;1-9]$/g;
+        const keyRegex = /^[\p{L},;1-9]$/gu;
         if (evt.key.match(keyRegex)) {
           this.keyTypedInSecond += 1;
           this.keyTypedSinceSpace += 1;
