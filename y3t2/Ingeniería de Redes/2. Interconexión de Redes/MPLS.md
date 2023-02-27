@@ -35,5 +35,6 @@ Diseñado para enviar paquetes basándose en etiquetas (en lugar de L3).
 - Se requiere apilar etiquetas (*label stack*) para enviar tráfico a través del dominio MPLS. Son necesarias dos etiquetas:
 	- Una para identificar la VPN.
 	- Etiquetas LPD para transportar el tráfico a través del dominio MPLS.
+- Solo los routers frontera conocen las etiquetas de VPN. Los routers intermedios conocen las etiquetas LDP.
 ![[_resources/Pasted image 20230227121442.png]]
-- Cuando un paquete IP llega al router PE, 
+![[_resources/Pasted image 20230227121756.png]]
