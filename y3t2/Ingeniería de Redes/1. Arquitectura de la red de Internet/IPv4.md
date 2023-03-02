@@ -79,7 +79,7 @@ Control de enlace. Controla el flujo y los errores. El control de flujo consiste
 - **No fiable**
 - **Inseguro**
 
-![[_resources/Pasted image 20230203121245.png]]
+![[_resources/Pasted image 20230302192525.png]]
 
 #### Direccionamiento IP
 - **Dirección IP**

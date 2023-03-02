@@ -5,10 +5,12 @@
 ## Concepto
 Diseñado para enviar paquetes basándose en etiquetas (en lugar de L3).
 
-- Diseñado para soportar diferfentes protocolos L3 (*multiprotocol*)
+- Diseñado para soportar diferentes protocolos L3 (*multiprotocol*)
 - Disminuye la sobrecarga de reenvío en los routes core (*mayor eficiencia*)
 - Eficiente y flexible
 - Proporciona diferentes servicios, como unicast routing, multicast routing, VPN, *Traffic Engineering*, QoS, *Any Transport Over MPLS*.
+
+![[_resources/Pasted image 20230302192619.png]]
 
 ## Componentes
 - Label Distribution Protocol *(LDP)*
