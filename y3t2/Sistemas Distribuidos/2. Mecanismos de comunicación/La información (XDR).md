@@ -42,12 +42,12 @@ xdr_destroy(&operacion);
 
 ### Arrays de longitud variable
 ```c
-/* ejemplo.x */
+/* ejemplo-var.x */
 typedef int VariosEnteros<100>;
 ```
 
 ```c
-/* ejemplo.h, converitdo por rpcgen a tipo "struct" */
+/* ejemplo-var.h, converitdo por rpcgen a tipo "struct" */
 typedef struct {
 	u_int VariosEnteros_len;
 	int *VariosEnteros_val;
@@ -63,13 +63,61 @@ typedef struct VariosEnteros VariosEnteros;
 
 ### Cadenas (string)
 ```c
-/* ejemplo.x */
+/* ejemplo-string.x */
 typedef string Texto<500>; // 500 como máx.
 ```
 
 ```c
-/* ejemplo.h, convertido por rpcgen a tipo "struct" */
+/* ejemplo-string.h, convertido por rpcgen a tipo "struct" */
 char * Texto;
 ```
 
 1 byte por caracter, 4 bytes por longitud (mín 4, máx 504)
+
+### Estructuras
+```c
+/* ejemplo-struct.x */
+struct Persona {
+	int edad;
+	string nombre<>;
+	string apellidos<>;
+}
+```
+
+```c
+/* ejemplo-struct.h */
+struct Persona {
+	int edad;
+	char *nombre;
+	char *apellidos;
+};
+typedef struct Persona Persona;
+```
+
+### Uniones
+- Sus campos se almacenan en la misma dirección.
+- No puede usarse más de uno.
+- Es como una variable con varios tipos.
+
+XDR implementa la idea de *unión con un discriminante*.
+```c
+/* ejemplo-union-x */
+union Resultado switch(int tipo) {
+	case 1: int entero;
+	case 2: double real;
+	default string error<>;
+};
+```
+
+```c
+/* Parte de ejemplo-union.h */ 
+struct Resultado { 
+	int tipo; 
+	union { 
+		int entero; 
+		double real; 
+		char *error; 
+	}
+	Resultado_u; 
+}; typedef struct Resultado Resultado;
+```
