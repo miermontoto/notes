@@ -23,6 +23,21 @@
 - Bucle digital de abonado (xDSL)
 - Fibra óptica (FTTx)
 
+### Bucle digital de abonado (xDSL)
+- Transmitir datos de alta velocidad sobre el par trenzado telefónico.
+- Tecnologías DSL
+	- Acceso básico RDSI
+	- HDSL
+		- E1 (2Mbps)
+		- T1 (1.54Mpbs)
+	- SHDSL
+	- ADSL
+		- 13% usuarios
+		- ADSL2, ADSL2+
+		- READSL
+	- VDSL
+		- VDSL2
+
 ## Tecnologías inalámbricas
 - Redes WiMAX
 - Acceso por satélite
