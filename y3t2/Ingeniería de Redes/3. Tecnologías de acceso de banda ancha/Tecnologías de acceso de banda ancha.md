@@ -32,11 +32,18 @@
 		- T1 (1.54Mpbs)
 	- SHDSL
 	- ADSL
-		- 13% usuarios
+		- 25% usuarios
 		- ADSL2, ADSL2+
+			- Mayores capacidades, mayores alcances
 		- READSL
 	- VDSL
 		- VDSL2
+- Desarrollo de IPTV
+- DSLAM pasan de ATM a conmutadores Ethernet
+
+### Teconlogías de fibra óptica
+
+
 
 ## Tecnologías inalámbricas
 - Redes WiMAX
