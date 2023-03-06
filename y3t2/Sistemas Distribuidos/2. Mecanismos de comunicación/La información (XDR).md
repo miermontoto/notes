@@ -121,3 +121,28 @@ struct Resultado {
 	Resultado_u; 
 }; typedef struct Resultado Resultado;
 ```
+
+
+### Punteros
+- Los punteros no se pueden transmitir, ya que pierden su significado.
+- XDR no puede transmitir putneros, pero puede transmitir la lista.
+	- Basta con transmitir cada dato, y un booleano indicando si hay más.
+	- En destino, la lista se reconstruye a base de `malloc()`.
+	- Concepto de **serialización**.
+- XDR define un nuevo tipo: <u>datos opcionales</u>.
+	- Un dato opcional puede tener valor asignado o no. (`FALSE` si no lo tiene, `TRUE`de lo contrario)
+
+```c
+	typedef int *entero_opcional; // .x (dato opcional)
+	typedef int *entero_opcional; // .h
+	// .c
+	entero_opcional p;
+	p = NULL; /* */ p = malloc(sizeof(int));
+	*p = 3;
+	xdr_enteroopcional(&op, &p);
+```
+
+
+### Datos opcionales (listas enlazadas)
+
+### XDR y sockets
