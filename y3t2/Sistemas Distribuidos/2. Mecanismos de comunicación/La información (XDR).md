@@ -132,17 +132,56 @@ struct Resultado {
 - XDR define un nuevo tipo: <u>datos opcionales</u>.
 	- Un dato opcional puede tener valor asignado o no. (`FALSE` si no lo tiene, `TRUE`de lo contrario)
 
+
+***Lista enlazada***
+XDR no puede transmitir punteros, pero puede transmitir la lista.
+- Basta con transmitir cada dato, y un booleano indicando si hay más.
+- En destino, la lista se reconstruye a base de `malloc()`.
+- Concepto de **serialización**.
 ```c
-	typedef int *entero_opcional; // .x (dato opcional)
-	typedef int *entero_opcional; // .h
-	// .c
-	entero_opcional p;
-	p = NULL; /* */ p = malloc(sizeof(int));
-	*p = 3;
-	xdr_enteroopcional(&op, &p);
+struct Elemento {
+	int dato;
+	struct Elemento *siguiente;
+};
+```
+
+```c
+e.dato = 35;
+e.siguiente = malloc(sizeof(struct Elemento));
+e.siguiente -> dato = 70;
+e.siguiente -> siguiente = malloc(...);
+e.siguiente -> siguiente -> dato ) 15;
+//...
 ```
 
 
-### Datos opcionales (listas enlazadas)
+***Datos opcionales***
+XDR define un nuevo tipo: <u>datos opcionales</u>.
+- Un dato opcional puede tener valor asignado o no. (`FALSE` si no lo tiene, `TRUE`de lo contrario)
+
+```c
+/* ejemplo-lista-enlazada.x */
+struct ListaEnlazada {
+	int dato;
+	ListaEnlazada *siguiente;
+};
+```
 
 ### XDR y sockets
+XDR fue creado para usarse con ONC RPC.
+Pero puede usarse "por separado" para: 
+- Convertir datos de formato nativo a un formato independiente
+- Volcar esos datos a disco 
+- Enviarlos por la red
+
+### Manejadores : `int` vs `FILE*`
+- `int` es el usado por la API del operativo
+	- `open()`, `read()`, `write()`, `close()`, `dup()`
+	- Bajo nivel
+	- Usada también por los sockets
+- `FILE*` está implementada en la biblioteca estándar C
+	- `fopen()`, `fread()`...
+	- Alto nivel
+	- Usada por XDR
+- Convertir uno en otro
+	- `FILE* fdopen()`
