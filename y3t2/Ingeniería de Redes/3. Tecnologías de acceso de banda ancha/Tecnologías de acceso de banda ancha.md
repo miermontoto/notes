@@ -50,3 +50,38 @@
 - Acceso por satélite
 - Redes locales inalámbricas
 - Acceso móvil de banda ancha
+
+### WiMax
+Alternativa a otras tecnologías de banda ancha.
+
+- Solución económica para el despliegue rápido de redes en áreas sin cobertura de banda ancha.
+	- Cobertura <= 50km
+	- Servicios de Internet y telefonía.
+	- Ancho de banda <= 70Mpbs
+	- Garantía de QoS
+
+![[_resources/Pasted image 20230309114228.png]]
+
+### Redes de acceso por satélite
+- Muy ámplia cobertura, rapidez de instalación de terminales, coste independiente de la distancia.
+- Alcance en ubicaciones remotas.
+- Capacidad de hasta cientos de Mpbs en downlink
+- Adecuación para servicios de difusión y multicast
+- Satélites en órbita geoestacionaria (GEO)
+	- Retardo y atenuación elevados
+	- Terminales fijos con antenas grandes VSAT
+	- Velocidades bajas (240/384kpbs)
+- Satélites en órbitas bajas (LEO)
+	- Acceso directo de los usuarios al satélite
+
+![[_resources/Pasted image 20230309114245.png]]
+
+### Redes locales inalámbricas (WLAN)
+
+### Comunicaciones de banda ancha
+Servicio sobre áreas geográficas extensas.
+
+- Divididas en zonas de cobertura (células)
+- Cada célula atendida por una estación base radio.
+
+![[_resources/Pasted image 20230309114259.png]]
