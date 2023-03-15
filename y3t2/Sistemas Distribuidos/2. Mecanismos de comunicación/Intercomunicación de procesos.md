@@ -31,7 +31,11 @@
 ![[_resources/2. Intercomunicación de procesos 2023-02-02 09.36.00.excalidraw]]
 
 ### Orden de funciones de la API
+#### TCP
 ![[_resources/Pasted image 20230202095524.png]]
+
+#### UDP
+![[_resources/Pasted image 20230315165007.png]]
 
 - `socket` crea el socket.
 - `bind` asigna IP y puerto a un socket.
