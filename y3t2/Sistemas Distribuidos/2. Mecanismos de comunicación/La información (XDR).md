@@ -125,7 +125,7 @@ struct Resultado {
 
 ### Punteros
 - Los punteros no se pueden transmitir, ya que pierden su significado.
-- XDR no puede transmitir putneros, pero puede transmitir la lista.
+- XDR no puede transmitir punteros, pero puede transmitir la lista.
 	- Basta con transmitir cada dato, y un booleano indicando si hay más.
 	- En destino, la lista se reconstruye a base de `malloc()`.
 	- Concepto de **serialización**.
