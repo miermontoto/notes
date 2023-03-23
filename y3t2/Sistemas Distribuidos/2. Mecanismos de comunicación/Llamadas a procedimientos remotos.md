@@ -35,3 +35,20 @@ Se utilizan *callbacks* para avisar al cliente del proceso de la información.
 ![[_resources/Pasted image 20230309103425.png]]
 
 # ONC RPC
+
+# Java RMI
+Conceptos similares, pero orientados a objetos.
+
+**En común**
+- Una clase remota implementa métodos que un cliente quiere invocar.
+- El ciente invoca en realidad un *stub* local.
+- Otra clase remota implementa el esqueleto con el que se conecta el cliente.
+- Es necesario un "registro" que ponga en contacto el cliente con el servidor.
+- EL cliente debe conocer la IP y el puerto del registro.
+
+## Características
+- Los parámetros pueden ser cualquier tipo básico u objeto serializable.
+- La especificación del interfaz no requiere lenguaje aparte (usa `interface`)
+- No requiere un "rpcgen", se genera código JIT
+- El cliente no necesita tener un stub, lo obtiene del servidor.
+- El registro tiene URLs donde anuncia las funciones.
