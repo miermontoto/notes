@@ -16,3 +16,4 @@
 
 Solución: creación de una red de peers
 
+El sistema no es muy robusto puesto que cada clave lo almacena un solo nodo.
