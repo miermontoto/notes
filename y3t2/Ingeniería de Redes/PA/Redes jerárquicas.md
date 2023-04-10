@@ -17,3 +17,5 @@
 - Materiales de cobre y fibra óptica
 	- Redes pequeñas (<100TT) → Generalmente cobre
 	- Redes grandes (>100TT)  → Horizontal cobre/fibra | Vertical principalmente fibra, otros usos cobre
+
+![[_resources/Redes jerárquicas 2023-03-27 12.07.44.excalidraw]]

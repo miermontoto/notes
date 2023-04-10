@@ -1,0 +1,1 @@
+![[_resources/Ejercicio individual 2023-03-30 11.15.47.excalidraw]]

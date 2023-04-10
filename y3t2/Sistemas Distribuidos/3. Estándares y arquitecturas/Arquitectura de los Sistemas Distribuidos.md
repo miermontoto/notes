@@ -64,5 +64,29 @@ Si se combina con eventos, dan lugar a **espacios de datos compartidos**.
 <p style="font-size: 12px">NOTA: cada columna representa una posibilidad de repartir las funcionalidades entre cliente y servidor.</p>
 
 ## Arquitecturas descentralizadas
+- En lugar de separar capas en procesos, se hace lo contrario.
+- Una capa se implementa distribuida entre varios procesos.
+- Todos los procesos implementan todas las capas, pero trabajando sobre diferentes datos.
+- Son todos iguales entre sí, e intercambiables.
+
+>[!INFO]
+>Una arquitectura descentralizada crea una red virtual superpuesta por encima de la red física
+> - Los nodos son los procesos
+> - Los enlaces son sus intercomunicaciones
+
+### Estructuradas
+- Las red superpuesta se construye con algoritmos deterministas
+- Los datos se mapean a nodos de forma determinista
+
+### Desestructuradas
+- La red superpuesta se construye con algoritmos que usan aleatoriedad
+- Los datos se distribuyen aleatoriamente entre sus nodos
+- Las búsquedas son problemáticas (*flood*)
+
+### Híbridas
+- Mayormente aleatorias
+- Nodos especiales (*superpeers*)
+	- Actúan como *brokers*
+	- Contienen índices para mejorar las búsquedas
 
 
