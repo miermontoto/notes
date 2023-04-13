@@ -8,5 +8,6 @@
   "baseFontSize": 15,
   "enabledCssSnippets": [
     "math"
-  ]
+  ],
+  "nativeMenus": false
 }
