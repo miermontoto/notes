@@ -1,0 +1,1 @@
+![[_resources/Ayuda 2023-04-13 19.02.41.excalidraw]]
