@@ -74,5 +74,6 @@ Cuando una máquina envía un mensaje a otra, hay una relación entre los evento
 > [!INFO] Algoritmo de Lamport
 > - El reloj lógico es el contador que mantiene cada máquina.
 > - El reloj debe actualizarse con cada recepción de mensaje.
+> - Cuando `A` envía un mensaje a `B`, incluye como parte del mensaje el valor de su reloj lógico.
 
-- Cuando `A` envía un mensaje a `B`, incluye como parte del mensaje el valor de su reloj lógico.
+![[_resources/Pasted image 20230417140700.png]]
