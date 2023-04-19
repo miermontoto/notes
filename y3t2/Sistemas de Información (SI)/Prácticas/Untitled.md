@@ -1,1 +1,0 @@
-![[_resources/Untitled 2023-03-16 09.24.53.excalidraw]]
