@@ -16,6 +16,7 @@ acc 102 permit tcp 10.23.19.0 0.0.0.255 host 23.19.24.146 eq smtp
 acc 102 permit tcp 10.23.19.0 0.0.0.255 host 23.19.25.66 eq smtp
 acc 102 permit tcp 10.23.19.0 0.0.0.255 host 23.19.27.66 eq smtp
 acc 102 permit tcp 10.23.19.0 0.0.0.255 156.35.0.0 0.0.255.255
+acc 102 deny ip 10.23.19.0 0.0.0.255 any
 ```
 IN en g0/1
 
@@ -29,11 +30,20 @@ IN en g0/2
 *Las salas de invitados solamente tendrán acceso a los servicios web A, web B (tcp, puerto 80), mail A, mail B, mail C-D (tcp, puerto 25) y a Internet.*
 ```
 acc 104 permit edp any bootpc any eq bootps
+acc 105 permit edp any bootpc any eq bootps
 acc 104 permit tcp 10.23.19.0 0.0.0.65 host 23.19.24.147 eq www
-acc 104 permit tcp 10.23.19.64 0.0.0.
+acc 105 permit tcp 10.23.19.64 0.0.0.15 host 23.19.24.147 eq www
+acc 104 permit tcp 10.23.19.0 0.0.0.65 host 23.19.25.67 eq www
+acc 105 permit tcp 10.23.19.64 0.0.0.15 host 23.19.25.67 eq www
+acc 104 permit tcp 10.23.19.0 0.0.0.65 host 23.19.24.146 eq smtp
+acc 105 permit tcp 10.23.19.64 0.0.0.15 host 23.19.24.146 eq smtp
+acc 104 permit tcp 10.23.19.0 0.0.0.65 host 23.19.25.66 eq smtp
+acc 105 permit tcp 10.23.19.64 0.0.0.15 host 23.19.25.66 eq smtp
+acc 104 permit tcp 10.23.19.0 0.0.0.65 host 23.19.27.66 eq smtp
+acc 105 permit tcp 10.23.19.64 0.0.0.15 host 23.19.27.66 eq smtp
 ```
 
 *Las salas de trabajo del personal de la empresa no tienen acceso a Internet ni conexión con ningún PC de la red empresarial. Sólo pueden acceder a la sala de servidores C-D y a los servidores web y mail de la empresa (web A, web B, mail A, mail B, mail C-D).*
 ```
-
+acc 
 ```
