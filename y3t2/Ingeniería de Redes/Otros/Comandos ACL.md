@@ -1,4 +1,4 @@
-*A los servidores web A y mail A debe poder acceder cualquier equipo (empresa e Internet) a los puertos web y smtp. Al resto de puertos de esos equipos sólo accederá el personal de A. A los servidores corporativos A (todos los puertos) sólo puede acceder el personal del edificio A y los empleados de la VLAN 40 del edificio D.*
+notes*A los servidores web A y mail A debe poder acceder cualquier equipo (empresa e Internet) a los puertos web y smtp. Al resto de puertos de esos equipos sólo accederá el personal de A. A los servidores corporativos A (todos los puertos) sólo puede acceder el personal del edificio A y los empleados de la VLAN 40 del edificio D.*
 ```
 acc 101 permit tcp any host 23.19.24.146 eq smtp
 acc 101 permit tcp any host 23.19.24.147 eq www
