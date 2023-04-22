@@ -128,10 +128,6 @@ acc 108 permit ip 23.19.27.0 0.0.0.63 host 23.19.27.68
 acc 108 permit ip 156.23.19.0 0.0.0.255 host 23.19.27.67
 acc 108 permit ip 156.23.19.0 0.0.0.255 host 23.19.27.68
 
-! Salas de invitados C-D
-acc 108 permit ip 10.23.19.0 0.0.0.255 host 23.19.27.67
-acc 108 permit ip 10.23.19.0 0.0.0.255 host 23.19.27.68
-
 ! Departamento de Ingeniería
 acc 108 permit ip 10.23.24.0 0.0.0.63 host 23.19.27.67
 acc 108 permit ip 10.23.24.0 0.0.0.63 host 23.19.27.68
