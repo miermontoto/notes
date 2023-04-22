@@ -129,12 +129,12 @@ acc 108 permit ip 156.23.19.0 0.0.0.255 host 23.19.27.67
 acc 108 permit ip 156.23.19.0 0.0.0.255 host 23.19.27.68
 
 ! Departamento de Ingeniería
-acc 108 permit ip 10.23.24.0 0.0.0.63 host 23.19.27.67
-acc 108 permit ip 10.23.24.0 0.0.0.63 host 23.19.27.68
+acc 108 permit ip 23.19.24.0 0.0.0.63 host 23.19.27.67
+acc 108 permit ip 23.19.24.0 0.0.0.63 host 23.19.27.68
 
 ! Departamento de RRHH
-acc 108 permit ip 10.23.24.128 0.0.0.15 host 23.19.27.67
-acc 108 permit ip 10.23.24.128 0.0.0.15 host 23.19.27.68
+acc 108 permit ip 23.19.24.128 0.0.0.15 host 23.19.27.67
+acc 108 permit ip 23.19.24.128 0.0.0.15 host 23.19.27.68
 
 ! APPLY (R6): OUT @ g0/0.10
 int g0/0.10
