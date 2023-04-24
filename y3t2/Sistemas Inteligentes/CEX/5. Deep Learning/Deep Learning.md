@@ -4,28 +4,28 @@
 
 ## Representación
 ![[_resources/Pasted image 20230213112832.png]]
+Dependiendo de la representación, cambia la clasificación entre clases.
 
 ## Aprendizaje de múltiples componentes
 ![[_resources/Pasted image 20230213113603.png]]
-
-El problema de Machine Learning es que es necesario una persona que decida sobre las características. Con el Deep Learning, se resuelve ese error y la tasa de fallos se reduce.
+El problema de Machine Learning es que es necesario una persona que decida sobre las características. Con el Deep Learning, se resuelve ese error y la tasa de fallos se reduce. El *DeepLearning* es la extracción de características y clasficación de información de manera automatizada con el objetivo de conseguir una clasificación.
 
 ## Deep Learning
 El objetivo es encontrar la función no linear con la mayor consistencia de datos posible.
 - Consistente significa que se puedan hacer estimaciones de manera sencilla de la función a partir de algunas transformaciones. $y\approx \psi(f(x,\theta))$
 - Que esa estimación haga mínimo una función de pérdida (inconsistencia)
 
-| ![[_resources/Pasted image 20230213114900.png]] | ![[_resources/Pasted image 20230220100841.png|760]] 
+| ![[_resources/Pasted image 20230213114900.png]]  
 
-![[_resources/Pasted image 20230213115743.png]]
+![[_resources/Deep Learning 2023-04-24 10.24.51.excalidraw]]
 
+![[_resources/Deep Learning 2023-04-24 10.28.27.excalidraw]]
 
-**Por qué hacerlo todo de manera no-lineal?:** Las funciones de pérdida son irresolubles, pero <u>compensa</u> porque la inconsistencia obtenida es muy buena, mejor que en humanos.
-
+**¿Por qué hacerlo todo de manera no-lineal?:** Las funciones de pérdida son irresolubles, pero <u>compensa</u> porque la inconsistencia obtenida es muy buena, mejor que en humanos.
+Se aplica un algoritmo, normalmente el *gradiente del descenso estocrástico*, para hacer la función no lineal.
 ![[_resources/5. Deep Learning 2023-02-20 10.17.03.excalidraw]]
 
-## Métodos de optimización
-![[_resources/Pasted image 20230220102605.png|500]] | ![[_resources/Pasted image 20230220102622.png|500]] | 
+![[_resources/Pasted image 20230220102622.png]] 
 
 
 
