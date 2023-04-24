@@ -14,7 +14,7 @@ peso de los atributos. ^TmgRoOgD
 
 
 # Embedded files
-aebce08dd99d9a5b7df69044e9ed877bb36cc71b: [[_resources/Pasted Image 20230424102842_861.png]]
+aebce08dd99d9a5b7df69044e9ed877bb36cc71b: [[Pasted Image 20230424102842_861.png]]
 
 %%
 # Drawing

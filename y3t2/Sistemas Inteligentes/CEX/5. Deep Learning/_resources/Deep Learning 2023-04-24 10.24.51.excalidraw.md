@@ -15,7 +15,7 @@ muy buenos. ^MQhTr1XD
 
 
 # Embedded files
-7aa3dd63c44c2e613bcd5604ede2c8c966323842: [[_resources/Pasted Image 20230424102508_100.png]]
+7aa3dd63c44c2e613bcd5604ede2c8c966323842: [[Pasted Image 20230424102508_100.png]]
 
 %%
 # Drawing
