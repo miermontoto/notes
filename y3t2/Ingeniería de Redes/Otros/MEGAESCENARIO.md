@@ -51,12 +51,18 @@ ip acc 102 in
 acc 103 permit ip 156.23.19.0 0.0.0.255 any
 
 ! Peronsal de empresa
-acc 103 permit ip 23.19.24.0 0.0.0.255 any
+acc 103 permit ip 23.19.24.0 0.0.3.255 host 23.19.25.68
+acc 103 permit ip 23.19.24.0 0.0.3.255 host 23.19.25.69
+
+! Otras reglas
+acc 103 permit tcp 23.19.24.0 0.0.3.255 host 23.19.25.66 eq smtp
+acc 103 permit tcp 23.19.24.0 0.0.3.255 host 23.19.25.67 eq www
 
 ! APPLY (R5): OUT @ g0/1.35
 int g0/1.35
 ip acc 103 out
 ```
+
 
 *Las salas de invitados (C-D) solamente tendrán acceso a los servicios web A, web B (tcp, puerto 80), mail A, mail B, mail C-D (tcp, puerto 25) y a Internet.*
 ```
@@ -136,6 +142,9 @@ acc 108 permit ip 23.19.24.0 0.0.0.63 host 23.19.27.68
 ! Departamento de RRHH
 acc 108 permit ip 23.19.24.128 0.0.0.15 host 23.19.27.67
 acc 108 permit ip 23.19.24.128 0.0.0.15 host 23.19.27.68
+
+! Permite acceso global a ServMailCD
+acc 108 permit tcp any host 23.19.27.66 eq smtp
 
 ! APPLY (R6): OUT @ g0/0.10
 int g0/0.10
