@@ -1,0 +1,1 @@
+50 cuestiones tipo test, 50% de preguntas ya existentes, 50% "nuevas"
