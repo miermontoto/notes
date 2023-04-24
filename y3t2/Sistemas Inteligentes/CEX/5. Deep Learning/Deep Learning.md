@@ -25,7 +25,7 @@ El objetivo es encontrar la función no linear con la mayor consistencia de dato
 Se aplica un algoritmo, normalmente el *gradiente del descenso estocrástico*, para hacer la función no lineal.
 ![[_resources/5. Deep Learning 2023-02-20 10.17.03.excalidraw]]
 
-![[_resources/Pasted image 20230220102622.png]] 
+![[_resources/Pasted image 20230220102622.png|800]] 
 
 
 
@@ -35,9 +35,8 @@ Cuanto más profunda sea la red, más posible es que el problema sea aprendible.
 
 
 ## Funcionamiento
-![[_resources/Pasted image 20230220102951.png]] | ![[_resources/Pasted image 20230220103258.png]] |
-
-Se aprende la probabilidad de y condicionado a x (distribución).
+![[_resources/Deep Learning 2023-04-24 11.12.55.excalidraw|800]]
+Se aprende la probabilidad de *y* condicionado a *x* (distribución).
 Al aplicar este planteamiento, se aplica un planteamiento de "máxima verosimilitud".
 Se utilizan logaritmos para simplificar la función de distribución (exponencial).
 
@@ -46,8 +45,7 @@ Se utilizan logaritmos para simplificar la función de distribución (exponencia
 
 
 ## Regresión
-![[_resources/Pasted image 20230220104208.png]]
+![[_resources/Deep Learning 2023-04-24 11.22.50.excalidraw]]
 
 ## Clasificación
-![[_resources/Pasted image 20230220104341.png]]
-![[_resources/Pasted image 20230220104618.png]]
+![[_resources/Deep Learning 2023-04-24 11.34.35.excalidraw]]
