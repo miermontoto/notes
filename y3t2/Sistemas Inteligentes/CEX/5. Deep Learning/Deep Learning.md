@@ -36,9 +36,10 @@ Cuanto más profunda sea la red, más posible es que el problema sea aprendible.
 
 ## Funcionamiento
 ![[_resources/Deep Learning 2023-04-24 11.12.55.excalidraw|800]]
-Se aprende la probabilidad de *y* condicionado a *x* (distribución).
-Al aplicar este planteamiento, se aplica un planteamiento de "máxima verosimilitud".
-Se utilizan logaritmos para simplificar la función de distribución (exponencial).
+- Se aprende la probabilidad de *y* condicionado a *x* (distribución).
+- Al aplicar este planteamiento, se aplica un planteamiento de "máxima verosimilitud".
+- Se utilizan logaritmos para simplificar la función de distribución (exponencial).
+- Este planteamiento funciona para todos los problemas, variando la función de que requiere la máxima verosimilitud dependiendo de las características.
 
 ## Tipos de redes
 ![[_resources/Pasted image 20230220103526.png]]
