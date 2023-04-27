@@ -150,3 +150,16 @@ acc 108 permit tcp any host 23.19.27.66 eq smtp
 int g0/0.10
 ip acc 108 out
 ```
+
+*Permitir únicamente acceso desde los PCs del Departamento de Ingeniería y dirección de A a la nueva subred de servidores*
+```
+! Dirección
+acc 110 permit ip 23.19.24.96 0.0.0.31 any
+
+! Ingeniería
+acc 110 permit ip 23.19.24.0 0.0.0.63 any
+
+! APPLY (R9): OUT @ g0/2
+int g0/2
+ip acc 110 out
+```
