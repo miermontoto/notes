@@ -1,0 +1,1 @@
+![[_resources/Prototipos 2023-04-30 16.26.53.excalidraw]]
