@@ -80,8 +80,32 @@ Protocolo de la capa de interfaz FC4 encargado de mapear el protocolo SCSI sobre
 
 #### Estructura de red
 Utilización de switches FC para la interconexión de dispositivos FC.
+Los switches FC pueden interconectarse para formar topologías de interconexión.
+*Malla Fiber Channel:* conjunto de switches y cables FC que forman una red FC.
+*Transceptores:* dispositivos que transforman las señales eléctricas manejadas en los puertos de los switches FC en las señales de luz enviadas a través de los canales de fibra. SFP = small form factor pluggable, SFP+ = enhanced SFP
+*HBA:* permiten conectar los servidores a los switches FC mediante PCIe.
+
+##### Direccionamiento
+Conecta a los servidores con los volúmenes de los sistemas de almacenamiento.
+
+- **Roles**
+	- **Initiator:** inicia el proceso de comunicación con un target y gobierna el proceso de acceso al mismo (desde un HBA)
+	- **Target:** atiende a las solicitudes de acceso del iniciador que corresponde. (desde una cabina de almacenamiento
+- **Identificación de puertos FC:** mediante números de 64 bits, únicos a nivel mundial (World Wide Name)
+- **LUN:** identificador numérico para identificar cad avolumen dentro de un target.
 
 ### iSCSI
+Transmisión del protocolo SCSI sobre el protocolo TCP/IP y, por lo tanto, sobre infraestructura física de tipo Ethernet.
+
+- <mark style="background: #BBFABBA6;">Igual tecnología que la usada en redes de datos</mark>
+- <mark style="background: #BBFABBA6;">Más personal formado en redes IP</mark>
+- <mark style="background: #BBFABBA6;">Disponibilidad de más herramientas de gestión de red</mark>
+- <mark style="background: #BBFABBA6;">Menor coste</mark>
+- <mark style="background: #FF5582A6;">Mayor uso de CPU para gestión del tráfico</mark>
+- <mark style="background: #FF5582A6;">TCP/IP genera sobrecarga de tráfico</mark>
+- <mark style="background: #FF5582A6;">La latencia de los switches es elevada</mark>
+
+- Instalaciones críticas o de gran tamaño
 
 ## NAS
 
