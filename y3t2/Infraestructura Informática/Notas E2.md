@@ -65,7 +65,7 @@
 - **Básico:** un único expansor.
 - **Tolerante a fallos:** dos expansores y el resto de sus componentes redundados. 
 
-*Una bandeja de discos no opuede operar en solitario: funciona siempre de manera subordinada a una cabina con controlador.*
+*Una bandeja de discos no puede operar en solitario: funciona siempre de manera subordinada a una cabina con controlador.*
 
 ### Pilas de sistemas
 **Concepto:** sistema formado por un controlador y bandejas de discos interconectados mediante un bus SAS simple o múltiple.
@@ -105,9 +105,28 @@ Transmisión del protocolo SCSI sobre el protocolo TCP/IP y, por lo tanto, sobre
 - <mark style="background: #FF5582A6;">TCP/IP genera sobrecarga de tráfico</mark>
 - <mark style="background: #FF5582A6;">La latencia de los switches es elevada</mark>
 
-- Instalaciones críticas o de gran tamaño
+- Instalaciones críticas o de gran tamaño → **FC**
+- Instalaciones pequeñas o medianas → **iSCSI**
 
 ## NAS
+### Sistema de ficheros en red
+**Concepto:** servidor que <u>expone</u> su sistema de ficheros local a través de una red de datos, de modo que es accesible a otros oredenadores conectados a la red.
+
+**Protocolos**
+- **SMB:** estándar en Windows.
+- **NFS:** estándar en Linux.
+
+**Servidor de ficheros:** servidor que proporciona la funcionalidad de sistema de ficheros en red.
+
+### Sistemas NAS
+**Concepto:** servidores diseñados y configurados específicamente para proporcionar la funcionalidad de servidor de ficheros.
+
+*NAS frente a servidor genérico*
+- SO optimizado para servir ficheros
+- Totalmente preconfigurado
+- Disponibilidad de sistemas de gran capacidad y prestaciones
+
+*Doble funcionalidad NAS/Cabina de almacenamiento*: la cabinas de almacenamiento equipadas con puertos Ethernet, además de exportar volúmenes a una SAN, pueden también funcionar como dispositivos NAS.
 
 # Tema 6
 ## Tipos de equipos informáticos
