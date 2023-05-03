@@ -33,27 +33,55 @@
 
 **Cabinas de almacenamiento tolerante a fallos con elementos redundados:** requieren discos con doble puerto (SAS)
 
-#### Grupos
-**Definición:** conjunto de discos que funciona colaborativamente.
-**Implementación:** mediante un nivel de RAID.
+#### Configuración
+##### Grupos
+**Definición:** conjunto de discos que funciona colaborativamente (*de manera solidaria*)
+**I<sub></sub>mplementación:** mediante un nivel de RAID.
 **Requisitos:** discos del mismo tipo (HDD/SDD) y (recomendable) del mismo tamaño.
 
-#### Volúmenes
+##### Volúmenes
 **Definición:** <u>entidad lógica de almacenamiento</u> exportada a la SAN por el sistema de almacenamiento.
 **Implementación:** medainte una partición geométricamente idéntica en todos los discos de un grupo.
-**Direccionamiento:** mediante una LUn (*Logical Unit Number*) que es un número entero.
-**Visibilidad:** todos los volúmenes configurados en una cabina conectada a una red de almacenamiento son visibles a todos los servidores conectados
+**Direccionamiento:** mediante una LUN (*Logical Unit Number*) que es un número entero.
+**Visibilidad:** todos los volúmenes configurados en una cabina conectada a una red de almacenamiento son visibles a todos los servidores conectados a la misma red. Los servidores ven a los volúmenes como si fueran discos internos del mismo.
+**Vinculación:** proceso de registro de un volúmen por parte del SO de un servidor. Una vez registrado, el volúmen se comporta como un disco interno.
 
-#### Consola de administración
+##### Consola de administración
 **Definición:** aplicación gráfica que permite administrar cabinas de almacenamiento y se ejecuta en un ordenador cliente.
 **Mecanismo de conexión:** red de administración
 **Protocolo de la red:** habitualmente HTTP/HTTPS
 
+#### Funcionalidades
+- **Snapshots:** capacidad de realizar copias de solo lectura de los volúmenes. Se realizan de forma instantánea, independientemente de tamaño del disco. Solo se copian bloques cuando resultan modificados en el volumen original.
+- **Copias completas:** creación de copias R/W de un volumen en otro.
+- **Enmascaramiento de LUN:** capacidad de establecer los volúmenes (identificados por LUN) que serán visibles a cada servidor de la red. Facilita las tareas de configuración de los servidores y evita errores innecesarios.
+- **Replicación remota:** se trata de la capacidad de mantener permanentemente replicados volúmenes de una cabina de almacenamiento en otra cabina remota. La replicación entre volumen origen y remoto es coordinada por las cabinas. (*objetivo: contingencia*)
+
 ### Bandejas de discos
+**Definición:** contenedor de discos gestionado por uno o dos expansores SAS.
+**Objetivo:** proporcionar un sistema de expansión para las cabinas de almacenamiento, de modo que se pueda incrementar el número de discos gestionados por un controlador.
+
+**<u><b>Tipos</b></u>
+- **Básico:** un único expansor.
+- **Tolerante a fallos:** dos expansores y el resto de sus componentes redundados. 
+
+*Una bandeja de discos no opuede operar en solitario: funciona siempre de manera subordinada a una cabina con controlador.*
 
 ### Pilas de sistemas
+**Concepto:** sistema formado por un controlador y bandejas de discos interconectados mediante un bus SAS simple o múltiple.
+**Objetivo:** implementar infraestructuras de almacenamiento escalables en capacidad, permitiendo alcanzar capacidades de almacenamiento muy elevadas.
 
 ## SAN
+### Fiber Channel
+Tecnología de comunicación de red tipo serie y bidireccional que utiliza como medio físico de transmisión canal de fibra (fibra óptica).
+
+#### Fiber Channel Protocol (FCP)
+Protocolo de la capa de interfaz FC4 encargado de mapear el protocolo SCSI sobre la infraestructura de comunicación (*FC*).
+
+#### Estructura de red
+Utilización de switches FC para la interconexión de dispositivos FC.
+
+### iSCSI
 
 ## NAS
 
