@@ -110,7 +110,7 @@ Transmisión del protocolo SCSI sobre el protocolo TCP/IP y, por lo tanto, sobre
 
 ## NAS
 ### Sistema de ficheros en red
-**Concepto:** servidor que <u>expone</u> su sistema de ficheros local a través de una red de datos, de modo que es accesible a otros oredenadores conectados a la red.
+**Concepto:** servidor que <u>expone</u> su sistema de ficheros local a través de una red de datos, de modo que es accesible a otros ordenadores conectados a la red.
 
 **Protocolos**
 - **SMB:** estándar en Windows.
@@ -142,10 +142,48 @@ Proporcionan servicios al resto de ordenadores de la red.
 - **SO:** potencian la estabilidad, fiabilidad, seguridad y capacidad para proporcionar servicios de manera concurrente.
 
 ## Características de los servidores
-- **Elevada capacidad de cómputo**
-	- Múltiples CPU de elevada velocidad
-	- Elevada capacidad de memoria
-	- Almacenamiento de alta velocidad
-- **Elevada capacidad de almacenamiento**
+### Elevada capacidad de cómputo
+#### Múltiples CPU de elevada velocidad
+1. Mayor número de núcleos
+2. Memorias caché de mayor tamaño
+3. Mecanismo que posibilitan el trabajo colaborativo entre 2 o más procesadores
+4. Soporte para mayores tamaños de memoria RAM
+
+#### Elevada capacidad de memoria
+- *Objetivo:* proporcionar el soporte necesario para algunos tipos de aplicaciones que requieren grandes cantidades (big data, entornos de consolidación)
+- *Tecnología:* DDR4
+- *Implementación física:* DIMM-DDR4
+- *Capacidad máxima teórica:* 512GB mediante "shockets"
+#### Almacenamiento de alta velocidad
+- *Uso de tecnología RAID:* eleva las prestaciones mediante la técnica de la fragmentación de datos (data stripping)
+- *Uso de dispositivos SSD:* eleva mucho las prestaciones respecto a los dispositivos HDD, sobre todo en acceso aleatorio.
+
+### Elevada capacidad de almacenamiento
+- *Diseños con múltiples bahías:* espacio de tamaño estandarizado cuyo objetivo es albergar un dispositivo hardware (habitualmente de almacenamiento) (2.5", 3.5")
+- *Uso de controladoras RAID SAS con capacidad para múltiples discos*
+- *Uso de expansores SAS*
+
+### Elevada disponibilidad
+#### Uso de componentes de alta fiabilidad
+##### Fiabilidad
+**Concepto:** probabilidad de que el componente funcione correctamente hasta un determinado momento.
+- **Parámetro indicativo:** tiempo
+- **MTBF:** tiempo medio esperado entre los fallos de un componente (en horas)
+- El uso de los componentes de alta fiabilidad disminuye la probabilidad de los mismos, lo que supone una mejora de la disponibilidad.
+- Componentes con mayores problemas de fiabilidad: discos duros, fuentes de alimentación y ventiladores (debido a las características electromecánicas y la presencia de elementos móviles)
+
+##### Memorias RAM
+###### Tipos de errores
+- **Errores duros:** debidos a defectos o roturas del software. Hacen que el chip dañado devuelva siempre datos erróneos.
+- **Errores blandos:** errores aleatorios causados por perturbaciones eléctricas que alteran el estado de carga de las celdas, variando su estado lógico.
+	- Se denominan blandos porque no son debidos a un mal funcionamiento del hardware.
+
+###### RAM ECC
+
+#### Redundancia de componentes
+
+#### Componentes conectables en caliente
+
+- **Gestión fuera de línea**
 
 ## Tipos de servidores según su factor
