@@ -130,7 +130,22 @@ Transmisión del protocolo SCSI sobre el protocolo TCP/IP y, por lo tanto, sobre
 
 # Tema 6
 ## Tipos de equipos informáticos
+### Clientes
+Utilizan los servicios proporcionados por servidores.
+- **Orientados a** interacción con el usuario.
+- Desktop, laptop, portables...
+- **SO:** poteniian la interfaz con el usuario y las características multimedia.
+
+### Servidores
+Proporcionan servicios al resto de ordenadores de la red.
+- **Orientados a** dar soporte a aplicaciones o servicios que son accedidos a través de la red.
+- **SO:** potencian la estabilidad, fiabilidad, seguridad y capacidad para proporcionar servicios de manera concurrente.
 
 ## Características de los servidores
+- **Elevada capacidad de cómputo**
+	- Múltiples CPU de elevada velocidad
+	- Elevada capacidad de memoria
+	- Almacenamiento de alta velocidad
+- **Elevada capacidad de almacenamiento**
 
 ## Tipos de servidores según su factor
