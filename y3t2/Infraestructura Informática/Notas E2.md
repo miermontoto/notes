@@ -1,3 +1,4 @@
+
 # Tema 5
 ## Tipos de arquitectura
 1. **Elemento estructural**
@@ -204,8 +205,31 @@ La información se escribe en la memoria de dos canales simultáneamente. Para l
 Mismas consecuencias que con la spare memory.
 
 #### Componentes conectables en caliente
+**Concepto:** capacidad de un servidor de permitir la conexión de dispositivos mientras se encuentra en pleno funcionamiento.
+**Beneficio:** se incrementa la disponibilidad del servidor debido a que se facilitan las tareas de manenimiento.
 
+### Gestión fuera de línea
+#### Comparativa con la gestión en línea
+*in-band y out-of-band*
+En ambos casos, el objetivo es la gestión remota de un sistema aprovechando la infraestructura de red.
 
-- **Gestión fuera de línea**
+- **Gestión in-band**
+	- *Concepto:* gestión remota cuando el SO se encuentra arrancado y en pleno funcionamiento. Permite usar los recursos proporcionados por el SO para las tareas de gestión.
+	- *Hardware de soporte:* el sistema principal, que es sobre el que se ejecuta el sistema operativo.
+- **Gestión out-of-band**
+	- *Concepto:* gestión remota utilizada sin el concurso del sistema operativo.
+	- *Hardware de soporte:* subsistema hardware adicional al sistema principal específico para la gestión fuera de línea.
+
+##### Gestión en línea en Windows
+- **API de gestión remota:** infraestructura de sw que permite gestionar un sistema Windows mediatne aplicaciones o scripts ejecutados remotamente.
+- **Escritorio remoto:** capacidad de la plataforma Windows de exportar la pantalla a un ordenador cliente, que se conecta al sistema a través de la red, utilizando una aplicación cliente de escritorio.
+
+**Elementos de soporte a la API de gestión remota**
+- *WMI/CIM (Windows Management Instrumentation):* infraestructura sw que proporciona una plataforma para obtener información y gestionar sistemas Windows de manera estandarizada, con especial énfasis en la gestión remota.
+- *WinRM (Windows Remote Management):* protocolo orientado a la gestión remota de la plataforma Windows, basado en SOAP (HTTP) y que proporciona el mecanismo para acceder de forma remota a la infraestructura WMI/CIM.
+
+#### Circuitos de energía de un equipo informático
+
+#### Sistema de gestión fuera de línea
 
 ## Tipos de servidores según su factor
