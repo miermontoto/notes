@@ -191,6 +191,18 @@ Proporcionan servicios al resto de ordenadores de la red.
 **Objetivo:** proporcionar un mecanismo de tolerancia a fallos de modo que, aunque se produzca el fallo de un componente, pueda seguir el funcionamiento gracias a un componente redundante.
 Incrementa la disponibilidad del servidor.
 
+##### Redundancia de memoria
+###### Online spare memory
+Capacidad de configurar un canal como "spare", lo que hace que no esté disponible para el funcionamiento normal. SI la memoria en el otro canal rebasa un umbral de errores corregibles, el contenido de la memoria de dicho canal se copia en la memoria del canal "spare", que se convierte en el activo.
+
+- Se reduce la capacidad (en un sistema de doble canal, 50%)
+- Se reducen las prestaciones debido a la pérdida de paralelismo en el acceso a la RAM.
+
+###### Mirrored memory
+La información se escribe en la memoria de dos canales simultáneamente. Para las lecturas, un canal se comporta como activo y el otro como backup. Si en una lectura se detecta un error no corregible, se utiliza el canal de backup para para completar la operación.
+
+Mismas consecuencias que con la spare memory.
+
 #### Componentes conectables en caliente
 
 
