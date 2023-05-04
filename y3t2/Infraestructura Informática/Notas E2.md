@@ -15,7 +15,7 @@
 
 ### Arquitecturas centradas en el almacenamiento
 1. El almacenamiento en red es el centro de los servicios de la organización (servidores son meros procesadores)
-2. Disponibilidad de almacenamiento en red independiente de os servidores.
+2. Disponibilidad de almacenamiento en red independiente de los servidores.
 3. Uso de redes de almacenamiento para conectar a los dispositivos de almacenamiento en red. 
 
 - <mark style="background: #BBFABBA6;">Total aprovechamiento del almacenamiento disponible.</mark>
@@ -26,7 +26,7 @@
 ### Cabinas de almacenamiento
 **Definición:** dispositivos informáticos diseñados para contener discos duros y dispositivos SSD proporcionando <u>mecanismos de gestión</u> para los mismos, así como <u>puertos de comunicación</u> para acceder al espacio de almacenamiento que generan.
 
-- **Controlador:** el dispositivo que gestiona los discos físicos proporcionando funcionalidad RAID. Genera discos virtuales a partir de los físicos y los presenta a través de los puertos del sistema.
+- **Controlador:** el dispositivo que gestiona los discos físicos <u>proporcionando funcionalidad RAID</u>. Genera discos virtuales a partir de los físicos y los presenta a través de los puertos del sistema.
 - **Cache:** memoria de almacenamiento intermedio, utilizada para acelerar las operaciones R/W realizadas sobre los discos.
 - **Bus interno:** sistema de conexión entre el controlador y los discos físicos. *En los sistemas actuales, se implementa siguiendo el estandar SAS.*
 - **Puertos de datos:** elementos de conexión de la cabina a la red de almacenamiento (normalmente FibreChannel, Ethernet, SAS)
@@ -229,7 +229,22 @@ En ambos casos, el objetivo es la gestión remota de un sistema aprovechando la 
 - *WinRM (Windows Remote Management):* protocolo orientado a la gestión remota de la plataforma Windows, basado en SOAP (HTTP) y que proporciona el mecanismo para acceder de forma remota a la infraestructura WMI/CIM.
 
 #### Circuitos de energía de un equipo informático
+- **Circuito de energía principal**
+	- *Objetivo:* proporcionar energía al sistema en su estado normal de funcionamiento.
+	- *Momento de activación:* cuando se pulsa el interruptor del equipo.
+- **Circuito de energía auxiliar**
+	- *Objetivo:* proporcionar energía a los dispositivos que funcionan estado de standby.
+	- *Momento de activación:* siempre activo, cuando la fuente de alimentación está enchufada.
 
 #### Sistema de gestión fuera de línea
+**Sistema de gestión fuera de línea:** sistema empotrado en el en el computador principal que cuenta con su propio procesoador, memoria e interfaz de red, que se alimenta mediante el circuito de energía auxiliar, y que proporciona las funciones básicas requeridas para la gestión fuera de línea.
+
+**Puerto de gestión fuera de línea:** puerto <u>Ethernet</u> 1G que permite <u>conectar</u> el sistema de gestión fuera de línea a la red, <u>sin necesidad de usar los puertos</u> de red del sistema principal.
+
+**Funciones**
+- Gestión del encencido, apagado y reinicio remotos
+- Servicio de consola remota
+- Servicio *remote virtual media*
+- Monitorización del estado de la plataforma hardware
 
 ## Tipos de servidores según su factor
