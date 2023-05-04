@@ -179,10 +179,20 @@ Proporcionan servicios al resto de ordenadores de la red.
 	- Se denominan blandos porque no son debidos a un mal funcionamiento del hardware.
 
 ###### RAM ECC
+- Palia los efectos de los errores blandos.
+- Establece mecanismos de detección y corrección de errores en las memorias RAM.
+- Una ECC básica puede corregir un bit y detectar un fallo en dos bits en cada bloque de 64 bits.
+- *Checksum:* código de 8 bits que se calcula y almacena para cada bloque 64 bits de mrmoria y que se utiliza para detectar y corregir los posibles errores ocurridos en el bloque.
+	- Lo calcula el controlador de memoria de la placa base, mediante un circuito EDAC (Error Detection and Correction)
+	- El checksum se genera y almacena cada vez que se escrie un bloque de 64 bits. Cuando se lee del bloque, el checksum se vuelve a calcular y se compara con el almacenado. En caso de error, el checksum se utiliza para realizar la corrección del error.
+- Los servidores suelen utilizar memorias ECC salvo algunos servidores de muy bajo coste.
 
 #### Redundancia de componentes
+**Objetivo:** proporcionar un mecanismo de tolerancia a fallos de modo que, aunque se produzca el fallo de un componente, pueda seguir el funcionamiento gracias a un componente redundante.
+Incrementa la disponibilidad del servidor.
 
 #### Componentes conectables en caliente
+
 
 - **Gestión fuera de línea**
 
