@@ -56,10 +56,10 @@
 - **Snapshots:** capacidad de realizar copias de solo lectura de los volúmenes. Se realizan de forma instantánea, independientemente de tamaño del disco. Solo se copian bloques cuando resultan modificados en el volumen original.
 - **Copias completas:** creación de copias R/W de un volumen en otro.
 - **Enmascaramiento de LUN:** capacidad de establecer los volúmenes (identificados por LUN) que serán visibles a cada servidor de la red. Facilita las tareas de configuración de los servidores y evita errores innecesarios.
-- **Replicación remota:** se trata de la capacidad de mantener permanentemente replicados volúmenes de una cabina de almacenamiento en otra cabina remota. La replicación entre volumen origen y remoto es coordinada por las cabinas. (*objetivo: contingencia*)
+- **Replicación remota:** se trata de la capacidad de <u>mantener permanentemente</u> replicados volúmenes de una cabina de almacenamiento en otra cabina remota. La replicación entre volumen origen y remoto es coordinada por las cabinas. (*objetivo: contingencia*)
 
 ### Bandejas de discos
-**Definición:** contenedor de discos gestionado por uno o dos expansores SAS.
+**Definición:** <u>contenedor</u> de discos gestionado por uno o dos expansores SAS.
 **Objetivo:** proporcionar un sistema de expansión para las cabinas de almacenamiento, de modo que se pueda incrementar el número de discos gestionados por un controlador.
 
 **<u><b>Tipos</b></u>
@@ -135,7 +135,7 @@ Transmisión del protocolo SCSI sobre el protocolo TCP/IP y, por lo tanto, sobre
 Utilizan los servicios proporcionados por servidores.
 - **Orientados a** interacción con el usuario.
 - Desktop, laptop, portables...
-- **SO:** poteniian la interfaz con el usuario y las características multimedia.
+- **SO:** potencian la interfaz con el usuario y las características multimedia.
 
 ### Servidores
 Proporcionan servicios al resto de ordenadores de la red.
@@ -155,6 +155,7 @@ Proporcionan servicios al resto de ordenadores de la red.
 - *Tecnología:* DDR4
 - *Implementación física:* DIMM-DDR4
 - *Capacidad máxima teórica:* 512GB mediante "shockets"
+
 #### Almacenamiento de alta velocidad
 - *Uso de tecnología RAID:* eleva las prestaciones mediante la técnica de la fragmentación de datos (data stripping)
 - *Uso de dispositivos SSD:* eleva mucho las prestaciones respecto a los dispositivos HDD, sobre todo en acceso aleatorio.
@@ -194,7 +195,7 @@ Incrementa la disponibilidad del servidor.
 
 ##### Redundancia de memoria
 ###### Online spare memory
-Capacidad de configurar un canal como "spare", lo que hace que no esté disponible para el funcionamiento normal. SI la memoria en el otro canal rebasa un umbral de errores corregibles, el contenido de la memoria de dicho canal se copia en la memoria del canal "spare", que se convierte en el activo.
+Capacidad de configurar un canal como "spare", lo que hace que no esté disponible para el funcionamiento normal. Si la memoria en el otro canal rebasa un umbral de errores corregibles, el contenido de la memoria de dicho canal se copia en la memoria del canal "spare", que se convierte en el activo.
 
 - Se reduce la capacidad (en un sistema de doble canal, 50%)
 - Se reducen las prestaciones debido a la pérdida de paralelismo en el acceso a la RAM.
@@ -221,7 +222,7 @@ En ambos casos, el objetivo es la gestión remota de un sistema aprovechando la 
 	- *Hardware de soporte:* subsistema hardware adicional al sistema principal específico para la gestión fuera de línea.
 
 ##### Gestión en línea en Windows
-- **API de gestión remota:** infraestructura de sw que permite gestionar un sistema Windows mediatne aplicaciones o scripts ejecutados remotamente.
+- **API de gestión remota:** infraestructura de sw que permite gestionar un sistema Windows mediante aplicaciones o scripts ejecutados remotamente.
 - **Escritorio remoto:** capacidad de la plataforma Windows de exportar la pantalla a un ordenador cliente, que se conecta al sistema a través de la red, utilizando una aplicación cliente de escritorio.
 
 **Elementos de soporte a la API de gestión remota**
