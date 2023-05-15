@@ -30,7 +30,8 @@
       "bottom": 2,
       "left": 2
     },
-    "emojiStyle": "none"
+    "emojiStyle": "none",
+    "iconInTabsEnabled": false
   },
   "y2t2/Paradigmas (TPP)": "FasObjectUngroup",
   "y2t2/CPM": "FasWindowRestore",
