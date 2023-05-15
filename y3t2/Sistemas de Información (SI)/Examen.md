@@ -80,8 +80,31 @@
 - Siempre existen alternativas a valorar.
 
 # Tema 3
-## Clases de equivalencia
+## Pruebas
+### Clases de equivalencia
 Conjunto de datos para los que se supone que el programa tiene un comportamiento similar.
 
 Se agrupan bajo condiciones de entrada para situaciones a cubrir.
 
+## Calidad, revisiones, configuración
+### Calidad
+Grado en el que el programa desarrollado cumple con los requisitos especificados y con las expectativas del cliente.
+
+La calidad tiene un coste, hay que buscar la optimización del mismo.
+
+### Revisiones
+- **Formales:** inspecciones realizadas por un equipo de inspectores que representan distintas perspectivas.
+	- Analista que ha elaborado los requisitos (autor)
+	- Usuario/Cliente
+	- Personal de diseño/código
+- **Informales**
+	- *Walk-through*
+	- *Peer review*
+	- *Revisión técnica*
+
+#### Roles y participantes
+- Director - Responsable - Jefe
+- Moderador
+- Autor
+- Revisor
+- Secretario
