@@ -1,4 +1,4 @@
-# Tema 1
+# Tema 1: Scrum
 ## Definiciones
 - **Sprints**
 	- No más de 4 semanas.
@@ -63,3 +63,25 @@
 ##### Otras
 - Actualización del PB.
 - Burndown Chart
+
+# Tema 2: Requisitos
+**Concepto:** definen las <u>capacidades</u>, <u>características</u> y <u>restricciones</u> del software a desarrollar.
+
+- **Características**
+	- *Identificables* (numeración y jerarquía)
+	- *Singulares* (solo una idea)
+	- *Inequívocos* (sin ambigüedades)
+	- *Verificables* (mediante pruebas)
+	- *Trazables* (RS respecto a RU)
+
+![[_resources/Pasted image 20230515194948.png]]
+
+- Fundamental definir stakeholders a la hora de definir requisitos.
+- Siempre existen alternativas a valorar.
+
+# Tema 3
+## Clases de equivalencia
+Conjunto de datos para los que se supone que el programa tiene un comportamiento similar.
+
+Se agrupan bajo condiciones de entrada para situaciones a cubrir.
+
