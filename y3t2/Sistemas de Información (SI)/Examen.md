@@ -76,7 +76,14 @@
 
 ![[_resources/Pasted image 20230515194948.png]]
 
+#### Proceso de obtención
+![[_resources/Pasted image 20230516080153.png]]
+
+#### Entrevistas / Obtención de stakeholders
 - Fundamental definir stakeholders a la hora de definir requisitos.
+![[_resources/Pasted image 20230516080235.png]]
+
+#### Alternativas
 - Siempre existen alternativas a valorar.
 
 # Tema 3
@@ -91,7 +98,8 @@ Conjunto de entradas, condiciones de ejecución y resultados esperados desarroll
 ### Calidad
 Grado en el que el programa desarrollado cumple con los requisitos especificados y con las expectativas del cliente.
 
-La calidad tiene un coste, hay que buscar la optimización del mismo.
+#### Costes
+![[_resources/Pasted image 20230516075742.png]]
 
 ### Revisiones
 - **Formales:** inspecciones realizadas por un equipo de inspectores que representan distintas perspectivas.
@@ -109,3 +117,6 @@ La calidad tiene un coste, hay que buscar la optimización del mismo.
 - Autor
 - Revisor
 - Secretario 
+
+#### Proceso general
+![[_resources/Pasted image 20230516075701.png]]
