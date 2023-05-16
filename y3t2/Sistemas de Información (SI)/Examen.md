@@ -81,10 +81,11 @@
 
 # Tema 3
 ## Pruebas
-### Clases de equivalencia
-Conjunto de datos para los que se supone que el programa tiene un comportamiento similar.
+### Caso de prueba
+Conjunto de entradas, condiciones de ejecución y resultados esperados desarrollados para un objetivo particular.
 
-Se agrupan bajo condiciones de entrada para situaciones a cubrir.
+- **Condición de entrada**
+- **Clases de equivalencia:** conjunto de datos para los que se supone que el programa tiene un comportamiento similar.
 
 ## Calidad, revisiones, configuración
 ### Calidad
