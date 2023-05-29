@@ -10,7 +10,6 @@ Nuevo método para la clasificación:
 
 Se busca un método que retorne valores de x que se puedan interpretar con la función logística. La función logística retorna la probabilidad de que un valor pertenezca a una clase.
 
-## Regresión logística
 - Se buscan los parámetros que maximicen la probabilidad que se busca (máxima verosimilitud)
 - Se utiliza el descenso del gradiente como fórmula de actualización: ahora la regresión logística es no lineal.
 - En la regresión lineal, el resultado es un número contínuo, mientras que en regresión logística se devuelve una probabilidad entre 0 y 1. (repetido)

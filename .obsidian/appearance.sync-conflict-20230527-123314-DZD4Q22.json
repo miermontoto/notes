@@ -1,0 +1,13 @@
+{
+  "accentColor": "",
+  "theme": "obsidian",
+  "cssTheme": "Obsidian gruvbox",
+  "interfaceFontFamily": "SF Pro Display",
+  "textFontFamily": "SF Pro Text",
+  "monospaceFontFamily": "JetBrains Mono",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "math"
+  ],
+  "nativeMenus": false
+}

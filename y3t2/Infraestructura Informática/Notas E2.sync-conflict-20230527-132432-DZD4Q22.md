@@ -1,3 +1,4 @@
+
 # Tema 5
 ## Tipos de arquitectura
 1. **Elemento estructural**
@@ -14,7 +15,7 @@
 
 ### Arquitecturas centradas en el almacenamiento
 1. El almacenamiento en red es el centro de los servicios de la organización (servidores son meros procesadores)
-2. Disponibilidad de almacenamiento en red independiente de os servidores.
+2. Disponibilidad de almacenamiento en red independiente de los servidores.
 3. Uso de redes de almacenamiento para conectar a los dispositivos de almacenamiento en red. 
 
 - <mark style="background: #BBFABBA6;">Total aprovechamiento del almacenamiento disponible.</mark>
@@ -25,7 +26,7 @@
 ### Cabinas de almacenamiento
 **Definición:** dispositivos informáticos diseñados para contener discos duros y dispositivos SSD proporcionando <u>mecanismos de gestión</u> para los mismos, así como <u>puertos de comunicación</u> para acceder al espacio de almacenamiento que generan.
 
-- **Controlador:** el dispositivo que gestiona los discos físicos proporcionando funcionalidad RAID. Genera discos virtuales a partir de los físicos y los presenta a través de los puertos del sistema.
+- **Controlador:** el dispositivo que gestiona los discos físicos <u>proporcionando funcionalidad RAID</u>. Genera discos virtuales a partir de los físicos y los presenta a través de los puertos del sistema.
 - **Cache:** memoria de almacenamiento intermedio, utilizada para acelerar las operaciones R/W realizadas sobre los discos.
 - **Bus interno:** sistema de conexión entre el controlador y los discos físicos. *En los sistemas actuales, se implementa siguiendo el estandar SAS.*
 - **Puertos de datos:** elementos de conexión de la cabina a la red de almacenamiento (normalmente FibreChannel, Ethernet, SAS)
@@ -55,10 +56,10 @@
 - **Snapshots:** capacidad de realizar copias de solo lectura de los volúmenes. Se realizan de forma instantánea, independientemente de tamaño del disco. Solo se copian bloques cuando resultan modificados en el volumen original.
 - **Copias completas:** creación de copias R/W de un volumen en otro.
 - **Enmascaramiento de LUN:** capacidad de establecer los volúmenes (identificados por LUN) que serán visibles a cada servidor de la red. Facilita las tareas de configuración de los servidores y evita errores innecesarios.
-- **Replicación remota:** se trata de la capacidad de mantener permanentemente replicados volúmenes de una cabina de almacenamiento en otra cabina remota. La replicación entre volumen origen y remoto es coordinada por las cabinas. (*objetivo: contingencia*)
+- **Replicación remota:** se trata de la capacidad de <u>mantener permanentemente</u> replicados volúmenes de una cabina de almacenamiento en otra cabina remota. La replicación entre volumen origen y remoto es coordinada por las cabinas. (*objetivo: contingencia*)
 
 ### Bandejas de discos
-**Definición:** contenedor de discos gestionado por uno o dos expansores SAS.
+**Definición:** <u>contenedor</u> de discos gestionado por uno o dos expansores SAS.
 **Objetivo:** proporcionar un sistema de expansión para las cabinas de almacenamiento, de modo que se pueda incrementar el número de discos gestionados por un controlador.
 
 **<u><b>Tipos</b></u>
@@ -134,7 +135,7 @@ Transmisión del protocolo SCSI sobre el protocolo TCP/IP y, por lo tanto, sobre
 Utilizan los servicios proporcionados por servidores.
 - **Orientados a** interacción con el usuario.
 - Desktop, laptop, portables...
-- **SO:** poteniian la interfaz con el usuario y las características multimedia.
+- **SO:** potencian la interfaz con el usuario y las características multimedia.
 
 ### Servidores
 Proporcionan servicios al resto de ordenadores de la red.
@@ -154,6 +155,7 @@ Proporcionan servicios al resto de ordenadores de la red.
 - *Tecnología:* DDR4
 - *Implementación física:* DIMM-DDR4
 - *Capacidad máxima teórica:* 512GB mediante "shockets"
+
 #### Almacenamiento de alta velocidad
 - *Uso de tecnología RAID:* eleva las prestaciones mediante la técnica de la fragmentación de datos (data stripping)
 - *Uso de dispositivos SSD:* eleva mucho las prestaciones respecto a los dispositivos HDD, sobre todo en acceso aleatorio.
@@ -179,11 +181,71 @@ Proporcionan servicios al resto de ordenadores de la red.
 	- Se denominan blandos porque no son debidos a un mal funcionamiento del hardware.
 
 ###### RAM ECC
+- Palia los efectos de los errores blandos.
+- Establece mecanismos de detección y corrección de errores en las memorias RAM.
+- Una ECC básica puede corregir un bit y detectar un fallo en dos bits en cada bloque de 64 bits.
+- *Checksum:* código de 8 bits que se calcula y almacena para cada bloque 64 bits de mrmoria y que se utiliza para detectar y corregir los posibles errores ocurridos en el bloque.
+	- Lo calcula el controlador de memoria de la placa base, mediante un circuito EDAC (Error Detection and Correction)
+	- El checksum se genera y almacena cada vez que se escrie un bloque de 64 bits. Cuando se lee del bloque, el checksum se vuelve a calcular y se compara con el almacenado. En caso de error, el checksum se utiliza para realizar la corrección del error.
+- Los servidores suelen utilizar memorias ECC salvo algunos servidores de muy bajo coste.
 
 #### Redundancia de componentes
+**Objetivo:** proporcionar un mecanismo de tolerancia a fallos de modo que, aunque se produzca el fallo de un componente, pueda seguir el funcionamiento gracias a un componente redundante.
+Incrementa la disponibilidad del servidor.
+
+##### Redundancia de memoria
+###### Online spare memory
+Capacidad de configurar un canal como "spare", lo que hace que no esté disponible para el funcionamiento normal. Si la memoria en el otro canal rebasa un umbral de errores corregibles, el contenido de la memoria de dicho canal se copia en la memoria del canal "spare", que se convierte en el activo.
+
+- Se reduce la capacidad (en un sistema de doble canal, 50%)
+- Se reducen las prestaciones debido a la pérdida de paralelismo en el acceso a la RAM.
+
+###### Mirrored memory
+La información se escribe en la memoria de dos canales simultáneamente. Para las lecturas, un canal se comporta como activo y el otro como backup. Si en una lectura se detecta un error no corregible, se utiliza el canal de backup para para completar la operación.
+
+Mismas consecuencias que con la spare memory.
 
 #### Componentes conectables en caliente
+**Concepto:** capacidad de un servidor de permitir la conexión de dispositivos mientras se encuentra en pleno funcionamiento.
+**Beneficio:** se incrementa la disponibilidad del servidor debido a que se facilitan las tareas de manenimiento.
 
-- **Gestión fuera de línea**
+### Gestión fuera de línea
+#### Comparativa con la gestión en línea
+*in-band y out-of-band*
+En ambos casos, el objetivo es la gestión remota de un sistema aprovechando la infraestructura de red.
+
+- **Gestión in-band**
+	- *Concepto:* gestión remota cuando el SO se encuentra arrancado y en pleno funcionamiento. Permite usar los recursos proporcionados por el SO para las tareas de gestión.
+	- *Hardware de soporte:* el sistema principal, que es sobre el que se ejecuta el sistema operativo.
+- **Gestión out-of-band**
+	- *Concepto:* gestión remota utilizada sin el concurso del sistema operativo.
+	- *Hardware de soporte:* subsistema hardware adicional al sistema principal específico para la gestión fuera de línea.
+
+##### Gestión en línea en Windows
+- **API de gestión remota:** infraestructura de sw que permite gestionar un sistema Windows mediante aplicaciones o scripts ejecutados remotamente.
+- **Escritorio remoto:** capacidad de la plataforma Windows de exportar la pantalla a un ordenador cliente, que se conecta al sistema a través de la red, utilizando una aplicación cliente de escritorio.
+
+**Elementos de soporte a la API de gestión remota**
+- *WMI/CIM (Windows Management Instrumentation):* infraestructura sw que proporciona una plataforma para obtener información y gestionar sistemas Windows de manera estandarizada, con especial énfasis en la gestión remota.
+- *WinRM (Windows Remote Management):* protocolo orientado a la gestión remota de la plataforma Windows, basado en SOAP (HTTP) y que proporciona el mecanismo para acceder de forma remota a la infraestructura WMI/CIM.
+
+#### Circuitos de energía de un equipo informático
+- **Circuito de energía principal**
+	- *Objetivo:* proporcionar energía al sistema en su estado normal de funcionamiento.
+	- *Momento de activación:* cuando se pulsa el interruptor del equipo.
+- **Circuito de energía auxiliar**
+	- *Objetivo:* proporcionar energía a los dispositivos que funcionan estado de standby.
+	- *Momento de activación:* siempre activo, cuando la fuente de alimentación está enchufada.
+
+#### Sistema de gestión fuera de línea
+**Sistema de gestión fuera de línea:** sistema empotrado en el en el computador principal que cuenta con su propio procesoador, memoria e interfaz de red, que se alimenta mediante el circuito de energía auxiliar, y que proporciona las funciones básicas requeridas para la gestión fuera de línea.
+
+**Puerto de gestión fuera de línea:** puerto <u>Ethernet</u> 1G que permite <u>conectar</u> el sistema de gestión fuera de línea a la red, <u>sin necesidad de usar los puertos</u> de red del sistema principal.
+
+**Funciones**
+- Gestión del encencido, apagado y reinicio remotos
+- Servicio de consola remota
+- Servicio *remote virtual media*
+- Monitorización del estado de la plataforma hardware
 
 ## Tipos de servidores según su factor

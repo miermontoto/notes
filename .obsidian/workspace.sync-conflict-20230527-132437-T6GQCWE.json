@@ -1,0 +1,138 @@
+{
+  "main": {
+    "id": "92bfb39d139dbdc9",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ff8359dea626be5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "962cf82f1288b66e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b4d20d2d113c5c89",
+    "type": "split",
+    "children": [
+      {
+        "id": "b17d7fe875f6a197",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "530016e0256ead32",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "42b0b222e1f2be8a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6efa8176a7404af0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 341.5
+  },
+  "right": {
+    "id": "2e90e7b9f551534b",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "janitor:Janitor: scan vault": false
+    }
+  },
+  "active": "962cf82f1288b66e",
+  "lastOpenFiles": [
+    "y3t2/Sistemas de Información (SI)/Preguntas de las presentaciones.md",
+    "y3t2/Sistemas Inteligentes/Untitled.md",
+    "y3t2/Sistemas Inteligentes/Exámenes",
+    "y3t2/Sistemas Inteligentes/CEX/A. Temas avanzados/Clasificación - Regresión lógica y lenguaje generativo.md",
+    "y3t2/Sistemas Inteligentes/CEX/A. Temas avanzados/GDR.md",
+    "y3t2/Sistemas Inteligentes/CEX/A. Temas avanzados/Ensemble learning.md",
+    "y3t2/Sistemas Inteligentes/CEX/7. Sistemas de recomendación/Parte 2.md",
+    "y3t2/Sistemas Inteligentes/CEX/7. Sistemas de recomendación/Parte 1.md",
+    "y3t2/Sistemas Inteligentes/CEX/7. Sistemas de recomendación/_resources/L7 Recommender Systems (1).pdf",
+    "y3t2/Sistemas Inteligentes/CEX/6. Búsqueda de grafos/Búsqueda local.md",
+    "y3t2/Sistemas Inteligentes/CEX/6. Búsqueda de grafos/Búsqueda de grafos.md",
+    "y3t2/Sistemas Inteligentes/CEX/5. Deep Learning/Deep Learning.md",
+    "y3t2/Sistemas Inteligentes/CEX/5. Deep Learning/CNN.md",
+    "y3t2/Sistemas Inteligentes/CEX/4. Representaciones vectoriales/4. Representaciones vectoriales.md",
+    "y3t2/Sistemas Inteligentes/CEX/3. Preprocesado y visualización/Visualización de datos.md",
+    "y3t2/Sistemas Inteligentes/CEX/3. Preprocesado y visualización/Preprocesado de datos.md",
+    "y3t2/Sistemas Inteligentes/CEX/2. Machine Learning/ML4 - SVM.md",
+    "y3t2/Sistemas Inteligentes/CEX/2. Machine Learning/ML3 - Evaluación.md",
+    "y3t2/Sistemas Inteligentes/CEX/2. Machine Learning/ML2.md",
+    "y3t2/Sistemas Inteligentes/CEX/2. Machine Learning/ML1.md",
+    "y3t2/Sistemas Inteligentes/CEX/1. Introducción/1. Introducción.md",
+    "y3t2/Sistemas Distribuidos/2. Mecanismos de comunicación/La información (XDR).md",
+    "y3t2/Sistemas Distribuidos/2. Mecanismos de comunicación/Intercomunicación de procesos.md",
+    "y3t2/Sistemas Distribuidos/1. Introducción/1. Introducción.md",
+    "Excalidraw/Drawing 2023-05-17 12.36.35.excalidraw.md",
+    "Untitled.canvas",
+    "y3t2/Ingeniería de Redes/Otros/_resources/Pasted Image 20230330115758_719.png",
+    "Excalidraw",
+    "y3t2/Ingeniería de Redes/Otros/_resources/Pasted Image 20230424133941_199.png",
+    "y3t2/Ingeniería de Redes/Otros/_resources/Pasted Image 20230413192320_611.png",
+    "y3t2/Ingeniería de Redes/Otros/_resources/Pasted Image 20230413190337_565.png",
+    "y3t2/Ingeniería de Redes/Otros/_resources/Ayuda 2023-04-13 19.02.41.excalidraw.md",
+    "y3t2/Ingeniería de Redes/Otros/_resources/Redes jerárquicas 2023-03-27 12.07.44.excalidraw.md",
+    "y3t2/Ingeniería de Redes/Otros/_resources/Redes jerárquicas 2023-03-23 11.32.19.excalidraw.md",
+    "y3t2/Ingeniería de Redes/Otros/_resources/IRD_Redes_jerarquicas 2023.pdf",
+    "y3t2/Sistemas de Información (SI)/_resources/Pasted image 20230516080235.png",
+    "y3t2/Sistemas de Información (SI)/_resources/Pasted image 20230516080153.png",
+    "y3t2/Sistemas de Información (SI)/_resources/Pasted image 20230516075742.png",
+    "y3t2/Sistemas de Información (SI)/_resources/Pasted image 20230516075701.png",
+    "y3t2/Sistemas de Información (SI)/_resources/Pasted image 20230515194948.png",
+    "y3t2/Sistemas de Información (SI)/_resources/_resources/Pasted Image 20230509111858_617.jpg",
+    "y3t2/Sistemas de Información (SI)/_resources/_resources",
+    "y3t2/Sistemas Distribuidos/_resources/05-Cloud.pdf",
+    "y3t2/Sistemas Distribuidos/_resources",
+    "_resources/Recording 20230503174440.webm",
+    "_resources",
+    "y3t2/Sistemas Inteligentes/CEX/A. Temas avanzados/_resources/_resources"
+  ]
+}

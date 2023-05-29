@@ -2,7 +2,7 @@
 
 ---
 
-## Métodos de ensamblamiento?
+## Métodos de ensamblamiento
 Elevar la responsabilidad de un clasificador "débil" a un conjunto de ellos, que combinados forman un aprendedor fuerte con mejor rendimiento que cualquiera de ellos de forma individual.
 
 ### Bagging

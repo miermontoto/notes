@@ -41,7 +41,7 @@ Método que trata de solventar los problemas de representación total de la pobl
 1. Se dividen los datos de aprendizaje en partes.
 2. Se divide en subconjuntos iguales.
 3. Por cada parte que haya, se escoge una como test y el resto como conjunto de entrenamiento.
-4. Al final, se entrena sobre el conjunto competo.
+4. Al final, se entrena sobre el conjunto completo.
 
 - Los diez resultados se utilizan para obtener una estimación del error en casos no vistos. Se promedian los resultados.
 - Puede hacerse de manera estratificada.
