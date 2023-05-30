@@ -1,4 +1,4 @@
-![[_resources/T6 Busqueda en grafos L6 graph search.pdf]]
+[[_resources/T6 Busqueda en grafos L6 graph search.pdf]]
 
 ---
 
