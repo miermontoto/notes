@@ -33,7 +33,7 @@ Los componentes se comunican mediante eventos que pueden llevar asociados datos.
 ![[_resources/Pasted image 20230323104009.png]]
 
 ## Arquitecturas centradas en datos
-Los componmentes se comunican a través de un repositorio compartido.
+Los componentes se comunican a través de un repositorio compartido.
 
 ### Arquitecturas con espacios de datos compartidos
 Si se combina con eventos, dan lugar a **espacios de datos compartidos**.
