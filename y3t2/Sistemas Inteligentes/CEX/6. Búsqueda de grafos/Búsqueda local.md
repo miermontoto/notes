@@ -43,7 +43,7 @@ Utilizan *cromosomas*.
 4. Decidir sobre las mutaciones
 
 
-# Algoritmos de distribuciones de probabilidad (EDA)
+# Algoritmos de estimación de distribuciones (EDA)
 Son muy similares a los algoritmos genéticos, pero se diferencian en la manera de iterar poblaciones.
 
 Para conseguir una nueva generación:
