@@ -1,0 +1,3 @@
+- Controles de teoría: 60%
+- Trabajo en grupo (por parejas): 40$
+- No hay examen final
