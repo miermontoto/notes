@@ -1,0 +1,8 @@
+- Teoría: 20%
+	- Examen tipo test (mín 5)
+	- Cuestionarios semanales: 2pts extra
+	- Nota máxima: 12
+- Prácticas: 80%
+	- Dos entregas de trabajo en grupo correspondientes a cada parte de la asignatura
+	- Dos exámenes sobre el trabajo en grupo entregado
+	- La nota es la nota media de las cuatro actividades
