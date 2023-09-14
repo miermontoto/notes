@@ -1,9 +1,9 @@
 {
   "accentColor": "",
   "theme": "moonstone",
-  "cssTheme": "",
+  "cssTheme": "Minimal",
   "interfaceFontFamily": "SF Pro Display",
-  "textFontFamily": "SF Pro Text",
+  "textFontFamily": "SF Pro Text,CaskaydiaCove NF",
   "monospaceFontFamily": "JetBrains Mono",
   "baseFontSize": 16,
   "enabledCssSnippets": [
