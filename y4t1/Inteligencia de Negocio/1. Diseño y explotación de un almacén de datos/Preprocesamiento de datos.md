@@ -26,3 +26,5 @@ Es la parte más pesada del análisis:![[_resources/Pasted image 20230915164811.
 El objetivo final es conseguir variables independientes entre sí y dependientes de la variable que se quiere predecir.
 
 *Cuánta dependencia tiene una variable de otra a partir de dos datos*
+#### chi-cuadrado
+![[_resources/Preprocesamiento de datos 2023-09-18 15.42.45.excalidraw]]
