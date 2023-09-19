@@ -60,4 +60,6 @@ Mediante la tag `@ManagedBean` o mediante `faces-config.xml`.
 - Request
 - Session
 - Application
-- View (debe implementar `Serializable`)
+- View (debe implementar `Serializable`: cambia con la vista, así que se suele utilizar con Ajax)
+- Custom → el Bean se guarda en un map y se puede gestionar programáticamente.
+- None → para Beans referenciados por otros Beans
