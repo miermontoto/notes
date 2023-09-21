@@ -15,7 +15,8 @@ Las políticas se pueden presentar de forma mátemática como una lista de estad
 Puede incluír muchos aspectos, por lo que puede ser beneficioso desarrollar una *política general* de la que se derivan *múltiples políticas* para aspectos específicos:
 ![[_resources/Pasted image 20230921154538.png]]
 ## Contenido
-> [!error] Lo siguiente es importante!
+> [!error] Lo siguiente es MUY importante!
+> Incluso el dibujo!
 
 Como suelen expresar conceptos muy generales, es necesario desarrollar:
 - **Normas**: colección de requisitos para sistemas o procedimientos que se deben cumplir obligatoriamente (normas internas, normas intl.)
@@ -31,3 +32,22 @@ Como suelen expresar conceptos muy generales, es necesario desarrollar:
 
 # Jerarquía de políticas (ISO 27003)
 ![[_resources/Pasted image 20230921154614.png]]
+
+# Proceso de desarrollo
+> [!info] Saber por encima
+
+![[_resources/Pasted image 20230921160053.png]]
+
+# Estructura
+> [!info] No hay que saber literal
+> Pero si en general
+1. **Resumen de la política** - visión general en una o dos oraciones.
+	- Se puede combinar con la siguiente parte.
+2. **Introducción** - breve explicación del tema.
+3. **Alcance** - describe las partes o actividades de una organización afectadas por la política
+4. **Objetivos** - describe el propósito de la política. 
+	- Se puede combinar con la siguiente parte.
+5. **Principios** - describe las reglas para alcanzar los objetivos anteriores.
+6. **Responsabilidades** - describe quién es responsable de las acciones para cumplir la política.
+7. **Resultados clave** - describe los resultados empresariales (*generalmente no se suele incluir*)
+8. **Políticas relacionadas** - describe otras políticas pertintentes.
