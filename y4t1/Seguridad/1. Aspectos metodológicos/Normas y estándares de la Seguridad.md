@@ -47,7 +47,37 @@ un SGSI para que una organización sea <u>auditable</u> y <u>certificable</u>.
 > Se pueden preguntar sobre todos un poco o en uno en concreto.
 
 # Contenido
+El estándar adopta un enfoque de procesos para establecer, implantar, revistar y mejorar un SGSI.
+
+> [!info] Proceso
+> Actividad gestionada adecuadamente para transformar entradas en salidas.
+
+> [!info] Enfoque de procesos
+> Aplicar un sistema de procesos dentro de una org.
+
+<u>El estándar adopta el modelo PDCA → *Plan Do-Check-Act* para estructurar los procesos.</u>¨
+
+![[_resources/Pasted image 20230921153117.png]]
+
+### Plan Do-Check-Act
+#### PLAN
+Establecer política y los objetivos, los procesos y procedimientos, los resultados acordes.
+#### DO
+Implementarlo
+#### CHECK
+Evaluar y medir la eficacia de los procesos en relación con la política y los objetivos.
+#### ACT
+Mantener y mejorar, tomar acciones correctivas y preventivas durante la auditoría y la revisión.
+
+> [!faq] No hay que saberse esto literalmente
+> Solo tener una "idea general"
+
+
+![[_resources/Pasted image 20230921153438.png]]
 
 
 
+> [!error] Tarea obligatoria
+> Leer los estándares 27000 y 27001 a través de AENORmás mediante [buo.uniovi.es](https://buo.uniovi.es)
 
+![[_resources/N0067945-PDF-ES.pdf]]![[_resources/N0071764-PDF-ES.pdf]]
