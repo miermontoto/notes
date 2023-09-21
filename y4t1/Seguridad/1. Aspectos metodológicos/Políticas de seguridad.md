@@ -51,3 +51,16 @@ Como suelen expresar conceptos muy generales, es necesario desarrollar:
 6. **Responsabilidades** - describe quién es responsable de las acciones para cumplir la política.
 7. **Resultados clave** - describe los resultados empresariales (*generalmente no se suele incluir*)
 8. **Políticas relacionadas** - describe otras políticas pertintentes.
+
+# Aplicación
+1. Identificar activos a proteger
+2. Determinar el responsable de cada uno
+3. Evaluar los requsitos de confidencialidad, integridad y disponibilidad de cada activo
+4. Determinar las amenazas
+5. Seleccionar controles o mecanismos de seguridad
+# Viabilidad
+Cualquier política debe balancear los siguientes conceptos para ser útiles:
+- <u>Beneficios</u> de la protección
+- <u>Coste</u> de los mecanismos
+
+Un equilibrio razonable suele ser subjetivo .
