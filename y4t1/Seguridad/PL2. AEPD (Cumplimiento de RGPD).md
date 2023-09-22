@@ -130,4 +130,16 @@ La primera fase del análisis de riesgos consiste en documentar con precisión e
 
 En esta metodología, cada amenaza se asocia a un riesgo de seguridad que afecta a una de las propiedades de los datos relacionadas con la seguridad (CIA) → tipo de riesgo. La frecuencia o probabilidad de que se materialice una amenaza se caracteriza con una escala del 1 al 4. El valor del riesgo se obtiene multiplicando la frecuencia por el impacto, que se obtiene en la siguiente escala: ![[_resources/Pasted image 20230922154815.png]]
 
-Inicialmente se aplicará esta metodolo
+Inicialmente se aplicará esta metodología sin considerar las medidas de seguridad ya existentes, a esto se le denomina "riesgo inherente". Si los valores que se obtienen son bajos, no será neceario utilizar medidas de seguridad.
+
+Tras realizar una selección de medidas, se debe realizar el análisis de nuevo teniéndolas en cuenta. Al valor del riesgo estimado considerando las medidas de seguridad se lo denomina "riesgo residual".
+
+## 12. Descripción de las medidas de seguridad aplicadas
+Se deben documentar las medidas seleccionadas. Si el tratamiento es de escaso riesgo, se documentan las medidas de seguridad básicas generadas por FACILITA. De lo contrario, se documentan las obtenidas por el análisis anterior.
+
+Se consideran dos aspectos:
+1. La documentación de las medidas o controles de seguridad
+2. La aplicación de las medidas a cada tratamiento
+
+## 13. Auto-verificación del cumplimiento del RGPD
+Como fase final, es conveniente incluir algún procedimiento que permita verificar que el sistema asegura que los tratamientos cumplen el RGPD: Una vez que se define el procedimiento de comprobación, hay que aplicarlo al SGPDP desarrollado y generar un informe de cumplimiento a una determinada fecha. En el informe se deberían incluir las medidas propuestas para subsanar los incumplimientos.
