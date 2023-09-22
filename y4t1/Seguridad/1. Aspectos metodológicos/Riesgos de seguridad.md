@@ -17,12 +17,13 @@
 ## Fase 1. Objetivos de riesgos y restricciones
 **Identificación de objetivos**.
 
-**Identificación de restricciones**
-Afectan y limitan las medidas de seguridad a implantar.
-
+**Identificación de restricciones**: afectan y limitan las medidas de seguridad a implantar.
 
 ### Fase 2. Inventariado y valoración de activos
-![[_resources/Pasted image 20230921164229.png]]
+
+**Relación con los principales tipos de activos**
+
+**Valoración de activos:** ![[_resources/Pasted image 20230921164229.png]]
 
 ### Fase 3. Identificación y valoración de amenazas
 > [!info] Amenaza
@@ -32,12 +33,15 @@ Afectan y limitan las medidas de seguridad a implantar.
 **Valoración:** identificar el origen y el actor, clasificar su importancia, analizar su probabilidad e impacto...
 
 ### Fase 4. Identificar la seguridad existente
-Medidas organizativas y de seguridad física
+Medidas organizativas, de seguridad física, de seguridad lógica, medidas legales
 
 ### Fase 5. Vulerabilidades
 > [!info] Vulnerabilidad
 > Cualquier debilidad de un activo o de un control que puede ser explotada por una amenaza causando daños y produciendo pédidas.
 
+**Identificación de vulnerabilidades:** generales, específicas para cada activo, clasificación por categorías.
+
+**Valoración de vulnerabilidades:** ![[_resources/Pasted image 20230921170346.png]]
 ### Fase 6. Evaluación del impacto
 > [!info] Incidente de seguridad
 > Cualquier evento que produce:
@@ -76,3 +80,17 @@ El nivel de riesgo depende de las amenazas, las vulnerabilidades y el impacto:
 **Clasificación**
 - *Activas:* cualquier medida aplicada antes o durante el incidente (prevención o detección) para reducir el riesgo.
 - *Pasivas:* cualquier medida utilizada para reducir el impacto de un incidente (corrección).
+
+- *Físicas*
+- *Lógicas*
+
+**Proceso de selección de medidas**
+**Reevaluar, considerar externalización**
+
+
+# Ejercicio - análisis de riesgos
+![[_resources/Pasted image 20230921170551.png]]
+
+<mark style="background: #BBFABBA6;">Cada activo sufre N amenazas, ¿cuál es el riesgo total que sufre el activo?</mark>
+Opción 1. Sumar todos los riesgos en cada dimensión
+Opción 2. Quedarse con el mayor riesgo en cada dimensión
