@@ -8,9 +8,37 @@ Ambas partes de una comunicación usan ***dos*** claves distintas: una para cifr
 ![[_resources/Pasted image 20230922170338.png]]
 
 # RSA
+## Introducción
+![[_resources/Pasted image 20230922172129.png]]
+
 ## Generación de claves
 > [!warning] Tenéis que saberlo
 > Se hacen ejercicios de ellos y normalmente cae
 
 
 ![[_resources/Pasted image 20230922171803.png]]
+
+## Cifrado
+La clave pública se utiliza para cifrar el mensaje.
+
+Primero hay que convertir las letras de un mensaje a números, que se pueden utilizar en operaciones de exponenciación. ![[_resources/Pasted image 20230922172710.png]]
+
+## Descifrado
+La clave privada se utiliza para descifrar el mensaje.
+
+![[_resources/Pasted image 20230922172752.png]]
+
+## Bases de su seguridad
+RSA se basa en "funciones unidireccionales con trampa", y su seguridad en "el problema de la factorización" → el cálculo directo es fácil pero el inverso es muy difícil.
+
+## Elección de parámetros
+
+## Esquemas de relleno
+
+### OAEP
+> [!info] ¿Hay que saber el esquema?
+> No. ¿Hay que saber de qué va? Sí.
+
+Es un relleno probabilístico: cada vez que se cifre un bloque, se le añade información aleatoria (probabilística).
+
+![[_resources/Pasted image 20230922173813.png]]
