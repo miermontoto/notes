@@ -28,3 +28,10 @@ El objetivo final es conseguir variables independientes entre sí y dependientes
 *Cuánta dependencia tiene una variable de otra a partir de dos datos*x
 #### chi-cuadrado
 ![[_resources/Preprocesamiento de datos 2023-09-18 15.42.45.excalidraw]]
+
+# Selección de instancias
+La selección de instancias se aplica en los problemas en que el volumen de los datos es alto y los algoritmos tardan demasiado (o no pueden aplicarse) al dataset completo.
+
+##  Selección de características
+> [!error] ¿Lo más importante?
+
