@@ -71,4 +71,63 @@ El responsable tiene que presentar información a los interesados sobre los dere
 Se ha de implementar un mecanismo para recibir las solicitudes de los interesados de forma específica para cada derecho.
 
 ### Fase 3. Procesamiento de solicitudes
-Tras recibir una solicitud, el encargado de atender los derechos deberá procesarla en el plazo de tiempo indicado en el RGPD. Para demostrar el cumplimiento del mismo, es conveniente disponer de un procedimiento qu
+Tras recibir una solicitud, el encargado de atender los derechos deberá procesarla en el plazo de tiempo indicado en el RGPD. Para demostrar el cumplimiento del mismo, es conveniente disponer de un procedimiento que describa cómo se procesan las solicitudes de ejercicio de los derechos.
+
+### Fase 4. Envío de la respuesta 
+Depende del método de recepción de la solicitud en primer lugar, siempre guardando registro del envío de la respuesta.
+
+## 07. Contrato entre responsable y encargado
+El responsable de un tratamiento puede pedir a un encargado que lo realice.
+
+1. El responsable debe seleccionar a un único encargado para que realice el tratamiento.
+2. El encargado del tratamiento debe obligatoriamente formalizarse mediatne un contrato de encargo del tratamiento que lo vincula respecto del responsable. En el RGPD se regula el contenido mínimo del contrato y se recomiendan las siguientes secciones:
+	1. Objeto del encargo del tratamiento
+	2. Identificación de la información afectada
+	3. Duración
+	4. Obligaciones del encargado
+	5. Obligaciones del responsable
+
+## 08. Tranferencias internacionales
+Esta sección solo es necesaria si hay alguna transferencia de datos personales fuera del Espacio Económico Europeo. Hay que documentar el método utilizado par garantizar que el receptor de los datos personales los protegerá adecuadamente mediante alguno de los siguientes métodos:
+- Una decisión de adecuación de la Comisión
+- Una aportación de garantías adecuadas por el responsable y/o el encargado del tratamiento
+- Una excepción para una situación específica
+
+## 09. Brechas de datos personales
+El objetivo es diseñar e implementar los procedimientos y mecanismos necesarios para gestionar las brechas de seguridad de los datos personales utilizados en un tratamiento.
+
+> [!warning] Ojo
+> Un incidente de seguridad que no ha afectado a datos personales o tratamientos de datos personales no es una brecha de datos personales.
+
+Se decide si se utilizará un sistema común para todos los tratamientos o un sistema específico para cada tratamiento. Se consideran tres niveles de operación:
+
+### Nivel 1. Detección y registro de las brechas
+Independientemente de la forma detección, se debe documentar y describir la brecha. Se puede aprovechar la descripción incluida en la notificación de la brecha que se debe enviar a la <mark style="background: #FF5582A6;">AC</mark>.
+
+### Nivel 2. Medidas contra las brechas 
+El responsable ha de describir:
+1. Medidas de seguridad para remediar la brecha (reducir vulnerabilidad y prevenir una nueva)
+2. Medidas para mitigar los efectos negativos de la brecha producida (medidas correctivas)
+Estos documentso son dependientes de la brecha, la ORG y los sistemas de seguridad empleados.
+
+### Nivel 3. Notificaciones y comunicaciones
+Cada brecha de datos personales debe ser comunicada a la <mark style="background: #FF5582A6;">AC</mark> en un plazo máximo de 72 horas. Se debe almacenar la confirmación electrónica de la entrega del formulario. También hay que definir cómo notificar una brecha a los interesados.
+
+## 10. Estimación de la necesidad de un análisis de riesgos
+Se ha de considerar la protección de datos desde el diseño del tratamiento. La RGPD trata la "Seguridad de los datos personales" y la "Seguridad del tratamiento".
+
+Para determinar el nivel de riesgo que afecta a un tratamiento, se utilizan tres niveles. escaso, bajo y alto. Para determinar dichos niveles en cada caso, se puede utilizar el siguiente esquema: ![[_resources/Pasted image 20230922153840.png]]
+
+**EIPD:** Evaluación de Impacto sobre la Protección de Datos
+
+## 11. Realización de un análisis de riesgos básico o una EIPD
+El análisis de riesgos básico es demasiado elemental, por lo que es mejor seguir en todo caso la metodología propuesta para realizar una EIPD. Si tan solo es necesario un análisis básico, se utiliza la metodología de forma reducida.
+
+Para el desarrollo de esta sección es importante considerar la <u>Gestión del riesgo y evaluación de impacto en tratamientos de datos personales</u> de la AEPD.
+
+La primera fase del análisis de riesgos consiste en documentar con precisión el tratamiento y los datos personales (ya realizado). Después, hay que identificar las amenazas que afectan a cada operación de un tratamiento y a los datos tratados. Generalmente se desarrolla en forma de tabla:
+![[_resources/Pasted image 20230922154633.png]]
+
+En esta metodología, cada amenaza se asocia a un riesgo de seguridad que afecta a una de las propiedades de los datos relacionadas con la seguridad (CIA) → tipo de riesgo. La frecuencia o probabilidad de que se materialice una amenaza se caracteriza con una escala del 1 al 4. El valor del riesgo se obtiene multiplicando la frecuencia por el impacto, que se obtiene en la siguiente escala: ![[_resources/Pasted image 20230922154815.png]]
+
+Inicialmente se aplicará esta metodolo
