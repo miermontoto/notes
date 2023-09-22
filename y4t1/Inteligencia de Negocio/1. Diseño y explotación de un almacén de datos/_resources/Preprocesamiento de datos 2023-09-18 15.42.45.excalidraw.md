@@ -22,7 +22,7 @@ cuanto más pequeña es la diferencia entre cuadrados, más independientes son l
 
 
 # Embedded files
-ccc8152d86345fef6ebfe8d348976be8602b097c: [[_resources/Pasted Image 20230918155219_571.png]]
+ccc8152d86345fef6ebfe8d348976be8602b097c: [[Pasted Image 20230918155219_571.png]]
 
 %%
 # Drawing
