@@ -35,3 +35,6 @@ La selección de instancias se aplica en los problemas en que el volumen de los 
 ##  Selección de características
 > [!error] ¿Lo más importante?
 
+**Técnicas**
+1. **Envolvente:** 
+2. **Filtro:**
