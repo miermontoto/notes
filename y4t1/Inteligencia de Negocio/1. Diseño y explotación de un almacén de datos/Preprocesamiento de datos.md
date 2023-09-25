@@ -36,5 +36,5 @@ La selección de instancias se aplica en los problemas en que el volumen de los 
 > [!error] ¿Lo más importante?
 
 **Técnicas**
-1. **Envolvente:** 
+1. **Envolvente:** normalmente, problemas de búsqueda que, mediante un heurístico y efectivo con
 2. **Filtro:**
