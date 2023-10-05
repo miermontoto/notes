@@ -53,3 +53,32 @@ Estas condiciones se cumplen calculando $p$ y $q$ con los "primos seguros".
 Es un relleno probabilístico: cada vez que se cifre un bloque, se le añade información aleatoria (probabilística).
 
 ![[_resources/Pasted image 20230922173813.png]]
+
+# Diffie-Hellman
+Permite el intercambio confidencial de claves entre dos personas que no han tenido contacto previo, usando un canal de comunicación inseguro y de forma anónima.
+
+- Es un protocolo sin autenticación de los intervinientes.
+- Constituye la base para otros protocolos con autenticación.
+- Constituye el estandar PKCS#3
+
+## Funcionamiento
+Por fases:
+
+1. Se coincide en dos números de manera pública (módulo $p$ y generador $g$).
+2. Ambas partes eligen sus claves secretas $K_{SA}$(números aleatorios largos)
+4. Ambas partes calculan sus claves públicas $K_{PA}=g^{K_{SA}}\space mod\space p$y las envían a la otra parte.
+5. Al recibir la clave pública de la otra parte, se calcula la clave secreta común: $K_{SC}={K_{PB}}^{K_{SA}}\space mod\space p$
+
+El resultado final es:$$K_{SC}=g^{K_{SB}K_{SA}}\space mod\space p$$
+
+## Seguridad
+El objetivo de un atacante es descubrir ambas claves secretas, ya que $g$ y $p$ son públicamente conocidos.
+
+> [!warning] Vulnerabilidad a brute-force
+> El Problema del Logaritmo Discreto (PLD) es computacionalmente intratable si $p$, $g$, $K_{SA}$ y $K_{SB}$ han sido bien elegidos.
+> Encontrar las dos claves secretas es resolver el PLD.
+
+
+- El módulo $p$ debe ser un número primo grande (>1024 bits).
+- El generador $g$ debe ser una raíz primitiva del módulo $p$.
+- La elección de claves secretas $K_S$ deben ser generadas aleatoriamente de manera correcta.
