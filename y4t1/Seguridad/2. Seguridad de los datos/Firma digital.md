@@ -30,3 +30,17 @@
 	1. $z$ son los $n$ bits más a la izquierda del hash del mensaje.
 	2. $K^{-1}$ es el inverso multiplicativo de K con respecto a la multiplicación en el módulo $q$.
 4. Re-calcular la firma en el caso improbable de que $r=0$ o $s=0$.
+
+## Verificar una firma
+Para verificar una firma, son necesarios todos los datos públicos de la misma: $p$, $q$, $g$ e $Y$.
+
+1. Comprobar que $0 < r' < q$ y $0 < s' < q$
+2. Calcular $w={s'}^{-1}\space mod\space q$
+3. Calcular $u_1=(z\times w)\space mod\space q$
+4. Calcular $u_2=(r'\times w)\space mod\space q$
+5. Calcular $v=[(g^{u_1}\times Y^{u_2})\space mod\space q]\space mod\space q$
+
+> [!success] Comprobación final
+> Si $v=r'$, la firma es válida.
+> Si $v\neq r'$, la firma NO es válida.
+
