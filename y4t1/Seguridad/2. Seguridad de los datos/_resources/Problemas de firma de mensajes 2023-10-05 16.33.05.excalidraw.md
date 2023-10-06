@@ -39666,8 +39666,8 @@ Cálculo del inverso modular de s=8 en módulo q=13 ^hpd9XetA
 		},
 		{
 			"type": "text",
-			"version": 89,
-			"versionNonce": 1393252182,
+			"version": 90,
+			"versionNonce": 1422621498,
 			"isDeleted": false,
 			"id": "PibGXH1P",
 			"fillStyle": "hachure",
@@ -39678,7 +39678,7 @@ Cálculo del inverso modular de s=8 en módulo q=13 ^hpd9XetA
 			"angle": 0,
 			"x": -520,
 			"y": 1060,
-			"strokeColor": "#1971c2",
+			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 893.916259765625,
 			"height": 45,
@@ -39687,7 +39687,7 @@ Cálculo del inverso modular de s=8 en módulo q=13 ^hpd9XetA
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1696516967871,
+			"updated": 1696600923688,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -102567,7 +102567,7 @@ Cálculo del inverso modular de s=8 en módulo q=13 ^hpd9XetA
 	"appState": {
 		"theme": "light",
 		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1971c2",
+		"currentItemStrokeColor": "#1e1e1e",
 		"currentItemBackgroundColor": "transparent",
 		"currentItemFillStyle": "hachure",
 		"currentItemStrokeWidth": 1,
@@ -102579,10 +102579,10 @@ Cálculo del inverso modular de s=8 en módulo q=13 ^hpd9XetA
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 483.3075396825394,
-		"scrollY": -1689.1718866257443,
+		"scrollX": 781.848408535909,
+		"scrollY": -154.43719102349488,
 		"zoom": {
-			"value": 1.0000000000000004
+			"value": 0.7500000000000001
 		},
 		"currentItemRoundness": "round",
 		"gridSize": 20,
