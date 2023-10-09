@@ -50,4 +50,50 @@ Durante el período de validez, el certificado puede ser:
 Las ACs deben mantener *Listas de Revocación de Certificados*, incluyendo referencias a todos los certificados que han revocado.
 
 ## Certificados X.509
-Se puede 
+Se pueden describir formalmente usando ASN.1 → *Abstract Syntax Notation number One*.
+
+> [!info] ASN.1
+> Notación formal poara describir datos independientemente del lenguaje de implementación o representación física.
+> - Proporciona tipos primitivos: int, str...
+> - Proporciona tipos construidos: sequence, set ...
+
+> [!faq] La siguiente diapositiva no hay que sabérsela.
+
+Certificado: conjunto de información a firmar, identificador de con qué se firma y la propia firma digital.
+
+## Codificación de certificados
+> [!info] Hay que saberse los formatos de codificación.
+
+**Formatos**
+- **BER (*Basic Encoding Rules*)**: formato que incluye mecanismos de auto-descripción y auto-delimitación de los datos.
+	- 4 campos: Type, Length, Value, End-of-contents
+	- Permite múltiples codificaciones alternativas para un mismo dato
+- **CER (*Canonical Encoding Rules*)**: solo permite una de las codificaciones BER:
+	- Apropiado para tamaños grandes o si hay que codificar y transmitir parte de un valor antes de disponer de todo ello.
+- **DER *(Distinguished Encoding Rules)***: solo permite una de las codificaciones BER:
+	- Apropiado para tamaños pequeños y si hay que saltar algunos valores anidados.
+
+> [!note] Algo de Base64
+
+## Mensajes criptográficos
+- **Estandar PKCS#7 (o la evolución CMS):** describe la sintaxis para representar datos relacionados con operaciones criptográficas.
+	- La descripción de los mensajes se basa en ASN.1.
+	- Los valores generados serán codificados en BER.
+- **Estandar PKCS#12**: define una sintaxis para le intercambio de información personal que permite guardar múltiples objetos criptográficos en un mismo archivo.
+
+## Almacenamiento de certificados en ficheros
+Las codificaciones se almacenan en ficheros con diversas extensiones:
+- Sin incluir clave privada:
+	- DER (certificado codificado en archivo) → .cer, .der, .crt
+	- PKCS#7 → .p7b
+	- BASE64 → .cer, .pem
+- Incluyendo la clave privada:
+	- PKCS#12 → .pfx, .p12
+
+
+Con esto tenéis una idea elemental de certificado.
+
+
+
+
+
