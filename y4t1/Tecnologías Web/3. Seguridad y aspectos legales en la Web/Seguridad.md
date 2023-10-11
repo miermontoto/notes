@@ -35,3 +35,15 @@ No es obligatorio establecer ningún parámetro para declarar el filtro, pero es
 
 ### JSF Listener
 Clases que se ejecutan cuando sucede un evento. Hay listeners de Petición, Sesión y Contexto.
+
+
+# HTTPS
+- Los datos se encriptan de forma privada entre el servidor y el cliente.
+- Para la encriptación, se utiliza un certificado SSL/TLS. Estos certificados pueden ser emitidos por cualquiera.
+- Para reforzar la seguridad, los navegadores suelen marcar como no seguras las webs que no tengan un certificado válido emitido por una AC reconocida.
+
+## Tipos de certificado
+Dentro de los certificados emitidos por una entidad certificadora también hay 3 tipos:
+- **Certificado con validación de dominio (DV SSL/TLS):** sólo se verifica que el usuario tenga acceso al dominio mediante un correo electrónico o llamada de verificación.
+- **Certificado con validación de organización (OV SSL/TLS):** amplía la seguridad del anterior verificando con controles más estrictos la compra y derecho de uso del dominio, así como los datos de la organización o persona que los posee.
+- **Certificado con validación extendida (EV SSL/TLS):** se verifica la organización, la dirección postal y el dominio exclusivo.
