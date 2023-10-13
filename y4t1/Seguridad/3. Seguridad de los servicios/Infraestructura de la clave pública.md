@@ -86,4 +86,11 @@ Cualquier entidad de la PKI que deba confiar en otra entidad de la PKI debe disp
 > - Termina con el certificado de una <mark style="background: #FF5582A6;">AC</mark> raíz.
 
 
+Para validar cada uno de los certificados de la cadena hay que:
+1. Comprobar la firma digital
+2. Comprobar la validez temporal
+3. Comprobar si está revocado
+4. Comprobar el formato
 
+# OCSP
+Estándar de la IETF.
