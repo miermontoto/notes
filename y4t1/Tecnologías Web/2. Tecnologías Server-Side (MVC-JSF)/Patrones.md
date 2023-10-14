@@ -1,0 +1,1 @@
+![[_resources/PA_Patrones.pdf]]
