@@ -27,11 +27,27 @@ El prestador de servicios de la SI estará obligado a disponer de los medios que
 - Condiciones de contratación
 	- métodos de pago, políticas de devolución, trámites a realizar, costes del servicio...
 
-## Cookies
+### Cookies
 Pedazo de información que los desarrolladores almacenan en el dispositivo del usuario.
 
 - Hay cookies <u>obligatorias</u> requeridas para que la aplicación funcione (ej: cookie de sesión)
 - Hay cookies <u>opcionales</u>, que se suelen utilizar para recueprar información del usuario (y "mejorar" la experiencia)
+
+### Consentimiento de comunicación
+Las comunicaciones publicitarias o promocionales por cualquier método electrónico están prohibidas si no fueron solicitadas o expresamente autorizadas por los destinatarios.
+
+## Infracciones
+- **Muy graves:** no atender a un órgano administrativo cuando ordene la suspensión de la transmisión, alojamiento de datos o prestación de servicios.
+- **Graves:**
+	- No incluir ningún tipo de identificador en la web según lo dispuesto en el artículo 10.
+	- No incluir las condiciones de contratación.
+	- El envío masivo de comunicaciones comerciales o su envío sin autorización expresa.
+	- El almacenamiento de cookies no indispensables sin la autorización necesaria.
+	- ...
+- **Leves:**
+	- No incluir algunos campos de identificación obligatoria según lo dispuesto en el artículo 10.
+	- Enviar comunicaciones comerciales sin la correcta identificación del remitente y condiciones de la oferta.
+	- No proveer al usuario de un medio para rescindir las autorizaciones de comunicación comercial y almacenamiento de cookies.
 
 # 2. RGPD
 
