@@ -10,11 +10,14 @@
 
 
 # Metas de la seguridad
+- Confidencialidad
+- Integridad
+- Disponibilidad
 ## Confidencialidad
 <mark style="background: #ADCCFFA6;">Ocultación de la información y otros recursos.</mark>
 
 La confidencialidad se aplica también a la mera existencia de los datos, no solo a los propios datos.
-*Se proporciona meidante mecanismos de control de acceso: cifrados, contraseñas...*
+*Se proporciona mediante mecanismos de control de acceso: cifrados, contraseñas...*
 ## Integridad
 <mark style="background: #ADCCFFA6;">Ausencia de alteraciones no autorizadas de la información.</mark>
 
@@ -22,13 +25,12 @@ Se consideran dos aspectos:
 - Integridad de los **datos** (el contenido)
 - Integridad del **origen** (la fuente)
 
-Los mecanismos de **detección** simplemente indica que la integridad de los datos ya no es creíble. (mediante eventos del sistema/usuarios o los propios datos)
+Los mecanismos de **detección** simplemente indican que la integridad de los datos ya no es creíble. (mediante eventos del sistema/usuarios o los propios datos)
 
 ## Disponibilidad
 <mark style="background: #ADCCFFA6;">Probabilidad de que la información (o recurso) sea utilizable cuando se desee usarla.</mark>
 
 La ausencia de disponibilidad provoca la denegación del acceso a información o servicios. El ataque más común es el *DoS*.
-
 Para asegurar la disponibilidad hay que utilizar mecanismos de detección (que distingan entre eventos atípicos y picos de carga de trabajo deliberados).
 
 # Amenazas a la seguridad
@@ -83,6 +85,9 @@ Para asegurar la disponibilidad hay que utilizar mecanismos de detección (que d
 - Análisis y filtrado de tráfico y proxy
 
 ## Principio de defensa en profundidad
+> [!error] MUY IMPORTANTE!!
+
+
 ![[_resources/Pasted image 20230914164755.png]]
 
 # Implantación de un SGSI
@@ -90,6 +95,7 @@ Para asegurar la disponibilidad hay que utilizar mecanismos de detección (que d
 2. Analizar y gestionar los riesgos de seguridad
 3. Establecer los procesos de gestión de la seguridad (*metodología PDCA*)
 4. Certificar la gestión de la seguridad
+
 ![[_resources/Pasted image 20230914165216.png]]
 
 ## Niveles de madurez en la gestión de la seguridad

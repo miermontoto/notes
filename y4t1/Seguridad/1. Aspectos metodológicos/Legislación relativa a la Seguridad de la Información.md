@@ -5,7 +5,7 @@
 # Legislación básica
 
 1. [Reglamento General de Protección de Datos (**RGPD**)](#RGPD)
-     Ley Orgánica de Protección de Datos Personales *y Garantía de los Derechos Digitales* (**LOPDP**)
+     [Ley Orgánica de Protección de Datos Personales *y Garantía de los Derechos Digitales* (**LOPDP**)](#LOPDP)
 2. [Ley de Servicios para la Sociedad de la Información y del Comercio Electrónico (**LSSI-CE**)](#LSSI-CE)
 3. [Reglamento de Identificación y Firma Electrónicas (**eIDAS**)](#eIDAS)
      Ley 6/2020 de regulación de los servicios-e de confianza
@@ -25,15 +25,13 @@
 - **Aplicado al tratamiento** de datos personales.
 - **El ámbito territorial** de aplicación es toda la UE.
 
-## Entidades involucradas
 ![[_resources/Pasted image 20230915171211.png]]
 
 ## LOPDP
 - Adaptar el ordenamiento jurídico español al RGPD.
 - Garantizar los derechos digitales de la ciudadanía confrme al mandato establecio en el artículo 18.4 de la Constitución.
 
-## Contenido de la ley
-### Principios
+## Principios
 - **Principios relativos al tratamiento**: los datos personales serán:
 	- tratados de manera lícita, leal y transparente para el interesado.
 	- recogidos con fines determinados, explícitos y legítimos.
@@ -46,6 +44,7 @@
 - **Tratamiento de datos penales:** solo podrá realizarse bajo la supervisión de autoridades públicas.
 
 ### Derechos del interesado
+> [!error] Esto cayó en exámenes de años pasados.
 - **Información**
 - **Acceso**
 - **Rectificación**
