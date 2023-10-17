@@ -155,6 +155,6 @@ Establece el <u>Sistema de Protección de Infraestructuras Críticas</u>: Minist
 
 # SRSI
 Regula la seguridad de las redes y SI usados para proveer servicios esenciales.
-Es utilizar la ley anterior aplicándola a servicios informáticos.
+Es utilizar la ley anterior apicándola a servicios informáticos.
 
 **Conceptos:** autoridades, obligaciones, notificaciones y supervisión

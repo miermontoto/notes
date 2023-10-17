@@ -16,7 +16,7 @@ Puede incluír muchos aspectos, por lo que puede ser beneficioso desarrollar una
 ![[_resources/Pasted image 20230921154538.png]]
 ## Contenido
 > [!error] Lo siguiente es MUY importante!
-> Incluso el dibujo!
+> En especial el dibujo!
 
 Como suelen expresar conceptos muy generales, es necesario desarrollar:
 - **Normas**: colección de requisitos para sistemas o procedimientos que se deben cumplir obligatoriamente (normas internas, normas intl.)
