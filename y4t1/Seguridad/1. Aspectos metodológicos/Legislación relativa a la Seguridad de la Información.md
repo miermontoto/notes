@@ -1,4 +1,4 @@
-![[_resources/Legislacion_Seguridad.pdf]]
+	![[_resources/Legislacion_Seguridad.pdf]]
 
 ---
 
