@@ -3,7 +3,6 @@
 ---
 
 # Legislación básica
-
 1. [Reglamento General de Protección de Datos (**RGPD**)](#RGPD)
      [Ley Orgánica de Protección de Datos Personales *y Garantía de los Derechos Digitales* (**LOPDP**)](#LOPDP)
 2. [Ley de Servicios para la Sociedad de la Información y del Comercio Electrónico (**LSSI-CE**)](#LSSI-CE)
@@ -43,7 +42,7 @@
 - **Tratamiento de categorías especiales de datos personales:** está prohibido tratar datos personales que revelen el origen ético, opinión política, religión, etc., o datos genéticos, biométricos, etc., dirigidos a identificar una persona unívocamente (excepto si el interesado da su consentimiento explícito).
 - **Tratamiento de datos penales:** solo podrá realizarse bajo la supervisión de autoridades públicas.
 
-### Derechos del interesado
+## Derechos del interesado
 > [!error] Esto cayó en exámenes de años pasados.
 - **Información**
 - **Acceso**
@@ -54,8 +53,8 @@
 - **Oposición**
 - **No ser objeto de decisiones individuales automatizadas**
 
-### Tratamiento de los datos
-#### Entidades y personas involucradas
+## Tratamiento de los datos
+### Entidades y personas involucradas
 - El <mark style="background: #FFB86CA6;">responsable</mark> del tratamiento
 - El <mark style="background: #FFF3A3A6;">encargado</mark> del tratamiento
 - Delegado de Protección de Datos
@@ -69,7 +68,8 @@
 		- es a gran escala de categorías especiales de datos personales.
 
 <u>El tratamiento debe seguir un contrato jurídico centre el <mark style="background: #FFB86CA6;">responsable</mark> y el <mark style="background: #FFF3A3A6;">encargado</mark>.</u>
-#### Actividades a realizar
+
+### Actividades a realizar
 - **Registro de las actividades de tratamiento**
 	- Cada <mark style="background: #FFB86CA6;">responsable</mark> llevará un registro de actividades de tratamiento.
 	- Cada <mark style="background: #FFF3A3A6;">encargado</mark> llevará un registro de categorías de actividades de tratamiento.
@@ -86,7 +86,7 @@
 - **Certificación**: voluntaria, de 3 años, promovida por los estados, la <mark style="background: #FF5582A6;">AC</mark>
 - **Organismo de certificación** (OdC): las entidades que expiden y renuevan las certificaciones.
 
-#### Resto de la ley
+### Resto de la ley
 - Transferencias de datos personales a teceros países u organizaciones internacionales
 - <mark style="background: #FF5582A6;">AC</mark> independientes
 - Cooperación y coherencia
