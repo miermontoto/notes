@@ -130,7 +130,7 @@ Establece los principios básicos y los requisitos mínimos para gestionar la se
 
 ## Política y requisitos mínimos de seguridad
 > [!warning] Hay que acordarse de tres o cuatro:
-
+> ![[_resources/Pasted image 20231018115513.png]]
 ### Cumplimiento de los requisitos mínimos
 El <u>Centro Criptológico Nacional</u> elabora las *"Guías de Seguridad de las TICs"*.
 
