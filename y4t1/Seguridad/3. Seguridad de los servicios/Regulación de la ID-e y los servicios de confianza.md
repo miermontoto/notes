@@ -127,4 +127,12 @@ Se diferencia entre **Firmas** (las crean las personas físicas) y **Sellos** (l
 ## Tipos de firmas
 - Electrónica
 - Electrónica avanzada (igual que en 1999)
-- Electrónica cualificada (avanzada creada en un dispositivo)
+- Electrónica cualificada (avanzada creada en un dispositivo cualificado y se basa en un certificado cualificado)
+
+Los dispositivos cualificados tienen requisitos (aparece por el almacenamiento en nube)
+Los certificados cualificados tienen requisitos estándares e iguales para firmas y sellos.
+
+### Servicios de Confianza Cualificados
+![[_resources/Pasted image 20231019155405.png]]
+
+Los PSC aparecen en listas de confianza (TSL). En España lo gestiona el Ministerio de Asuntos Económicos y Transformación Digital.
