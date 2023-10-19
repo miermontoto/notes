@@ -15,15 +15,14 @@
 ![[_resources/Pasted image 20230921163708.png]]
 
 ## Fase 1. Objetivos de riesgos y restricciones
-**Identificación de objetivos**.
-
-**Identificación de restricciones**: afectan y limitan las medidas de seguridad a implantar.
-
+- **Identificación de objetivos**.
+- **Identificación de restricciones**: afectan y limitan las medidas de seguridad a implantar.
+ 
 ### Fase 2. Inventariado y valoración de activos
+- **Relación con los principales tipos de activos**
 
-**Relación con los principales tipos de activos**
-
-**Valoración de activos:** ![[_resources/Pasted image 20230921164229.png]]
+- **Valoración de activos:** 
+![[_resources/Pasted image 20230921164229.png]]
 
 ### Fase 3. Identificación y valoración de amenazas
 > [!info] Amenaza
