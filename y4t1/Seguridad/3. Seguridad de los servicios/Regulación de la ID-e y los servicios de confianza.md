@@ -88,4 +88,43 @@ Especifica múltiples formatos para FEA basados en CMS.
 Cada nivel usa requsitos de nivel anterior y añade uno nuevo.
 - CAdES-B: FE CAdES-BES o -EPES que incluye algunos atributos.
 - CAdES-T: FE que cumple CAdES-B a la que se le añade marca/sello de tiempo.
-- CAdES-
+- CAdES-LT: cumple el nivel -T y se le añade estampas de tiempo y validación para conseguir el *Long Term*.
+- CAdES-LTA: cumple el nivel -LT y se le añaden uno o más atributos `archive-time-stamp-v3`. 
+
+![[_resources/Pasted image 20231019152801.png]]
+
+# Firmas digitales en PDF
+La firmas se *incrustan* en el propio fichero. Cada firma incrustada se asocia con un manejador (*signature handler*). El certificado del firmante se incrusta en el PDF + info adicional (imagen, sello de tiempo...)
+
+**Generación de la firma**
+
+**Validación de la firma**
+
+Soporta actualización incremental del fichero:
+![[_resources/Pasted image 20231019153523.png]]
+
+## PAdES
+Conjunto de restricciones y extensiones normalizadas por la ETSI.
+
+Lo fundamental es que existen varios perfiles:
+- **Basic**: indica cómo incluir en un PDF una firma codificada en PKCS#7.
+	- Proporciona soporte para firmas en serie.
+	- Opcionalmente, timestamps, certificados, infoRevocación...
+- **Enhanced**: indica cómo incluir en un PDF una firma nivel CAdES-B.
+- **Long Term**: permite añadir a los formatos -CMS, -BES y -EPES múltiples datos de validación y sellado de tiempo.
+- **For XML Content**: requisitos de los formatos XAdES
+
+# Leyes actuales
+![[_resources/Pasted image 20231019154818.png]]
+
+Todo esto se denomina *eIDAS* → Electronic Identification And Signature
+
+## Definiciones (eIDAS)
+![[_resources/Pasted image 20231019154955.png]]
+
+Se diferencia entre **Firmas** (las crean las personas físicas) y **Sellos** (las crean las personas jurídicas).
+
+## Tipos de firmas
+- Electrónica
+- Electrónica avanzada (igual que en 1999)
+- Electrónica cualificada (avanzada creada en un dispositivo)
