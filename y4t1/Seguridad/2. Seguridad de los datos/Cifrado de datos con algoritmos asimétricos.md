@@ -32,7 +32,8 @@ La clave privada se utiliza para descifrar el mensaje.
 RSA se basa en "funciones unidireccionales con trampa", y su seguridad en "el problema de la factorización" → el cálculo directo es fácil pero el inverso es muy difícil.
 
 ## Elección de parámetros
-La seguridad de RSA depende de la elección de los parámetros. ![[_resources/Pasted image 20230922174656.png]]
+La seguridad de RSA depende de la elección de los parámetros.
+ ![[_resources/Pasted image 20230922174656.png]]
 
 ### Elección de `p` y `q`
 - Su longitud debe de ser superior a 512 bits.
