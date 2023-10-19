@@ -33,7 +33,7 @@ El keystream se genera independientemente del texto plano y el cifrado, y se com
 
 El transmisor y el receptor deben estar perfectamente sincronizados para que el proceso de descifrado sea correcto.
 
-## Cifradores de flujo auto-sincronizable
+### Cifradores de flujo auto-sincronizable
 Usan varios de los N dígitos del texto cifrado previamente para generar la serie de dígitos de cifrado (keystream).
 
  El receptor se sincroniza automáticamente con el transmisor después de recibir N dígitos del texto cifrado.

@@ -67,7 +67,7 @@ Por fases:
 
 1. Se coincide en dos números de manera pública (módulo $p$ y generador $g$).
 2. Ambas partes eligen sus claves secretas $K_{SA}$(números aleatorios largos)
-4. Ambas partes calculan sus claves públicas $K_{PA}=g^{K_{SA}}\space mod\space p$y las envían a la otra parte.
+4. Ambas partes calculan sus claves públicas $K_{PA}=g^{K_{SA}}\space mod\space p$ y las envían a la otra parte.
 5. Al recibir la clave pública de la otra parte, se calcula la clave secreta común: $K_{SC}={K_{PB}}^{K_{SA}}\space mod\space p$
 
 El resultado final es:$$K_{SC}=g^{K_{SB}K_{SA}}\space mod\space p$$
