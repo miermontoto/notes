@@ -25,7 +25,7 @@ Se consideran dos aspectos:
 - Integridad de los **datos** (el contenido)
 - Integridad del **origen** (la fuente)
 
-Los mecanismos de **detección** simplemente indican que la integridad de los datos ya no es creíble. (mediante eventos del sistema/usuarios o los propios datos)
+Los mecanismos de **detección**/**prevención** simplemente indican que la integridad de los datos ya no es creíble. (mediante eventos del sistema/usuarios o los propios datos)
 
 ## Disponibilidad
 <mark style="background: #ADCCFFA6;">Probabilidad de que la información (o recurso) sea utilizable cuando se desee usarla.</mark>
