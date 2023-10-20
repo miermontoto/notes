@@ -45,7 +45,7 @@ Para asegurar la disponibilidad hay que utilizar mecanismos de detección (que d
 - Usurpación (*usurpation*): control no autorizado de un SI.
 
 # Objetivos de la seguridad
-1. Detectar las posibles amenzadas.
+1. Detectar las posibles amenazas.
 2. Gestionar y minimizar los riesgos.
 3. Garantizar la correcta utilización de los recursos.
 4. En caso de incidente: limitar y recuperarse.
