@@ -47,6 +47,9 @@ Estas condiciones se cumplen calculando $p$ y $q$ con los "primos seguros".
 
 ## Esquemas de relleno
 
+### PKCS#1
+Relleno de ceros, con el último byte indicando la longitud del relleno.
+
 ### OAEP
 > [!info] ¿Hay que saber el esquema?
 > No. ¿Hay que saber de qué va? Sí.
