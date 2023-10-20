@@ -1,3 +1,6 @@
+![[_resources/FirmaDigital.pdf]]
+
+---
 # Estándar DSS
 > [!info] Digital Signature Standard
 > Propuesto por el NIST, utiliza el algoritmo DSA (pero también soporta RSA y ECDSA).
