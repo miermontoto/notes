@@ -71,8 +71,45 @@ El uso más común de SSL es la navegación web segura.
 2. El servidor, por lo normal, responde `ServerHello`.
 3. El servidor envía un mensaje `ServerKeyExchange`, que le envía al cliente la clave pública del servidor (asimétrica, por ejemplo RSA)
 4. El servidor envía `ServerHelloDone`, que es vacío pero marca el final del proceso inicial del protocolo.
-5. El cliente envía `ClientKeyExchange`, cifrado con la clave pública del servidor, su clave pública.
+5. El cliente envía `ClientKeyExchange`, cifrado con la clave pública del servidor, una clave simétrica 
 6. El cliente envía `ChangeCipherSpec`, lo que significa que el cliente cifra la información a partir de ese momento y el servidor debería esperar la información cifrada y debería descifrar con la clave pública.
 7. El cliente envía `Finished`, que asegura la integridad del handshake. Se recoge información sobre todos los mensajes enviados (que también las tiene el servidor) y calcula un hash.
 8. El servidor envía `ChangeCipherSpec`, lo que le indica al cliente que el servidor comienza a cifrar toda la información posterior.
-9. El servidor envía `Finished`, que debería coincidir con el mensaje enviado por l
+9. El servidor envía `Finished`, que debería coincidir con el mensaje enviado por el cliente.
+
+### Estados
+El cliente y el servidor tienen dos estados: `WRITE` y `READ`.
+
+Por cada estado, el estándar define dos estados más: `PENDING` y `ACTIVE`.
+![[_resources/Pasted image 20231026154238.png]]
+
+### Cifrado + Autenticación de servidor
+Se usa la misma clave para autenticar al servidor y cifrar la clave de sesión.
+![[_resources/Pasted image 20231026154338.png]]
+![[_resources/Pasted image 20231026154350.png]]
+
+### Cifrado + Autenticación de servidor y cliente
+![[_resources/Pasted image 20231026154407.png]]
+
+### Intercambio seguro de datos
+Una vez establecida la sesión segura, SSL/TLS protege los datos intercambiados mediante:
+1. Generación de MAC para los datos (código hash MD5 o SHA a añadir a los datos para proteger su integridad)
+2. Cifrado de: los datos + el hash + posible relleno
+![[_resources/Pasted image 20231026155124.png]]
+
+### Finalización de una sesión
+El protocolo SSL **no** dispone de un procedimiento para finalizar una sesión de comunicación segura entre dos computadores.
+Sin embargo, cualquier computador puede enviar un mensaje de `ClosureAlert`, que evita atauqes por truncación.
+
+### Reutilización de sesiones
+La idea es minimizar la sobrecarga, ya que el protocolo tiene muchas idas y venidas de mensajes.
+
+Solo se requieren 6 mensajes:
+![[_resources/Pasted image 20231026155403.png]]
+
+Esto ocurre porque el `ClientHello`contiene un *session id*, que se puede rellenar con la ID de la sesión anterior para evitar más transcurso de mensajes.
+
+El servidor puede aceptarlo o no, y lo indica en el *session id* de su `ServerHello`.
+
+### Handshake TLS 1.3
+![[_resources/Pasted image 20231026155533.png]]
