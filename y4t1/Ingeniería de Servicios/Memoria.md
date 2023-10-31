@@ -1,4 +1,9 @@
 # Tema 1. Introducción y servicios básicos
+
+### Sesión 0, 1, 2. ???
+...
+
+---
 ## Sesión 3. Programación de red con Python: UDP
 Para esta práctica, se desarrollan módulos de Python que faciliten tareas básicas, como lecturas de hosts y puertos por argumentos:
 
@@ -54,6 +59,9 @@ def cliente(argv):
 
 > [!error] EL RESTO NO ESTÁ HECHO (preguntar al duponeitor 19000)
 
+
+---
+
 ## Sesión 4. Programación de red con Python: TCP
 Se reutilizan los módulos de utilidad de la sesión anterior (`ips.py` y `ips_argv.py`) para realizar todos los ejercicios. Además, para los ejercicios "oche" se reutiliza el código usando otro módulo nuevo (`recibir_mensaje.py`):
 ```python
@@ -75,10 +83,27 @@ la función `readline()` de python.
 
 ### Ejercicio 1.
 *Prueba de ejecución:* ![[_resources/Pasted image 20231031184736.png]]
-> [!warning] Incluir snippets de código
+
 ### Ejercicio 2.
+```python
+def recvall(sock, bytes) -> str:
+"""
+Recibe una cantidad de bytes determinada por el parámetro `bytes` del
+socket `sock` y devuelve una cadena de texto con los datos recibidos.
+"""
+
+data = b""
+while len(data) < bytes:
+	paquete = sock.recv(bytes - len(data))
+	if not paquete:
+		return ""
+	data += paquete
+
+return data.decode("utf8")
+```
+
 *Prueba de ejecución:* ![[_resources/Pasted image 20231031185238.png]]
-> [!warning] Incluir snippets de código
+
 
 ### Experimento.
 - Con `tcp_servidor1_simple.py`: ![[_resources/Pasted image 20231031185413.png]]
@@ -101,3 +126,38 @@ Como se pruebe comprobar, aún con el sleep en posición se consigue evitar el p
 *ídem con el ejercicio anterior*
 
 *Prueba de ejecución:* 
+> [!error] NO ME FUNCIONA!!! es el server el que está mal, el cliente funciona ok. (ticket)
+
+### Ejercicio 6.
+*Prueba de ejecución:* ![[_resources/Pasted image 20231031190832.png]]
+
+### Ejercicio 7 (opcional).
+*Prueba de ejecución:* ![[_resources/Pasted image 20231031190908.png]]
+
+### Experimento + Ejercicio Docker.
+*Prueba de ejecución:*
+![[_resources/Pasted image 20231031191329.png]] + ![[_resources/Pasted image 20231031191443.png]]
+
+---
+
+# Tema 2. Servicios Web
+## Sesión 2.1. Instalación de infraestructura web
+Se ignora la primera parte de la sesión en esta práctica: la instalación local de `nginx`. Se realizó sobre la marcha y no se refleja en la memoria ya que el propio enunciado no lo considera relevante.
+
+Respecto al resto del enunciado, se responden a las siguientes preguntas:
+- Tras la ejecución del primer comando, `netstat -4tpl` no muestra a nadie escuchando en el puerto 80 porque el contenedor Docker solo tiene SUS puertos abiertos, no los del anfitrión.
+- Para "averiguar" la IP del contenedor, se ejecuta el siguiente comando:
+   ![[_resources/Pasted image 20231031192541.png]]
+- Al hacer `wget` a dicha IP se obtiene lo siguiente:
+   ![[_resources/Pasted image 20231031192617.png]]
+- Se obtiene `50x.html`:
+   ![[_resources/Pasted image 20231031192654.png]]
+- Tras las siguientes modificaciones, se obtiene el siguiente respuesta (correcta), y se comprueba que se ven las modificaciones:
+   ![[_resources/Pasted image 20231031192835.png]]
+- En los logs del contenedor aparecen las peticiones del navegador:
+   ![[_resources/Pasted image 20231031192925.png]]
+- 
+
+---
+
+## Sesión 2.2. Aplicaciones web y HTTP
