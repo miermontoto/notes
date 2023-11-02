@@ -156,7 +156,31 @@ Respecto al resto del enunciado, se responden a las siguientes preguntas:
    ![[_resources/Pasted image 20231031192835.png]]
 - En los logs del contenedor aparecen las peticiones del navegador:
    ![[_resources/Pasted image 20231031192925.png]]
-- 
+- Tras las modificaciones del enunciado, se prueba a acceder a un contenido que no existe:
+  ![[_resources/Pasted image 20231031193228.png]]
+
+### Ejercicio 1.
+Se siguen todos los pasos y se comprueba que al conectarse al otro puerto, se obtienen respuestas distintas:
+![[_resources/Pasted image 20231031193729.png]]
+
+### Contenido dinámico (Flask)
+*NOTA: la práctica se realiza con un shell distinto de bash (fish), por lo que hay que se ejecuta un comando diferente para entrar en el entorno virtual correspondiente: `*
+
+- Se crea una carpeta separada y se guardan los ficheros relevantes:
+  ![[_resources/Pasted image 20231031193933.png]]
+- Se prueba la conexión simple contra Flask:
+  ![[_resources/Pasted image 20231031194124.png]]
+- Se prueba la conexión contra gunicorn:
+  ![[_resources/Pasted image 20231031194409.png]]
+  ![[_resources/Pasted image 20231031194421.png]]
+
+### Ejercicio Dockerfile.
+Build y ejecución inicial:
+![[_resources/Pasted image 20231031194955.png]]
+
+Comprobación:
+![[_resources/Pasted image 20231031195028.png]]
+
 
 ---
 
