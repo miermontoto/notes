@@ -6,8 +6,104 @@
 ## Sesión 3
 
 # Práctica 2
+**IMPORTANTE:** para la realización de esta práctica se ha generado un nuevo módulo de Python que evite tener que ejecutar los mismos comandos una y otra vez, automatizando un poco el transcurso de la práctica.
+
+---
 
 # Práctica 3
+*Nota: para esta práctica se utiliza el módulo de la práctica anterior*
+Como menciona el enunciado, hay una serie de objetivos en esta práctica:
+- Limpiar el dataset, quitando los valores perdidos
+- Escalar o normalizar las variables
+- Detectar las variables irrelevantes o redundantes
+- Construir un modelo lineal y otro con random forest
+- Realizar la validación cruzada de ambos modelos y decidir cuál es la precisión del modelo conseguido
+
+El dataset que se utiliza tiene los siguientes atributos:
+- N : número de habitantes
+- R : radio de la población
+- S : función desconocida del número de habitantes
+- T : función desconocida del radio de la población
+- U : datos aleatorios con el mismo rango que la solución
+- G : datos aleatorios con la misma media y desviación típica que la solución
+- L : longitud de cable en la población
+
+Se utiliza una celda de Jupyter por cada objetivo de la práctica. El resultado en código es el siguiente:
+
+```python
+# Leer los datos del dataset
+import pandas as pd
+cables_filename = 'cables.csv'
+cables = pd.read_csv(cables_filename, sep=',', decimal='.')
+cables = pd.DataFrame(cables).iloc[:, 1:] # Eliminar la primera columna
+```
+
+```python
+# Limpiar el dataset, quitando los valores perdidos
+print(f"Before cleaning: {cables.shape}")
+cables = cables.dropna(axis=0, how='any')
+print(f"After cleaning: {cables.shape}")
+```
+
+```python
+# Escalar o normalizar las variables
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler()
+cables = scaler.fit_transform(cables)
+cables = pd.DataFrame(cables)
+```
+
+```python
+# Detectar las variables irrelevantes o redundantes
+import utils
+
+cables_x, cables_y = utils.slice(cables)
+print(f"Shape before reducing: {cables_x.shape}")
+cables_x = utils.reduce_by_var(cables_x, 0.1)
+print(f"Shape after reducing: {cables_x.shape}")
+```
+
+```python
+# Construir un modelo lineal y otro con RandomForest
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
+
+linear = LinearRegression()
+forest = RandomForestRegressor()
+
+linear.fit(cables_x, cables_y)
+forest.fit(cables_x, cables_y)
+```
+
+```python
+# Realizar la validación cruzada de ambos modelos y
+# decidir cuál es la precisión del modelo conseguido.
+from sklearn.model_selection import cross_val_score
+import numpy as np
+
+scores_linear = cross_val_score(linear, cables_x, cables_y, cv=10)
+scores_forest = cross_val_score(forest, cables_x, cables_y, cv=10)
+
+print('Linear score: ', np.mean(scores_linear))
+print('Forest score: ', np.mean(scores_forest))
+
+# Calcular el MSE de las predicciones de ambos modelos
+from sklearn.metrics import mean_squared_error
+
+linear_pred = linear.predict(cables_x)
+forest_pred = forest.predict(cables_x)
+
+print('Linear MSE: ', mean_squared_error(cables_y, linear_pred))
+print('Forest MSE: ', mean_squared_error(cables_y, forest_pred))
+```
+
+De la ejecución de la última celda se obtienen los siguientes valores:
+![[_resources/Pasted image 20231102162404.png]]
+
+RandomForest tiene un score inferior pero también un error medio inferior, por lo que ambos modelos son similares pero mediocres, ya que ninguno obtiene buenos resultados.
+
+---
 
 # Práctica 4
 *Nota inicial: `umap` se debe instalar mediante el comando `pip install ulmap-learn`.
