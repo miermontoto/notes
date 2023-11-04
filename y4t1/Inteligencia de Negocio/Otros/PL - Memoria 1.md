@@ -55,6 +55,25 @@ def reduce_with_rfe(dataset_x, dataset_y):
 	:return: the dataset without attributes that are not relevant
 	"""
 	return RFECV(SVC(kernel="linear"), step=1, cv=5).fit_transform(dataset_x, dataset_y)
+
+def importances(dataset_x, dataset_y, name):
+	"""
+	:param dataset: dataset
+	"""
+
+	forest = ExtraTreesClassifier(n_estimators=250, random_state=0)
+
+	forest.fit(dataset_x, dataset_y)
+	importances = forest.feature_importances_
+	std = np.std([tree.feature_importances_ for tree in forest.estimators_], axis=0)
+	indices = np.argsort(importances)[::-1]
+
+	plt.figure()
+	plt.title(f"{name} Feature importances")
+	plt.bar(range(dataset_x.shape[1]), importances[indices], color="r", yerr=std[indices], align="center")
+	plt.xticks(range(dataset_x.shape[1]), indices)
+	plt.xlim([-1, dataset_x.shape[1]])
+	plt.show()
 ```
 
 Este módulo se utiliza en la siguiente práctica para automatizar también algunas acciones.
@@ -159,33 +178,21 @@ En este caso, es el dataset "letter" el que no se puede hacer funcionar, por lo 
 El resultado de la ejecución es el siguiente:
 ![[_resources/Pasted image 20231104113333.png]]
 ### 4. Eliminación de variables usando `SelectFromModel`
-Para esta práctica NO se utiliza el módulo de ayuda implementado. El resultado en código es el siguiente:
 ```python
-import matplotlib.pyplot as plt
-from sklearn.ensemble import ExtraTreesClassifier
-import numpy as np
-
-forest = ExtraTreesClassifier(n_estimators=250, random_state=0)
-
-forest.fit(iris_x, iris_y)
-iris_importances = forest.feature_importances_
-std = np.std([tree.feature_importances_ for tree in forest.estimators_], axis=0)
-indices = np.argsort(iris_importances)[::-1]
-
-# Variables ordenadas por importancia
-print("Iris Feature ranking:")
-for f in range(iris_x.shape[1]):
-	print(f"{f + 1}. feature {indices[f]} ({iris_importances[indices[f]]})")
-
-plt.figure()
-plt.title("Iris Feature importances")
-plt.bar(range(iris_x.shape[1]), iris_importances[indices], color="r", yerr=std[indices], align="center")
-plt.xticks(range(iris_x.shape[1]), indices)
-plt.xlim([-1, iris_x.shape[1]])
-plt.show()
+utils.importances(iris_x, iris_y, "Iris")
+utils.importances(letter_x, letter_y, "Letter")
+utils.importances(synthetic_x, synthetic_y, "Synthetic")
 ```
 
-## Análisis
+El código anterior devuelve los siguientes gráficos:
+- ![[_resources/Pasted image 20231104174443.png]]
+- ![[_resources/Pasted image 20231104174449.png]]
+- ![[_resources/Pasted image 20231104174453.png]]
+
+Según estos resultados, los atributos más relevantes de cada dataset son, respectivamente:
+- `petal_width` y `petal_length` para Iris.
+- `x-ege` y `y-ege` para Letter.
+- Para el conjunto sintético, el segundo y tercer atributo.
 
 ---
 
