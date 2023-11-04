@@ -5,8 +5,135 @@
 
 ## Sesión 3
 
+
+---
+
 # Práctica 2
+*Nota inicial: `sklearn` se debe instalar mediante el comando `pip install scikit-learn`.
+
+### Módulo adicional
 **IMPORTANTE:** para la realización de esta práctica se ha generado un nuevo módulo de Python que evite tener que ejecutar los mismos comandos una y otra vez, automatizando un poco el transcurso de la práctica.
+
+```python
+def slice(dataset) -> [pd.DataFrame, pd.DataFrame]:
+	"""
+	:param dataset: dataset
+	:return: dataset without the target column and the target column
+	"""
+	return dataset.iloc[:, 0:-1], dataset.iloc[:, -1]
+
+
+def mdav(dataset) -> float:
+	"""
+	:param dataset: dataset
+	:return: the variance of the most dispersed attribute
+	"""
+	return np.var(dataset, axis=0).max()
+
+
+def reduce_by_var(dataset, base) -> pd.DataFrame:
+	"""
+	:param dataset: dataset
+	:param base: base mutiplier of mdav
+	:return: the dataset without attributes higher than `base * mdav(dataset)`
+	"""
+	return VarianceThreshold(base * mdav(dataset)).fit_transform(dataset)
+
+
+def reduce_with_univariate(dataset_x, dataset_y, k) -> pd.DataFrame:
+	"""
+	:param dataset: dataset
+	:param k: number of attributes to keep
+	:return: the dataset with the `k` most relevant attributes
+	"""
+	return SelectKBest(chi2, k=k).fit_transform(dataset_x, dataset_y)
+
+
+def reduce_with_rfe(dataset_x, dataset_y):
+	"""
+	:param dataset: dataset
+	:return: the dataset without attributes that are not relevant
+	"""
+	return RFECV(SVC(kernel="linear"), step=1, cv=5).fit_transform(dataset_x, dataset_y)
+```
+
+Este módulo se utiliza en la siguiente práctica para automatizar también algunas acciones.
+
+### Práctica
+El objetivo de la práctica es la selección de las características más relevantes mediante el uso de diferentes técnicas:
+- Eliminación de variables con poca varianza
+- Eliminación de variables basada en estadísticos univariantes
+- Eliminación recursiva de variables
+- Eliminación de variables usando `SelectFromModel`
+
+#### 0. Lectura de archivos
+Para esta práctica, se utilizan tres conjuntos de datos diferentes que se han de cargar de manera distinta. Teniendo en cuenta mi estructura de archivos local, donde los archivos `csv` están en una subcarpeta `datasets` con respecto a la carpeta de la práctica, los conjuntos se cargan de la siguiente manera:
+```python
+import datasets.datasets_synthetic
+import pandas as pd
+import utils
+
+# Carga inicial de datasets
+iris = pd.read_csv('datasets/datasets-uci-iris.csv', sep=',', decimal='.', header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'target'])
+letter = pd.read_csv('datasets/datasets-uci-letter.csv', sep=',', decimal='.')
+synthetic = datasets.datasets_synthetic.gen()
+
+iris_x, iris_y = utils.slice(iris)
+letter_x, letter_y = utils.slice(letter)
+synthetic_x = synthetic[0]
+synthetic_y = synthetic[1]
+
+print(f"Iris shape: {iris_x.shape}")
+print(f"Letter shape: {letter_x.shape}")
+print(f"Synthetic shape: {synthetic_x.shape}")
+```
+
+Como se puede comprobar, se dividen los conjuntos para extraer la clasificación a una variable distinta, por necesidades de algunos métodos de eliminación. Además, la célula imprime la "forma" de los conjuntos importados como referencia para las reducciones posteriores:
+![[_resources/Pasted image 20231104110944.png]]
+
+Para la obtención del conjunto "sintético", se crea un pequeño módulo dentro de la anteriormente mencionada carpeta `datasets`:
+```python
+from sklearn.datasets import make_classification
+import pandas as pd
+
+
+def gen():
+	return make_classification(n_samples=1000, n_features=10, n_informative=3, n_redundant=0, n_repeated=0, n_classes=2, random_state=0, shuffle=False)
+```
+
+#### 1. Eliminación de variables con poca varianza
+Para la reducción de variables con poca varianza, ocurre un error que impide el uso del conjunto sintético, por lo que se dejan las instrucciones comentadas.
+
+```python
+base = 0.1
+
+iris_var = utils.reduce_by_var(iris_x, base)
+letter_var = utils.reduce_by_var(letter_x, base)
+# synthetic_var = utils.reduce_by_var(synthetic_x, base)
+
+print(f"Iris reduced_by_var shape: {iris_var.shape}")
+print(f"Letter reduced_by_var shape: {letter_var.shape}")
+# print(f"Synthetic reduced_by_var shape: {syntehtic_var.shape}")
+```
+
+El resultado de la célula anterior es una reducción de una sola variable en el conjunto de IRIS:
+![[_resources/Pasted image 20231104111025.png]]
+
+#### 2. Eliminación de variables basada en estadísticos univariantes
+Se hace uso del estadístico `SelectKBest`, como se indica en el enunciado de la práctica, con $k=2$.
+
+```python
+k = 2
+
+iris_uni = utils.reduce_with_univariate(iris_x, iris_y, k)
+letter_uni = utils.reduce_with_univariate(letter_x, letter_y, k)
+# synthetic_uni = utils.reduce_with_univariate(synthetic_x, synthetic_y, k)
+
+print(f"Iris reduced_with_univariate shape: {iris_uni.shape}")
+print(f"Letter reduced_with_univariate shape: {letter_uni.shape}")
+# print(f"Synthetic reduced_with_univariate shape: {synthetic_uni.shape}")
+```
+
 
 ---
 

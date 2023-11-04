@@ -1,9 +1,9 @@
 {
-  "accentColor": "",
+  "accentColor": "#ffffff",
   "theme": "obsidian",
-  "cssTheme": "",
+  "cssTheme": "Buena Vista",
   "interfaceFontFamily": "SF Pro Display",
-  "textFontFamily": "SF Pro Text,CaskaydiaCove NF",
+  "textFontFamily": "",
   "monospaceFontFamily": "JetBrains Mono",
   "baseFontSize": 15,
   "enabledCssSnippets": [
