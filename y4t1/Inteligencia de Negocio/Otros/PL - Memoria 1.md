@@ -11,7 +11,7 @@
 # Práctica 2
 *Nota inicial: `sklearn` se debe instalar mediante el comando `pip install scikit-learn`.
 
-### Módulo adicional
+## Módulo adicional
 **IMPORTANTE:** para la realización de esta práctica se ha generado un nuevo módulo de Python que evite tener que ejecutar los mismos comandos una y otra vez, automatizando un poco el transcurso de la práctica.
 
 ```python
@@ -59,14 +59,14 @@ def reduce_with_rfe(dataset_x, dataset_y):
 
 Este módulo se utiliza en la siguiente práctica para automatizar también algunas acciones.
 
-### Práctica
+## Práctica
 El objetivo de la práctica es la selección de las características más relevantes mediante el uso de diferentes técnicas:
 - Eliminación de variables con poca varianza
 - Eliminación de variables basada en estadísticos univariantes
 - Eliminación recursiva de variables
 - Eliminación de variables usando `SelectFromModel`
 
-#### 0. Lectura de archivos
+### 0. Lectura de archivos
 Para esta práctica, se utilizan tres conjuntos de datos diferentes que se han de cargar de manera distinta. Teniendo en cuenta mi estructura de archivos local, donde los archivos `csv` están en una subcarpeta `datasets` con respecto a la carpeta de la práctica, los conjuntos se cargan de la siguiente manera:
 ```python
 import datasets.datasets_synthetic
@@ -101,26 +101,26 @@ def gen():
 	return make_classification(n_samples=1000, n_features=10, n_informative=3, n_redundant=0, n_repeated=0, n_classes=2, random_state=0, shuffle=False)
 ```
 
-#### 1. Eliminación de variables con poca varianza
-Para la reducción de variables con poca varianza, ocurre un error que impide el uso del conjunto sintético, por lo que se dejan las instrucciones comentadas.
+### 1. Eliminación de variables con poca varianza
 
 ```python
 base = 0.1
 
 iris_var = utils.reduce_by_var(iris_x, base)
 letter_var = utils.reduce_by_var(letter_x, base)
-# synthetic_var = utils.reduce_by_var(synthetic_x, base)
+synthetic_var = utils.reduce_by_var(synthetic_x, base)
 
 print(f"Iris reduced_by_var shape: {iris_var.shape}")
 print(f"Letter reduced_by_var shape: {letter_var.shape}")
-# print(f"Synthetic reduced_by_var shape: {syntehtic_var.shape}")
+print(f"Synthetic reduced_by_var shape: {syntehtic_var.shape}")
 ```
 
 El resultado de la célula anterior es una reducción de una sola variable en el conjunto de IRIS:
-![[_resources/Pasted image 20231104111025.png]]
+![[_resources/Pasted image 20231104112557.png]]
 
-#### 2. Eliminación de variables basada en estadísticos univariantes
+### 2. Eliminación de variables basada en estadísticos univariantes
 Se hace uso del estadístico `SelectKBest`, como se indica en el enunciado de la práctica, con $k=2$.
+Debido a un problema desconocido, no se puede aplicar esta técnica al dataset sintético, por lo que se dejan las correspondientes instrucciones comentadas.
 
 ```python
 k = 2
@@ -134,6 +134,58 @@ print(f"Letter reduced_with_univariate shape: {letter_uni.shape}")
 # print(f"Synthetic reduced_with_univariate shape: {synthetic_uni.shape}")
 ```
 
+El resultado de la ejecución es lo siguiente:
+![[_resources/Pasted image 20231104112801.png]]
+
+### 3. Eliminación recursiva de variables
+Siguiendo las indicaciones y explicaciones del enunciado de la práctica, se utiliza el siguiente estimador y selector:
+```python
+estimator = SVC(kernel="linear")
+selector = RFECV(estimator, step=1, cv=5)
+```
+
+El código de la práctica es el siguiente:
+```python
+iris_rfe = utils.reduce_with_rfe(iris_x, iris_y)
+# letter_rfe = utils.reduce_with_rfe(letter_x, letter_y)
+synthetic_rfe = utils.reduce_with_rfe(synthetic_x, synthetic_y)
+
+print(f"Iris reduced_with_rfe shape: {iris_rfe.shape}")
+# print(f"Letter reduced_with_rfe shape: {letter_rfe.shape}")
+print(f"Synthetic reduced_with_rfe shape: {synthetic_rfe.shape}")
+```
+
+En este caso, es el dataset "letter" el que no se puede hacer funcionar, por lo que se comentan las instrucciones pertinentes.
+El resultado de la ejecución es el siguiente:
+![[_resources/Pasted image 20231104113333.png]]
+### 4. Eliminación de variables usando `SelectFromModel`
+Para esta práctica NO se utiliza el módulo de ayuda implementado. El resultado en código es el siguiente:
+```python
+import matplotlib.pyplot as plt
+from sklearn.ensemble import ExtraTreesClassifier
+import numpy as np
+
+forest = ExtraTreesClassifier(n_estimators=250, random_state=0)
+
+forest.fit(iris_x, iris_y)
+iris_importances = forest.feature_importances_
+std = np.std([tree.feature_importances_ for tree in forest.estimators_], axis=0)
+indices = np.argsort(iris_importances)[::-1]
+
+# Variables ordenadas por importancia
+print("Iris Feature ranking:")
+for f in range(iris_x.shape[1]):
+	print(f"{f + 1}. feature {indices[f]} ({iris_importances[indices[f]]})")
+
+plt.figure()
+plt.title("Iris Feature importances")
+plt.bar(range(iris_x.shape[1]), iris_importances[indices], color="r", yerr=std[indices], align="center")
+plt.xticks(range(iris_x.shape[1]), indices)
+plt.xlim([-1, iris_x.shape[1]])
+plt.show()
+```
+
+## Análisis
 
 ---
 
