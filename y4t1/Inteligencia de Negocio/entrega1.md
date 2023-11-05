@@ -42,6 +42,7 @@ En la actualidad, la capacidad de una organización para tomar decisiones inform
 La capacidad de presentar datos de manera visual y comprensible se ha convertido en una herramienta fundamental para la toma de decisiones informadas. Los dashboards son una herramienta que permite presentar datos de manera visual, y que se utilizan para tomar decisiones informadas sobre un proceso o negocio. Estos dashboards suelen mostrar datos en tiempo real, y permiten a los directivos tomar decisiones informadas sobre el futuro de la empresa.
 
 En el contexto de esta asignatura, y por lo tanto de este trabajo, se pretende explicar y expandir los conceptos "cuadro de mando" (dahsboard) y "procesos de extracción, transformación y carga" (ETL), así como su importancia en el sector. Además de dar ejemplos de herramientas y procesos que se utilicen hoy en día, se realizarán unas breves demostraciones prácticas de algunas de estas herramientas.
+
 ---
 
 # 2. Conceptos
