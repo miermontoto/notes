@@ -1,7 +1,8 @@
 # Práctica 1
 Durante esta práctica, tan solo se realizan pequeñas modificaciones al código base que se tiene.
 ## Sesión 1
-Del desarrollo de esta sesión se obtienen las siguientes células de código y resultados:
+Durante la primera sesión, se juega con tareas de la librería `scipy`: distribuciones de probabilidad, test estad´isticos, distancias entre instancias...
+
 ```python
 # Imports generales
 import scipy
@@ -182,11 +183,136 @@ plt.show()
 #### Resultado
 ![[_resources/Pasted image 20231105102410.png]]
 
-
 ## Sesión 2
+Durante la segunda sesión, se hace uso de la librería `sklearn` principalmente.
+
+### Ejercicio 6
+#### Código
+Como base para el ejercicio 6, se utiliza el archivo `sklearn-1-multivariate.py`.
+
+```python
+
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn.feature_selection import SelectKBest, f_regression
+from sklearn.linear_model import LinearRegression
+from sklearn.svm import SVR
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.neural_network import MLPRegressor
+import numpy as np
+import pandas as pd
+
+data_url = "http://lib.stat.cmu.edu/datasets/boston"
+raw_df = pd.read_csv(data_url, sep="\s+", skiprows=22, header=None)
+X_full = np.hstack([raw_df.values[::2, :], raw_df.values[1::2, :2]])
+Y = raw_df.values[1::2, 2]
+print(raw_df.columns)
+
+print(X_full.shape)
+print(Y.shape)
+X = X_full[:, :]
+orden = np.argsort(Y)
+horizontal = np.arange(Y.shape[0])
+plt.scatter(horizontal, Y[orden], color='black')
+
+regressor = LinearRegression()
+regressor.fit(X, Y)
+plt.scatter(horizontal, regressor.predict(X)[orden], 2, color='blue')
+
+regressor = SVR(kernel='rbf', C=1e5, epsilon=1)
+regressor.fit(X, Y)
+plt.scatter(horizontal, regressor.predict(X)[orden], 2, color='green')
+
+regressor = RandomForestRegressor()
+regressor.fit(X, Y)
+plt.scatter(horizontal, regressor.predict(X)[orden], 2, color='red')
+
+regressor = MLPRegressor()
+regressor.fit(X, Y)
+plt.scatter(horizontal, regressor.predict(X)[orden], 2, color='yellow')
+
+plt.legend(['Real', 'Linear', 'SVR', 'Random Forest', 'MLP'])
+plt.show()
+```
+
+#### Resultado y análisis
+![[_resources/Pasted image 20231105103507.png]]
+
+- A simple vista, se puede observar que el modelo `RandomForestRegressor` es el más preciso.
+- Para `SVR`, los diferentes tipos de kernel no afectan prácticamente nada a la predicción final.
+- Con valores superiores de $k$, el resto de modelos se ajustan considerablemente mejor a la "realidad".
+
+### Ejercicio 7
+#### Código
+```python
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn.feature_selection import SelectKBest, f_regression
+from sklearn.linear_model import LinearRegression
+from sklearn.svm import SVR
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import cross_val_score, cross_val_predict
+from sklearn.metrics import mean_squared_error
+import numpy as np
+import pandas as pd
+
+data_url = "http://lib.stat.cmu.edu/datasets/boston"
+raw_df = pd.read_csv(data_url, sep="\s+", skiprows=22, header=None)
+X_full = np.hstack([raw_df.values[::2, :], raw_df.values[1::2, :2]])
+Y = raw_df.values[1::2, 2]
+print(raw_df.columns)
+
+print(X_full.shape)
+print(Y.shape)
+# Se elige la variable mas dependiente de la salida
+selector = SelectKBest(f_regression, k=1)
+selector.fit(X_full, Y)
+X = X_full[:, :]
+
+regressor = LinearRegression()
+regressor.fit(X, Y)
+# Error cuadratico medio de cada fold, seguido de media de folds
+score = cross_val_score(regressor, X, Y, scoring='neg_mean_squared_error', cv=10).mean()
+# La prediccion es la respuesta del modelo aprendido en el
+# el fold para el que la instancia fue parte del conjunto de test
+predicted = cross_val_predict(regressor, X, Y, cv=10)
+mse = mean_squared_error(Y, predicted)
+# Resultados parecidos pero no iguales
+print("LIN MSE =", mse)
+print("LIN score =", -score)
+
+regressor = SVR(kernel='rbf', C=1e1, epsilon=1)
+regressor.fit(X, Y)
+score = cross_val_score(regressor, X, Y, scoring='neg_mean_squared_error', cv=10).mean()
+predicted = cross_val_predict(regressor, X, Y, cv=10)
+mse = mean_squared_error(Y, predicted)
+print("SVR MSE =", mse)
+print("SVR score =", -score)
+
+regressor = RandomForestRegressor()
+regressor.fit(X, Y)
+score = cross_val_score(regressor, X, Y, scoring='neg_mean_squared_error', cv=10).mean()
+predicted = cross_val_predict(regressor, X, Y, cv=10)
+mse = mean_squared_error(Y, predicted)
+print("RNF MSE =", mse)
+print("RNF score =", -score)
+
+# Resulta mejor usar SVR, luego LIN y por último RNF
+# Esto es porque el error cuadratico medio es menor
+
+# Si se utilizan todas las variables, el resultado es el inverso.
+```
+
+#### Resultado y análisis
+![[_resources/Pasted image 20231105103824.png]]
+
+En cuanto a error se refiere, el mejor es, de nuevo, `RandomForestGenerator`, y el peor es el regresor lineal. El resultado es similar se empleen todas las variables o no.
 
 ## Sesión 3
+Durante la tercera sesión, se trabaja con `pandas` (y un poco la "visión general").
+Los cinco archivos aportados son ejercicios ya completados, que se leen y se ejecutan para comprender su funcionamiento.
 
+### Ejercicio 8
 
 ---
 
