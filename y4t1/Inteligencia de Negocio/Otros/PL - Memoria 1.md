@@ -314,6 +314,77 @@ Los cinco archivos aportados son ejercicios ya completados, que se leen y se eje
 
 ### Ejercicio 8
 
+```python
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import cross_val_score, cross_val_predict
+from sklearn.linear_model import LinearRegression
+from sklearn.svm import SVR
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error
+
+df = pd.read_excel("Churn_Modelling_NANs.xlsx", na_values='NA')
+```
+
+```python
+# 1. Elimina las filas con valores perdidos
+df = df.dropna()
+
+# 2. Selecciona un dataframe 'X' con las columnas 'CreditScore','Age','Tenure','Balance','NumOfProducts','HasCrCard','IsActiveMember'
+X = df[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember']]
+
+# 3. Selecciona un dataframe 'y' con la columna 'EstimatedSalary'
+y = df[['EstimatedSalary']]
+```
+
+``` python
+# 4. Haz tres modelos (LinearRegression, SVR, RandomForestRegressor) de Y frente a X
+# 	 y compara el error cuadrático medio de los tres con validación cruzada (10 fold)
+cv = 10
+
+# LinearRegression
+lr = LinearRegression()
+lr_scores = cross_val_score(lr, X, y, cv=cv, scoring="neg_mean_squared_error")
+lr_rmse_scores = np.sqrt(-lr_scores)
+print("LinearRegression mse mean: " + str(lr_rmse_scores.mean()))
+
+# SVR
+svr = SVR(kernel="linear")
+svr_scores = cross_val_score(svr, X, y, cv=cv, scoring="neg_mean_squared_error")
+svr_rmse_scores = np.sqrt(-svr_scores)
+print("SVR mse mean: " + str(svr_rmse_scores.mean()))
+
+# RandomForestRegressor
+rfr = RandomForestRegressor(n_estimators=10)
+rfr_scores = cross_val_score(rfr, X, y, cv=cv, scoring="neg_mean_squared_error")
+rfr_rmse_scores = np.sqrt(-rfr_scores)
+print("RandomForestRegressor mse mean: " + str(rfr_rmse_scores.mean()))
+```
+
+```python
+# 5. Selecciona un dataframe 'XC' con las columnas CreditScore, Age, Tenure, Balance,
+# 	 NumOfProducts, HasCrCard, IsActiveMember, EstimatedSalary y un dataframe 'C' con
+# 	 la columna Exited. Haz tres clasificaciones diferentes de C frente a XC y compara
+# 	 sus porcentajes de aciertos con validación cruzada (10 fold)
+XC = df[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']]
+C = df[['Exited']]
+
+# LinearRegression
+lr = LinearRegression()
+lr_scores = cross_val_score(lr, XC, C, cv=cv, scoring="neg_mean_squared_error")
+print("LinearRegression mse mean: " + str(lr_scores.mean()))
+
+# SVR
+svr = SVR(kernel="linear")
+svr_scores = cross_val_score(svr, XC, C, cv=cv, scoring="neg_mean_squared_error")
+print("SVR mse mean: " + str(svr_scores.mean()))
+
+# RandomForestRegressor
+rfr = RandomForestRegressor(n_estimators=10)
+rfr_scores = cross_val_score(rfr, XC, C, cv=cv, scoring="neg_mean_squared_error")
+print("RandomForestRegressor mse mean: " + str(rfr_scores.mean()))
+```
+
 ---
 
 # Práctica 2
