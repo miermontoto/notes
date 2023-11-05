@@ -7,17 +7,15 @@
   "obsidian-icon-folder",
   "obsidian-git",
   "cm-editor-syntax-highlight-obsidian",
-  "hotkeysplus-obsidian",
   "obsidian-style-settings",
-  "obsidian-minimal-settings",
   "cmenu-plugin",
   "folder-note-core",
   "settings-search",
   "janitor",
-  "typing-speed",
   "scroll-speed",
-  "obsidian-dashing-cursor",
   "obsidian-wakatime",
   "obsidian-discordrpc",
-  "copilot"
+  "copilot",
+  "recent-files-obsidian",
+  "obsidian-linter"
 ]

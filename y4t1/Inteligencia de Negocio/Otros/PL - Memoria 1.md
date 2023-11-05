@@ -344,21 +344,24 @@ cv = 10
 
 # LinearRegression
 lr = LinearRegression()
-lr_scores = cross_val_score(lr, X, y, cv=cv, scoring="neg_mean_squared_error")
-lr_rmse_scores = np.sqrt(-lr_scores)
-print("LinearRegression mse mean: " + str(lr_rmse_scores.mean()))
+lr.fit(X, y)
+lr_scores = cross_val_score(lr, X, y, cv=cv, scoring="neg_mean_squared_error").mean()
+lr_predicted = cross_val_predict(lr, X, y, cv=cv)
+print("LinearRegression mse mean: " + str(mean_squared_error(y, lr_predicted)))
 
 # SVR
 svr = SVR(kernel="linear")
+svr.fit(X, y)
 svr_scores = cross_val_score(svr, X, y, cv=cv, scoring="neg_mean_squared_error")
-svr_rmse_scores = np.sqrt(-svr_scores)
-print("SVR mse mean: " + str(svr_rmse_scores.mean()))
+svr_predicted = cross_val_predict(svr, X, y, cv=cv)
+print("SVR mse mean: " + str(mean_squared_error(y, svr_predicted)))
 
 # RandomForestRegressor
 rfr = RandomForestRegressor(n_estimators=10)
+rfr.fit(X, y)
 rfr_scores = cross_val_score(rfr, X, y, cv=cv, scoring="neg_mean_squared_error")
-rfr_rmse_scores = np.sqrt(-rfr_scores)
-print("RandomForestRegressor mse mean: " + str(rfr_rmse_scores.mean()))
+rfr_predicted = cross_val_predict(rfr, X, y, cv=cv)
+print("RandomForestRegressor mse mean: " + str(mean_squared_error(y, rfr_predicted)))
 ```
 
 ```python
