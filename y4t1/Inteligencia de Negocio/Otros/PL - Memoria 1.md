@@ -1,7 +1,32 @@
+<br><br><br><br><br><br><br><br><br><br><br><br>
+# Memoria de sesiones de Prácticas de Laboratorio  (1-4)
+Juan Francisco Mier Montoto
+*Inteligencia de Negocio, EPI Gijón 23-24*
+
+<div style="page-break-after: always;"></div>
+
+# Índice
+
+- **Práctica 1**
+	- Sesión 1
+	- Sesión 2
+	- Sesión 3
+- **Práctica 2**
+	- Módulo adicional
+	- Práctica
+- **Práctica 3**
+- **Práctica 4**
+	- Parte obligatoria
+	- Parte opcional 1
+	- Parte opcional 2
+	- Análisis
+
+<div style="page-break-after: always;"></div>
+
 # Práctica 1
 Durante esta práctica, tan solo se realizan pequeñas modificaciones al código base que se tiene.
 ## Sesión 1
-Durante la primera sesión, se juega con tareas de la librería `scipy`: distribuciones de probabilidad, test estad´isticos, distancias entre instancias...
+Durante la primera sesión, se juega con tareas de la librería `scipy`: distribuciones de probabilidad, test estadísticos, distancias entre instancias...
 
 ```python
 # Imports generales
@@ -389,6 +414,7 @@ print("RandomForestRegressor mse mean: " + str(rfr_scores.mean()))
 ```
 
 ---
+<div style="page-break-after: always;"></div>
 
 # Práctica 2
 *Nota inicial: `sklearn` se debe instalar mediante el comando `pip install scikit-learn`.
@@ -577,9 +603,11 @@ Según estos resultados, los atributos más relevantes de cada dataset son, resp
 - Para el conjunto sintético, el segundo y tercer atributo.
 
 ---
+<div style="page-break-after: always;"></div>
 
 # Práctica 3
 *Nota: para esta práctica se utiliza el módulo de la práctica anterior*
+
 Como menciona el enunciado, hay una serie de objetivos en esta práctica:
 - Limpiar el dataset, quitando los valores perdidos
 - Escalar o normalizar las variables
@@ -672,9 +700,10 @@ De la ejecución de la última celda se obtienen los siguientes valores:
 RandomForest tiene un score inferior pero también un error medio inferior, por lo que ambos modelos son similares pero mediocres, ya que ninguno obtiene buenos resultados.
 
 ---
+<div style="page-break-after: always;"></div>
 
 # Práctica 4
-*Nota inicial: `umap` se debe instalar mediante el comando `pip install ulmap-learn`.
+*Nota inicial: `umap` se debe instalar mediante el comando `pip install ulmap-learn`.*
 
 Para la resolución de esta práctica, se utiliza el Jupyter Notebook mencionado en el enunciado de la misma `manifold-learning.ipynb` como punto de partida para ejecutar los diferentes métodos.
 
