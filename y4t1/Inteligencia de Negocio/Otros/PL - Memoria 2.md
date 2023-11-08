@@ -27,3 +27,13 @@ df = pipeline.fit(df).transform(df)
 
 Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones nuevas con los parámetros deseados:
 ![[_resources/Pasted image 20231025172840.png]]
+
+# Práctica 6
+## Reglas de asociación
+
+### Preguntas
+- **¿Cuáles son las asociaciones más relevantes entre estos productos? Pruebe con diferentes combinaciones de confianza, soporte y lift:**
+- **Visualice un grafo con las reglas más relevantes (en el grafo deben mostrarse más de 10 reglas y menos de 100):**
+- **(Opcional) Dé un ejemplo de cómo usaría esta información para decidir un producto en el que realizar un descuento y un producto asociado a este anterior al que se le pueda elevar el precio y compensar el margen comercial perdido en el descuento:**
+
+## IA explicativa
