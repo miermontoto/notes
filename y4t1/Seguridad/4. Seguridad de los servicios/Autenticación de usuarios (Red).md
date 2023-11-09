@@ -116,3 +116,29 @@ OpenID Connect (basado en OAuth)
 ## Roles
 > [!error] HAY QUE SABÉRSELO
 
+![[_resources/Pasted image 20231109164743.png]]
+
+## Aplicación cliente
+### Registro
+Antes de usar el protocolo, el cliente tiene que registrarse con el servidor de atuorización.
+
+Al registrar un cliente, el desarrollador o responsable DEBE:
+- Especificar el tipo del cliente.
+- Proporcionar los URIs de redirección del cliente.
+
+### Tipos
+- Cliente confidencial → capaz de mantener confidencialidad
+- Cliente público → incapaz de mantener confidencialidad
+
+### Perfiles
+- **Aplicación web**
+- **Aplicación basada en el agente del usuario**
+- **Aplicación nativa**
+
+### Interacciones
+![[_resources/Pasted image 20231109165423.png]]
+
+### Flujos
+> [!warning] Hay que sabérse los flujos?
+> "Sí y no", "hay que saber colocar las flechas".
+
