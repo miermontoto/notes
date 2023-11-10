@@ -142,3 +142,13 @@ Al registrar un cliente, el desarrollador o responsable DEBE:
 > [!warning] Hay que sabérse los flujos?
 > "Sí y no", "hay que saber colocar las flechas".
 
+**LOS FLUJOS SON VARIANTES DE LAS INTERACCIONES**
+
+## OpenID Connect
+Capa de gestión de identidad ubicada sobre el protocolo OAuth 2.0
+
+Permite:
+1. Verificar la identidad del usuario final basándos
+2. Obtener información básica sobre el perfil del usuario final de forma interoperable
+
+![[_resources/Pasted image 20231110171525.png]]

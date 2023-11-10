@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Cortafuegos",
+      "path": "y4t1/Seguridad/5. Seguridad perimetral/Cortafuegos.md"
+    },
+    {
+      "basename": "Autenticación de usuarios (Red)",
+      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (Red).md"
+    },
+    {
+      "basename": "Regulación de la ID-e y los servicios de confianza",
+      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Regulación de la ID-e y los servicios de confianza.md"
+    },
+    {
       "basename": "Ejercicio IPsec",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Ejercicio IPsec.md"
     },
@@ -19,14 +31,6 @@
     {
       "basename": "3. Prácticas de Gestión Generales en ITIL4",
       "path": "y4t1/Gestión de Tecnologías de la Información/3. Prácticas de Gestión Generales en ITIL4.md"
-    },
-    {
-      "basename": "Autenticación de usuarios (Red)",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (Red).md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Untitled.md"
     },
     {
       "basename": "4. Correo electrónico",
