@@ -1,9 +1,4 @@
----
 
-Created at 2022-03-24T18:29:15+01:00
-Last updated at 2022-05-05T18:02:40+02:00
-
----
 
 # CN PL (parcial 2)
 # Práctica 6
@@ -430,4 +425,3 @@ b = [14 15 16]';
 x = linprog(-f, A, b) % OJO! se utiliza -f porque linprog busca el mínimo, no el máximo.
 beneficio = f * x;
 ```
-

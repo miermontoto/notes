@@ -1,9 +1,4 @@
----
 
-Created at 2022-03-21T15:30:29+01:00
-Last updated at 2022-04-04T14:32:23+02:00
-
----
 
 # Prueba parcial
 

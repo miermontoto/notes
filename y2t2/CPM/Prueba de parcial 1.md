@@ -1,9 +1,4 @@
----
 
-Created at 2022-03-09T15:05:58+01:00
-Last updated at 2022-03-09T15:07:15+01:00
-
----
 
 # Prueba de examen
 
@@ -14,5 +9,3 @@ Last updated at 2022-03-09T15:07:15+01:00
 Date & Time:Wed, Mar 9, 2022, 2:00 PM - 3:00 PM
 Location:AS-1
 Clase Expositiva
-
-
