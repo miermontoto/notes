@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-15T16:07:33+01:00
-Last updated at 2022-02-21T15:00:30+01:00
-
-Tagged: #2.-Gestión-de-procesos
-
----
 
 # Procesos
 # Definición de proceso
@@ -64,7 +57,7 @@ Un proceso existe mientras tiene un PCB.
 * Todas las operaciones que el SO realiza sobre un proceso implican la manipulación de su PCB.
 * Todos están en la tabla de procesos.
 
-### 
+###
 
 ### Elementos básicos de un PCB
 
@@ -162,6 +155,3 @@ Clase Expositiva
 Date & Time:Mon, Feb 21, 2022, 2:00 PM - 4:00 PM
 Location:AS-1
 Clase Expositiva
-
-
-

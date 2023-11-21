@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-07T17:08:08+01:00
-Last updated at 2022-03-14T10:09:57+01:00
-
-Tagged: #2.-Métodos-numéricos-para-ecuaciones
-
----
 
 # HUB: Resolución numérica
 ### ¿Para qué usamos métodos numéricos?

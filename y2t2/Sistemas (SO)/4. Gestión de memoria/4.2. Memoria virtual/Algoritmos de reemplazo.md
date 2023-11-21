@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-19T16:36:57+02:00
-Last updated at 2022-04-19T16:46:26+02:00
-
-Tagged: #4.1-Memoria-virtual
-
----
 
 # Algoritmos de reemplazo
 

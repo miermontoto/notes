@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-05T16:01:59+02:00
-Last updated at 2022-04-05T16:25:07+02:00
-
-Tagged: #4.-Memoria-principal
-
----
 
 # Asignación contigua
 ## Reglas generales
@@ -25,9 +18,9 @@ Tagged: #4.-Memoria-principal
 * **Estrategias de asignación**
   * Primer ajuste
     * El primer hueco en el que entra.
-  * <mark style="background: #BBFABBA6;">Mejor ajuste</mark> 
+  * <mark style="background: #BBFABBA6;">Mejor ajuste</mark>
     * De todos los huecos en el que entra, se elige el más pequeño.
-  * <mark style="background: #FF5582A6;">Peor ajuste</mark> 
+  * <mark style="background: #FF5582A6;">Peor ajuste</mark>
     * De todos los huecos en el que entra, se elige el más grande.
   * Siguiente ajuste
     * Por primer ajuste, pero empezando a buscar desde el último que se colocó, en vez de desde 0.
@@ -53,11 +46,11 @@ Tagged: #4.-Memoria-principal
   * Cola  de entrada de procesos a memoria principal.
     * Una única cola parra todas las particiones.
 * **Ventajas / desventajas**
-  * **❌** <mark style="background: #FF5582A6;">Tamaño de proceso limitado al de la mayor partición.</mark> 
-  * ❌ <mark style="background: #FF5582A6;">El grado de multiprogramación máximo de este sistema es el número de particiones menos uno.</mark> 
-  * ❌❌  <mark style="background: #FF5582A6;">Fragmentación interna</mark> 
+  * **❌** <mark style="background: #FF5582A6;">Tamaño de proceso limitado al de la mayor partición.</mark>
+  * ❌ <mark style="background: #FF5582A6;">El grado de multiprogramación máximo de este sistema es el número de particiones menos uno.</mark>
+  * ❌❌  <mark style="background: #FF5582A6;">Fragmentación interna</mark>
     * Se pierde espacio en cada partición debido a que el proceso es más pequeño que la partición.
-  * ✅ <mark style="background: #BBFABBA6;">Sencilla implementación</mark> 
+  * ✅ <mark style="background: #BBFABBA6;">Sencilla implementación</mark>
 
 
 
@@ -86,13 +79,13 @@ Tagged: #4.-Memoria-principal
   * Si se utiliza el mejor ajuste, se ordena la lista de huecos por el tamaño de manera ascendente.
   * Si se utiliza el peor ajuste, se ordena la lista de huecos por el tamaño de manera descendente.
 * **Ventajas / desventajas**
-  * ✅ <mark style="background: #BBFABBA6;">No hay límite de tamaño de los procesos.</mark> 
-  * ✅ <mark style="background: #BBFABBA6;">El grado de multiprogramación no está tan limitado (pueden caber más programas en RAM en un momento dado).</mark> 
-  * ❌ <mark style="background: #FF5582A6;">Fragmentación externa.</mark> 
+  * ✅ <mark style="background: #BBFABBA6;">No hay límite de tamaño de los procesos.</mark>
+  * ✅ <mark style="background: #BBFABBA6;">El grado de multiprogramación no está tan limitado (pueden caber más programas en RAM en un momento dado).</mark>
+  * ❌ <mark style="background: #FF5582A6;">Fragmentación externa.</mark>
     * Tiene soluciones.
       * Condensación: solución parcial, se hace siempre. (O(1))
         * Se fusionan huecos que estén juntos.
       * Compactación: solución óptima, se hace cada cierto tiempo. (O(n2))
         * Todos los procesos van al principio de la memoria.
         * Solo queda un hueco, al final de la memoria.
-  * ❌ <mark style="background: #BBFABBA6;">Más complicado de programar.</mark> 
+  * ❌ <mark style="background: #BBFABBA6;">Más complicado de programar.</mark>

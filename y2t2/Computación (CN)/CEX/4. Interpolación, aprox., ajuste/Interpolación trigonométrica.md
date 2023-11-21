@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-25T15:07:57+01:00
-Last updated at 2022-03-25T16:17:13+01:00
-
-Tagged: #4.-Interpolación--aprox.--ajuste
-
----
 
 # Interpolación trigonométrica
 
@@ -42,5 +35,3 @@ Para c ≠ 0, el método anterior funciona y se reemplaza t por (t - c).
 
 ### Problema 4.12
 ![[Sketch 3-25-2022 4-10 PM.png]]
-
-

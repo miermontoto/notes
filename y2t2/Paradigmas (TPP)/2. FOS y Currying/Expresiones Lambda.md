@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-07T16:10:05+01:00
-Last updated at 2022-02-07T19:15:11+01:00
-
-Tagged: #2.-FOS-y-Currying
-
----
 
 # Expresiones Lambda
 ```scheme

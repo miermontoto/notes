@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-08T14:05:42+01:00
-Last updated at 2022-03-10T23:46:33+01:00
-
-Tagged: #2.-FOS-y-Currying
-
----
 
 # Funciones de Orden Superior
 ### Definición
@@ -55,7 +48,7 @@ Filtra elementos no deseados de una lista.
 
 
 ## Take-while
-Devuelve el prefijo de una lista. 
+Devuelve el prefijo de una lista.
 >[!WARNING]
 >Requiere `srfi/1`.
 
@@ -67,7 +60,7 @@ Devuelve el prefijo de una lista.
 
 
 ## Drop-while
-Devuelve el sufijo de una lista. 
+Devuelve el sufijo de una lista.
 >[!WARNING]
 >Requiere `srfi/1`.
 
@@ -103,7 +96,7 @@ Aplica una función de aridad _n_ a los i-ésimos elementos de n-listas.
 (3 4 5 6)
 ```
 
-## 
+##
 
 ## Compose
 
@@ -133,7 +126,7 @@ Traspone una matriz en forma de lista de listas.
 ((1 3 5) (2 4 6))
 ```
 
-## 
+##
 
 ## Fold(l/r)
 
@@ -220,6 +213,3 @@ Clase Expositiva
 Date & Time:Mon, Feb 14, 2022, 4:00 PM - 5:00 PM
 Location:AS-1
 Clase Expositiva
-
-
-

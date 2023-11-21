@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-25T16:17:18+01:00
-Last updated at 2022-04-01T14:44:35+02:00
-
-Tagged: #4.-Interpolación--aprox.--ajuste
-
----
 
 # Ajuste de datos
 Buscar una función que se ajuste a unos datos minimizando la suma de los errores de los valores dados con respecto a la función obtenida.

@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-08T16:13:48+01:00
-Last updated at 2022-03-16T14:04:33+01:00
-
-Tagged: #3.-Coordinación
-
----
 
 # Coordinación y sincronización de procesos (Intro)
 PDF:
@@ -94,4 +87,3 @@ Para solucionar el segundo tipo, se utilizarán métodos de comunicación entre 
 
 ### Ejercicio Productor-Consumidor
 Se generan elementos al azar, se guardan en un vector circular y el consumidor los imprime por pantalla.   
-

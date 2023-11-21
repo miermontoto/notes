@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-04T15:28:49+01:00
-Last updated at 2022-03-04T16:23:44+01:00
-
-Tagged: #3.-Métodos-numéricos-para-sistemas
-
----
 
 # Métodos indirectos
 Estos métodos son útiles para sistemas grandes pero son lentos.
@@ -64,5 +57,3 @@ Si A es de diagonal estrictamente dominante, entonces los métodos Jacobi y Gaus
 Date & Time:Fri, Mar 4, 2022, 3:00 PM - 5:00 PM
 Location:AS-1
 Antonio Palacio Muñiz Clase Expositiva
-
-

@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-14T14:38:47+01:00
-Last updated at 2022-02-14T15:53:25+01:00
-
-Tagged: #2.-Gestión-de-procesos
-
----
 
 # Visión global de la multiprogramación
 ### Ejercicio multiprogramación
@@ -66,5 +59,3 @@ _Existe una llamada al sistema sin E/S 'exit' que finaliza el proceso._
 
 
 ![[Sketch 2-14-2022 3-53 PM.png]]
-
-

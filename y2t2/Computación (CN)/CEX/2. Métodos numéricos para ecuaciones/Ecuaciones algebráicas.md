@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-18T15:08:28+01:00
-Last updated at 2022-02-21T17:10:34+01:00
-
-Tagged: #2.-Métodos-numéricos-para-ecuaciones
-
----
 
 # Ecuaciones algebráicas
 Son polinomios de grado _n_ igualados a cero con coeficientes reales.
@@ -86,5 +79,3 @@ En el último punto, si la cota inferior es cero HAY que aplicar el método de b
 Date & Time:Fri, Feb 18, 2022, 3:00 PM - 5:00 PM
 Location:AS-1
 Antonio Palacio Muñiz Clase Expositiva
-
-

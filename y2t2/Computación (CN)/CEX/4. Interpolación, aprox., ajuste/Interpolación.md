@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-11T14:11:02+01:00
-Last updated at 2022-06-01T12:34:22+02:00
-
-Tagged: #4.-Interpolación--aprox.--ajuste
-
----
 
 # Interpolación
 
@@ -113,7 +106,3 @@ Para que se pueda resolver el sistema de 4n coeficientes y 4n-2 ecuaciones, se a
 
 ## Acotación dewel error
 ![[y2t2/Computación (CN)/_resources/Interpolación.resources/image.9.png]]
-
-
-
-

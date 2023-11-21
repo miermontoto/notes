@@ -1,11 +1,3 @@
----
-
-Created at 2022-02-10T14:08:10+01:00
-Last updated at 2022-03-29T15:53:18+02:00
-
-Tagged: #1.-Modelo-E/R
-
----
 
 # Actividades y situaciones
 ## Actividad 1
@@ -102,4 +94,3 @@ día, mes, año, númVuelo (FK vuelo)], horaInicio, horaFin, díaSemana*, matrí
 
 instanciaAzafata = (@[codTripulaciónAzafata (FK azafata), (díaInstancia, mesInstancia, añoInstancia, númVueloInstancia) (FK instancia)])
 ```
-

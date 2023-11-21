@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-14T17:06:52+01:00
-Last updated at 2022-03-14T10:34:57+01:00
-
-Tagged: #2.-Métodos-numéricos-para-ecuaciones
-
----
 
 # Métodos de punto fijo
 No tienen porqué converger siempre.
@@ -68,4 +61,3 @@ Sea g : [a, b] → ℝ  una función con derivada continua y sea r ∈ (a, b) u
 ### Problema 2.3.
 
 ![[Sketch 2-14-2022 5-24 PM.png]]
-

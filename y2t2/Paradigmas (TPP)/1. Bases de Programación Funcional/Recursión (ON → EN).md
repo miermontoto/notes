@@ -1,28 +1,21 @@
----
 
-Created at 2022-03-11T11:54:35+01:00
-Last updated at 2022-03-11T11:56:42+01:00
-
-Tagged: #1.-Bases-de-Prg.-Func.
-
----
 
 # Recursión (ON → EN)
 La recursión como patrón de resolución. 
 Análisis de casos: BASE y RECURRENCIA = Hipótesis + Tesis 
 
-* Soluciones más compactas → más legibles 
-* Sin necesidad de variables → menos posibilidad de errores 
-* Curva de aprendizaje 
-* Limitaciones de memoria de pila 
+* Soluciones más compactas → más legibles
+* Sin necesidad de variables → menos posibilidad de errores
+* Curva de aprendizaje
+* Limitaciones de memoria de pila
 
-## ¿Cuándo utilizarla? 
+## ¿Cuándo utilizarla?
 
 * No hay otra opción más simple/eficiente. 
   * ¿Composición funcional y/o F.O.S? 
 * Problemas de naturaleza recursiva. 
 
-# Funciones recursivas sobre Listas 
+# Funciones recursivas sobre Listas
 
 Definición recurrente del dominio: 
 
@@ -36,46 +29,46 @@ Definición recurrente de una función f(L): 
   * Hipótesis 
   * Tesis 
 
-### Definición de longitud de una Lista: 
+### Definición de longitud de una Lista:
 
 * Base:  
   length( () ) = 0 
-  
+
 * Recurrencia: 
   * Hipótesis: 
     conocido length(cdr(x)) 
-    
+
   * Tésis: 
     length(x) = 1 + length(cdr(x)) 
-    
 
-### Definición de member(): 
+
+### Definición de member():
 
 * Base: 
   member(x, ()) = #f 
-  
+
 * Recurrencia: 
   * Hipótesis 
     member(x, cdr(y)) es conocido 
-    
+
   * Tesis 
     y si car(y) = x, si no member(x,cdr(y)) 
-    
 
-### Definición de reverse() 
+
+### Definición de reverse()
 
 * Base: 
   reverse( () ) = () 
-  
+
 * Recurrencia: 
   * Hipótesis: 
     reverse(cdr(x)) es conocida 
-    
+
   * Tesis: 
     reverse(x) = append(reverse(cdr(x), car(x)) 
-    
 
-# Funciones recursivas sobre S-Expresiones 
+
+# Funciones recursivas sobre S-Expresiones
 
 Definición recurrente del dominio 
 
@@ -83,7 +76,7 @@ Definición recurrente del dominio 
 * Recurrencia: Si s1 y s2 son S-exp, cons(s1, s2) es una nueva S-exp 's' tal que 
   car(s) = s1 
   cdr(s) = s2 
-  
+
 
 Definición recurrente de una función f(s) 
 
@@ -92,16 +85,16 @@ Definición recurrente de una función f(s) 
   * Hipótesis: conocido f(car(s)) y f(cdr(s)) 
   * Tesis 
 
-### Definición de equal() 
+### Definición de equal()
 
 * Base 
   if(atom? x ^ atom? y) (eq? x y) ( 
   if(atom? x o atom? y) #f) 
-  
+
 * Recurrencia 
   * Hipótesis: conocido equal? (car x) (car y) y equal? (cdr x) (cdr y) 
   * Tesis… 
 
-### Definición de palíndromo() 
+### Definición de palíndromo()
 
 (equal? (reverse x) x)

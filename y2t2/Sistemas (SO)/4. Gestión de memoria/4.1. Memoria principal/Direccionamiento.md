@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-21T14:45:28+01:00
-Last updated at 2022-05-25T19:11:38+02:00
-
-Tagged: #4.-Memoria-principal
-
----
 
 # Direccionamiento
 Hay varios tipos de direccioens:
@@ -78,7 +71,7 @@ De todas formas, se carga el programa a memoria.
 Traduce sobre la marcha las direcciones relativas que no hayan sido transformadas aún a direcciones físicas.
 La MMU tiene un registro de la dirección física de inicio del proceso en ejecución. Este registro se suma a todas las direcciones relativas para poder acceder a la memoria principal.
 
-# 
+#
 
 ## Esquema general
 

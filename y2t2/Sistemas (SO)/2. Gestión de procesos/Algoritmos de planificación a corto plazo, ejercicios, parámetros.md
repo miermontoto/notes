@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-28T14:10:16+01:00
-Last updated at 2022-03-07T15:26:43+01:00
-
-Tagged: #2.-Gestión-de-procesos
-
----
 
 # Algoritmos de planificación a corto plazo, ejercicios, parámetros
 **Sea cual sea el criterio de desempate, si al final existe un empate se escoge el proceso con el menor PID.**
@@ -144,5 +137,3 @@ Clase Expositiva
 Date & Time:Mon, Mar 7, 2022, 2:00 PM - 4:00 PM
 Location:AS-1
 Prácticas De Aula
-
-

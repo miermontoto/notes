@@ -1,11 +1,4 @@
----
 
-Created at 2022-05-09T13:50:38+02:00
-Last updated at 2022-05-26T00:13:17+02:00
-
-Tagged: #5.-Ficheros
-
----
 
 # Ejercicios de ficheros
 

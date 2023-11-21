@@ -1,14 +1,7 @@
----
 
-Created at 2022-02-07T13:59:43+01:00
-Last updated at 2022-03-28T11:37:10+02:00
-
-Tagged: #1.-Intro-a-los-SO
-
----
 
 # Arranque del sistema
-## Firmware 
+## Firmware
 
 Es  un software que pone el fabricante del dispositivo muy pequeño. Reside  en una memoria no volátil (ROM) que no se puede modificar. 
 

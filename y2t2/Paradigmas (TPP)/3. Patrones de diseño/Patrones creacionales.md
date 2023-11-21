@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-18T17:08:35+01:00
-Last updated at 2022-03-22T11:51:53+01:00
-
-Tagged: #3.-Patrones-de-Diseño
-
----
 
 # Patrones creacionales
 Crear un objeto es una toma de decisión.

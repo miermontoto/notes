@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-14T15:38:53+01:00
-Last updated at 2022-03-15T16:44:02+01:00
-
-Tagged: #3.-Coordinación
-
----
 
 # Semáforos
 Es la herramienta de más bajo nivel a partir de las instrucciones especiales, y funcionan gracias a ellas.
@@ -143,5 +136,3 @@ Prácticas De Aula
 Date & Time:Tue, Mar 15, 2022, 4:00 PM - 5:00 PM
 Location:AS-1
 Clase Expositiva
-
-

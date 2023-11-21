@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-08T16:22:45+01:00
-Last updated at 2022-02-08T16:36:15+01:00
-
-Tagged: #1.-Intro-a-los-SO
-
----
 
 # Clasificación de los sistemas operativos
 ## Según la utilización de recursos
@@ -37,5 +30,3 @@ _Tiempo de respuesta_
 Date & Time:Tue, Feb 8, 2022, 4:00 PM - 5:00 PM
 Location:AS-1
 Clase Expositiva
-
-

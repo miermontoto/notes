@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-29T14:07:59+02:00
-Last updated at 2022-05-15T20:52:23+02:00
-
-Tagged: #4.-POE
-
----
 
 # Ejercicios de Eventos
 ### Máquina-discos

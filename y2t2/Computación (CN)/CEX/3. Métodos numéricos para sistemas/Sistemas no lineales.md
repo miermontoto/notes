@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-04T16:26:34+01:00
-Last updated at 2022-03-07T18:00:08+01:00
-
-Tagged: #3.-Métodos-numéricos-para-sistemas
-
----
 
 # Sistemas no lineales
 # Método de punto fijo
@@ -57,5 +50,3 @@ Computación Numérica (CEX)￼￼￼￼￼￼￼￼
 Date & Time:Mon, Mar 7, 2022, 5:00 PM - 6:00 PM
 Location:AS-1
 Antonio Palacio Muñiz Clase Expositiva
-
-

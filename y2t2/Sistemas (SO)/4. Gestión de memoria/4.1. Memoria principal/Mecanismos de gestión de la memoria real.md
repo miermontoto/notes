@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-25T14:15:38+01:00
-Last updated at 2022-04-05T16:03:27+02:00
-
-Tagged: #4.-Memoria-principal
-
----
 
 # Mecanismos de gestión de la memoria real
 # Asignaciones

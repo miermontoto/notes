@@ -1,14 +1,7 @@
----
 
-Created at 2022-03-28T11:04:48+02:00
-Last updated at 2022-04-05T16:03:15+02:00
-
-Tagged: #1.-Intro-a-los-SO
-
----
 
 # Evolución histórica (ON → EN)
-## Índice 
+## Índice
 
 1. **Sin sistema operativo.** 
 
@@ -35,14 +28,14 @@ Dispositivos inteligentes. 
 Soportan varias CPUs, varios hilos, varios usuarios simultáneos. 
 Metodologías avanzadas (POOs) 
 
-## Sin sistema operativo 
+## Sin sistema operativo
 
 * No hay usuarios, solo un operador que sabe manejar el ordenador. 
 * Hay un operador que interactúa con el ordenador desde una consola, formada por conmutadores, e/s… 
 * Los programas se escriben en código máquina. 
 * Nivel de abstracción mínimo. 
 
-## Procesamiento por lotes 
+## Procesamiento por lotes
 
 * Secuenciación automática de programas (**monitor**) 
   * Antepasado de los sistemas operativos. 
@@ -61,7 +54,7 @@ Metodologías avanzadas (POOs) 
   * Como  un programa no puede cargar en memoria hasta que no termina el  anterior, se consume más tiempo leyendo y cargando que ejecutando. 
   * Hay tiempos de espera sin usar el ordenador, simplemente cargando y grabando. 
 
-## Sistemas multiprogramados 
+## Sistemas multiprogramados
 
 Esta técnica se sigue utilizando hoy en día. 
 
@@ -74,11 +67,11 @@ Esto complica considerablemente las cosas, en parte debido a la gestión de memo
 Esta técnica reduce el tiempo de CPU inactiva, NO para incluir varios programas en memoria. 
 Cuantos más programas se carguen en memoria, menos tiempo va a estar la CPU inactiva y mejor va a ser el rendimiento. 
 
-### Defectos 
+### Defectos
 
 * Un programa muy intensivo en CPU va a monopolizar la CPU, con lo que otras tareas pueden tardar más en ejecutarse. 
 
-Sistemas de tiempo compartido 
+Sistemas de tiempo compartido
 Tiene como objetivo reducir el tiempo de respuesta. 
 
 El tiempo de respuesta es el tiempo que tarda un programa desde que se carga hasta que se use la CPU. 
@@ -88,26 +81,26 @@ El SO limita el uso continuado de un programa, de modo que se reduce el tiempo d
 
 La unidad de tiempo a la que está limitado un proceso es un _cuanto_. 
 
-## Sistemas operativos modernos 
+## Sistemas operativos modernos
 
 Incorporan nuevas técnicas y elementos de diseño. 
 
-### Sistemas operativos en tiempo real 
+### Sistemas operativos en tiempo real
 
 * Extremizan el tiempo compartido. 
 * Algunos procesos pueden tener tiempo de respuesta cercano a cero. 
 * Sistemas de control, donde es importante el tiempo de respuesta. 
 
-### Multiprocesamiento simétrico & Multihilo 
+### Multiprocesamiento simétrico & Multihilo
 
 Se gestionan varias CPUs. 
 Depende del software que utilice todos los núcleos de la CPU (tanto OS como aplicaciones). 
 
-### Sistemas operativos distribuidos 
+### Sistemas operativos distribuidos
 
 Permite distribuir el procesamiento de un programa, de modo que se ejecuten en varios equipos. 
 
-### Diseño orientado a objetos (implementación) 
+### Diseño orientado a objetos (implementación)
 
 Se organiza el código del sistema operativo para POO. 
 

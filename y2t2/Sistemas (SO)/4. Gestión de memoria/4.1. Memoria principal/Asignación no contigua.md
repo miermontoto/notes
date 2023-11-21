@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-05T16:02:07+02:00
-Last updated at 2022-05-21T13:25:26+02:00
-
-Tagged: #4.-Memoria-principal
-
----
 
 # Asignación no contigua
 ## Reglas generales
@@ -56,13 +49,13 @@ Funciona en base al particionamiento fijo.
     * Dos o más páginas apuntan a un solo marco (se comparte, sin duplicar).
   * Protección
     * Poner una flag de protección a cada página (R/RW, etc).
-    * ❌ <mark style="background: #FF5582A6;">No se puede llevar a cabo porque las páginas (al ser de tamaño fijo) pueden contener más de un trozo de proceso y afectar o no afectar correctamente.</mark> 
+    * ❌ <mark style="background: #FF5582A6;">No se puede llevar a cabo porque las páginas (al ser de tamaño fijo) pueden contener más de un trozo de proceso y afectar o no afectar correctamente.</mark>
 * **Ventajas / desventajas**
-  * **✅** <mark style="background: #BBFABBA6;">La paginación no es visible al usuario del SO.</mark> 
-  * ✅ <mark style="background: #BBFABBA6;">Se elimina la fragmentación externa.</mark> 
-  * ✅ <mark style="background: #BBFABBA6;">La fragmentación interna solo se puede producir en la última página de cada proceso.</mark> 
-  * ✅ <mark style="background: #BBFABBA6;">Es fácil permitir que se comparta memoria entre procesos.</mark> 
-  * ❌ <mark style="background: #FF5582A6;">No se puede proteger las páginas efectivamente.</mark> 
+  * **✅** <mark style="background: #BBFABBA6;">La paginación no es visible al usuario del SO.</mark>
+  * ✅ <mark style="background: #BBFABBA6;">Se elimina la fragmentación externa.</mark>
+  * ✅ <mark style="background: #BBFABBA6;">La fragmentación interna solo se puede producir en la última página de cada proceso.</mark>
+  * ✅ <mark style="background: #BBFABBA6;">Es fácil permitir que se comparta memoria entre procesos.</mark>
+  * ❌ <mark style="background: #FF5582A6;">No se puede proteger las páginas efectivamente.</mark>
 
 # Segmentación
 
@@ -83,9 +76,9 @@ Funciona en base al particionamiento variable.
 * **Estructuras de datos de la organización física**
   * Tablas de huecos, tablas de no huecos.
 * **Traducción de posiciónes lógicas a posiciones físicas**
-  
+
   * _Metodología similar al de paginación._
-  
+
   1. Se genera una dirección lógica, se divide en dos.
     * Segmento | desplazamiento
   2. Obtiene el campo base mediante el segmento.
@@ -97,9 +90,9 @@ Funciona en base al particionamiento variable.
   1. Comprobar que el segmento sea válido. (que exista el índice del segmento)
   2. Comprobar que el desplazamiento sea menor estricto que el límite del segmento.
 * **Ventajas / Inconvenientes**
-  * **✅** <mark style="background: #BBFABBA6;">Bueno para compartir y proteger.</mark> 
-  * ✅ <mark style="background: #BBFABBA6;">Bueno dividiendo a los procesos.</mark> 
-  * ❌❌ <mark style="background: #FF5582A6;">Muy malo en aprovechamiento de memoria.  </mark> 
+  * **✅** <mark style="background: #BBFABBA6;">Bueno para compartir y proteger.</mark>
+  * ✅ <mark style="background: #BBFABBA6;">Bueno dividiendo a los procesos.</mark>
+  * ❌❌ <mark style="background: #FF5582A6;">Muy malo en aprovechamiento de memoria.  </mark>
 
 
 
@@ -127,9 +120,9 @@ Funciona en base al particionamiento variable.
     2. Acceder al marco número `p`.
     3. Obtener su dirección base y sumarle `d'` .
 * ### **Ventajas / desventajas**
-  * **✅** <mark style="background: #BBFABBA6;">Fácil compartición</mark> 
-  * **✅** <mark style="background: #BBFABBA6;">Fácil protección</mark> 
-  * **✅** <mark style="background: #BBFABBA6;">Fácil ampliación de las estructuras de datos</mark> 
-  * **✅** <mark style="background: #BBFABBA6;">Visión del proceso tal y como lo ve el usuario</mark> 
-  * <mark style="background: #FFF3A3A6;">~  Solo hay fragmentación interna en la última página de cada proceso.</mark> 
-  * ❌ <mark style="background: #FF5582A6;">Bastante complejo.</mark> 
+  * **✅** <mark style="background: #BBFABBA6;">Fácil compartición</mark>
+  * **✅** <mark style="background: #BBFABBA6;">Fácil protección</mark>
+  * **✅** <mark style="background: #BBFABBA6;">Fácil ampliación de las estructuras de datos</mark>
+  * **✅** <mark style="background: #BBFABBA6;">Visión del proceso tal y como lo ve el usuario</mark>
+  * <mark style="background: #FFF3A3A6;">~  Solo hay fragmentación interna en la última página de cada proceso.</mark>
+  * ❌ <mark style="background: #FF5582A6;">Bastante complejo.</mark>

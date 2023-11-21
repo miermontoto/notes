@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-04T17:09:14+02:00
-Last updated at 2022-04-22T15:53:39+02:00
-
-Tagged: #5.-Integración-numérica
-
----
 
 # Integración numérica
 
@@ -93,4 +86,3 @@ donde m es el número de intervalos:
 
 ### Ejercicio 5.3
 ![[Sketch 4-18-2022 5-59 PM.png]]
-

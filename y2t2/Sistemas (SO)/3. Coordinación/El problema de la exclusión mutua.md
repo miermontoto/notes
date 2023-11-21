@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-14T14:18:32+01:00
-Last updated at 2022-03-14T15:05:51+01:00
-
-Tagged: #3.-Coordinación
-
----
 
 # El problema de la exclusión mutua
 # Introducción
@@ -35,5 +28,3 @@ El hardware debe siempre proporcionar algún mecanismo de exclusión.
 Date & Time:Mon, Mar 14, 2022, 2:00 PM - 4:00 PM
 Location:AS-1
 Prácticas De Aula
-
-

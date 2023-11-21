@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-08T14:15:15+02:00
-Last updated at 2022-05-23T14:12:34+02:00
-
-Tagged: #4.1-Memoria-virtual
-
----
 
 # Memoria virtual
 ![[04 Gestion de la memoria virtual - Transparencias.pdf]]
@@ -53,7 +46,7 @@ En mem. virtual, la MMU puede generar dos excepciones:
 2. Carga la página.
   Se pone al proceso en E/S.
   Pasado un tiempo, la página se carga en MP.
-  
+
 3. Se pone a uno el bit de presencia.
 4. Se pone al proceso a listo.
 5. Se reinicia la instrucción que generó el fallo.

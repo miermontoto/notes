@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-19T15:17:50+02:00
-Last updated at 2022-05-18T17:39:30+02:00
-
-Tagged: #4.-Normalización
-
----
 
 # Formas
 Distintos niveles de redundancias, llamadas _formas normales_.
@@ -122,4 +115,3 @@ R que cumple F está en FNBC si cada relación cumple al menos una de las siguie
 ### Ejercicio extra :').
 
 ![[Sketch 5-5-2022 3-44 PM.png]]
-

@@ -1,18 +1,11 @@
----
 
-Created at 2022-02-21T17:10:57+01:00
-Last updated at 2022-03-13T14:36:25+01:00
-
-Tagged: #3.-Métodos-numéricos-para-sistemas
-
----
 
 # Métodos directos
 ## Introducción
 
 Dada una matriz real A de orden n x n y un vector b→ (matriz columna de orden n x 1) se plantea el problema de hallar un vector x → tal que
 		**_Ax→ = b→_**
-		
+
 
 * A invertible
 * Métodos fáciles de programar
@@ -156,7 +149,7 @@ Gram-Schmidt
 Se pretende determinar cuánto cambia la solución de un sistema al realizar una pequeña modificación en los coeficientes.
 Esta modificación ocurre cuando no se tengan los valores exactos, debido a valores experimentales o aproximaciones.
 
-### 
+###
 
 ## Conceptos de álgebra
 
@@ -238,5 +231,3 @@ Antonio Palacio Muñiz Clase Expositiva
 Date & Time:Fri, Mar 4, 2022, 3:00 PM - 5:00 PM
 Location:AS-1
 Antonio Palacio Muñiz Clase Expositiva
-
-

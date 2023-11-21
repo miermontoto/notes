@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-14T16:06:25+01:00
-Last updated at 2022-03-28T16:22:43+02:00
-
-Tagged: #4.-POE
-
----
 
 # Programación orientada a eventos
 
@@ -191,8 +184,3 @@ Los eventos se procesan en lapsos de tiempos superpuestos.
 
 
 ## Cola de eventos
-
-
-
-
-

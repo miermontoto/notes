@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-28T16:20:29+01:00
-Last updated at 2022-03-08T14:22:22+01:00
-
-Tagged: #3.-Patrones-de-Diseño
-
----
 
 # Patrones de comportamiento
 Encapsulan "lo que varía". Cuando un comportamiento varía con frecuencia se encapsula con un objeto.

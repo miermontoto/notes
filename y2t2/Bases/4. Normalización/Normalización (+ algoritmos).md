@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-24T14:20:13+01:00
-Last updated at 2022-04-05T15:21:02+02:00
-
-Tagged: #4.-Normalización
-
----
 
 # Normalización (+ algoritmos)
 
@@ -24,7 +17,7 @@ Tuplas de columnas a → b.
 
 ![[y2t2/Bases/_resources/Normalización_(+_algoritmos).resources/image.png]]
 
-### 
+###
 
 ### Reglas derivadas
 
@@ -40,5 +33,3 @@ Tuplas de columnas a → b.
 Date & Time:Thu, Mar 24, 2022, 2:00 PM - 4:00 PM
 Location:AS-1
 Clase Expositiva
-
-

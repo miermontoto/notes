@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-05T15:20:47+02:00
-Last updated at 2022-04-05T15:58:03+02:00
-
-Tagged: #4.-Normalización
-
----
 
 # Recubrimiento canónico (+ ejercicios)
 Es el conjunto de dependencias mínimo, todas sus dependencias no triviales y plenas.
@@ -34,4 +27,3 @@ Dado un F, es posible encontrar recubrimientos canónicos dependiendo del orden 
 ### 2.
 
 ![[Sketch 4-5-2022 3-40 PM.png]]
-

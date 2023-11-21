@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-14T17:07:28+01:00
-Last updated at 2022-02-18T15:08:49+01:00
-
-Tagged: #2.-Métodos-numéricos-para-ecuaciones
-
----
 
 # Métodos que usan intervalos
 ### Teorema 2.1: Teorema de Bolzano
@@ -88,4 +81,3 @@ Cambia la forma de elegir el valor xn:
 
 
 ![[y2t2/Computación (CN)/_resources/Métodos_que_usan_intervalos.resources/image.1.png]]
-

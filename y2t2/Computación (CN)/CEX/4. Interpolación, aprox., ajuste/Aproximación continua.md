@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-01T14:44:45+02:00
-Last updated at 2022-04-04T17:07:24+02:00
-
-Tagged: #4.-Interpolación--aprox.--ajuste
-
----
 
 # Aproximación continua
 > [!NOTE]

@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-22T16:02:25+01:00
-Last updated at 2022-02-22T16:49:18+01:00
-
-Tagged: #2.-Gestión-de-procesos
-
----
 
 # Hilos
 El hilo de un proceso son los que ejecutan código. **Los procesos no ejecutan código.**
@@ -97,7 +90,7 @@ El proceso finaliza cuando:
   * Sacar partido de un sistema con varias CPUs y/o núcleos de CPU
 * **Servicios de red**
   * Cada hilo atiende a un cliente (conexión) distinto.
-  * 
+  *
 
 
 
@@ -106,5 +99,3 @@ El proceso finaliza cuando:
 Date & Time:Tue, Feb 22, 2022, 4:00 PM - 5:00 PM
 Location:AS-1
 Clase Expositiva
-
-

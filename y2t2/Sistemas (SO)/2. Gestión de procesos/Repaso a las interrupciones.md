@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-08T16:38:52+01:00
-Last updated at 2022-02-14T15:11:34+01:00
-
-Tagged: #2.-Gestión-de-procesos
-
----
 
 # Repaso a las interrupciones
 * **Las interrupciones son las únicas que pueden echar a un proceso de la CPU.**
@@ -66,6 +59,3 @@ Clase Expositiva
 Date & Time:Mon, Feb 14, 2022, 2:00 PM - 4:00 PM
 Location:AS-1
 Clase Expositiva
-
-
-

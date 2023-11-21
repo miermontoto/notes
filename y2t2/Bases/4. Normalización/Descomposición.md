@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-07T14:13:52+02:00
-Last updated at 2022-04-19T15:17:45+02:00
-
-Tagged: #4.-Normalización
-
----
 
 # Descomposición
 Un conjunto de relaciones es una descomposición de la relación R si R es la unión del conjunto.
@@ -50,4 +43,3 @@ Risannen
 ### Ejercicio 3 de descomposiciones.
 
 ![[Sketch 4-7-2022 3-32 PM.png]]
-

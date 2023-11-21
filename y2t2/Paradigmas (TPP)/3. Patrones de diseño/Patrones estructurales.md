@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-22T15:00:55+01:00
-Last updated at 2022-03-22T11:50:55+01:00
-
-Tagged: #3.-Patrones-de-Diseño
-
----
 
 # Patrones estructurales
 # Adapter
@@ -58,6 +51,3 @@ Compone objetos en estructuras de árbol para representar jerarquías parte-todo
 * Simplifica el cliente.
 * Facilita añadir nuevos tipos de componentes.
 * Riesgo de excesiva generalidad en el diseño.
-
-
-

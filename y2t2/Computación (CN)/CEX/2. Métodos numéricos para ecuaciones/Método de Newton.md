@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-14T17:24:24+01:00
-Last updated at 2022-03-12T11:26:02+01:00
-
-Tagged: #2.-Métodos-numéricos-para-ecuaciones
-
----
 
 # Método de Newton
 ## Procedimiento
@@ -75,5 +68,3 @@ TIene convergencia local de orden ≈ 1.62 bajo las mismas hipótesis del métod
 
 
 ### Método de Newton para raíces múltiples (poco relevante)
-
-

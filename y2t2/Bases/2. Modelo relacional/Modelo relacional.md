@@ -1,11 +1,3 @@
----
-
-Created at 2022-03-03T14:13:18+01:00
-Last updated at 2022-03-03T15:40:57+01:00
-
-Tagged: #2.-Modelo-relacional
-
----
 
 # Modelo relacional
 Una base de datos relacional consiste en un conjunto de relaciones que sirve para representar tanto los objetos como las asociaciones entre ellos. SOLO HAY RELACIONES.
@@ -98,5 +90,3 @@ NO se genera una tabla para la relación.
 Date & Time:Thu, Mar 3, 2022, 2:00 PM - 4:00 PM
 Location:AS-1
 Clase Expositiva
-
-

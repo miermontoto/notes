@@ -1,11 +1,4 @@
----
 
-Created at 2022-02-21T15:04:26+01:00
-Last updated at 2022-02-22T16:21:52+01:00
-
-Tagged: #2.-Gestión-de-procesos
-
----
 
 # Control de procesos
 * **PLP**: planificador a largo plazo.
@@ -91,7 +84,3 @@ No puede ocurrir empates.
 Date & Time:Mon, Feb 21, 2022, 2:00 PM - 4:00 PM
 Location:AS-1
 Clase Expositiva
-
-
-
-

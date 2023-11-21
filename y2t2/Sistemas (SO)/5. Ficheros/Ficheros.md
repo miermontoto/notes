@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-26T15:57:53+02:00
-Last updated at 2022-05-24T17:56:47+02:00
-
-Tagged: #5.-Ficheros
-
----
 
 # Ficheros
 

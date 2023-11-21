@@ -1,11 +1,4 @@
----
 
-Created at 2022-04-18T14:04:43+02:00
-Last updated at 2022-05-23T12:02:21+02:00
-
-Tagged: #4.-Memoria-principal
-
----
 
 # Ejercicios de particionamiento de memoria real
 
@@ -79,4 +72,3 @@ Si en el enunciado se tiene L o R exclusivamente, se entiende que son ambos igua
 ### Ejercicio 2, corrupción A.
 
 ![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_particionamiento_de_memoria_real.resources/image.7.png]]![[Sketch 5-23-2022 12-01 PM.png]]
-

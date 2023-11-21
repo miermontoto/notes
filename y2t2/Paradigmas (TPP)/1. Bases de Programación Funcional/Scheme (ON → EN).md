@@ -1,35 +1,28 @@
----
 
-Created at 2022-03-11T11:53:44+01:00
-Last updated at 2022-03-11T11:54:16+01:00
-
-Tagged: #1.-Bases-de-Prg.-Func.
-
----
 
 # Scheme (ON → EN)
-# Semántica 
+# Semántica
 
-## Datos simbólicos 
+## Datos simbólicos
 
 Datos más genéricos que en Programación Imperativa. 
 
 * Datos simples (**átomos**) 
 * Datos simples y compuestos (**S-Expresiones**) 
 
-## Átomos 
+## Átomos
 
 * Concatenación INDIVISIBLE de caracteres símbolo y alfanuméricos (excepto paréntesis y asterisco). 
 * Simbólicos y numéricos. 
 * **# t** para true, **#f** para false"
 
-## S-expresiones 
+## S-expresiones
 
 * Un átomo es una S-Expresión. 
 * Si x e y son S-expresiones, entonces el par (x . y) es una S-expresión 's'. 
 * x: _car_ de 's', y: _cdr_ de 's' 
 
-## Lista 
+## Lista
 
 * Una secuencia de S-Expresiones que puede ser vacía, encerrada entre paréntesis, es una S-Expresión llamada lista. 
 * Subconjunto de las S-Expresiones. 
@@ -39,7 +32,7 @@ Datos más genéricos que en Programación Imperativa. 
 * Solo se puede obtener el primer elemento de la lista. 
 * Todas las listas, excepto la lista vacía _()_, son pares. 
 
-### _Representaciones_ 
+### _Representaciones_
 
 * Árboles y grafos: '(a (e () ()) (b (c () ()) (d () ()))) 
 * Expresiones algebraicas 
@@ -47,9 +40,9 @@ Datos más genéricos que en Programación Imperativa. 
   * 2∗x+3∗y≡(+ (∗2 x)  (∗3 y)) 
 * Funciones 
   f(x, g(y, z), h(a))≡(f x (g y z) (h a))  
-  
 
-# Funciones básicas 
+
+# Funciones básicas
 
 * cons(x, y) ::= el par (x . y) 
 

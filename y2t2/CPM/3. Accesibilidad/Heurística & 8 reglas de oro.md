@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-22T17:14:03+01:00
-Last updated at 2022-05-03T17:26:59+02:00
-
-Tagged: #3.-Accesibilidad
-
----
 
 # Heurística / 8 reglas de oro
 # Heurística
@@ -41,7 +34,7 @@ Tagged: #3.-Accesibilidad
 
 
 
-### <mark style="background: #BBFABBA6;">Actividad. Busca inconsistencias</mark> 
+### <mark style="background: #BBFABBA6;">Actividad. Busca inconsistencias</mark>
 Abrir dentro / Abrir fuera tienen atajos de teclado sin relación entre sí.
 Crear carpeta / Crear archivo tienen atajos de teclado sin relación entre sí.
 Información / Propiedades se refieren a lo mismo.
@@ -49,22 +42,22 @@ CRC / Suma de verificación se refieren a lo mismo.
 
 
 
-### <mark style="background: #BBFABBA6;">Actividad. Busca acceso directo</mark> 
+### <mark style="background: #BBFABBA6;">Actividad. Busca acceso directo</mark>
 Para posicionar una Label y TextField a la izquierda o encima.
 Crear un objeto TextLabel que incluya a ambos componentes y poder intercambiar su posición relativa mediante una combinación de teclas.
 Se puede expandir a todos los objetos manteniendo la combinación de teclas al seleccionar con el ratón a dos elementos.
 
 
-### <mark style="background: #BBFABBA6;">Actividad. Retroalimentación de una página de descarga</mark> 
+### <mark style="background: #BBFABBA6;">Actividad. Retroalimentación de una página de descarga</mark>
 
 Barra de progreso en la propia web.
 Si el navegador cuenta con un indicador del progreso de la descarga, no cuenta como retroalimentación de la página web.
 
 
-### <mark style="background: #BBFABBA6;">Actividad. Indicación de terminación de procesos de interfaz</mark> 
-<mark style="background: #FFF3A3A6;">a)  ¿Cómo se puede indicar que el usuario ha terminado de dar la orden de mover todos los ficheros?</mark> 
+### <mark style="background: #BBFABBA6;">Actividad. Indicación de terminación de procesos de interfaz</mark>
+<mark style="background: #FFF3A3A6;">a)  ¿Cómo se puede indicar que el usuario ha terminado de dar la orden de mover todos los ficheros?</mark>
 	- Añadir un icono que indiquen los ficheros movidos.
-<mark style="background: #FFF3A3A6;">b) ¿Cómo se puede indicar que se han movido todos los ficheros para diferenciarlo de que no hay ficheros en origen?</mark> 
+<mark style="background: #FFF3A3A6;">b) ¿Cómo se puede indicar que se han movido todos los ficheros para diferenciarlo de que no hay ficheros en origen?</mark>
 	- Añadir una label al final que indique el estado actual.
 
 
@@ -94,7 +87,7 @@ Toda acción debería permitirse deshacer.
 
 
 
-### <mark style="background: #BBFABBA6;">Actividad. Permitir deshacer las acciones</mark> 
+### <mark style="background: #BBFABBA6;">Actividad. Permitir deshacer las acciones</mark>
 * Permitir deshacer la acción de 'cerrar pestaña'.
 * Permitir deshacer la acción de 'cerrar ventana'.
 
@@ -103,7 +96,7 @@ Toda acción debería permitirse deshacer.
 
 
 
-### <mark style="background: #BBFABBA6;">Actividad. Control de la interfaz por parte del usuario</mark> 
+### <mark style="background: #BBFABBA6;">Actividad. Control de la interfaz por parte del usuario</mark>
 * La tarea detecta un problema de puerta abierta.
 * El interfaz muestra la puerta que ha pasado de cerrada a abierta.
 * ¿Cómo le indica la interfaz al usuario que hay un problema y cúal es?
@@ -114,9 +107,9 @@ Toda acción debería permitirse deshacer.
 
 
 
-### <mark style="background: #BBFABBA6;">Actividad. Limitar la necesidad de memoria a corto plazo</mark> 
+### <mark style="background: #BBFABBA6;">Actividad. Limitar la necesidad de memoria a corto plazo</mark>
 * Se quiere diseñar una interfaz que permita seleccionar un aula de la Universidad de Oviedo
 * Se quiere que sea mediante una búsqueda geográfica y de localización 3D en edificios.
 * ¿Cómo tendrñia que ser la interfaz para que el usuario solo tuviera que decidirse entre unas pocas opciones?
 
-`Ciudad > Campus > Facultad > Edificio > Planta > Aula` 
+`Ciudad > Campus > Facultad > Edificio > Planta > Aula`

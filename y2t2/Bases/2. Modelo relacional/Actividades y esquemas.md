@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-03T15:42:23+01:00
-Last updated at 2022-03-31T12:08:34+02:00
-
-Tagged: #2.-Modelo-relacional
-
----
 
 # Actividades y esquemas
 
@@ -194,8 +187,3 @@ Clase Expositiva
 Date & Time:Thu, Mar 24, 2022, 2:00 PM - 4:00 PM
 Location:AS-1
 Clase Expositiva
-
-
-
-
-

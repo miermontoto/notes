@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-14T15:05:30+01:00
-Last updated at 2022-03-15T16:12:47+01:00
-
-Tagged: #3.-Coordinación
-
----
 
 # Soluciones hardware a la exclusión mutua
 # Deshabilitación de instrucciones
@@ -36,5 +29,3 @@ Se necesita una posición de memoria donde se almacene el semáforo **_por cada_
 Date & Time:Mon, Mar 14, 2022, 2:00 PM - 4:00 PM
 Location:AS-1
 Prácticas De Aula
-
-

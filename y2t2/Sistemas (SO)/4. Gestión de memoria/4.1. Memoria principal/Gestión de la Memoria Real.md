@@ -1,11 +1,4 @@
----
 
-Created at 2022-03-21T14:03:43+01:00
-Last updated at 2022-05-21T20:01:26+02:00
-
-Tagged: #4.-Memoria-principal
-
----
 
 # Gestión de la Memoria Real
 PDF:
