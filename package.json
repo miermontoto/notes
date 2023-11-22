@@ -1,0 +1,46 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "my personal class notes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean; eleventy --serve & npm run sass-dev",
+    "build": "npm run clean; eleventy & npm run sass-prod",
+    "deploy": "npm run build; firebase deploy; npm run clean",
+    "clean": "rm -rf _site",
+    "test": "npm run build; firebase serve",
+    "beta": "npm run build; firebase hosting:channel:deploy beta",
+    "sass-dev": "sass --watch --update --style=expanded src/static/css:_site/static/css",
+    "sass-prod": "sass --no-source-map --style=compressed src/static/css:_site/static/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miermontoto/notes.git"
+  },
+  "keywords": [
+    "notes",
+    "eleventy",
+    "obsidian",
+    "computer",
+    "engineering",
+    "epi",
+    "epi",
+    "gijón",
+    "giitin",
+    "informática",
+    "apuntes"
+  ],
+  "author": "Juan Mier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miermontoto/notes/issues"
+  },
+  "homepage": "https://github.com/miermontoto/notes#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "markdown-it-obsidian": "https://github.com/miermontoto/markdown-it-obsidian/tarball/main",
+    "sass": "^1.69.5"
+  }
+}
