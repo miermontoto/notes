@@ -1,4 +1,5 @@
-
+> [!error] IMPORTANTE
+> De este tema, que es el más teórico, van a salir muchas preguntas del examen de enero.
 # Modelos
 - Basados en la intermediación
 - De vendedor
@@ -85,18 +86,32 @@
 *ej: Google AdWords*
 
 ### Publicación orientada al contenido
-> [!info] Definición
-> Las empresas de publicidad orientadas al contenido le ofrecen a los sitios web la posibilidad de obtener ingresos a través de la publicidad incrustada en sus páginas.
-> 
-> Recibe ingresos por:
-> - Cobros por tener publicidad de terceros
+**Definición:** las empresas de publicidad orientadas al contenido le ofrecen a los sitios web la posibilidad de obtener ingresos a través de la publicidad incrustada en sus páginas.
+**Recibe ingresos por:**  cobros por tener publicidad de terceros.
 
 *ej: Google AdSense*
 
 ### Cupones de descuento
-> [!info] Definición
-> Consiste en ofrecer por Internet, servicios/productos a precios muy reducidos.
-> 
-> Recibe ingresos por:
-> - La empresa de cupones gana un margen por cupón vendido.
-> - La empresa anunciada que da el producto/servicio 
+**Definición:** consiste en ofrecer por Internet, servicios/productos a precios muy reducidos.
+
+**Recibe ingresos por:**
+ - La empresa de cupones gana un margen por cupón vendido.
+ - La empresa anunciada que da el producto/servicio obtiene un margen de beneficio más bajo, pero gana en el boca a boca.
+*ej: Groupon*
+
+### Modelos de comunidad
+**Definición:** el proveedor obtiene algún beneficio de los modelos anteriores pero incorporado en una comunidad. Lo más representativo son las redes sociales.
+**Tipos:**
+- Contenido abierto
+- Redes sociales
+
+#### Contenido abierto
+**Definición:** creación de una comunidad en el que todo el mundo puede participar.
+**Recibe ingresos por:** donaciones o publicidad.
+*ej:* wikipedia, fandom
+
+#### Redes sociales
+**Definición:** comunidad en la que se reproduce el concepto de relación social. Suele tener forma de perfil e incluir redes de contactos con las que se pueden intercambiar mensajes públicos o privados.
+**Recibe ingresos por:** publicidad, modelo freemium/premium, juegos sociales o monedas virtuales.
+
+*ej: instagram, reddit, linkedin**
