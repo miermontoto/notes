@@ -76,7 +76,34 @@ Integrado en 802.11 2020, servicios básicos de seguridad →
 
 
 ### Fase 2. Autenticación
+> [!warning] Incompleto
+> Desde el protocolo EAP hasta abajo, todo entra dentro de esta fase.
 
+### Fase 3. Gestión de claves
+Se generan claves y se distribuyen.
+Esta fase comienza si la fase previa de autenticación terminó satisfactoriamente → *la STA, el AP y el AS disponen de la misma PMK.*
+
+**Tipos de claves**
+- <u>Claves de parejas</u>: usadas para la comunicación entre una STA y un AP
+- <u>Claves de grupos</u>: usadas para la comunicación multicast
+
+**Claves de parejas**
+![[_resources/Pasted image 20231130155210.png]]
+
+**Claves de grupos**
+![[_resources/Pasted image 20231130155223.png]]
+
+
+**Distribución de claves**
+![[_resources/Pasted image 20231130155301.png]]
+### Fase 4. Transferencias de datos protegida
+**Técnicas de protección de datos transmitidos**
+- TKIP *obsoleta*
+- <u>CCMP</u>
+	- *Integridad* → Se calcula un MAC aplicando AES a cada bloque y se encadenan los cifradores en modo CBC.
+	- *Confidencialidad* → Utiliza AES para cifrar la información y se encadenan los cifradores en modo CTR.
+
+> [!note] La fase 5 no tiene información referente a seguridad.
 ## Protocolo EAP
 ### Introducción
 > [!info] Definición
@@ -100,3 +127,37 @@ Código → Identificador → Longitud → Datos
 
 ### Intercambio de mensajes
 ![[_resources/Pasted image 20231130154043.png]]
+
+## IEEE 802.1X
+### Introducción
+Se diseñó para proporcionar funciones de control de acceso para LANs basadas en puertos
+
+**Entidades**
+![[_resources/Pasted image 20231130154409.png]]
+
+> [!warning] Muy importante el concepto de "puerto"
+> *Puerto* → canal lógico de comunicación que se mapea a una conexión física.
+
+**Tipos de puertos**
+- Puerto NO controlado → permite el intercambio de PDUs entre el suplicante y el autenticador independientemente del estado de autenticación del suplicante.
+- Puerto controlado → permite el intercambio de PDUs entre el suplicante y el autenticador solo si el suplicante ha sido convenientemente autenticado.
+
+### Bloqueo de puertos
+> [!error] Todo esto es bastante importante
+> Porque es la clave de el paso/no paso de información.
+
+
+![[_resources/Pasted image 20231130154537.png]]
+
+### EAP over LAN - Paquetes
+**Paquetes más comunes**
+- <u>EAPOL-EAP</u> → contiene un paquete EAP encapsulado.
+- <u>EAPOL-Start</u> → suplicante puede enviar este paquete en vez de esperar por un *challenge* de un autenticador.
+- <u>EAPOL-Logoff</u> → usado para devolver el esatdo del puerto no autorizado cuando el suplicante termina de usar la red.
+- <u>EAPOL-Key</u> → usado para intercambiar claves criptográficas.
+
+**Formato del paquete EAPOL**
+![[_resources/Pasted image 20231130154636.png]]
+
+#### EAP over LAN - Intercambio de mensajes
+![[_resources/Pasted image 20231130154742.png]]
