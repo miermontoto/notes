@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Minería de excepciones (Anomalías)",
-      "path": "y4t1/Inteligencia de Negocio/CEX/Bloque 2/Minería de excepciones (Anomalías).md"
+      "basename": "Seguridad de aplicaciones",
+      "path": "y4t1/Seguridad/Seguridad de aplicaciones.md"
     },
     {
       "basename": "Seguridad Wi-Fi",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad Wi-Fi.md"
+    },
+    {
+      "basename": "Cortafuegos",
+      "path": "y4t1/Seguridad/5. Seguridad perimetral/Cortafuegos.md"
+    },
+    {
+      "basename": "Minería de excepciones (Anomalías)",
+      "path": "y4t1/Inteligencia de Negocio/CEX/Bloque 2/Minería de excepciones (Anomalías).md"
     },
     {
       "basename": "7. Servicios sobre móviles",
@@ -47,10 +55,6 @@
     {
       "basename": "Ejercicio IPsec",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Ejercicio IPsec.md"
-    },
-    {
-      "basename": "Cortafuegos",
-      "path": "y4t1/Seguridad/5. Seguridad perimetral/Cortafuegos.md"
     },
     {
       "basename": "Autenticación de usuarios (Red)",
@@ -195,10 +199,6 @@
     {
       "basename": "Pasted image 20230912173301",
       "path": "y4t1/Ingeniería de Servicios/CEX/_resources/Pasted image 20230912173301.png"
-    },
-    {
-      "basename": "Pasted image 20231025181748",
-      "path": "y4t1/Ingeniería de Servicios/CEX/_resources/Pasted image 20231025181748.png"
     }
   ],
   "omittedPaths": [],
