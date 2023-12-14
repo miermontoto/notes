@@ -1,4 +1,4 @@
-![[_resources/Protocolo_Seg_SSL-TLS.pdf]]
+[[_resources/Protocolo_Seg_SSL-TLS.pdf]]
 
 #protocolos #ssl #tls #seguridad 
 
