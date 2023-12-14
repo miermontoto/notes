@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Seguridad Wi-Fi",
+      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad Wi-Fi.md"
+    },
+    {
       "basename": "Autenticación de usuarios (local)",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (local).md"
     },
@@ -31,10 +35,6 @@
     {
       "basename": "Seguridad de aplicaciones",
       "path": "y4t1/Seguridad/Seguridad de aplicaciones.md"
-    },
-    {
-      "basename": "Seguridad Wi-Fi",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad Wi-Fi.md"
     },
     {
       "basename": "Minería de excepciones (Anomalías)",

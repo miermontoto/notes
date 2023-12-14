@@ -1,5 +1,6 @@
-Normalmente, las redes inalámbricas se basan en el estándar IEEE 802.11
+[[_resources/Seg_Wi-Fi.pdf]]
 
+Normalmente, las redes inalámbricas se basan en el estándar IEEE 802.11
 ## Componentes
 ![[_resources/Pasted image 20231130150705.png]]
 
@@ -22,8 +23,6 @@ Se comunica con la capa superior mediante bloques de datos denominados **MSDU** 
 
 ## Servicios
 > [!faq] Lo que "más nos interesa"
-
-
 9 servicios: 6 de transferencia de datos, 3 de seguridad en la red.
 
 ### Servicios de transferencia de datos
