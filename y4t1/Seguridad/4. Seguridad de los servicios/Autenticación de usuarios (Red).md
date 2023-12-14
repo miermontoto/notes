@@ -1,4 +1,4 @@
-![[_resources/Autenticacion_Usuarios_Red.pdf]]
+[[_resources/Autenticacion_Usuarios_Red.pdf]]
 
 ---
 
