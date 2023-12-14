@@ -1,8 +1,8 @@
+[[_resources/Seguridad_Aplicaciones.pdf]]
+
+---
 ## Manejo de los datos de entrada
 Fallo de seguridad común.
-
-
-
 ### Desbordamiento de búfer
 Se produce cuando un proceso sobrepasa el límite del búfer sobreescribiendo las posiciones de memoria siguientes.
 
