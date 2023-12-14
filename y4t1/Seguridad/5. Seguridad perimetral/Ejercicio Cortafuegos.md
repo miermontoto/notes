@@ -1,0 +1,1 @@
+![[_resources/Ejercicio Cortafuegos 2023-12-14 16.31.09.excalidraw]]

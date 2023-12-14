@@ -29,3 +29,15 @@ Código máquina del atacante que se ejecuta al retornar de una función.
 - **Execution-time defense:** protección del espacio de direcciones ejecutable, hacer aleatorio el espacio de direcciones, páginas de protección
 
 ## Inyección de código SQL
+Inserción de una consulta SQL parcial o completa en los datos proporcionados por una aplicación a un gestor de bases de datos.
+
+### Causas
+- Gestión incorrecta de caracteres de escape
+- Manejo incorrecto de tipos
+
+
+### Posibles ataques
+- Ataque a ciegas
+	- Técnicas de inferencia: se construye poco a poco información mediante preguntas consecutivas
+	- Técnicas que usan canales alternativos: se obtiene información privilegiada, como nombres de usuario específicos, direcciones....
+	- 
