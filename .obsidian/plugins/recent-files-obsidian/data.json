@@ -1,28 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "Seguridad de aplicaciones",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad de aplicaciones.md"
-    },
-    {
-      "basename": "Certificados digitales",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Certificados digitales.md"
-    },
-    {
-      "basename": "Seguridad Wi-Fi",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad Wi-Fi.md"
-    },
-    {
-      "basename": "Autenticación de usuarios (local)",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (local).md"
-    },
-    {
-      "basename": "Cortafuegos",
-      "path": "y4t1/Seguridad/5. Seguridad perimetral/Cortafuegos.md"
-    },
-    {
-      "basename": "Malware y Anti-Malware",
-      "path": "y4t1/Seguridad/5. Seguridad perimetral/Malware y Anti-Malware.md"
+      "basename": "6. Auditoría de seguridad",
+      "path": "y4t1/Seguridad/6. Auditoría de seguridad/6. Auditoría de seguridad.md"
     },
     {
       "basename": "5. Servicios multimedia",
@@ -39,6 +19,14 @@
     {
       "basename": "Frameworks Web",
       "path": "y4t1/Tecnologías Web/Frameworks Web.md"
+    },
+    {
+      "basename": "Seguridad Wi-Fi",
+      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad Wi-Fi.md"
+    },
+    {
+      "basename": "Cortafuegos",
+      "path": "y4t1/Seguridad/5. Seguridad perimetral/Cortafuegos.md"
     },
     {
       "basename": "Minería de excepciones (Anomalías)",
@@ -65,10 +53,6 @@
       "path": "y4t1/Tecnologías Web/4. Servicios web/Object Relational Mapping (ORM).md"
     },
     {
-      "basename": "6. Auditoría de seguridad",
-      "path": "y4t1/Seguridad/6. Auditoría de seguridad/6. Auditoría de seguridad.md"
-    },
-    {
       "basename": "2. GUIDE",
       "path": "y2t2/CPM/2. GUIDE.md"
     },
@@ -91,6 +75,10 @@
     {
       "basename": "Regulación de la ID-e y los servicios de confianza",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Regulación de la ID-e y los servicios de confianza.md"
+    },
+    {
+      "basename": "Autenticación de usuarios (local)",
+      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (local).md"
     },
     {
       "basename": "Series temporales",
@@ -199,6 +187,14 @@
     {
       "basename": "Pasted image 20231031194409",
       "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031194409.png"
+    },
+    {
+      "basename": "Pasted image 20231031194421",
+      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031194421.png"
+    },
+    {
+      "basename": "Pasted image 20231031194955",
+      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031194955.png"
     }
   ],
   "omittedPaths": [],
