@@ -1,8 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "Ejercicio IPsec",
+      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Ejercicio IPsec.md"
+    },
+    {
+      "basename": "Protocolos de seguridad - IPsec",
+      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Protocolos de seguridad - IPsec.md"
+    },
+    {
+      "basename": "Malware y Anti-Malware",
+      "path": "y4t1/Seguridad/5. Seguridad perimetral/Malware y Anti-Malware.md"
+    },
+    {
+      "basename": "Seguridad de aplicaciones",
+      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad de aplicaciones.md"
+    },
+    {
       "basename": "Autenticación de usuarios (Red)",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (Red).md"
+    },
+    {
+      "basename": "Ejercicio Cortafuegos",
+      "path": "y4t1/Seguridad/5. Seguridad perimetral/Ejercicio Cortafuegos.md"
+    },
+    {
+      "basename": "Autenticación de usuarios (local)",
+      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (local).md"
     },
     {
       "basename": "Protocolos de seguridad - SSL & TLS",
@@ -13,28 +37,12 @@
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad Wi-Fi.md"
     },
     {
-      "basename": "Autenticación de usuarios (local)",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (local).md"
-    },
-    {
-      "basename": "Ejercicio IPsec",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Ejercicio IPsec.md"
-    },
-    {
       "basename": "Ejercicio IPsec 2023-11-02 15.31.35.excalidraw",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/_resources/Ejercicio IPsec 2023-11-02 15.31.35.excalidraw.md"
     },
     {
       "basename": "Ejercicio Cortafuegos 2023-12-14 16.31.09.excalidraw",
       "path": "y4t1/Seguridad/5. Seguridad perimetral/_resources/Ejercicio Cortafuegos 2023-12-14 16.31.09.excalidraw.md"
-    },
-    {
-      "basename": "Ejercicio Cortafuegos",
-      "path": "y4t1/Seguridad/5. Seguridad perimetral/Ejercicio Cortafuegos.md"
-    },
-    {
-      "basename": "Seguridad de aplicaciones",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad de aplicaciones.md"
     },
     {
       "basename": "6. Auditoría de seguridad",
@@ -191,14 +199,6 @@
     {
       "basename": "Pasted image 20231031193228",
       "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031193228.png"
-    },
-    {
-      "basename": "Pasted image 20231031193729",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031193729.png"
-    },
-    {
-      "basename": "Pasted image 20231031193933",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031193933.png"
     }
   ],
   "omittedPaths": [],
