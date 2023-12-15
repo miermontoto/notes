@@ -99,7 +99,7 @@ Se pueden usar contraseñas, tokens, biometría (o combinarlos)
 - **User Agent**
 
 **Registro de usuarios en el Proveedor**
-El usuario deve crear una cuenta den un proveedor de identidad que use OpenID.
+El usuario debe crear una cuenta den un proveedor de identidad que use OpenID.
 El proveedor asigna al usuario un Identificador OpenID:
 - URL
 - XRI
