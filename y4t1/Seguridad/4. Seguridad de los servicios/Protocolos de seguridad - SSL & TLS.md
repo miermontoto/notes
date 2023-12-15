@@ -99,7 +99,7 @@ Una vez establecida la sesión segura, SSL/TLS protege los datos intercambiados 
 
 ### Finalización de una sesión
 El protocolo SSL **no** dispone de un procedimiento para finalizar una sesión de comunicación segura entre dos computadores.
-Sin embargo, cualquier computador puede enviar un mensaje de `ClosureAlert`, que evita atauqes por truncación.
+Sin embargo, cualquier computador puede enviar un mensaje de `ClosureAlert`, que evita ataques por truncación.
 
 ### Reutilización de sesiones
 La idea es minimizar la sobrecarga, ya que el protocolo tiene muchas idas y venidas de mensajes.
