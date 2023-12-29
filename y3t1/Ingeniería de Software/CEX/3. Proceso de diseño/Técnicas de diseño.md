@@ -1,4 +1,4 @@
-![[ISOF - 3 - Técnica de diseño.pdf]]
+![[_resources/ISOF - 3 - Técnica de diseño.pdf]]
 
 ---
 
@@ -16,7 +16,7 @@ Diagrama de nodos.
 - Permite verificar la coherencia del sistema validándolo con el modelo de clases.
 - <u>Objetos y mensajes entre objetos.</u>
 
-![[Pasted image 20221107122731.png]]
+![[_resources/Pasted image 20221107122731.png]]
 
 # Reglas de transformación
 **Clases:** directamente en una tabla.

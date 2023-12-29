@@ -2,12 +2,12 @@
 
 ![[_resources/Prototipos 2023-05-09 01.14.34.excalidraw]]
 
-![[1.md]]
+![[_resources/1]]
 
-![[2.md]]
+![[_resources/2]]
 
-![[3.md]]
-![[4.md]]
+![[_resources/3]]
+![[_resources/4]]
 
 ![[_resources/Prototipos 2023-05-09 10.47.49.excalidraw]]
 ![[_resources/Prototipos 2023-05-09 11.30.43.excalidraw]]
