@@ -1,1 +1,0 @@
-![[_resources/Untitled 2022-09-16 15.12.45.excalidraw]]
