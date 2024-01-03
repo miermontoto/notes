@@ -57,8 +57,12 @@ Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones
 
 # Práctica 8
 ## Preparación del código
-Para la resolución de esta práctica, se escoge Google Colab como entorno de desarrollo, lo que permite ejecuciones con GPU de manera rápida y gratuita.
-Obviamente, a la hora de preparar el código, se utiliza
+- Para la resolución de esta práctica, se escoge Google Colab como entorno de desarrollo, lo que permite ejecuciones con GPU de manera rápida y gratuita.
+- Obviamente, a la hora de preparar el código, se utilizan ejemplos y código de HuggingFace, como Transformers.
+- Para facilitar la ejecución, se utilizan diccionarios de Python para almacenar tanto los modelos como los datasets, para poder probar con mayor facilidad.
+
+**Libererías utilizadas:**
+![[_resources/Pasted image 20240104004142.png]]
 
 ## Tareas
 Para la práctica 8, existen 5 tareas:
@@ -72,5 +76,14 @@ A la hora de escoger datasets, hay que tener en cuenta dos puntos clave:
 - Puesto que la mayoría de modelos están entrenados sobre datasets derivados de *squad*, sería adecuado escoger un conjunto derivado de *squad* y otro que no lo sea, para corroborar que el modelo es capaz de encontrar las respuestas adecuadas en el mayor número de circunstancias.
 
 Para este análisis se escoge el dataset oficial de *[Squad v2](https://huggingface.co/datasets/squad_v2)* y el dataset de Databricks *[Dolly 15k](https://huggingface.co/datasets/databricks/databricks-dolly-**15k**)*.
+![[_resources/Pasted image 20240104004239.png]]
+
+Como nota adicional, se filtran y se eliminan todos los elementos que no contienen contexto.
 
 ### 3. Elegir al menos dos modelos para resolver la tarea 
+Se escogen tres modelos diferentes para contrastar resultados:
+- El modelo por defecto (`distilbert-base-cased-distilled-squad`), entrenado sobre *squad*.
+- Otro modelo *bert* (Bidirectional Encoder Representations from Transformers) entrenado también sobre *Squad v2*, más actualizado.
+- Un último modelo totalmente diferente, que no utiliza ninguna derivación de *bert*/*robert*/*berta* ni está entrenado sobre *squad* ni sus derivados.
+
+![[_resources/Pasted image 20240104004444.png]]
