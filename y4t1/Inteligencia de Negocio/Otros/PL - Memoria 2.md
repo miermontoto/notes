@@ -56,3 +56,7 @@ Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones
 
 
 # Práctica 8
+Para la práctica 8, existen 5 tareas:
+1. **Escoger una tarea dentro de *Natural Language Processing* (NLP):** se escoge *Question Answering*.
+2. **Elegir un dataset asociado a dicha tarea:** puesto que la mayoría de modelos están entrenados sobre datasets derivados de *squad*, para este análisis se escoge el dataset oficial de *Squad v2* y otro que no tenga nada que ver, en este caso el dataset de Databricks *Dolly 15k*
+3. **Elegir al menos 2 modelos para resolver la tarea elegida:** 
