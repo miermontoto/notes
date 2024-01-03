@@ -37,3 +37,9 @@ Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones
 - **(Opcional) Dé un ejemplo de cómo usaría esta información para decidir un producto en el que realizar un descuento y un producto asociado a este anterior al que se le pueda elevar el precio y compensar el margen comercial perdido en el descuento:**
 
 ## IA explicativa
+
+
+# Práctica 7
+
+
+# Práctica 8
