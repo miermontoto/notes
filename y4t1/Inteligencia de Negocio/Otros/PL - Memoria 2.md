@@ -56,16 +56,20 @@ Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones
 
 
 # Práctica 8
+## Preparación del código
+Para la resolución de esta práctica, se 
+
+## Tareas
 Para la práctica 8, existen 5 tareas:
-## 1. Escoger una tarea dentro de *Natural Language Processing* (NLP)
+### 1. Escoger una tarea dentro de *Natural Language Processing* (NLP)
 Se escoge [*Question Answering*](https://huggingface.co/tasks/question-answering).
 ![[_resources/Pasted image 20240103190332.png|700]]
 
-## 2. **Elegir un dataset asociado a dicha tarea:**
+### 2.  Elegir un dataset asociado a dicha tarea:
 A la hora de escoger datasets, hay que tener en cuenta dos puntos clave:
 - Se necesitan conjuntos que cuenten con un esquema básico de pregunta, contexto y respuesta válida.
 - Puesto que la mayoría de modelos están entrenados sobre datasets derivados de *squad*, sería adecuado escoger un conjunto derivado de *squad* y otro que no lo sea, para corroborar que el modelo es capaz de encontrar las respuestas adecuadas en el mayor número de circunstancias.
 
 Para este análisis se escoge el dataset oficial de *[Squad v2](https://huggingface.co/datasets/squad_v2)* y el dataset de Databricks *[Dolly 15k](https://huggingface.co/datasets/databricks/databricks-dolly-**15k**)*.
 
-## 3. 
+### 3. Elegir al menos dos modelos para resolver la tarea 
