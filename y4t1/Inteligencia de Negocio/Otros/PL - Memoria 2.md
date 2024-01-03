@@ -1,3 +1,16 @@
+<br><br><br><br><br><br><br><br><br><br><br><br>
+# Memoria de sesiones de Prácticas de Laboratorio  (1-4)
+Juan Francisco Mier Montoto
+*Inteligencia de Negocio, EPI Gijón 23-24*
+
+<div style="page-break-after: always;"></div>
+
+# Índice
+- **Práctica 5**
+- **Práctica 6**
+- **Práctica 7**
+- **Práctica 8**
+
 # Práctica 5
 Para la práctica, se crea una cuenta en la edición "Community" de Databricks como especificado.
 
