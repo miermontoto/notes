@@ -57,7 +57,8 @@ Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones
 
 # Práctica 8
 ## Preparación del código
-Para la resolución de esta práctica, se 
+Para la resolución de esta práctica, se escoge Google Colab como entorno de desarrollo, lo que permite ejecuciones con GPU de manera rápida y gratuita.
+Obviamente, a la hora de preparar el código, se utiliza
 
 ## Tareas
 Para la práctica 8, existen 5 tareas:
