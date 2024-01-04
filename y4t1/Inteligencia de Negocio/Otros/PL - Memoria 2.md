@@ -56,9 +56,244 @@ Para visualizar los datos en los pasos 9 y 10, se ejecuta `display(df)` y se gen
 
 # Práctica 6
 ## Reglas de asociación
-### 1. ¿Cuáles son las asociaciones más relevantes entre los productos?
+Antes de realizar análisis, se introduce de manera breve el código que permite realizarlo en primer lugar:
 
+```python
+# Importar librerías
+%matplotlib ipympl
+import seaborn as sns
+import pandas as pd
+from mlxtend.preprocessing import TransactionEncoder
+from mlxtend.frequent_patterns import apriori, association_rules
+import matplotlib.pyplot as plt
+from IPython.display import display, Markdown
+import ipywidgets as widgets
+```
+
+```python
+data = pd.read_csv('Grocery Products Purchase.csv') # se lee el fichero de datos
+data = data.iloc[:, 0:8] # selección de las primeras tres columnas
+data = data.dropna() # se eliminan las compras que tengan 'nan'
+
+for a in data.columns: # parseo
+	data[a] = data[a].astype(str)
+```
+
+```python
+# Selección de algunas columnas y transformación a formato de transacción
+transactions = data.iloc[:, 0:8].values.tolist()
+
+# Transformación con One-Hot Encoding
+te = TransactionEncoder()
+oht = te.fit(transactions).transform(transactions)
+df = pd.DataFrame(oht, columns=te.columns_)
+```
+
+```python
+frequent_itemsets = apriori(df, min_support=0.1, use_colnames=True) # Minería de ítems frecuentes
+rules = association_rules(frequent_itemsets, metric="lift", min_threshold=1) # Minería de reglas de asociación
+```
+
+```python
+# método que añade interactividad a los gráficos
+def onclick(event):
+    # Obtener el índice del punto más cercano al clic
+    idx = event.ind[0]
+
+    # Extraer la regla correspondiente a ese índice
+    rule = rules.iloc[idx]
+    antecedents = ', '.join(list(rule['antecedents']))
+    consequents = ', '.join(list(rule['consequents']))
+
+    # Mostrar la regla en el notebook
+    display(Markdown(f"**Regla:** {antecedents} -> {consequents}"))
+    display(Markdown(f"**Lift:** {rule['lift']:.2f}, **Confianza:** {rule['confidence']:.2f}"))
+```
+
+```python
+fig, ax = plt.subplots(figsize=(10, 6))
+sns.scatterplot(data=rules, x="lift", y="confidence", alpha=0.6, size="support", sizes=(20, 200), ax=ax, picker=4)
+plt.title("Reglas de Asociación: Lift vs Confianza")
+
+fig.canvas.mpl_connect('pick_event', onclick) # Conectar el evento de clic con la función onclick
+plt.show()
+```
+
+El gráfico resultante del código anterior se ve en la segunda sección.
+### 1. ¿Cuáles son las asociaciones más relevantes entre los productos?
+Para realizar esta tarea, se inyecta un poco de código que muestra (formateado) las diez reglas más relevantes.
+```python
+# mostrar las asociaciones más relevantes
+display(Markdown('### Reglas de asociación'))
+display(rules.sort_values(by=['confidence'], ascending=False).head(10))
+```
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>antecedents</th>
+      <th>consequents</th>
+      <th>antecedent support</th>
+      <th>consequent support</th>
+      <th>support</th>
+      <th>confidence</th>
+      <th>lift</th>
+      <th>leverage</th>
+      <th>conviction</th>
+      <th>zhangs_metric</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>27</th>
+      <td>(root vegetables)</td>
+      <td>(other vegetables, whole milk)</td>
+      <td>0.298694</td>
+      <td>0.271971</td>
+      <td>0.101544</td>
+      <td>0.339960</td>
+      <td>1.249985</td>
+      <td>0.020308</td>
+      <td>1.103007</td>
+      <td>0.285168</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>(other vegetables, whole milk)</td>
+      <td>(root vegetables)</td>
+      <td>0.271971</td>
+      <td>0.298694</td>
+      <td>0.101544</td>
+      <td>0.373362</td>
+      <td>1.249985</td>
+      <td>0.020308</td>
+      <td>1.119158</td>
+      <td>0.274701</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>(other vegetables)</td>
+      <td>(whole milk, root vegetables)</td>
+      <td>0.494656</td>
+      <td>0.170428</td>
+      <td>0.101544</td>
+      <td>0.205282</td>
+      <td>1.204512</td>
+      <td>0.017241</td>
+      <td>1.043858</td>
+      <td>0.335986</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>(whole milk, root vegetables)</td>
+      <td>(other vegetables)</td>
+      <td>0.170428</td>
+      <td>0.494656</td>
+      <td>0.101544</td>
+      <td>0.595819</td>
+      <td>1.204512</td>
+      <td>0.017241</td>
+      <td>1.250292</td>
+      <td>0.204670</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>(other vegetables)</td>
+      <td>(root vegetables)</td>
+      <td>0.494656</td>
+      <td>0.298694</td>
+      <td>0.177553</td>
+      <td>0.358944</td>
+      <td>1.201712</td>
+      <td>0.029803</td>
+      <td>1.093985</td>
+      <td>0.332157</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>(root vegetables)</td>
+      <td>(other vegetables)</td>
+      <td>0.298694</td>
+      <td>0.494656</td>
+      <td>0.177553</td>
+      <td>0.594433</td>
+      <td>1.201712</td>
+      <td>0.029803</td>
+      <td>1.246021</td>
+      <td>0.239344</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>(butter)</td>
+      <td>(whole milk)</td>
+      <td>0.159739</td>
+      <td>0.537411</td>
+      <td>0.100950</td>
+      <td>0.631970</td>
+      <td>1.175954</td>
+      <td>0.015105</td>
+      <td>1.256934</td>
+      <td>0.178071</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>(whole milk)</td>
+      <td>(butter)</td>
+      <td>0.537411</td>
+      <td>0.159739</td>
+      <td>0.100950</td>
+      <td>0.187845</td>
+      <td>1.175954</td>
+      <td>0.015105</td>
+      <td>1.034607</td>
+      <td>0.323454</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>(other vegetables)</td>
+      <td>(whipped/sour cream)</td>
+      <td>0.494656</td>
+      <td>0.185867</td>
+      <td>0.105701</td>
+      <td>0.213685</td>
+      <td>1.149669</td>
+      <td>0.013761</td>
+      <td>1.035378</td>
+      <td>0.257615</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>(whipped/sour cream)</td>
+      <td>(other vegetables)</td>
+      <td>0.185867</td>
+      <td>0.494656</td>
+      <td>0.105701</td>
+      <td>0.568690</td>
+      <td>1.149669</td>
+      <td>0.013761</td>
+      <td>1.171650</td>
+      <td>0.159905</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 ### 2. Visualice un grafo con las reglas más relevantes
+![[_resources/Pasted image 20240104194813.png]]
 
 ### 3. Dé un ejemplo de cómo usaría esta información para decidir sobre las bajadas y subidas de precio
 
@@ -261,7 +496,7 @@ plt.axvline(endTrain, color='r')
 plt.grid(which="both")
 plt.show()
 ```
-![[_resources/Pasted image 20240104113151.png]]
+![[_resources/Pasted image 20240104193911.png]]
 
 
 ## 5. Comparar entre sí las predicciones de los modelos
