@@ -55,8 +55,65 @@ Para visualizar los datos en los pasos 9 y 10, se ejecuta `display(df)` y se gen
 ![[_resources/Pasted image 20240104173824.png]]
 ![[_resources/Pasted image 20240104173814.png]]
 
+Para el resto de tareas, se crea un método que admita varios parámetros con el objetivo de reducir el código que se repite y se pueda ejecutar en serie de manera más sencilla:
+```python
+from pyspark.ml.feature import Imputer
+from pyspark.ml.feature import VectorAssembler
+from pyspark.ml.regression import LinearRegression, RandomForestRegressor
+from pyspark.ml.evaluation import RegressionEvaluator
+
+rcolinputk = ['genderI','ethnicityI','birthI','starkI','lunchkI','schoolkI','degreekI','ladderkI','tethnicitykI']
+# Dividir con randomSplit en 75% y 25%
+train, test = df.randomSplit([0.75, 0.25])
+
+# Crear un pipeline con tres etapas y aplicársela al conjunto de entrenamiento
+def execute_read(var, k, regressor):
+	# Etapa 1. Con pyspark.ml.feature.Imputer, rellena los valores perdidos de la
+	# variable de salida (strategy="mean") en otra variable.
+	im = Imputer(inputCol=f"read{k}", outputCol=f"my{var}{k}_imputado", strategy="mean")
+	
+	# Etapa 2. Con pyspark.ml.feature.VectorAssembler, combina todas las variables
+	# de entrada en una columna llamada "myfeatures".
+	assembler = VectorAssembler(inputCols=colinputk, outputCol="myfeatures")
+	
+	# Etapa 3. Con pyspark.ml.regression.LinearRegression, ajusta un modelo a las
+	# variables de entrada "myfeatures" y de salida "myreadk_imputado".
+	lr = regressor(featuresCol="myfeatures", labelCol=f"my{var}{k}_imputado")
+	
+	# Crear un pipeline con las tres etapas anteriores
+	df = Pipeline(stages=[im, assembler, lr]).fit(train).transform(test)
+	
+	# Por último, calcula el error cuadrático medio y R2 en conjunto de test.
+	evaluator = RegressionEvaluator(labelCol=f"my{var}{k}_imputado", predictionCol="prediction", metricName="rmse")
+	rmse = evaluator.evaluate(df)
+	print(f"{var}{k}: RMSE = {rmse}")
+	evaluator = RegressionEvaluator(labelCol=f"my{var}{k}_imputado", predictionCol="prediction", metricName="r2")
+	r2 = evaluator.evaluate(df)
+	print(f"{var}{k}: R2 = {r2}")
+
+
+vars = ['read', 'math']
+ks = ['k', '1', '2', '3']
+regressors = [LinearRegression, RandomForestRegressor]
+for regressor in regressors:
+	print(f"--- {regressor} ---")
+	for var in vars:
+		for k in ks:
+			execute_read(var, k, regressor)
+	print()
+```
+
+**Resultados**
+*LinearRegression*
+![[_resources/Pasted image 20240104203307.png]]
 <div style="page-break-after: always;"></div>
 
+*RandomForestRegressor*
+![[_resources/Pasted image 20240104203337.png]]
+
+**Análisis**
+A primera vista, el regresor de *RandomForest* funciona de manera ligeramente mejor que el regresor lineal, con $r^2$ ligeramente superiores y con $RMSE$ ligeramente inferiores.
+Independientemente de esto, los resultados son, por lo general, malos, con valores de $r^2$ inválidos para cualquier análisis serio fuera de demostraciones de juguete como estas.
 # Práctica 6
 ## Reglas de asociación
 ### Código
@@ -124,6 +181,9 @@ plt.show()
 ```
 
 ### Parámetros
+Para llegar a estos valores, se ha jugado bastante con las variables de `min_support` y `min_threshold`:
+- Se encuentra que variando los valores de `min_support`, se consiguen diferentes valores medios de *Lift* (la variable que se está buscando maximizar). En concreto, la relación es inversa, por lo que se reduce `min_support` a un valor lo más pequeño posible que obtiene resultados lógicos.
+- Tras ajustar el `min_support`, se observa que el gráfico representa demasiadas reglas de asociación (fuera del rango buscado de entre 10 y 100), por lo que se aumenta el umbral mínimo para tratar de reducir la cantidad de valores que se representan.
 
 ### Preguntas
 #### 1. ¿Cuáles son las asociaciones más relevantes entre los productos?
@@ -511,9 +571,7 @@ plt.show()
 ![[_resources/Pasted image 20240104193911.png]]
 
 
-## 5. Comparar entre sí las predicciones de los modelos
-
-## 6. (opcional) Estudiar el modelo DeepVAR y aplicarlo a una serie bivaluada
+## 5. Comparar entre sí las predicciones de los modelos (long term)
 
 <div style="page-break-after: always;"></div>
 
