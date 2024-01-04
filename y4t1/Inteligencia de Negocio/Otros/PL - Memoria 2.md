@@ -36,7 +36,7 @@ En el paso 8, hay que pasar todas las variables categóricas (incluyendo tambié
 from pyspark.ml import Pipeline
 from pyspark.ml.feature import StringIndexer,OneHotEncoder
 
-colk = ['gender','ethnicity','birth','stark','star1','star2','star3','lunchk','lunch1','lunch2','lunch3','schoolk','school1','school2','school3','degreek','degree1','degree2','degree3','ladderk','ladder1','ladder2','ladder3','tethnicityk','tethnicity1','tethnicity2','tethnicity3','systemk','system1','system2','system3','schoolidk','schoolid1','schoolid2','schoolid3']
+colk =['gender','ethnicity','birth','stark','star1','star2','star3','lunchk','lunch1','lunch2','lunch3','schoolk','school1','school2','school3','degreek','degree1','degree2','degree3','ladderk','ladder1','ladder2','ladder3','tethnicityk','tethnicity1','tethnicity2','tethnicity3','systemk','system1','system2','system3','schoolidk','schoolid1','schoolid2','schoolid3']
 colkI = [a+'I' for a in colk]
 colkE = [a+'E' for a in colk]
 
@@ -48,8 +48,9 @@ df = pipeline.fit(df).transform(df)
 ```
 
 
-Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones nuevas con los parámetros deseados.
-![[_resources/Pasted image 20231025172840.png]]
+Para visualizar los datos en los pasos 9 y 10, se ejecuta `display(df)` y se generan visualizaciones nuevas con los parámetros deseados.
+![[_resources/Pasted image 20240104173824.png]]
+![[_resources/Pasted image 20240104173814.png]]
 
 <div style="page-break-after: always;"></div>
 
