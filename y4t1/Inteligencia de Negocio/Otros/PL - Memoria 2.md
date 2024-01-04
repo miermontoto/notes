@@ -1,15 +1,20 @@
 <br><br><br><br><br><br><br><br><br><br><br><br>
-# Memoria de sesiones de Prácticas de Laboratorio  (1-4)
+# Memoria de sesiones de Prácticas de Laboratorio (5-8)
 Juan Francisco Mier Montoto
 *Inteligencia de Negocio, EPI Gijón 23-24*
 
 <div style="page-break-after: always;"></div>
 
 # Índice
+
 - **Práctica 5**
 - **Práctica 6**
 - **Práctica 7**
 - **Práctica 8**
+	- Preparación del código
+	- Tareas
+
+<div style="page-break-after: always;"></div>
 
 # Práctica 5
 Para la práctica, se crea una cuenta en la edición "Community" de Databricks como especificado.
@@ -86,4 +91,27 @@ Se escogen tres modelos diferentes para contrastar resultados:
 - Otro modelo *bert* (Bidirectional Encoder Representations from Transformers) entrenado también sobre *Squad v2*, más actualizado.
 - Un último modelo totalmente diferente, que no utiliza ninguna derivación de *bert*/*robert*/*berta* ni está entrenado sobre *squad* ni sus derivados.
 
-![[_resources/Pasted image 20240104004444.png]]
+![[_resources/Pasted image 20240104005135.png]]
+
+### 4. Evaluar sobre el dataset elegido y hacer una comparativa de los modelos
+#### Evaluación
+A la hora de evaluar, primero se ejecuta una batería de tests compuestas de muestras aleatorias de los conjuntos escogidos frente a todos los modelos.
+
+![[_resources/Pasted image 20240104010628.png]]
+
+Con las preguntas resumidas en un array, se prueban los modelos:
+![[_resources/Pasted image 20240104010718.png]]
+
+#### Comparativa
+Lo primero de todo y lo más obvio, es que el modelo `splinter-base` no sirve para las tareas (de la manera en la que estamos evaluando).
+Lo segundo, es que el conjunto *Dolly 15k* espera respuestas que, por lo general, son demasiado largas para que los modelos escojan la respuesta correcta.
+
+Analizando los dos modelos tipo *BERT* sobre el dataset tradicional *Squad*, sus respuestas son muy similares (si no iguales) la mayor parte de las veces:
+![[_resources/Pasted image 20240104011247.png]]
+
+En algunos casos, sin embargo, `deberta-v3` devuelve respuestas más acertadas y con mayor `confidence` que el modelo por defecto:
+![[_resources/Pasted image 20240104011412.png]]
+
+De este análisis, se deduce, que el segundo modelo es el mejor *para la tarea que se está evaluando*.
+
+### 5. Elegir el mejor modelo y crear una demo para desplegarlo
