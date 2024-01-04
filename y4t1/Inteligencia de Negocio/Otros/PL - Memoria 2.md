@@ -113,7 +113,6 @@ for regressor in regressors:
 **Resultados**
 *LinearRegression*
 ![[_resources/Pasted image 20240104203307.png]]
-<div style="page-break-after: always;"></div>
 
 *RandomForestRegressor*
 ![[_resources/Pasted image 20240104203337.png]]
@@ -121,6 +120,10 @@ for regressor in regressors:
 **Análisis**
 A primera vista, el regresor de *RandomForest* funciona de manera ligeramente mejor que el regresor lineal, con $r^2$ ligeramente superiores y con $RMSE$ ligeramente inferiores.
 Independientemente de esto, los resultados son, por lo general, malos, con valores de $r^2$ inválidos para cualquier análisis serio fuera de demostraciones de juguete como estas.
+
+<div style="page-break-after: always;"></div>
+
+
 # Práctica 6
 ## Reglas de asociación
 ### Código
@@ -369,6 +372,8 @@ display(rules.sort_values(by=['lift'], ascending=False).head(10))
 #### 2. Visualice un grafo con las reglas más relevantes
 ![[_resources/Pasted image 20240104200751.png]]
 
+El gráfico es interactivo: al hacer click encima de alguna de las reglas, se imprime información en el notebook.
+![[_resources/Pasted image 20240104220913.png]]
 #### 3. Dé un ejemplo de cómo usaría esta información para decidir sobre las bajadas y subidas de precio
 Teniendo en cuenta la tabla del primer punto, por lo general sería buena idea rebajar y subirle el precio a alguna de las siguientes parejas de items:
 - Chocolate y gofres
@@ -378,6 +383,7 @@ Teniendo en cuenta la tabla del primer punto, por lo general sería buena idea r
 
 Por ejemplo, podría hacerse una oferta de harina muy agresiva pero por otro lado subir el precio del azúcar.
 
+---
 ## IA explicativa
 ### Parte 1. Groceries
 
@@ -413,7 +419,7 @@ plt.style.use('fivethirtyeight')
 plt.plot(ts)
 plt.show()
 ```
-![[_resources/Pasted image 20240104110525.png]]
+![[_resources/Pasted image 20240104221437.png]]
 
 ## 1. Determinar los parámetros del modelo ARIMA con los que se obtenga el mejor ajuste en la serie `AirPassengers`
 ```python
@@ -458,7 +464,7 @@ results = mod.fit()
 results.plot_diagnostics(figsize=(16, 16))
 plt.show()
 ```
-![[_resources/Pasted image 20240104110931.png]]
+![[_resources/Pasted image 20240104221344.png]]
 
 Se predicen los valores de la serie:
 ```python
@@ -518,7 +524,7 @@ plt.legend()
 plt.show()
 ```
 ![[_resources/Pasted image 20240104111501.png]]
-![[_resources/Pasted image 20240104111507.png]]
+![[_resources/Pasted image 20240104221219.png]]
 
 ## 3. Ajustar Prophet a los mismos datos y comparar los resultados
 Primero, se ajustan los datos que se van a utilizar como entrenamiento:
@@ -548,12 +554,19 @@ print('Error porcentual medio PROPHET {}'.format(round(rele, 2)))
 
 forecast = forecast.set_index('ds')
 predicciones_prophet = forecast.loc[[str(value).split("T")[0].strip() for value in y_truth.index.values], 'yhat']
+
+plt.plot(ts, label="Actual", color="purple")
+plt.plot(predicciones_arima, label="ARIMA")
+plt.plot(predicciones_hw, label="Holt-Winters")
+plt.plot(predicciones_prophet, label="Prophet")
+plt.legend()
+plt.show()
 ```
 
 Se obtienen los siguientes resultados:
 ![[_resources/Pasted image 20240104190812.png]]
 ![[_resources/Pasted image 20240104190820.png]]
-
+![[_resources/Pasted image 20240104221323.png]]
 ## 4. Ajustar DeepAR a los mismos datos y comparar los resultados
 Primero, se ajustan los datos a DeepAR y se muestran en un gráfico, destacando el límite entre el conjunto de entrenamiento y el de testing:
 ```python
@@ -644,7 +657,7 @@ De la gráfica anterior, podemos realizar un escueto análisis de las prediccion
 Para la práctica 8, existen 5 tareas:
 ### 1. Escoger una tarea dentro de *Natural Language Processing* (NLP)
 Se escoge [*Question Answering*](https://huggingface.co/tasks/question-answering).
-![[_resources/Pasted image 20240103190332.png|500]]
+![[_resources/Pasted image 20240103190332.png]]
 
 ### 2.  Elegir un dataset asociado a dicha tarea:
 A la hora de escoger datasets, hay que tener en cuenta dos puntos clave:
