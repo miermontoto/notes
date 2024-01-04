@@ -557,67 +557,62 @@ from gluonts.dataset.util import to_pandas
 from gluonts.torch.model.deepar import DeepAREstimator
 from gluonts.evaluation.backtest import make_evaluation_predictions
 
-start = pd.to_datetime(data.index[0], dayfirst=True)
-
 # Una variable "target", una fecha "start" y una frecuencia
 training_data = ListDataset(
-    [{"start": start, "target": data.loc[:endTrain,"#Passengers"]}],
-    freq="M"
+    [{"start": ts.index[0], "target": y_train['#Passengers']}], freq="M"
 )
 
 # Train + test
 test_data = ListDataset(
-    [{"start": start, "target": data.loc[:,"#Passengers"]}],
-    freq="M"
+    [{"start": ts.index[0], "target": ts}], freq="M"
 )
 
 to_pandas(test_data[0]).plot()
-plt.axvline(endTrain, color='r')
+plt.axvline(y_train.index[-1], color='r')
 plt.grid(which="both")
 plt.show()
 ```
 ![[_resources/Pasted image 20240104193911.png]]
 
 ```python
+# prediction length: diferencia entre el final del train y el final del dataset
+prediction_length = len(ts) - len(y_train)
 estimator = DeepAREstimator(
 	freq="M",
-	prediction_length=25,
+	prediction_length=prediction_length,
 	cardinality=[1],
-	trainer_kwargs={"max_epochs": 10, "accelerator": "cpu"}
+	trainer_kwargs={"max_epochs": 50, "accelerator": "cpu"}
 )
 predictor = estimator.train(training_data=training_data)
 ```
 
 ```python
-ts_it, forecast_it = make_evaluation_predictions(
-	dataset=test_data,
-	predictor=predictor,
-	num_samples=100
+forecasts_it, ts_it = make_evaluation_predictions(
+    dataset=test_data,  # test dataset
+    predictor=predictor,  # predictor
+    num_samples=100,  # number of sample paths we want for evaluation
 )
-
-forecasts = list(forecast_it)[0]
+forecasts = list(forecasts_it)[0]
 ts = list(ts_it)[0]
-predicciones_deepar = forecasts
 
-print(f"Number of sample paths: {ts.num_samples}")
-print(f"Dimension of samples: {ts.samples.shape}")
-print(f"Start date of the forecast window: {ts.start_date}")
-print(f"Frequency of the time series: {ts.freq}")
+print(f"Number of sample paths: {forecasts.num_samples}")
+print(f"Dimension of samples: {forecasts.samples.shape}")
+print(f"Start date of the forecast window: {forecasts.start_date}")
+print(f"Frequency of the time series: {forecasts.freq}")
 
-plt.plot(ts_copy, label="Actual")
-plt.plot(predicciones_deepar, label="DeepAR")
-plt.legend()
+plot_prob_forecasts(ts, forecasts, 100, endTrain)
 plt.show()
+predicciones_deepar = forecasts.mean
 ```
-
+![[_resources/Pasted image 20240104213510.png]]
 ## 5. Comparar entre sí las predicciones de los modelos (long term)
+### Resultados
 Para compararar todos los modelos, se representan en un gráfico simultáneamente:
 ```python
 plt.plot(ts_copy, label="Actual")
 plt.plot(predicciones_arima, label="ARIMA")
 plt.plot(predicciones_hw, label="Holt-Winters")
 plt.plot(predicciones_prophet, label="Prophet")
-# plt.plot(predicciones_deepar, label="DeepAR")
 plt.axvline(pd.to_datetime(endTrain), lw=1, color='r')
 plt.legend()
 plt.show()
@@ -625,6 +620,12 @@ plt.show()
 
 <div style="page-break-after: always;"></div>
 ![[_resources/Pasted image 20240104211056.png]]
+
+### Análisis
+De la gráfica anterior, podemos realizar un escueto análisis de las predicciones:
+- ARIMA y Holt-Winters realizan predicciones muy similares y además bastante conservadoras, ignorando el trend del número de pasajeros.
+- Prophet analiza mejor el trend global pero se adapt
+
 # Práctica 8
 ## Preparación del código
 - Para la resolución de esta práctica, se escoge Google Colab como entorno de desarrollo, lo que permite ejecuciones con GPU de manera rápida y gratuita.
