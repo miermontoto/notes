@@ -136,6 +136,12 @@ Analizando los dos modelos tipo *BERT* sobre el dataset tradicional *Squad*, sus
 En algunos casos, sin embargo, `deberta-v3` devuelve respuestas más acertadas y con mayor `confidence` que el modelo por defecto:
 ![[_resources/Pasted image 20240104011412.png]]
 
-De este análisis, se deduce, que el segundo modelo es el mejor *para la tarea que se está evaluando*.
+De este análisis, se deduce, que el segundo modelo, `deberta-v3-base-squad2`, es el mejor *para la tarea que se está evaluando*.
 
 ### 5. Elegir el mejor modelo y crear una demo para desplegarlo
+Después de escoger el mejor modelo, se crea una demo sencilla haciendo uso de la librería *Gradio*.
+
+![[_resources/Pasted image 20240104095304.png]]
+
+A partir de la sencilla demostración anterior, se obtiene una interfaz que permite interactuar libremente con el modelo escogido:
+![[_resources/Pasted image 20240104095336.png]]
