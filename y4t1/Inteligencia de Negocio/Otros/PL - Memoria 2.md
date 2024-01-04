@@ -14,8 +14,6 @@ Juan Francisco Mier Montoto
 		- Parámetros
 		- Preguntas
 	- IA explicativa
-		- Groceries
-		- Wisconsin
 - **Práctica 7**
 - **Práctica 8**
 	- Preparación del código
@@ -385,9 +383,6 @@ Por ejemplo, podría hacerse una oferta de harina muy agresiva pero por otro lad
 
 ---
 ## IA explicativa
-### Parte 1. Groceries
-
-### Parte 2. Wisconsin
 
 
 
