@@ -92,6 +92,7 @@ import datetime
 dateparse = lambda dates: datetime.datetime.strptime(dates, '%Y-%m')
 data = pd.read_csv('AirPassengers.csv', parse_dates=['Month'], index_col='Month',date_parser=dateparse)
 ts = data['#Passengers'] # Serie temporal
+plt.style.use('fivethirtyeight')
 plt.plot(ts)
 plt.show()
 ```
@@ -170,6 +171,8 @@ rele = (np.abs(predicciones_arima - y_truth)/y_truth*100).mean()
 print('Error cuadrático medio ARIMA {}'.format(round(mse, 2)))
 print('Raíz cuadrada de ECM ARIMA {}'.format(round(np.sqrt(mse), 2)))
 print('Error porcentual medio ARIMA {}'.format(round(rele, 2)))
+
+predicciones_arima = pred_uc.predicted_mean[y_truth.index]
 ```
 ![[_resources/Pasted image 20240104111400.png]]
 
@@ -199,7 +202,38 @@ plt.show()
 ![[_resources/Pasted image 20240104111501.png]]
 ![[_resources/Pasted image 20240104111507.png]]
 ## 3. Ajustar Prophet a los mismos datos y comparar los resultados
+Primero, se ajustan los datos que se van a utilizar como entrenamiento:
+```python
+y_train = data[:endTrain]
+ejemplo = pd.DataFrame({"ds": list(y_train.index), "y": [ v[0] for v in y_train.values ]})
+ejemplo.plot(x="ds", y="y") # show training data
+```
+![[_resources/Pasted image 20240104190717.png]]
 
+Después, se realizan las predicciones y se guardan en la variable correspondiente:
+```python
+from prophet import Prophet
+m = Prophet(interval_width=1)
+m.fit(ejemplo)
+forecast = m.predict(
+	m.make_future_dataframe(periods=length, freq='MS')
+)
+
+fig1 = m.plot(forecast[
+    ['ds', 'yhat', 'yhat_lower', 'yhat_upper']
+])
+
+print('Error cuadrático medio PROPHET {}'.format(round(mse, 2)))
+print('Raíz cuadrada de ECM PROPHET {}'.format(round(np.sqrt(mse), 2)))
+print('Error porcentual medio PROPHET {}'.format(round(rele, 2)))
+
+forecast = forecast.set_index('ds')
+predicciones_prophet = forecast.loc[[str(value).split("T")[0].strip() for value in y_truth.index.values], 'yhat']
+```
+
+Se obtienen los siguientes resultados:
+![[_resources/Pasted image 20240104190812.png]]
+![[_resources/Pasted image 20240104190820.png]]
 ## 4. Ajustar DeepAR a los mismos datos y comparar los resultados
 Primero, se ajustan los datos a DeepAR y se muestran en un gráfico, destacando el límite entre el conjunto de entrenamiento y el de testing:
 ```python
@@ -230,11 +264,9 @@ plt.show()
 ![[_resources/Pasted image 20240104113151.png]]
 
 
-## 5. Comparar entre sí las predicciones a largo plazo (1960→1970) de los tres primeros modelos
+## 5. Comparar entre sí las predicciones de los modelos
 
-## 6. (Opcional, fácil) Incluir las predicciones a largo plazo de DeepAR en la comparativa anterior
-
-## 7. (Opcional, difícil) Estudiar el modelo DeepVAR y aplicarlo a una serie bivaluada
+## 6. (opcional)Estudiar el modelo DeepVAR y aplicarlo a una serie bivaluada
 
 <div style="page-break-after: always;"></div>
 
