@@ -52,8 +52,15 @@ df = pipeline.fit(df).transform(df)
 
 
 Para visualizar los datos en los pasos 9 y 10, se ejecuta `display(df)` y se generan visualizaciones nuevas con los parámetros deseados.
-![[_resources/Pasted image 20240104173824.png]]
-![[_resources/Pasted image 20240104173814.png]]
+*Los gráficos son los siguientes (en orden $k$→$1$→$2$→$3$  y $math$ → $read$)*
+![[_resources/newplot.png]] 
+![[_resources/newplot(1).png]]
+![[_resources/newplot(2).png]]
+![[_resources/newplot(3).png]]
+![[_resources/newplot(4).png]]
+![[_resources/newplot(5).png]]
+![[_resources/newplot(6).png]]
+![[_resources/newplot(7).png]]
 
 Para el resto de tareas, se crea un método que admita varios parámetros con el objetivo de reducir el código que se repite y se pueda ejecutar en serie de manera más sencilla:
 ```python
@@ -211,7 +218,7 @@ display(rules.sort_values(by=['lift'], ascending=False).head(10))
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th>id</th>
       <th>antecedents</th>
       <th>consequents</th>
       <th>antecedent support</th>
@@ -358,6 +365,7 @@ display(rules.sort_values(by=['lift'], ascending=False).head(10))
   </tbody>
 </table>
 </div>
+
 #### 2. Visualice un grafo con las reglas más relevantes
 ![[_resources/Pasted image 20240104200751.png]]
 
@@ -570,11 +578,53 @@ plt.show()
 ```
 ![[_resources/Pasted image 20240104193911.png]]
 
+```python
+estimator = DeepAREstimator(
+	freq="M",
+	prediction_length=25,
+	cardinality=[1],
+	trainer_kwargs={"max_epochs": 10, "accelerator": "cpu"}
+)
+predictor = estimator.train(training_data=training_data)
+```
+
+```python
+ts_it, forecast_it = make_evaluation_predictions(
+	dataset=test_data,
+	predictor=predictor,
+	num_samples=100
+)
+
+forecasts = list(forecast_it)[0]
+ts = list(ts_it)[0]
+predicciones_deepar = forecasts
+
+print(f"Number of sample paths: {ts.num_samples}")
+print(f"Dimension of samples: {ts.samples.shape}")
+print(f"Start date of the forecast window: {ts.start_date}")
+print(f"Frequency of the time series: {ts.freq}")
+
+plt.plot(ts_copy, label="Actual")
+plt.plot(predicciones_deepar, label="DeepAR")
+plt.legend()
+plt.show()
+```
 
 ## 5. Comparar entre sí las predicciones de los modelos (long term)
+Para compararar todos los modelos, se representan en un gráfico simultáneamente:
+```python
+plt.plot(ts_copy, label="Actual")
+plt.plot(predicciones_arima, label="ARIMA")
+plt.plot(predicciones_hw, label="Holt-Winters")
+plt.plot(predicciones_prophet, label="Prophet")
+# plt.plot(predicciones_deepar, label="DeepAR")
+plt.axvline(pd.to_datetime(endTrain), lw=1, color='r')
+plt.legend()
+plt.show()
+```
 
 <div style="page-break-after: always;"></div>
-
+![[_resources/Pasted image 20240104211056.png]]
 # Práctica 8
 ## Preparación del código
 - Para la resolución de esta práctica, se escoge Google Colab como entorno de desarrollo, lo que permite ejecuciones con GPU de manera rápida y gratuita.
