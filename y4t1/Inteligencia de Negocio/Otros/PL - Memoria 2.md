@@ -9,6 +9,8 @@ Juan Francisco Mier Montoto
 
 - **Práctica 5**
 - **Práctica 6**
+	- Reglas de asociación
+	- IA explicativa
 - **Práctica 7**
 - **Práctica 8**
 	- Preparación del código
@@ -17,7 +19,7 @@ Juan Francisco Mier Montoto
 <div style="page-break-after: always;"></div>
 
 # Práctica 5
-Para la práctica, se crea una cuenta en la edición "Community" de Databricks como especificado.
+Para la práctica, se crea una cuenta en la edición *Community* de Databricks como especificado.
 
 Se crea una unidad de *compute*:
 ![[_resources/Pasted image 20231025164749.png]]
@@ -46,6 +48,8 @@ df = pipeline.fit(df).transform(df)
 Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones nuevas con los parámetros deseados:
 ![[_resources/Pasted image 20231025172840.png]]
 
+<div style="page-break-after: always;"></div>
+
 # Práctica 6
 ## Reglas de asociación
 
@@ -57,8 +61,28 @@ Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones
 ## IA explicativa
 
 
-# Práctica 7
+<div style="page-break-after: always;"></div>
 
+
+# Práctica 7
+Esta práctica se completa tomando como base el notebook de teoría, tal y como se dice en el enunciado de las prácticas.
+
+## 1. Determinar los parámetros del modelo ARIMA con los que se obtenga el mejor ajuste en la serie `AirPassengers`
+**Validar el modelo en un periodo comprendido entre los años 1958, 1959 y 1960**
+
+## 2. Ajustar el modelo Holt-Winters a esta serie y comparar sus resultados
+
+## 3. Ajustar Prophet a los mismos datos y comparar los resultados
+
+## 4. Ajustar DeepAR a los mismos datos y comparar los resultados
+
+## 5. Comparar entre sí las predicciones a largo plazo (1960→1970) de los tres primeros modelos
+
+## 6. (Opcional, fácil) Incluir las predicciones a largo plazo de DeepAR en la comparativa anterior
+
+## 7. (Opcional, difícil) Estudiar el modelo DeepVAR y aplicarlo a una serie bivaluada
+
+<div style="page-break-after: always;"></div>
 
 # Práctica 8
 ## Preparación del código
@@ -73,7 +97,7 @@ Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones
 Para la práctica 8, existen 5 tareas:
 ### 1. Escoger una tarea dentro de *Natural Language Processing* (NLP)
 Se escoge [*Question Answering*](https://huggingface.co/tasks/question-answering).
-![[_resources/Pasted image 20240103190332.png|700]]
+![[_resources/Pasted image 20240103190332.png|500]]
 
 ### 2.  Elegir un dataset asociado a dicha tarea:
 A la hora de escoger datasets, hay que tener en cuenta dos puntos clave:
