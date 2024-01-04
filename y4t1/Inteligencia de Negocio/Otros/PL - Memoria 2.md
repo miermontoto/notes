@@ -383,6 +383,8 @@ Por ejemplo, podría hacerse una oferta de harina muy agresiva pero por otro lad
 
 ### Parte 2. Wisconsin
 
+
+
 <div style="page-break-after: always;"></div>
 
 
@@ -412,6 +414,7 @@ plt.plot(ts)
 plt.show()
 ```
 ![[_resources/Pasted image 20240104110525.png]]
+
 ## 1. Determinar los parámetros del modelo ARIMA con los que se obtenga el mejor ajuste en la serie `AirPassengers`
 ```python
 import itertools
@@ -516,6 +519,7 @@ plt.show()
 ```
 ![[_resources/Pasted image 20240104111501.png]]
 ![[_resources/Pasted image 20240104111507.png]]
+
 ## 3. Ajustar Prophet a los mismos datos y comparar los resultados
 Primero, se ajustan los datos que se van a utilizar como entrenamiento:
 ```python
@@ -549,6 +553,7 @@ predicciones_prophet = forecast.loc[[str(value).split("T")[0].strip() for value 
 Se obtienen los siguientes resultados:
 ![[_resources/Pasted image 20240104190812.png]]
 ![[_resources/Pasted image 20240104190820.png]]
+
 ## 4. Ajustar DeepAR a los mismos datos y comparar los resultados
 Primero, se ajustan los datos a DeepAR y se muestran en un gráfico, destacando el límite entre el conjunto de entrenamiento y el de testing:
 ```python
@@ -605,6 +610,8 @@ plt.show()
 predicciones_deepar = forecasts.mean
 ```
 ![[_resources/Pasted image 20240104213510.png]]
+DeepAR se ajusta MUY bien a todos los cambios en el número de pasajeros, tanto globales como estacionales, superando por mucho al resto de modelos.
+
 ## 5. Comparar entre sí las predicciones de los modelos (long term)
 ### Resultados
 Para compararar todos los modelos, se representan en un gráfico simultáneamente:
@@ -618,22 +625,20 @@ plt.legend()
 plt.show()
 ```
 
-<div style="page-break-after: always;"></div>
 ![[_resources/Pasted image 20240104211056.png]]
 
 ### Análisis
 De la gráfica anterior, podemos realizar un escueto análisis de las predicciones:
 - ARIMA y Holt-Winters realizan predicciones muy similares y además bastante conservadoras, ignorando el trend del número de pasajeros.
-- Prophet analiza mejor el trend global pero se adapt
+- Prophet analiza mejor el trend global pero se adapta peor a los cambios estacionales normales del conjunto.
+
+<div style="page-break-after: always;"></div>
 
 # Práctica 8
 ## Preparación del código
 - Para la resolución de esta práctica, se escoge Google Colab como entorno de desarrollo, lo que permite ejecuciones con GPU de manera rápida y gratuita.
 - Obviamente, a la hora de preparar el código, se utilizan ejemplos y código de HuggingFace, como Transformers.
 - Para facilitar la ejecución, se utilizan diccionarios de Python para almacenar tanto los modelos como los datasets, para poder probar con mayor facilidad.
-
-**Libererías utilizadas:**
-![[_resources/Pasted image 20240104004142.png]]
 
 ## Tareas
 Para la práctica 8, existen 5 tareas:
@@ -647,7 +652,12 @@ A la hora de escoger datasets, hay que tener en cuenta dos puntos clave:
 - Puesto que la mayoría de modelos están entrenados sobre datasets derivados de *squad*, sería adecuado escoger un conjunto derivado de *squad* y otro que no lo sea, para corroborar que el modelo es capaz de encontrar las respuestas adecuadas en el mayor número de circunstancias.
 
 Para este análisis se escoge el dataset oficial de *[Squad v2](https://huggingface.co/datasets/squad_v2)* y el dataset de Databricks *[Dolly 15k](https://huggingface.co/datasets/databricks/databricks-dolly-**15k**)*.
-![[_resources/Pasted image 20240104004239.png]]
+```python
+from datasets import load_dataset
+squad = load_dataset("squad_v2")
+dolly = load_dataset("databricks/databricks-dolly-15k")
+dolly = dolly.filter(lambda x: len(x['context']) > 0)
+```
 
 Como nota adicional, se filtran y se eliminan todos los elementos que no contienen contexto.
 
@@ -657,16 +667,51 @@ Se escogen tres modelos diferentes para contrastar resultados:
 - Otro modelo *bert* (Bidirectional Encoder Representations from Transformers) entrenado también sobre *Squad v2*, más actualizado.
 - Un último modelo totalmente diferente, que no utiliza ninguna derivación de *bert*/*robert*/*berta* ni está entrenado sobre *squad* ni sus derivados.
 
-![[_resources/Pasted image 20240104005135.png]]
+```python
+default = pipeline("question-answering") # modelo por defecto, fine-tuned para squad v2
+deberta = pipeline("question-answering", model="deepset/deberta-v3-base-squad2")
+splinter = pipeline("question-answering", model="tau/splinter-base")
+
+models = [
+	{'model': default, 'name': "distilbert-distilled"},
+	{'model': deberta, 'name': 'deberta-v3'},
+	{'model': splinter, 'name': "splinter"}
+]
+```
 
 ### 4. Evaluar sobre el dataset elegido y hacer una comparativa de los modelos
 #### Evaluación
 A la hora de evaluar, primero se ejecuta una batería de tests compuestas de muestras aleatorias de los conjuntos escogidos frente a todos los modelos.
 
-![[_resources/Pasted image 20240104010628.png]]
+```python
+import random
+
+def addQuestions(questions):
+	from_squad = squad['train'][random.randint(0, len(squad['train']))]
+	from_dolly = dolly['train'][random.randint(0, len(dolly['train']))]
+	questions.append({'question': from_squad['question'], 'context': from_squad['context'], 'answer': from_squad['answers']['text'][0], 'name': 'SQUAD'})
+	questions.append({'question': from_dolly['instruction'], 'context': from_dolly['context'], 'answer': from_dolly['response'], 'name': 'DOLLY'})
+
+questions = []
+for _ in range(3):
+	addQuestions(questions)
+
+for question in questions:
+	print(f"{question['name']} - Question: {question['question']}")
+```
+![[_resources/Pasted image 20240104214230.png]]
 
 Con las preguntas resumidas en un array, se prueban los modelos:
-![[_resources/Pasted image 20240104010718.png]]
+```python
+for question in questions:
+	print(f"{question['name']} - Expected answer: {question['answer']}")
+	for model in models:
+		model['result'] = model['model'](question = question['question'], context = question['context'])
+		print(f"{question['name']} - {model['name']} result: {model['result']['answer']} (score: {model['result']['score']})")
+	print()
+```
+
+![[_resources/Pasted image 20240104214316.png]]
 
 #### Comparativa
 Lo primero de todo y lo más obvio, es que el modelo `splinter-base` no sirve para las tareas (de la manera en la que estamos evaluando).
@@ -683,7 +728,20 @@ De este análisis, se deduce, que el segundo modelo, `deberta-v3-base-squad2`, e
 ### 5. Elegir el mejor modelo y crear una demo para desplegarlo
 Después de escoger el mejor modelo, se crea una demo sencilla haciendo uso de la librería *Gradio*.
 
-![[_resources/Pasted image 20240104095304.png]]
+```python
+import gradio as gr
+
+def run(question, context):
+	return deberta(question = question, context = context)
+
+demo = gr.Interface(
+	fn=run,
+	inputs=["text", "text"],
+	outputs=["text"],
+)
+
+demo.launch(share=True)
+```
 
 A partir de la sencilla demostración anterior, se obtiene una interfaz que permite interactuar libremente con el modelo escogido:
 ![[_resources/Pasted image 20240104095336.png]]
