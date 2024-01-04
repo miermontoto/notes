@@ -11,6 +11,8 @@ Juan Francisco Mier Montoto
 - **Práctica 6**
 	- Reglas de asociación
 	- IA explicativa
+		- Groceries
+		- Wisconsin
 - **Práctica 7**
 - **Práctica 8**
 	- Preparación del código
@@ -52,14 +54,17 @@ Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones
 
 # Práctica 6
 ## Reglas de asociación
+### 1. ¿Cuáles son las asociaciones más relevantes entre los productos?
 
-### Preguntas
-- **¿Cuáles son las asociaciones más relevantes entre estos productos? Pruebe con diferentes combinaciones de confianza, soporte y lift:**
-- **Visualice un grafo con las reglas más relevantes (en el grafo deben mostrarse más de 10 reglas y menos de 100):**
-- **(Opcional) Dé un ejemplo de cómo usaría esta información para decidir un producto en el que realizar un descuento y un producto asociado a este anterior al que se le pueda elevar el precio y compensar el margen comercial perdido en el descuento:**
+### 2. Visualice un grafo con las reglas más relevantes
+
+### 3. Dé un ejemplo de cómo usaría esta información para decidir sobre las bajadas y subidas de precio
+
 
 ## IA explicativa
+### Parte 1. Groceries
 
+### Parte 2. Wisconsin
 
 <div style="page-break-after: always;"></div>
 
