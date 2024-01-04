@@ -10,6 +10,9 @@ Juan Francisco Mier Montoto
 - **Práctica 5**
 - **Práctica 6**
 	- Reglas de asociación
+		- Código
+		- Parámetros
+		- Preguntas
 	- IA explicativa
 		- Groceries
 		- Wisconsin
@@ -56,6 +59,7 @@ Para visualizar los datos en los pasos 9 y 10, se ejecuta `display(df)` y se gen
 
 # Práctica 6
 ## Reglas de asociación
+### Código
 Antes de realizar análisis, se introduce de manera breve el código que permite realizarlo en primer lugar:
 
 ```python
@@ -90,8 +94,8 @@ df = pd.DataFrame(oht, columns=te.columns_)
 ```
 
 ```python
-frequent_itemsets = apriori(df, min_support=0.1, use_colnames=True) # Minería de ítems frecuentes
-rules = association_rules(frequent_itemsets, metric="lift", min_threshold=1) # Minería de reglas de asociación
+frequent_itemsets = apriori(df, min_support=0.01, use_colnames=True) # Minería de ítems frecuentes
+rules = association_rules(frequent_itemsets, metric="lift", min_threshold=2) # Minería de reglas de asociación
 ```
 
 ```python
@@ -119,13 +123,15 @@ fig.canvas.mpl_connect('pick_event', onclick) # Conectar el evento de clic con l
 plt.show()
 ```
 
-El gráfico resultante del código anterior se ve en la segunda sección.
-### 1. ¿Cuáles son las asociaciones más relevantes entre los productos?
+### Parámetros
+
+### Preguntas
+#### 1. ¿Cuáles son las asociaciones más relevantes entre los productos?
 Para realizar esta tarea, se inyecta un poco de código que muestra (formateado) las diez reglas más relevantes.
 ```python
 # mostrar las asociaciones más relevantes
 display(Markdown('### Reglas de asociación'))
-display(rules.sort_values(by=['confidence'], ascending=False).head(10))
+display(rules.sort_values(by=['lift'], ascending=False).head(10))
 ```
 
 <div>
@@ -160,143 +166,149 @@ display(rules.sort_values(by=['confidence'], ascending=False).head(10))
   </thead>
   <tbody>
     <tr>
-      <th>27</th>
-      <td>(root vegetables)</td>
-      <td>(other vegetables, whole milk)</td>
-      <td>0.298694</td>
-      <td>0.271971</td>
-      <td>0.101544</td>
-      <td>0.339960</td>
-      <td>1.249985</td>
-      <td>0.020308</td>
-      <td>1.103007</td>
-      <td>0.285168</td>
+      <th>10</th>
+      <td>(chocolate)</td>
+      <td>(waffles)</td>
+      <td>0.053444</td>
+      <td>0.047506</td>
+      <td>0.010689</td>
+      <td>0.200000</td>
+      <td>4.210000</td>
+      <td>0.008150</td>
+      <td>1.190618</td>
+      <td>0.805521</td>
     </tr>
     <tr>
-      <th>22</th>
-      <td>(other vegetables, whole milk)</td>
-      <td>(root vegetables)</td>
-      <td>0.271971</td>
-      <td>0.298694</td>
-      <td>0.101544</td>
-      <td>0.373362</td>
-      <td>1.249985</td>
-      <td>0.020308</td>
-      <td>1.119158</td>
-      <td>0.274701</td>
+      <th>11</th>
+      <td>(waffles)</td>
+      <td>(chocolate)</td>
+      <td>0.047506</td>
+      <td>0.053444</td>
+      <td>0.010689</td>
+      <td>0.225000</td>
+      <td>4.210000</td>
+      <td>0.008150</td>
+      <td>1.221362</td>
+      <td>0.800499</td>
     </tr>
     <tr>
-      <th>25</th>
-      <td>(other vegetables)</td>
-      <td>(whole milk, root vegetables)</td>
-      <td>0.494656</td>
-      <td>0.170428</td>
-      <td>0.101544</td>
-      <td>0.205282</td>
-      <td>1.204512</td>
-      <td>0.017241</td>
-      <td>1.043858</td>
-      <td>0.335986</td>
+      <th>15</th>
+      <td>(flour)</td>
+      <td>(sugar)</td>
+      <td>0.050475</td>
+      <td>0.063539</td>
+      <td>0.011876</td>
+      <td>0.235294</td>
+      <td>3.703134</td>
+      <td>0.008669</td>
+      <td>1.224603</td>
+      <td>0.768762</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>(sugar)</td>
+      <td>(flour)</td>
+      <td>0.063539</td>
+      <td>0.050475</td>
+      <td>0.011876</td>
+      <td>0.186916</td>
+      <td>3.703134</td>
+      <td>0.008669</td>
+      <td>1.167807</td>
+      <td>0.779486</td>
     </tr>
     <tr>
       <th>24</th>
-      <td>(whole milk, root vegetables)</td>
-      <td>(other vegetables)</td>
-      <td>0.170428</td>
-      <td>0.494656</td>
-      <td>0.101544</td>
-      <td>0.595819</td>
-      <td>1.204512</td>
-      <td>0.017241</td>
-      <td>1.250292</td>
-      <td>0.204670</td>
+      <td>(processed cheese)</td>
+      <td>(white bread)</td>
+      <td>0.046318</td>
+      <td>0.087292</td>
+      <td>0.013658</td>
+      <td>0.294872</td>
+      <td>3.377987</td>
+      <td>0.009615</td>
+      <td>1.294386</td>
+      <td>0.738156</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>(white bread)</td>
+      <td>(processed cheese)</td>
+      <td>0.087292</td>
+      <td>0.046318</td>
+      <td>0.013658</td>
+      <td>0.156463</td>
+      <td>3.377987</td>
+      <td>0.009615</td>
+      <td>1.130574</td>
+      <td>0.771294</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>(ham)</td>
+      <td>(processed cheese)</td>
+      <td>0.082542</td>
+      <td>0.046318</td>
+      <td>0.011876</td>
+      <td>0.143885</td>
+      <td>3.106438</td>
+      <td>0.008053</td>
+      <td>1.113964</td>
+      <td>0.739094</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>(processed cheese)</td>
+      <td>(ham)</td>
+      <td>0.046318</td>
+      <td>0.082542</td>
+      <td>0.011876</td>
+      <td>0.256410</td>
+      <td>3.106438</td>
+      <td>0.008053</td>
+      <td>1.233823</td>
+      <td>0.711021</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>(other vegetables)</td>
-      <td>(root vegetables)</td>
-      <td>0.494656</td>
-      <td>0.298694</td>
-      <td>0.177553</td>
-      <td>0.358944</td>
-      <td>1.201712</td>
-      <td>0.029803</td>
-      <td>1.093985</td>
-      <td>0.332157</td>
+      <td>(misc. beverages)</td>
+      <td>(bottled water)</td>
+      <td>0.030285</td>
+      <td>0.128266</td>
+      <td>0.011283</td>
+      <td>0.372549</td>
+      <td>2.904503</td>
+      <td>0.007398</td>
+      <td>1.389326</td>
+      <td>0.676185</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>(root vegetables)</td>
-      <td>(other vegetables)</td>
-      <td>0.298694</td>
-      <td>0.494656</td>
-      <td>0.177553</td>
-      <td>0.594433</td>
-      <td>1.201712</td>
-      <td>0.029803</td>
-      <td>1.246021</td>
-      <td>0.239344</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>(butter)</td>
-      <td>(whole milk)</td>
-      <td>0.159739</td>
-      <td>0.537411</td>
-      <td>0.100950</td>
-      <td>0.631970</td>
-      <td>1.175954</td>
-      <td>0.015105</td>
-      <td>1.256934</td>
-      <td>0.178071</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>(whole milk)</td>
-      <td>(butter)</td>
-      <td>0.537411</td>
-      <td>0.159739</td>
-      <td>0.100950</td>
-      <td>0.187845</td>
-      <td>1.175954</td>
-      <td>0.015105</td>
-      <td>1.034607</td>
-      <td>0.323454</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>(other vegetables)</td>
-      <td>(whipped/sour cream)</td>
-      <td>0.494656</td>
-      <td>0.185867</td>
-      <td>0.105701</td>
-      <td>0.213685</td>
-      <td>1.149669</td>
-      <td>0.013761</td>
-      <td>1.035378</td>
-      <td>0.257615</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>(whipped/sour cream)</td>
-      <td>(other vegetables)</td>
-      <td>0.185867</td>
-      <td>0.494656</td>
-      <td>0.105701</td>
-      <td>0.568690</td>
-      <td>1.149669</td>
-      <td>0.013761</td>
-      <td>1.171650</td>
-      <td>0.159905</td>
+      <td>(bottled water)</td>
+      <td>(misc. beverages)</td>
+      <td>0.128266</td>
+      <td>0.030285</td>
+      <td>0.011283</td>
+      <td>0.087963</td>
+      <td>2.904503</td>
+      <td>0.007398</td>
+      <td>1.063241</td>
+      <td>0.752187</td>
     </tr>
   </tbody>
 </table>
 </div>
-### 2. Visualice un grafo con las reglas más relevantes
-![[_resources/Pasted image 20240104194813.png]]
+#### 2. Visualice un grafo con las reglas más relevantes
+![[_resources/Pasted image 20240104200751.png]]
 
-### 3. Dé un ejemplo de cómo usaría esta información para decidir sobre las bajadas y subidas de precio
+#### 3. Dé un ejemplo de cómo usaría esta información para decidir sobre las bajadas y subidas de precio
+Teniendo en cuenta la tabla del primer punto, por lo general sería buena idea rebajar y subirle el precio a alguna de las siguientes parejas de items:
+- Chocolate y gofres
+- Azúcar y harina
+- Pan de molde y lonchas de queso
+- Agua y otras bevidas
 
+Por ejemplo, podría hacerse una oferta de harina muy agresiva pero por otro lado subir el precio del azúcar.
 
 ## IA explicativa
 ### Parte 1. Groceries
