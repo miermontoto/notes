@@ -200,6 +200,34 @@ plt.show()
 ## 3. Ajustar Prophet a los mismos datos y comparar los resultados
 
 ## 4. Ajustar DeepAR a los mismos datos y comparar los resultados
+Primero, se ajustan los datos a DeepAR y se muestran en un gráfico, destacando el límite entre el conjunto de entrenamiento y el de testing:
+```python
+from gluonts.dataset.common import ListDataset
+from gluonts.dataset.util import to_pandas
+from gluonts.torch.model.deepar import DeepAREstimator
+from gluonts.evaluation.backtest import make_evaluation_predictions
+
+start = pd.to_datetime(data.index[0], dayfirst=True)
+
+# Una variable "target", una fecha "start" y una frecuencia
+training_data = ListDataset(
+    [{"start": start, "target": data.loc[:endTrain,"#Passengers"]}],
+    freq="M"
+)
+
+# Train + test
+test_data = ListDataset(
+    [{"start": start, "target": data.loc[:,"#Passengers"]}],
+    freq="M"
+)
+
+to_pandas(test_data[0]).plot()
+plt.axvline(endTrain, color='r')
+plt.grid(which="both")
+plt.show()
+```
+![[_resources/Pasted image 20240104113151.png]]
+
 
 ## 5. Comparar entre sí las predicciones a largo plazo (1960→1970) de los tres primeros modelos
 
