@@ -47,7 +47,8 @@ pipeline = Pipeline(stages=[indexer,encoder])
 df = pipeline.fit(df).transform(df)
 ```
 
-Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones nuevas con los parámetros deseados:
+
+Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones nuevas con los parámetros deseados.
 ![[_resources/Pasted image 20231025172840.png]]
 
 <div style="page-break-after: always;"></div>
@@ -72,11 +73,130 @@ Para visualizar los datos, se ejecuta `display(df)` y se generan visualizaciones
 # Práctica 7
 Esta práctica se completa tomando como base el notebook de teoría, tal y como se dice en el enunciado de las prácticas.
 
+**Lectura inicial del dataset**
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pylab as plt
+# Lectura sin formato
+data = pd.read_csv('AirPassengers.csv')
+print(data.head())
+print('\n Data Types:')
+print(data.dtypes)
+```
+![[_resources/Pasted image 20240104110338.png]]
+
+```python
+import datetime
+dateparse = lambda dates: datetime.datetime.strptime(dates, '%Y-%m')
+data = pd.read_csv('AirPassengers.csv', parse_dates=['Month'], index_col='Month',date_parser=dateparse)
+ts = data['#Passengers'] # Serie temporal
+plt.plot(ts)
+plt.show()
+```
+![[_resources/Pasted image 20240104110525.png]]
 ## 1. Determinar los parámetros del modelo ARIMA con los que se obtenga el mejor ajuste en la serie `AirPassengers`
-**Validar el modelo en un periodo comprendido entre los años 1958, 1959 y 1960**
+```python
+import itertools
+import statsmodels.api as sm
+
+endTrain = '1957-12-31'
+startTest = '1958-01-01'
+y_train = ts[:endTrain]
+p = d = q = range(0, 2)
+pdq = list(itertools.product(p, d, q))
+seasonal_pdq = [(x[0], x[1], x[2], 12) for x in list(itertools.product(p, d, q))]
+```
+
+Para ajustar los hiperparámetros:
+```python
+# Ajuste de hiperparámetros
+mejor = np.inf
+for param in pdq:
+    for param_seasonal in seasonal_pdq:
+        try:
+            mod = sm.tsa.statespace.SARIMAX(y_train,
+                                            order=param,
+                                            seasonal_order=param_seasonal,
+                                            enforce_invertibility=False)
+            results = mod.fit(disp=False)
+            if results.aic < mejor:
+                mejor = results.aic
+                mejores_parametros = [param, param_seasonal]
+        except:
+            continue
+```
+
+Se ajusta el modelo:
+```python
+# Ajuste del modelo
+mod = sm.tsa.statespace.SARIMAX(y_train,
+                                order=mejores_parametros[0],
+                                seasonal_order=mejores_parametros[1],
+                                enforce_invertibility=False)
+results = mod.fit()
+results.plot_diagnostics(figsize=(16, 16))
+plt.show()
+```
+![[_resources/Pasted image 20240104110931.png]]
+
+Se predicen los valores de la serie:
+```python
+# Predicción a múltiples pasos
+pred_uc = results.get_forecast(steps=100)
+pred_ci = pred_uc.conf_int()
+ax = data.plot(label='observed', figsize=(14, 7))
+pred_uc.predicted_mean.plot(ax=ax, label='Forecast')
+ax.fill_between(pred_ci.index,
+                pred_ci.iloc[:, 0],
+                pred_ci.iloc[:, 1], color='k', alpha=.25)
+ax.set_xlabel('Date')
+ax.set_ylabel('# passengers')
+plt.legend()
+plt.show()
+```
+![[_resources/Pasted image 20240104111036.png]]
+
+Se evalúan los resultados de la predicción:
+```python
+# Evaluación de la predicción
+y_truth = data[startTest:]['#Passengers']
+# print(y_truth)
+predicciones_arima = pred_uc.predicted_mean[y_truth.index]
+
+mse = ((predicciones_arima - y_truth) ** 2).mean()
+rele = (np.abs(predicciones_arima - y_truth)/y_truth*100).mean()
+print('Error cuadrático medio ARIMA {}'.format(round(mse, 2)))
+print('Raíz cuadrada de ECM ARIMA {}'.format(round(np.sqrt(mse), 2)))
+print('Error porcentual medio ARIMA {}'.format(round(rele, 2)))
+```
+![[_resources/Pasted image 20240104111400.png]]
 
 ## 2. Ajustar el modelo Holt-Winters a esta serie y comparar sus resultados
+```python
+# Holt-Winters
+from pylab import rcParams
+rcParams['figure.figsize'] = 18, 8
 
+from statsmodels.tsa.api import ExponentialSmoothing
+hw_model = ExponentialSmoothing(
+    y_train, trend='add', seasonal='add', seasonal_periods=12).fit()
+predicciones_hw = hw_model.forecast(12*3)
+
+mse = ((predicciones_hw - y_truth) ** 2).mean()
+rele = (np.abs(predicciones_hw - y_truth)/y_truth*100).mean()
+print('Error cuadrático medio HW {}'.format(round(mse, 2)))
+print('Raíz cuadrada de ECM HW {}'.format(round(np.sqrt(mse), 2)))
+print('Error porcentual medio HW {}'.format(round(rele, 2)))
+
+plt.plot(ts, label="Actual")
+plt.plot(predicciones_arima, label="ARIMA")
+plt.plot(predicciones_hw, label="Holt-Winters")
+plt.legend()
+plt.show()
+```
+![[_resources/Pasted image 20240104111501.png]]
+![[_resources/Pasted image 20240104111507.png]]
 ## 3. Ajustar Prophet a los mismos datos y comparar los resultados
 
 ## 4. Ajustar DeepAR a los mismos datos y comparar los resultados
