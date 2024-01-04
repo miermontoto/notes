@@ -266,7 +266,7 @@ plt.show()
 
 ## 5. Comparar entre sí las predicciones de los modelos
 
-## 6. (opcional)Estudiar el modelo DeepVAR y aplicarlo a una serie bivaluada
+## 6. (opcional) Estudiar el modelo DeepVAR y aplicarlo a una serie bivaluada
 
 <div style="page-break-after: always;"></div>
 
