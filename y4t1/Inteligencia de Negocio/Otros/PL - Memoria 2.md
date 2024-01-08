@@ -383,11 +383,141 @@ Por ejemplo, podría hacerse una oferta de harina muy agresiva pero por otro lad
 
 ---
 ## IA explicativa
+Lo primero de todo es cargar el dataset y preprocesarlo:
+```python
+data = pd.read_csv('bsd/breast-cancer-wisconsin.data', header=None)
+data.columns = [
+    'Id number',
+    'Clump Thickness',
+    'Uniformity of Cell Size',
+    'Uniformity of Cell Shape',
+    'Marginal Adhesion',
+    'Single Epithelial Cell Size',
+    'Bare Nuclei',
+    'Bland Chromatin',
+    'Normal Nucleoli',
+    'Mitoses',
+    'Class'
+]
+data = data.apply(pd.to_numeric, errors='coerce')
+data = data.dropna()
+```
 
+Se entrena un modelo de `GradientBoostingClassifier`:
+```python
+# train test split
+y = data['Class']
+X = data.drop(columns=['Id number', 'Class'])
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=7401)
+
+# fit model by default
+model = GradientBoostingClassifier(random_state=7401)
+model.fit(X_train, y_train)
+
+# evaluate
+score = model.score(X_test, y_test)
+print(score)
+```
+
+... lo que devuelve $0.9532163742690059$.
+
+Para las dos primeras partes, se crea un *Partial Dependence Plot* y se crean los gráficos que se piden:
+```python
+# partial dependence plot
+pdp = PartialDependenceDisplay.from_estimator(
+	model,
+	X_train,
+	features=['Uniformity of Cell Shape', 'Uniformity of Cell Size', 'Bare Nuclei',
+		('Uniformity of Cell Shape', 'Uniformity of Cell Size'),
+		('Uniformity of Cell Shape', 'Bare Nuclei'),
+		('Uniformity of Cell Size', 'Bare Nuclei')
+	],
+	grid_resolution=50
+)
+
+pdp.figure_.subplots_adjust(wspace=0.4, hspace=0.3)
+plt.suptitle('Partial dependence of breast cancer classifier', fontsize=16)
+plt.tight_layout()
+plt.show()
+```
+![[_resources/Pasted image 20240104232655.png]]
+
+Del gráfico anterior, la fila superior son los gráficos que muestran la influencia de las variables individuales y la fila inferior muestra la dependencia del diagnóstico con las combinaciones dos a dos.
+
+Para el tercer punto, se realiza una "explicación LIME" de las 20 primeras instancias del conjunto de test:
+```python
+from lime import lime_tabular
+from sklearn.ensemble import RandomForestClassifier
+
+model = RandomForestClassifier(random_state=7401, n_estimators=100)
+model.fit(X_train, y_train)
+
+explainer = lime_tabular.LimeTabularExplainer(
+	X_train.values,
+	feature_names=X_train.columns,
+	class_names=['Benign', 'Malignant'],
+	mode='classification'
+)
+
+instancias = 20 # <- se piden las 20 primeras instancias!
+exp = explainer.explain_instance(
+	X_test.iloc[instancias],
+	model.predict_proba,
+	num_features=5
+)
+
+for i in range(instancias):
+	exp = explainer.explain_instance(
+		X_test.iloc[i],
+		model.predict_proba,
+		num_features=5
+	)
+	exp.show_in_notebook(show_table=True, show_all=False)
+```
+
+El código anterior resulta en los siguientes gráficos:
+![[_resources/Pasted image 20240104232941.png]]
+![[_resources/Pasted image 20240104232949.png]]
+![[_resources/Pasted image 20240104232956.png]]
+![[_resources/Pasted image 20240104233002.png]]
+![[_resources/Pasted image 20240104233030.png]]
+![[_resources/Pasted image 20240104233053.png]]
+![[_resources/Pasted image 20240104233120.png]]
+
+Para la parte opcional, se genera un gráfico SHAP resumiendo la importancia de cada variable para el diagnóstico:
+```python
+import shap
+explainer = shap.TreeExplainer(model)
+shap_values = explainer.shap_values(X_train)
+shap.summary_plot(shap_values[1], X_train)
+```
+![[_resources/Pasted image 20240104233220.png]]
+
+Para el siguietne apartado opcional, se prepara este código:
+```python
+shap.initjs()
+
+# Instancia benigna
+shap.force_plot(
+	explainer.expected_value[1],
+	shap_values[1][instancias],
+	X_test.iloc[instancias],
+	feature_names=X_test.columns
+)
+
+# Instancia maligna
+shap.force_plot(
+	explainer.expected_value[1],
+	shap_values[1][instancias+1],
+	X_test.iloc[instancias+1],
+	feature_names=X_test.columns
+)
+```
+Pero no funciona debido a un error de compatibilidad desconocido entre la librería, el Javascript y el Jupyter Notebook en el que se desarrolló esta práctica :(
+Puesto que no se puede completar el desarrollo de esta parte opcional, tampoco se consigue la siguiente, que debería ser muy similar.
 
 
 <div style="page-break-after: always;"></div>
-
 
 # Práctica 7
 Esta práctica se completa tomando como base el notebook de teoría, tal y como se dice en el enunciado de las prácticas.
