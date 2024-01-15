@@ -87,7 +87,7 @@
 
 ### Publicación orientada al contenido
 **Definición:** las empresas de publicidad orientadas al contenido le ofrecen a los sitios web la posibilidad de obtener ingresos a través de la publicidad incrustada en sus páginas.
-**Recibe ingresos por:**  cobros por tener publicidad de terceros.
+**Recibe ingresos por:** cobros por tener publicidad de terceros.
 
 *ej: Google AdSense*
 
