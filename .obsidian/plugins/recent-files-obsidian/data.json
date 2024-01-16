@@ -1,12 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "Frameworks Web",
-      "path": "y4t1/Tecnologías Web/Frameworks Web.md"
+      "basename": "JSF",
+      "path": "y4t1/Tecnologías Web/2. Tecnologías Server-Side (MVC-JSF)/JSF.md"
+    },
+    {
+      "basename": "Servlets",
+      "path": "y4t1/Tecnologías Web/1. Tecnologías Server-Side (JEE)/Servlets.md"
+    },
+    {
+      "basename": "JSP",
+      "path": "y4t1/Tecnologías Web/1. Tecnologías Server-Side (JEE)/JSP.md"
+    },
+    {
+      "basename": "Legislación",
+      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Legislación.md"
+    },
+    {
+      "basename": "Seguridad",
+      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Seguridad.md"
+    },
+    {
+      "basename": "Ajax",
+      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Ajax.md"
+    },
+    {
+      "basename": "Ética",
+      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Ética.md"
     },
     {
       "basename": "Modelos de Negocio",
       "path": "y4t1/Tecnologías Web/Modelos de Negocio.md"
+    },
+    {
+      "basename": "Frameworks Web",
+      "path": "y4t1/Tecnologías Web/Frameworks Web.md"
     },
     {
       "basename": "6. Mensajería instantánea",
@@ -171,34 +199,6 @@
     {
       "basename": "Pasted image 20231031183509",
       "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031183509.png"
-    },
-    {
-      "basename": "Pasted image 20231031183651",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031183651.png"
-    },
-    {
-      "basename": "Pasted image 20231031183729",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031183729.png"
-    },
-    {
-      "basename": "Pasted image 20231031183944",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031183944.png"
-    },
-    {
-      "basename": "Pasted image 20231031184736",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031184736.png"
-    },
-    {
-      "basename": "Pasted image 20231031185238",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031185238.png"
-    },
-    {
-      "basename": "Pasted image 20231031185331",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031185331.png"
-    },
-    {
-      "basename": "Pasted image 20231031185703",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031185703.png"
     }
   ],
   "omittedPaths": [],
