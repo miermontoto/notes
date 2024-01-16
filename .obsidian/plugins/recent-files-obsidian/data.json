@@ -1,16 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "JSF",
-      "path": "y4t1/Tecnologías Web/2. Tecnologías Server-Side (MVC-JSF)/JSF.md"
+      "basename": "Ética",
+      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Ética.md"
     },
     {
-      "basename": "Servlets",
-      "path": "y4t1/Tecnologías Web/1. Tecnologías Server-Side (JEE)/Servlets.md"
-    },
-    {
-      "basename": "JSP",
-      "path": "y4t1/Tecnologías Web/1. Tecnologías Server-Side (JEE)/JSP.md"
+      "basename": "Modelos de Negocio",
+      "path": "y4t1/Tecnologías Web/Modelos de Negocio.md"
     },
     {
       "basename": "Legislación",
@@ -21,16 +17,28 @@
       "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Seguridad.md"
     },
     {
+      "basename": "Despliegue de aplicaciones web",
+      "path": "y4t1/Tecnologías Web/Despliegue de aplicaciones web.md"
+    },
+    {
+      "basename": "JSF",
+      "path": "y4t1/Tecnologías Web/2. Tecnologías Server-Side (MVC-JSF)/JSF.md"
+    },
+    {
+      "basename": "Patrones",
+      "path": "y4t1/Tecnologías Web/2. Tecnologías Server-Side (MVC-JSF)/Patrones.md"
+    },
+    {
+      "basename": "Servlets",
+      "path": "y4t1/Tecnologías Web/1. Tecnologías Server-Side (JEE)/Servlets.md"
+    },
+    {
+      "basename": "JSP",
+      "path": "y4t1/Tecnologías Web/1. Tecnologías Server-Side (JEE)/JSP.md"
+    },
+    {
       "basename": "Ajax",
       "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Ajax.md"
-    },
-    {
-      "basename": "Ética",
-      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Ética.md"
-    },
-    {
-      "basename": "Modelos de Negocio",
-      "path": "y4t1/Tecnologías Web/Modelos de Negocio.md"
     },
     {
       "basename": "Frameworks Web",
@@ -149,10 +157,6 @@
       "path": "y4t1/Seguridad/5. Seguridad perimetral/_resources/Ejercicio Cortafuegos 2023-12-14 16.31.09.excalidraw.md"
     },
     {
-      "basename": "Despliegue de aplicaciones web",
-      "path": "y4t1/Tecnologías Web/Despliegue de aplicaciones web.md"
-    },
-    {
       "basename": "Cortafuegos",
       "path": "y4t1/Seguridad/5. Seguridad perimetral/Cortafuegos.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "IA explicable",
       "path": "y4t1/Inteligencia de Negocio/CEX/Bloque 2/IA explicable.md"
-    },
-    {
-      "basename": "Pasted image 20231031183509",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031183509.png"
     }
   ],
   "omittedPaths": [],

@@ -13,7 +13,7 @@
 - **Servidor dependiente del proyecto**
 	- El proyecto crea un archivo ejecutable que contiene todos los datos del proyecto y además tiene un servidor integrado.
 	- El framework integra toda la gestión que tiene que hacer un servidor de aplicaciones.
-	- En estos casos, el ejecutable del proyecto se incluye como un servicio en la máquina para que se pueda programar su arranque automático y se gestione la ejecución en segundo palno.
+	- En estos casos, el ejecutable del proyecto se incluye como un servicio en la máquina para que se pueda programar su arranque automático y se gestione la ejecución en segundo plano.
 	- Principalmente utilizando para Python y Node.
 
 

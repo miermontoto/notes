@@ -27,7 +27,7 @@ Se lanzó en 2004, pero se hizo más popular tras soportar HTML5 y WebSockets.
 </navigation−rule>
 
 <navigation−rule>
-	<from−view−i d>∗</from−view−id>
+	<from−view−id>∗</from−view−id>
 	<navigation−case>
 		<from−outcome>error</from−outcome>
 		<to−view−id>/error</to−view−id>
