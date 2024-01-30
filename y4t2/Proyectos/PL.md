@@ -1,0 +1,1 @@
+**Idea:** *API Park-and-Go* - consiste en poder alquilar plazas de garaje por horas en parkings particulares.

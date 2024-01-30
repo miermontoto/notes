@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "PL",
+      "path": "y4t2/Proyectos/PL.md"
+    },
+    {
       "basename": "Tema 1",
       "path": "y4t2/Proyectos/Tema 1.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Minería y paradigmas",
       "path": "y4t1/Inteligencia de Negocio/CEX/Bloque 1/Minería y paradigmas.md"
-    },
-    {
-      "basename": "Regulación de la ID-e y los servicios de confianza",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Regulación de la ID-e y los servicios de confianza.md"
     }
   ],
   "omittedPaths": [],
