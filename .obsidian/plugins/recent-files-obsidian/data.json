@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Tema 1",
+      "path": "y4t2/Proyectos/Tema 1.md"
+    },
+    {
+      "basename": "PL1 - Pruebas triángulo",
+      "path": "y4t2/Pruebas/PL1 - Pruebas triángulo.md"
+    },
+    {
       "basename": "Ética",
       "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Ética.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Regulación de la ID-e y los servicios de confianza",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Regulación de la ID-e y los servicios de confianza.md"
-    },
-    {
-      "basename": "Series temporales",
-      "path": "y4t1/Inteligencia de Negocio/CEX/Bloque 2/Series temporales.md"
-    },
-    {
-      "basename": "IA explicable",
-      "path": "y4t1/Inteligencia de Negocio/CEX/Bloque 2/IA explicable.md"
     }
   ],
   "omittedPaths": [],
