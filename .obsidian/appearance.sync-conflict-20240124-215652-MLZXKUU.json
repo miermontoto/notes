@@ -1,0 +1,13 @@
+{
+  "accentColor": "#ffffff",
+  "theme": "obsidian",
+  "cssTheme": "Buena Vista",
+  "interfaceFontFamily": "SF Pro Display",
+  "textFontFamily": "",
+  "monospaceFontFamily": "JetBrains Mono",
+  "baseFontSize": 15,
+  "enabledCssSnippets": [
+    "math"
+  ],
+  "nativeMenus": false
+}

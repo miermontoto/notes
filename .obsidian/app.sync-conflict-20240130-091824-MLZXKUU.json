@@ -1,0 +1,23 @@
+{
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "readableLineLength": false,
+  "strictLineBreaks": false,
+  "showFrontmatter": false,
+  "foldHeading": true,
+  "showLineNumber": false,
+  "showIndentGuide": true,
+  "autoPairMarkdown": true,
+  "newFileLocation": "current",
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "./_resources",
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "spellcheck": false,
+  "spellcheckLanguages": null
+}
