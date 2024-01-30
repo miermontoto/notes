@@ -14,4 +14,5 @@ El *tiempo spare* es el tiempo en el que el trabajador está presente pero no es
 | El equipo es temporal | El equipo permanece           |
 | Mayor riesgo          | Riesgo limitado               |
 | *ej: una película*                      | *ej: una revista*                              |
-**Consultaría:** aconsejar a una organización sobre procedimientos, políticas y métodos.
+**Consultoría:** aconsejar a una organización sobre procedimientos, políticas y métodos.
+**Auditoría:** revisión que retransmite la confianza o la opinión acerca de la fiabilidad con respecto a una normativa o un estándar.
