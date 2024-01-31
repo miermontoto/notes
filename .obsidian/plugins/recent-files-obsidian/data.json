@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "1. Introducción",
+      "path": "y4t2/Pruebas/1. Introducción.md"
+    },
+    {
+      "basename": "PL1 - Pruebas triángulo",
+      "path": "y4t2/Pruebas/PL1 - Pruebas triángulo.md"
+    },
+    {
       "basename": "PL",
       "path": "y4t2/Proyectos/PL.md"
     },
     {
       "basename": "Tema 1",
       "path": "y4t2/Proyectos/Tema 1.md"
-    },
-    {
-      "basename": "PL1 - Pruebas triángulo",
-      "path": "y4t2/Pruebas/PL1 - Pruebas triángulo.md"
     },
     {
       "basename": "Ética",
@@ -195,10 +199,6 @@
     {
       "basename": "1. Usabilidad",
       "path": "y2t2/CPM/1. Usabilidad.md"
-    },
-    {
-      "basename": "Minería y paradigmas",
-      "path": "y4t1/Inteligencia de Negocio/CEX/Bloque 1/Minería y paradigmas.md"
     }
   ],
   "omittedPaths": [],
