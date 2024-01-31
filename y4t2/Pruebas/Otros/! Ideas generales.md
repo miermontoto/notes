@@ -1,0 +1,7 @@
+- Trazabilidad: Situación ←→ Caso de Prueba
+- Cada situación se cubre una sola vez
+- Salida esperada antes de ejecutar
+- Especificación → no hay dudas
+- NO combinar situaciones inválidas
+	- Si hay fallo → no se sabe por qué
+- **Falsos positivos**
