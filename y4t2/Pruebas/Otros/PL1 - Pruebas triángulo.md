@@ -9,7 +9,7 @@
 		- Negativos
 			- 1ª posición
 			- 2ª posición
-	- Letras
+		- Letras
 	- Caracteres raros
 	- Campo vacío
 	- Ceros
