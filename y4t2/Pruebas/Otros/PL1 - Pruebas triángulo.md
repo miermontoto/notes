@@ -1,4 +1,4 @@
-## Situaciones
+## Situaciones de Prueba
 - **Validación de datos**
 	- Números
 		- Naturales
