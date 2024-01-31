@@ -7,6 +7,8 @@
 			- Por aproximación
 			- Por truncamiento
 		- Negativos
+			- 1ª posición
+			- 2ª posición
 	- Letras
 	- Caracteres raros
 	- Campo vacío
@@ -15,7 +17,7 @@
 	- Equilátero
 	- Isósceles
 	- Escaleno
-	- Inválido
+	- Desigualdad
 		- Mayor
 			- $a+b>c$
 			- $b+c>a$
@@ -37,13 +39,13 @@
 ![[Desigualdad_del_triángulo.svg|250]]
 ## Casos de prueba
 
-| CASO | Naturales | Decimales | Decimales (separación) | Decimales (aproximación) | decimales (truncamiento) | Negativo | Letras | Raros | Vacío | Cero | Equilátero | Isósceles | Escaleno | Desigualdad  (3º lado) | Desigualdad (1º lado) | Desigualdad (2º lado) | UF short | UF int | UF long | OF short | OF int | OF long | esperada | resultado |
+| CASO | Naturales | Decimales | Decimales (separación) | Decimales (aproximación) | decimales (truncamiento) | Negativo | Letras | Raros | Vacío | Cero | Equilátero | Isósceles | Escaleno | Desigualdad  (mayor 1) | Desigualdad  (mayor 2) | Desigualdad (mayor 3) | UF short | UF int | UF long | OF short | OF int | OF long | esperada | resultado |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | 2, 2, 3 | X |  |  |  |  |  |  |  |  |  |  | X |  |  |  |  |  |  |  |  |  |  | isósceles | <mark style="background: #BBFABBA6;">ok</mark> |
 | 2.2, 2.2, 2.2 |  | X |  |  |  |  |  |  |  |  | X |  |  |  |  |  |  |  |  |  |  |  | equilátero | <mark style="background: #BBFABBA6;">ok</mark> |
 | 2,2, 2,2, 2,2 |  |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | inválido | <mark style="background: #BBFABBA6;">ok</mark> |
-| 2.9999999999999999, 3, 3 |  |  |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | isósceles | <mark style="background: #FF5582A6;">MAL</mark> (equilátero) |
-| 2.0000000000000001, 2, 2 |  |  |  |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | isósceles | <mark style="background: #FF5582A6;">MAL</mark> (equilátero) |
+| 2.99, 3, 3 |  |  |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | isósceles | <mark style="background: #BBFABBA6;">ok</mark> |
+| 2.01, 2, 2 |  |  |  |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | isósceles | <mark style="background: #FF5582A6;">MAL</mark> (equilátero) |
 | -1, 3, 4 |  |  |  |  |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | inválido | <mark style="background: #BBFABBA6;">ok</mark> |
 | a, 2, 2 |  |  |  |  |  |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | inválido | <mark style="background: #FF5582A6;">MAL</mark> (crash) |
 | ø, 3, 4 |  |  |  |  |  |  |  | X |  |  |  |  |  |  |  |  |  |  |  |  |  |  | inválido | <mark style="background: #BBFABBA6;">ok</mark> |
