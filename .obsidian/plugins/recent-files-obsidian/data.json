@@ -1,20 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "1. Introducción",
-      "path": "y4t2/Pruebas/1. Introducción.md"
+      "basename": "PL1 - Pruebas triángulo",
+      "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
     },
     {
-      "basename": "PL1 - Pruebas triángulo",
-      "path": "y4t2/Pruebas/PL1 - Pruebas triángulo.md"
+      "basename": "! Ideas generales",
+      "path": "y4t2/Pruebas/Otros/! Ideas generales.md"
+    },
+    {
+      "basename": "1. Introducción",
+      "path": "y4t2/Pruebas/CEX/1. Introducción.md"
     },
     {
       "basename": "PL",
-      "path": "y4t2/Proyectos/PL.md"
+      "path": "y4t2/Proyectos/Otros/PL.md"
     },
     {
       "basename": "Tema 1",
-      "path": "y4t2/Proyectos/Tema 1.md"
+      "path": "y4t2/Proyectos/CEX/Tema 1.md"
     },
     {
       "basename": "Ética",
@@ -195,10 +199,6 @@
     {
       "basename": "2. GUIDE",
       "path": "y2t2/CPM/2. GUIDE.md"
-    },
-    {
-      "basename": "1. Usabilidad",
-      "path": "y2t2/CPM/1. Usabilidad.md"
     }
   ],
   "omittedPaths": [],

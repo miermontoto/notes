@@ -1,16 +1,15 @@
-- Validación de datos
+## Agrupación de pruebas
+- **Validación de datos**
 	- Números
 		- Naturales
 		- Decimales
 		- Negativos
+		- Decimales
+			- Separación
 	- Letras
 	- Caracteres raros
 	- Campo vacío
-
-- Números decimales
-	- Separación
-
-- Tipología triángulo válido
+- **Tipología triángulo válido**
 	- Equilátero
 	- Isósceles
 	- Escaleno
