@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "PL1 - Pruebas triángulo",
-      "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
+      "basename": "1. Conceptos",
+      "path": "y4t2/Proyectos/CEX/1. Conceptos.md"
     },
     {
       "basename": "! Ideas generales",
       "path": "y4t2/Pruebas/Otros/! Ideas generales.md"
+    },
+    {
+      "basename": "PL1 - Pruebas triángulo",
+      "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
+    },
+    {
+      "basename": "Desigualdad_del_triángulo",
+      "path": "Desigualdad_del_triángulo.svg"
     },
     {
       "basename": "1. Introducción",
@@ -15,10 +23,6 @@
     {
       "basename": "PL",
       "path": "y4t2/Proyectos/Otros/PL.md"
-    },
-    {
-      "basename": "Tema 1",
-      "path": "y4t2/Proyectos/CEX/Tema 1.md"
     },
     {
       "basename": "Ética",
@@ -195,10 +199,6 @@
     {
       "basename": "Object Relational Mapping (ORM)",
       "path": "y4t1/Tecnologías Web/4. Servicios web/Object Relational Mapping (ORM).md"
-    },
-    {
-      "basename": "2. GUIDE",
-      "path": "y2t2/CPM/2. GUIDE.md"
     }
   ],
   "omittedPaths": [],

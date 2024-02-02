@@ -1,4 +1,7 @@
 {
   "accentColor": "",
-  "cssTheme": "Dawn"
+  "cssTheme": "",
+  "interfaceFontFamily": "Zed Sans",
+  "baseFontSize": 17,
+  "textFontFamily": "SF Pro Display"
 }
