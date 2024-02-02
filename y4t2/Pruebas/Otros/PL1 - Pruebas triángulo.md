@@ -5,7 +5,7 @@
 		- Decimales
 			- Separación
 			- Por aproximación
-			- Por truncamiento
+				- Por truncamiento
 		- Negativos
 			- 1ª posición
 			- 2ª posición
