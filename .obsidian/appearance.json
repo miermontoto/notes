@@ -2,6 +2,10 @@
   "accentColor": "",
   "cssTheme": "",
   "interfaceFontFamily": "Zed Sans",
-  "baseFontSize": 12,
-  "textFontFamily": "SF Pro Display"
+  "baseFontSize": 20,
+  "textFontFamily": "SF Pro Display",
+  "baseFontSizeAction": false,
+  "enabledCssSnippets": [
+    "math"
+  ]
 }
