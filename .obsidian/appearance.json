@@ -1,8 +1,8 @@
 {
-  "accentColor": "",
+  "accentColor": "#334bff",
   "cssTheme": "",
   "interfaceFontFamily": "Zed Sans",
-  "baseFontSize": 20,
+  "baseFontSize": 17,
   "textFontFamily": "SF Pro Display",
   "baseFontSizeAction": false,
   "enabledCssSnippets": [

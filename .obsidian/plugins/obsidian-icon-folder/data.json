@@ -5,6 +5,8 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiHealthTestTubeFill",
+      "FasSolidPeopleCarryBox",
       "RiCommunicationMessage2Fill",
       "RiUserVoiceFill",
       "FasBusinessTime",
@@ -12,9 +14,7 @@
       "SiOpenai",
       "RiComputerLine",
       "RiFilePaperFill",
-      "RiDeviceServerLine",
-      "FasEthernet",
-      "FasNetwork-wired"
+      "RiDeviceServerLine"
     ],
     "recentlyUsedIconsSize": 10,
     "rules": [],
@@ -55,5 +55,7 @@
   "y4t1/Gestión de Tecnologías de la Información": "RiCommunicationMessage2Fill",
   "y3t2/Sistemas de Información": "RiFilePaperFill",
   "y3t1/Programación Concurrente y Paralela": "FasChartLine",
-  "y3t1/Ingeniería de Software": "FarComments"
+  "y3t1/Ingeniería de Software": "FarComments",
+  "y4t2/Proyectos": "FasSolidPeopleCarryBox",
+  "y4t2/Pruebas": "RiHealthTestTubeFill"
 }

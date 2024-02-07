@@ -1,20 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "PL1 - Pruebas triángulo",
-      "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
-    },
-    {
       "basename": "1. Conceptos",
       "path": "y4t2/Proyectos/CEX/1. Conceptos.md"
     },
     {
-      "basename": "! Ideas generales",
-      "path": "y4t2/Pruebas/Otros/! Ideas generales.md"
+      "basename": "Pasted image 20240206155447",
+      "path": "y4t2/Proyectos/CEX/_resources/Pasted image 20240206155447.png"
+    },
+    {
+      "basename": "Pasted image 20240206155403",
+      "path": "y4t2/Proyectos/CEX/_resources/Pasted image 20240206155403.png"
+    },
+    {
+      "basename": "Pasted image 20240206155312",
+      "path": "y4t2/Proyectos/CEX/_resources/Pasted image 20240206155312.png"
+    },
+    {
+      "basename": "1.Concepto de proyecto",
+      "path": "y4t2/Proyectos/CEX/_resources/1.Concepto de proyecto.pdf"
+    },
+    {
+      "basename": "Pasted image 20240202154540",
+      "path": "y4t2/Proyectos/CEX/_resources/Pasted image 20240202154540.png"
     },
     {
       "basename": "Desigualdad_del_triángulo",
-      "path": "Desigualdad_del_triángulo.svg"
+      "path": "y4t2/Pruebas/Otros/_resources/Desigualdad_del_triángulo.svg"
+    },
+    {
+      "basename": "PL1 - Pruebas triángulo",
+      "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
+    },
+    {
+      "basename": "! Ideas generales",
+      "path": "y4t2/Pruebas/Otros/! Ideas generales.md"
     },
     {
       "basename": "1. Introducción",
@@ -179,26 +199,6 @@
     {
       "basename": "Ejercicio Cortafuegos 2023-12-14 16.31.09.excalidraw",
       "path": "y4t1/Seguridad/5. Seguridad perimetral/_resources/Ejercicio Cortafuegos 2023-12-14 16.31.09.excalidraw.md"
-    },
-    {
-      "basename": "Cortafuegos",
-      "path": "y4t1/Seguridad/5. Seguridad perimetral/Cortafuegos.md"
-    },
-    {
-      "basename": "Minería de excepciones (Anomalías)",
-      "path": "y4t1/Inteligencia de Negocio/CEX/Bloque 2/Minería de excepciones (Anomalías).md"
-    },
-    {
-      "basename": "3. Prácticas de Gestión Generales en ITIL4",
-      "path": "y4t1/Gestión de Tecnologías de la Información/3. Prácticas de Gestión Generales en ITIL4.md"
-    },
-    {
-      "basename": "React",
-      "path": "y4t1/Tecnologías Web/React.md"
-    },
-    {
-      "basename": "Object Relational Mapping (ORM)",
-      "path": "y4t1/Tecnologías Web/4. Servicios web/Object Relational Mapping (ORM).md"
     }
   ],
   "omittedPaths": [],

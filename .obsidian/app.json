@@ -1,4 +1,7 @@
 {
   "readableLineLength": false,
-  "spellcheck": false
+  "spellcheck": false,
+  "attachmentFolderPath": "./_resources",
+  "newLinkFormat": "absolute",
+  "alwaysUpdateLinks": true
 }
