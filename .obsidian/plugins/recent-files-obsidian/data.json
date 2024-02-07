@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2. Técnicas (clases de equivalencia)",
+      "path": "y4t2/Pruebas/CEX/2. Técnicas (clases de equivalencia).md"
+    },
+    {
+      "basename": "1. Introducción",
+      "path": "y4t2/Pruebas/CEX/1. Introducción.md"
+    },
+    {
       "basename": "1. Conceptos",
       "path": "y4t2/Proyectos/CEX/1. Conceptos.md"
     },
@@ -35,10 +43,6 @@
     {
       "basename": "! Ideas generales",
       "path": "y4t2/Pruebas/Otros/! Ideas generales.md"
-    },
-    {
-      "basename": "1. Introducción",
-      "path": "y4t2/Pruebas/CEX/1. Introducción.md"
     },
     {
       "basename": "PL",
@@ -195,10 +199,6 @@
     {
       "basename": "Ejercicio IPsec 2023-11-02 15.31.35.excalidraw",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/_resources/Ejercicio IPsec 2023-11-02 15.31.35.excalidraw.md"
-    },
-    {
-      "basename": "Ejercicio Cortafuegos 2023-12-14 16.31.09.excalidraw",
-      "path": "y4t1/Seguridad/5. Seguridad perimetral/_resources/Ejercicio Cortafuegos 2023-12-14 16.31.09.excalidraw.md"
     }
   ],
   "omittedPaths": [],
