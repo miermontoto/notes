@@ -5,6 +5,18 @@
       "path": "y4t2/Pruebas/CEX/2. Técnicas (clases de equivalencia).md"
     },
     {
+      "basename": "PL2 - Iteraciones",
+      "path": "y4t2/Pruebas/Otros/PL2 - Iteraciones.md"
+    },
+    {
+      "basename": "PL1 - Pruebas triángulo",
+      "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
+    },
+    {
+      "basename": "! Ideas generales",
+      "path": "y4t2/Pruebas/Otros/! Ideas generales.md"
+    },
+    {
       "basename": "3. Combinación",
       "path": "y4t2/Pruebas/CEX/3. Combinación.md"
     },
@@ -39,14 +51,6 @@
     {
       "basename": "Desigualdad_del_triángulo",
       "path": "y4t2/Pruebas/Otros/_resources/Desigualdad_del_triángulo.svg"
-    },
-    {
-      "basename": "PL1 - Pruebas triángulo",
-      "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
-    },
-    {
-      "basename": "! Ideas generales",
-      "path": "y4t2/Pruebas/Otros/! Ideas generales.md"
     },
     {
       "basename": "PL",
@@ -195,10 +199,6 @@
     {
       "basename": "Protocolos de seguridad - IPsec",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Protocolos de seguridad - IPsec.md"
-    },
-    {
-      "basename": "Ejercicio Cortafuegos",
-      "path": "y4t1/Seguridad/5. Seguridad perimetral/Ejercicio Cortafuegos.md"
     }
   ],
   "omittedPaths": [],
