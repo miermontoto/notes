@@ -5,6 +5,10 @@
       "path": "y4t2/Proyectos/CEX/3. Documentación.md"
     },
     {
+      "basename": "4 doc",
+      "path": "y4t2/Proyectos/CEX/_resources/4 doc.pdf"
+    },
+    {
       "basename": "2. Viabilidad",
       "path": "y4t2/Proyectos/CEX/2. Viabilidad.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Protocolos de seguridad - SSL & TLS",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Protocolos de seguridad - SSL & TLS.md"
-    },
-    {
-      "basename": "Autenticación de usuarios (Red)",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (Red).md"
     }
   ],
   "omittedPaths": [],
