@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "2. Viabilidad",
+      "path": "y4t2/Proyectos/CEX/2. Viabilidad.md"
+    },
+    {
+      "basename": "1. Conceptos",
+      "path": "y4t2/Proyectos/CEX/1. Conceptos.md"
+    },
+    {
+      "basename": "3. Documentación",
+      "path": "y4t2/Proyectos/CEX/3. Documentación.md"
+    },
+    {
+      "basename": "2. Técnicas (clases de equivalencia)",
+      "path": "y4t2/Pruebas/CEX/2. Técnicas (clases de equivalencia).md"
+    },
+    {
       "basename": "PL3 - Combinaciones",
       "path": "y4t2/Pruebas/Otros/PL3 - Combinaciones.md"
     },
@@ -13,16 +29,8 @@
       "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
     },
     {
-      "basename": "2. Técnicas (clases de equivalencia)",
-      "path": "y4t2/Pruebas/CEX/2. Técnicas (clases de equivalencia).md"
-    },
-    {
       "basename": "3. Combinación",
       "path": "y4t2/Pruebas/CEX/3. Combinación.md"
-    },
-    {
-      "basename": "1. Conceptos",
-      "path": "y4t2/Proyectos/CEX/1. Conceptos.md"
     },
     {
       "basename": "PL2 - Iteraciones",
@@ -191,14 +199,6 @@
     {
       "basename": "Autenticación de usuarios (Red)",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (Red).md"
-    },
-    {
-      "basename": "Seguridad_Aplicaciones",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/_resources/Seguridad_Aplicaciones.pdf"
-    },
-    {
-      "basename": "Ejercicio IPsec",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Ejercicio IPsec.md"
     }
   ],
   "omittedPaths": [],
