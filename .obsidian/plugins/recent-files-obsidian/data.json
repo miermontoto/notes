@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "PL 2024-02-19 17.10.00.excalidraw",
-      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw.md"
-    },
-    {
       "basename": "PL",
       "path": "y4t2/Proyectos/Otros/PL.md"
+    },
+    {
+      "basename": "PL 2024-02-19 17.10.00.excalidraw",
+      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw.png"
+    },
+    {
+      "basename": "PL 2024-02-19 17.10.00.excalidraw",
+      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw.md"
     },
     {
       "basename": "3. Documentación",
@@ -195,10 +199,6 @@
     {
       "basename": "Malware y Anti-Malware",
       "path": "y4t1/Seguridad/5. Seguridad perimetral/Malware y Anti-Malware.md"
-    },
-    {
-      "basename": "Seguridad de aplicaciones",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad de aplicaciones.md"
     }
   ],
   "omittedPaths": [],
