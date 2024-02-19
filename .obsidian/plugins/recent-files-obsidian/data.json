@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "PL 2024-02-19 17.10.00.excalidraw",
+      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw.md"
+    },
+    {
+      "basename": "PL",
+      "path": "y4t2/Proyectos/Otros/PL.md"
+    },
+    {
       "basename": "3. Documentación",
       "path": "y4t2/Proyectos/CEX/3. Documentación.md"
     },
@@ -67,10 +75,6 @@
     {
       "basename": "Desigualdad_del_triángulo",
       "path": "y4t2/Pruebas/Otros/_resources/Desigualdad_del_triángulo.svg"
-    },
-    {
-      "basename": "PL",
-      "path": "y4t2/Proyectos/Otros/PL.md"
     },
     {
       "basename": "Ética",
@@ -195,10 +199,6 @@
     {
       "basename": "Seguridad de aplicaciones",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad de aplicaciones.md"
-    },
-    {
-      "basename": "Protocolos de seguridad - SSL & TLS",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Protocolos de seguridad - SSL & TLS.md"
     }
   ],
   "omittedPaths": [],
