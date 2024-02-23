@@ -6,4 +6,4 @@
 
 - \[F. ini. 1, F. ini 2) → plazo 1
 - \[F. ini. 2, F. cierre] → plazo 2
-- \[F. cierre, F. carrera] → plazo 3
+- (F. cierre, F. carrera - 3] → plazo 3
