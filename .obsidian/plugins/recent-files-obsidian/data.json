@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "PL3 - Combinaciones",
-      "path": "y4t2/Pruebas/Otros/PL3 - Combinaciones.md"
+      "basename": "3. Documentación",
+      "path": "y4t2/Proyectos/CEX/3. Documentación.md"
     },
     {
       "basename": "3. Combinación y validación",
       "path": "y4t2/Pruebas/CEX/3. Combinación y validación.md"
+    },
+    {
+      "basename": "Normas y estándares de la Seguridad",
+      "path": "y4t1/Seguridad/1. Legislación y normativa sobre seguridad/Normas y estándares de la Seguridad.md"
+    },
+    {
+      "basename": "PL3 - Combinaciones",
+      "path": "y4t2/Pruebas/Otros/PL3 - Combinaciones.md"
     },
     {
       "basename": "2. Clases de equivalencia",
@@ -23,10 +31,6 @@
     {
       "basename": "PL",
       "path": "y4t2/Proyectos/Otros/PL.md"
-    },
-    {
-      "basename": "3. Documentación",
-      "path": "y4t2/Proyectos/CEX/3. Documentación.md"
     },
     {
       "basename": "2. Viabilidad",
@@ -195,10 +199,6 @@
     {
       "basename": "Seguridad Wi-Fi",
       "path": "y4t1/Seguridad/4. Seguridad de los servicios/Seguridad Wi-Fi.md"
-    },
-    {
-      "basename": "Autenticación de usuarios (local)",
-      "path": "y4t1/Seguridad/4. Seguridad de los servicios/Autenticación de usuarios (local).md"
     }
   ],
   "omittedPaths": [],
