@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "PL3 - Combinaciones 2024-02-25 16.15.49.excalidraw",
-      "path": "y4t2/Pruebas/Otros/_resources/PL3 - Combinaciones 2024-02-25 16.15.49.excalidraw.md"
+      "basename": "4. Condiciones",
+      "path": "y4t2/Pruebas/CEX/4. Condiciones.md"
+    },
+    {
+      "basename": "PA - Ejercicio Interés",
+      "path": "y4t2/Pruebas/Otros/PA - Ejercicio Interés.md"
     },
     {
       "basename": "PL3 - Combinaciones",
       "path": "y4t2/Pruebas/Otros/PL3 - Combinaciones.md"
+    },
+    {
+      "basename": "PL3 - Combinaciones 2024-02-25 16.15.49.excalidraw",
+      "path": "y4t2/Pruebas/Otros/_resources/PL3 - Combinaciones 2024-02-25 16.15.49.excalidraw.md"
     },
     {
       "basename": "PL2 - Iteraciones",
@@ -31,10 +39,6 @@
     {
       "basename": "2. Clases de equivalencia",
       "path": "y4t2/Pruebas/CEX/2. Clases de equivalencia.md"
-    },
-    {
-      "basename": "PA - Ejercicio Interés",
-      "path": "y4t2/Pruebas/Otros/PA - Ejercicio Interés.md"
     },
     {
       "basename": "PL",
@@ -195,10 +199,6 @@
     {
       "basename": "epiTimer",
       "path": "others/epiTimer.md"
-    },
-    {
-      "basename": "6. Auditoría de seguridad",
-      "path": "y4t1/Seguridad/6. Auditoría de seguridad/6. Auditoría de seguridad.md"
     }
   ],
   "omittedPaths": [],
