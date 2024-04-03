@@ -1,16 +1,160 @@
 {
   "recentFiles": [
     {
-      "basename": "2. Viabilidad",
-      "path": "y4t2/Proyectos/CEX/2. Viabilidad.md"
+      "basename": "React",
+      "path": "y4t1/Tecnologías Web/PA/React.md"
+    },
+    {
+      "basename": "Modelos de Negocio",
+      "path": "y4t1/Tecnologías Web/PA/Modelos de Negocio.md"
+    },
+    {
+      "basename": "Computación (CN)",
+      "path": "y2t2/Computación (CN)/Computación (CN).md"
+    },
+    {
+      "basename": "Sketch 4-19-2022 3-46 PM",
+      "path": "y2t2/Bases/4. Normalización/_resources/Sketch 4-19-2022 3-46 PM.png"
+    },
+    {
+      "basename": "image 1",
+      "path": "y2t2/Bases/2. Modelo relacional/_resources/image 1.png"
+    },
+    {
+      "basename": "image 1",
+      "path": "y2t2/Bases/4. Normalización/_resources/image 1.png"
+    },
+    {
+      "basename": "Sketch 4-5-2022 3-40 PM",
+      "path": "y2t2/Bases/4. Normalización/_resources/Sketch 4-5-2022 3-40 PM.png"
+    },
+    {
+      "basename": "Sketch 4-5-2022 3-33 PM",
+      "path": "y2t2/Bases/4. Normalización/_resources/Sketch 4-5-2022 3-33 PM.png"
+    },
+    {
+      "basename": "image",
+      "path": "y2t2/Bases/4. Normalización/_resources/image.png"
+    },
+    {
+      "basename": "Actividades y situaciones",
+      "path": "y2t2/Bases/1. Modelo E-R/Actividades y situaciones.md"
+    },
+    {
+      "basename": "Entidades, atributos y relaciones",
+      "path": "y2t2/Bases/1. Modelo E-R/Entidades, atributos y relaciones.md"
+    },
+    {
+      "basename": "Primer parcial",
+      "path": "y2t2/Bases/Primer parcial.md"
+    },
+    {
+      "basename": "Bases",
+      "path": "y2t2/Bases/Bases.md"
+    },
+    {
+      "basename": "6. Pruebas en el contexto de un proyecto",
+      "path": "y4t2/Pruebas/CEX/6. Pruebas en el contexto de un proyecto.md"
     },
     {
       "basename": "4. Condiciones",
       "path": "y4t2/Pruebas/CEX/4. Condiciones.md"
     },
     {
+      "basename": "5. Caminos",
+      "path": "y4t2/Pruebas/CEX/5. Caminos.md"
+    },
+    {
+      "basename": "1. Introducción",
+      "path": "y4t2/Pruebas/CEX/1. Introducción.md"
+    },
+    {
+      "basename": "3. Combinación y validación",
+      "path": "y4t2/Pruebas/CEX/3. Combinación y validación.md"
+    },
+    {
+      "basename": "Técnicas de modelado dinámico",
+      "path": "y3t1/Ingeniería de Software/CEX/2. Proceso de análisis y técnicas/Técnica/Técnicas de modelado dinámico.md"
+    },
+    {
+      "basename": "Procesos",
+      "path": "y2t2/Sistemas (SO)/2. Gestión de procesos/Procesos.md"
+    },
+    {
+      "basename": "2. Web",
+      "path": "y4t1/Ingeniería de Servicios/CEX/2. Web.md"
+    },
+    {
+      "basename": "Tolerancia a averías",
+      "path": "y3t1/Configuración (CES)/CEX/5. Modelado de fiabilidad y disponibilidad/Tolerancia a averías.md"
+    },
+    {
+      "basename": "2. Clases de equivalencia",
+      "path": "y4t2/Pruebas/CEX/2. Clases de equivalencia.md"
+    },
+    {
+      "basename": "5. Pliego",
+      "path": "y4t2/Proyectos/CEX/5. Pliego.md"
+    },
+    {
+      "basename": "4. Planificación",
+      "path": "y4t2/Proyectos/CEX/4. Planificación.md"
+    },
+    {
+      "basename": "PA - Ejercicio CDs",
+      "path": "y4t2/Pruebas/Otros/PA - Ejercicio CDs.md"
+    },
+    {
+      "basename": "CEX - Ejercicio teórico 1 2024-03-19 22.28.47.excalidraw",
+      "path": "y4t2/Pruebas/Otros/_resources/CEX - Ejercicio teórico 1 2024-03-19 22.28.47.excalidraw.md"
+    },
+    {
+      "basename": "CEX - Ejercicio teórico 1",
+      "path": "y4t2/Pruebas/Otros/CEX - Ejercicio teórico 1.md"
+    },
+    {
+      "basename": "PA - Ejercicio Compra online",
+      "path": "y4t2/Pruebas/Otros/PA - Ejercicio Compra online.md"
+    },
+    {
+      "basename": "CEX - Ejercicio teórico 1 2024-03-19 21.39.48.excalidraw",
+      "path": "y4t2/Pruebas/Otros/_resources/CEX - Ejercicio teórico 1 2024-03-19 21.39.48.excalidraw.md"
+    },
+    {
       "basename": "PA - Ejercicio Interés",
       "path": "y4t2/Pruebas/Otros/PA - Ejercicio Interés.md"
+    },
+    {
+      "basename": "2. planificación de proyectos",
+      "path": "y4t2/Proyectos/CEX/_resources/2. planificación de proyectos.pdf"
+    },
+    {
+      "basename": "3. Documentación",
+      "path": "y4t2/Proyectos/CEX/3. Documentación.md"
+    },
+    {
+      "basename": "2. Viabilidad",
+      "path": "y4t2/Proyectos/CEX/2. Viabilidad.md"
+    },
+    {
+      "basename": "1. Conceptos",
+      "path": "y4t2/Proyectos/CEX/1. Conceptos.md"
+    },
+    {
+      "basename": "PL",
+      "path": "y4t2/Proyectos/Otros/PL.md"
+    },
+    {
+      "basename": "PL 2024-02-19 17.10.00.excalidraw",
+      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw.md"
+    },
+    {
+      "basename": "PL 2024-02-19 17.10.00.excalidraw",
+      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw.png"
+    },
+    {
+      "basename": "2. Viabilidad 2024-03-08 16.18.05.excalidraw",
+      "path": "y4t2/Proyectos/CEX/_resources/2. Viabilidad 2024-03-08 16.18.05.excalidraw.md"
     },
     {
       "basename": "PL3 - Combinaciones",
@@ -29,36 +173,8 @@
       "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
     },
     {
-      "basename": "3. Documentación",
-      "path": "y4t2/Proyectos/CEX/3. Documentación.md"
-    },
-    {
-      "basename": "3. Combinación y validación",
-      "path": "y4t2/Pruebas/CEX/3. Combinación y validación.md"
-    },
-    {
       "basename": "Normas y estándares de la Seguridad",
       "path": "y4t1/Seguridad/1. Legislación y normativa sobre seguridad/Normas y estándares de la Seguridad.md"
-    },
-    {
-      "basename": "2. Clases de equivalencia",
-      "path": "y4t2/Pruebas/CEX/2. Clases de equivalencia.md"
-    },
-    {
-      "basename": "PL",
-      "path": "y4t2/Proyectos/Otros/PL.md"
-    },
-    {
-      "basename": "1. Conceptos",
-      "path": "y4t2/Proyectos/CEX/1. Conceptos.md"
-    },
-    {
-      "basename": "PL 2024-02-19 17.10.00.excalidraw",
-      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw.png"
-    },
-    {
-      "basename": "PL 2024-02-19 17.10.00.excalidraw",
-      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw.md"
     },
     {
       "basename": "4 doc",
@@ -67,10 +183,6 @@
     {
       "basename": "! Ideas generales",
       "path": "y4t2/Pruebas/Otros/! Ideas generales.md"
-    },
-    {
-      "basename": "1. Introducción",
-      "path": "y4t2/Pruebas/CEX/1. Introducción.md"
     },
     {
       "basename": "Pasted image 20240206155447",
@@ -87,118 +199,6 @@
     {
       "basename": "1.Concepto de proyecto",
       "path": "y4t2/Proyectos/CEX/_resources/1.Concepto de proyecto.pdf"
-    },
-    {
-      "basename": "Pasted image 20240202154540",
-      "path": "y4t2/Proyectos/CEX/_resources/Pasted image 20240202154540.png"
-    },
-    {
-      "basename": "Desigualdad_del_triángulo",
-      "path": "y4t2/Pruebas/Otros/_resources/Desigualdad_del_triángulo.svg"
-    },
-    {
-      "basename": "Ética",
-      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Ética.md"
-    },
-    {
-      "basename": "Modelos de Negocio",
-      "path": "y4t1/Tecnologías Web/Modelos de Negocio.md"
-    },
-    {
-      "basename": "Legislación",
-      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Legislación.md"
-    },
-    {
-      "basename": "Seguridad",
-      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Seguridad.md"
-    },
-    {
-      "basename": "Despliegue de aplicaciones web",
-      "path": "y4t1/Tecnologías Web/Despliegue de aplicaciones web.md"
-    },
-    {
-      "basename": "JSF",
-      "path": "y4t1/Tecnologías Web/2. Tecnologías Server-Side (MVC-JSF)/JSF.md"
-    },
-    {
-      "basename": "Patrones",
-      "path": "y4t1/Tecnologías Web/2. Tecnologías Server-Side (MVC-JSF)/Patrones.md"
-    },
-    {
-      "basename": "Servlets",
-      "path": "y4t1/Tecnologías Web/1. Tecnologías Server-Side (JEE)/Servlets.md"
-    },
-    {
-      "basename": "JSP",
-      "path": "y4t1/Tecnologías Web/1. Tecnologías Server-Side (JEE)/JSP.md"
-    },
-    {
-      "basename": "Ajax",
-      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Ajax.md"
-    },
-    {
-      "basename": "Frameworks Web",
-      "path": "y4t1/Tecnologías Web/Frameworks Web.md"
-    },
-    {
-      "basename": "6. Mensajería instantánea",
-      "path": "y4t1/Ingeniería de Servicios/CEX/6. Mensajería instantánea.md"
-    },
-    {
-      "basename": "7. Servicios sobre móviles",
-      "path": "y4t1/Ingeniería de Servicios/CEX/7. Servicios sobre móviles.md"
-    },
-    {
-      "basename": "5. Servicios multimedia",
-      "path": "y4t1/Ingeniería de Servicios/CEX/5. Servicios multimedia.md"
-    },
-    {
-      "basename": "4. Correo electrónico",
-      "path": "y4t1/Ingeniería de Servicios/CEX/4. Correo electrónico.md"
-    },
-    {
-      "basename": "Tema 5_ Servicios Multimedia",
-      "path": "y4t1/Ingeniería de Servicios/CEX/_resources/Tema 5_ Servicios Multimedia.pdf"
-    },
-    {
-      "basename": "Memoria 1",
-      "path": "y4t1/Ingeniería de Servicios/Memoria 1.md"
-    },
-    {
-      "basename": "Memoria  P5",
-      "path": "y4t1/Ingeniería de Servicios/Memoria  P5.md"
-    },
-    {
-      "basename": "Pasted image 20231031192541",
-      "path": "y4t1/Ingeniería de Servicios/_resources/Pasted image 20231031192541.png"
-    },
-    {
-      "basename": "Drawing 2024-01-09 11.32.51.excalidraw",
-      "path": "Excalidraw/Drawing 2024-01-09 11.32.51.excalidraw.md"
-    },
-    {
-      "basename": "Drawing 2024-01-09 00.02.38.excalidraw",
-      "path": "Excalidraw/Drawing 2024-01-09 00.02.38.excalidraw.md"
-    },
-    {
-      "basename": "PL - Memoria 2",
-      "path": "y4t1/Inteligencia de Negocio/Otros/PL - Memoria 2.md"
-    },
-    {
-      "basename": "PL - Memoria 1",
-      "path": "y4t1/Inteligencia de Negocio/Otros/PL - Memoria 1.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "others/Untitled.md"
-    },
-    {
-      "basename": "Satisfactory",
-      "path": "others/Satisfactory.md"
-    },
-    {
-      "basename": "epiTimer",
-      "path": "others/epiTimer.md"
     }
   ],
   "omittedPaths": [],

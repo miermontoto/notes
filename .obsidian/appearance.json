@@ -3,7 +3,7 @@
   "cssTheme": "",
   "interfaceFontFamily": "Zed Sans",
   "baseFontSize": 18,
-  "textFontFamily": "SF Pro Display",
+  "textFontFamily": "Inter,Nimbus Roman,SF Pro Display,Times New Roman",
   "baseFontSizeAction": false,
   "enabledCssSnippets": [
     "math"

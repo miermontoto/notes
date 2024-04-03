@@ -50,12 +50,12 @@ Cada elemento del modelo E/R se convierte al modelo relacional, resultando un co
   * Cada tabla podrá tener entre cero y varias FK.
 
 
-![[y2t2/Bases/_resources/Modelo_relacional.resources/image.png]]![[y2t2/Bases/_resources/Modelo_relacional.resources/image.1.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image 1.png]]![[y2t2/Bases/2. Modelo relacional/_resources/image.1 1.png]]
 
 
 ## Relaciones
 
-![[y2t2/Bases/_resources/Modelo_relacional.resources/image.2.png]]![[y2t2/Bases/_resources/Modelo_relacional.resources/image.3.png]]![[y2t2/Bases/_resources/Modelo_relacional.resources/image.4.png]]![[y2t2/Bases/_resources/Modelo_relacional.resources/image.5.png]]![[y2t2/Bases/_resources/Modelo_relacional.resources/image.6.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.2 1.png]]![[y2t2/Bases/2. Modelo relacional/_resources/image.3 1.png]]![[y2t2/Bases/2. Modelo relacional/_resources/image.4 1.png]]![[y2t2/Bases/2. Modelo relacional/_resources/image.5 1.png]]![[y2t2/Bases/2. Modelo relacional/_resources/image.6 1.png]]
 
 Para N:1:N, la tabla Participa sería `(@DNIIngeniero (FK a Ingeniero), RefProyecto (FK a Proyecto), @codigoCargo (FK a Cargo))`
 Para 1:N:N, la tabla Participa sería `(DNIIngeniero (FK a Ingeniero), @RefProtecto (FK a Proyecto), @codigoCargo (FK a Cargo))`
@@ -68,18 +68,18 @@ Para 1:N:1, la tabla Participa podría ser `((DNIIngeniero (FK a Ingeniero), @Re
 
 ### Entidad débil
 
-![[y2t2/Bases/_resources/Modelo_relacional.resources/image.7.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.7.png]]
 NO se genera una tabla para la relación.
 
 
 ### Agregación
 
-![[y2t2/Bases/_resources/Modelo_relacional.resources/image.8.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.8.png]]
 
 
 ### Especialización
 
-![[y2t2/Bases/_resources/Modelo_relacional.resources/image.9.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.9.png]]
 
 
 * Si es disjunta, no se repite información.

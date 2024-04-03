@@ -1,11 +1,11 @@
 {
   "commitMessage": "vault backup: {{date}}",
-  "commitDateFormat": "DD-MM-YY HH:mm",
-  "autoSaveInterval": 25,
-  "autoPushInterval": 30,
+  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "autoSaveInterval": 0,
+  "autoPushInterval": 0,
   "autoPullInterval": 0,
-  "autoPullOnBoot": true,
-  "disablePush": true,
+  "autoPullOnBoot": false,
+  "disablePush": false,
   "pullBeforePush": true,
   "disablePopups": false,
   "listChangedFilesInMessageBody": false,
@@ -17,12 +17,12 @@
   "treeStructure": false,
   "refreshSourceControl": true,
   "basePath": "",
-  "differentIntervalCommitAndPush": true,
-  "changedFilesInStatusBar": true,
+  "differentIntervalCommitAndPush": false,
+  "changedFilesInStatusBar": false,
   "showedMobileNotice": true,
   "refreshSourceControlTimer": 7000,
   "showBranchStatusBar": true,
-  "setLastSaveToLastCommit": true,
+  "setLastSaveToLastCommit": false,
   "submoduleRecurseCheckout": false,
   "gitDir": "",
   "showFileMenu": true,
@@ -47,9 +47,7 @@
     },
     "textColorCss": "var(--text-muted)",
     "ignoreWhitespace": false,
-    "gutterSpacingFallbackLength": 5,
-    "lastShownAuthorDisplay": "initials",
-    "lastShownDateTimeFormatOptions": "date"
+    "gutterSpacingFallbackLength": 5
   },
-  "autoCommitMessage": "auto vault backup: {{date}}"
+  "autoCommitMessage": "vault backup: {{date}}"
 }

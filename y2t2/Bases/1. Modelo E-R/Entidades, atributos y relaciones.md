@@ -11,4 +11,4 @@ Ej: cliente, prod. químico, motor.
 Una entidad se representa mediante atributos.
 
 Los atributos describen propiedades de cada objeto de la entidad.
-![[y2t2/Bases/_resources/Entidades,_atributos_y_relaciones.resources/image.png]]
+![[y2t2/Bases/1. Modelo E-R/_resources/image.png]]

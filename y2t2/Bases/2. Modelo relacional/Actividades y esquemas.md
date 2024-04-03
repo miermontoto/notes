@@ -2,11 +2,11 @@
 
 # Actividades y esquemas
 
-![[Actividad1_PasoATablas.pdf]]
+![[y2t2/Bases/2. Modelo relacional/_resources/Actividad1_PasoATablas.pdf]]
 
 ### Esquema 1
 
-![[y2t2/Bases/_resources/Actividades_y_esquemas.resources/image.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.png]]
 
 ```
 A = (@cod, ...)
@@ -27,7 +27,7 @@ ABC = (@(codC (FK C), (codAAB, codBAB, codIBAB) (FK AB)))
 
 ### Esquema 2
 
-![[y2t2/Bases/_resources/Actividades_y_esquemas.resources/image.1.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.1.png]]
 
 ```
 A = (@cod, ...)
@@ -54,7 +54,7 @@ K = (@codJ (FK J), codE (UNIQUE), ...)
 
 ### Esquema 3
 
-![[y2t2/Bases/_resources/Actividades_y_esquemas.resources/image.2.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.2.png]]
 
 ```
 A = (@cod, codA (FK A)) // Incluye relación 1:N consigo misma.
@@ -77,7 +77,7 @@ BCD = (@[codD (FK D), (codBBC, codABBC, codCBC) (FK BC)], G, F)
 
 ### Esquema 4
 
-![[y2t2/Bases/_resources/Actividades_y_esquemas.resources/image.3.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.3.png]]
 
 ```
 H = (@cod)
@@ -98,7 +98,7 @@ I = (@codF (FK C), J*)
 
 ### Esquema 5.
 
-![[y2t2/Bases/_resources/Actividades_y_esquemas.resources/image.4.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.4.png]]
 
 ```
 A = (@cod, C, D, (codG, codHG) (FK G))
@@ -119,7 +119,7 @@ J = (@cod)
 
 ### Esquema 6.
 
-![[y2t2/Bases/_resources/Actividades_y_esquemas.resources/image.5.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.5.png]]
 
 ```
 A = (@cod, D, C)
@@ -140,7 +140,7 @@ IJ = (@[codI (FK I), codK (FK J)])
 
 ### Esquema 7.
 
-![[y2t2/Bases/_resources/Actividades_y_esquemas.resources/image.6.png]]
+![[y2t2/Bases/2. Modelo relacional/_resources/image.6.png]]
 
 ```
 A = (@cod, E, F)
