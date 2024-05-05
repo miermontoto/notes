@@ -1,0 +1,1 @@
+![[others/_resources/fotos orla 2024-04-24 13.04.10.excalidraw]]

@@ -138,5 +138,14 @@
       "key": "["
     }
   ],
-  "text-snippets-obsidian:text-snippets": []
+  "text-snippets-obsidian:text-snippets": [],
+  "obsidian-minimal-settings:toggle-minimal-focus-mode": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Z"
+    }
+  ]
 }

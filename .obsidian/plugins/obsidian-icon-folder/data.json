@@ -1,6 +1,6 @@
 {
   "settings": {
-    "migrated": 3,
+    "migrated": 4,
     "iconPacksPath": ".obsidian/icons",
     "fontSize": 16,
     "iconColor": null,
@@ -34,7 +34,13 @@
     "iconInTabsEnabled": false,
     "iconInTitleEnabled": false,
     "iconInFrontmatterEnabled": false,
-    "iconsBackgroundCheckEnabled": false
+    "iconsBackgroundCheckEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "debugMode": false
   },
   "y2t2/Paradigmas (TPP)": "FasObjectUngroup",
   "y2t2/CPM": "FasWindowRestore",

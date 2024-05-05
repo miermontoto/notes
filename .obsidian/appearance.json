@@ -1,11 +1,12 @@
 {
-  "accentColor": "#334bff",
-  "cssTheme": "",
+  "accentColor": "",
+  "cssTheme": "Minimal",
   "interfaceFontFamily": "Zed Sans",
   "baseFontSize": 18,
   "textFontFamily": "Inter,Nimbus Roman,SF Pro Display,Times New Roman",
   "baseFontSizeAction": false,
   "enabledCssSnippets": [
     "math"
-  ]
+  ],
+  "theme": "obsidian"
 }

@@ -1,6 +1,4 @@
-
-
-																																															![[_resources/11_GestionCapacidad 1.pdf]]
+[[_resources/11_GestionCapacidad 1.pdf]]
 
 ---
 
