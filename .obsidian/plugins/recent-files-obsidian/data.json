@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "5 PDS - Técnicas - Caminos",
+      "path": "y4t2/Pruebas/CEX/_resources/5 PDS - Técnicas - Caminos.pdf"
+    },
+    {
+      "basename": "PL3 - Combinaciones",
+      "path": "y4t2/Pruebas/Otros/PL3 - Combinaciones.md"
+    },
+    {
+      "basename": "PL2 - Iteraciones",
+      "path": "y4t2/Pruebas/Otros/PL2 - Iteraciones.md"
+    },
+    {
+      "basename": "PL1 - Pruebas triángulo",
+      "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
+    },
+    {
+      "basename": "PA - Ejercicio Interés",
+      "path": "y4t2/Pruebas/Otros/PA - Ejercicio Interés.md"
+    },
+    {
+      "basename": "PA - Ejercicio CDs",
+      "path": "y4t2/Pruebas/Otros/PA - Ejercicio CDs.md"
+    },
+    {
+      "basename": "CEX - Ejercicio teórico 2",
+      "path": "y4t2/Pruebas/Otros/CEX - Ejercicio teórico 2.md"
+    },
+    {
+      "basename": "CEX - Ejercicio teórico 1",
+      "path": "y4t2/Pruebas/Otros/CEX - Ejercicio teórico 1.md"
+    },
+    {
       "basename": "Formas",
       "path": "y2t2/Bases/4. Normalización/Formas.md"
     },
@@ -13,16 +45,8 @@
       "path": "y4t2/Pruebas/Otros/_resources/trazabilidad3.md"
     },
     {
-      "basename": "CEX - Ejercicio teórico 2",
-      "path": "y4t2/Pruebas/Otros/CEX - Ejercicio teórico 2.md"
-    },
-    {
       "basename": "CEX - Ejercicio teórico 1 2024-03-19 21.39.48.excalidraw",
       "path": "y4t2/Pruebas/Otros/_resources/CEX - Ejercicio teórico 1 2024-03-19 21.39.48.excalidraw.md"
-    },
-    {
-      "basename": "CEX - Ejercicio teórico 1",
-      "path": "y4t2/Pruebas/Otros/CEX - Ejercicio teórico 1.md"
     },
     {
       "basename": "4 PDS - Técnicas - Condiciones",
@@ -41,20 +65,8 @@
       "path": "y4t2/Pruebas/CEX/3. Combinación y validación.md"
     },
     {
-      "basename": "PL1 - Pruebas triángulo",
-      "path": "y4t2/Pruebas/Otros/PL1 - Pruebas triángulo.md"
-    },
-    {
       "basename": "Reporte de errores - TicketRun incremento 2",
       "path": "y4t2/Pruebas/Otros/Reporte de errores - TicketRun incremento 2.md"
-    },
-    {
-      "basename": "PL3 - Combinaciones",
-      "path": "y4t2/Pruebas/Otros/PL3 - Combinaciones.md"
-    },
-    {
-      "basename": "PA - Ejercicio Interés",
-      "path": "y4t2/Pruebas/Otros/PA - Ejercicio Interés.md"
     },
     {
       "basename": "2. Clases de equivalencia",
@@ -187,18 +199,6 @@
     {
       "basename": "Sketch 4-19-2022 3-46 PM",
       "path": "y2t2/Bases/4. Normalización/_resources/Sketch 4-19-2022 3-46 PM.png"
-    },
-    {
-      "basename": "image 1",
-      "path": "y2t2/Bases/2. Modelo relacional/_resources/image 1.png"
-    },
-    {
-      "basename": "image 1",
-      "path": "y2t2/Bases/4. Normalización/_resources/image 1.png"
-    },
-    {
-      "basename": "Sketch 4-5-2022 3-40 PM",
-      "path": "y2t2/Bases/4. Normalización/_resources/Sketch 4-5-2022 3-40 PM.png"
     }
   ],
   "omittedPaths": [],
