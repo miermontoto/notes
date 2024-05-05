@@ -93,7 +93,7 @@ Para generar subredes, se puede expandir la máscara:
 | ---------------------------------------------------- | ---------------------------------------------------- |
 
 #### <mark style="background: #BBFABBA6;">Ejemplo 2</mark>
-![[_resources/Nivel de red (1) 2022-10-25 10.13.21.excalidraw]]
+![[_resources/Nivel de red (1) 2022-10-25 10.13.21.excalidraw](_resources/Nivel%20de%20red%20(1)%202022-10-25%2010.13.21.excalidraw.md)
 
 ### Protocolo NAT
 - Gestiona la posible escasez de direciones IP dentro de una subred.

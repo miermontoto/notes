@@ -1,8 +1,8 @@
-[[y4t1/Tecnologías Web/PA/_resources/TEW2023___15_Despliegue.pdf]]
+[[y4t1/Tecnologías Web/PA/_resources/TEW2023___15_Despliegue.pdf](_resources/TEW2023___15_Despliegue.pdf)
 
 ---
 
-![[y4t1/Tecnologías Web/PA/_resources/Pasted image 20231213151545.png]]
+![[y4t1/Tecnologías Web/PA/_resources/Pasted image 20231213151545.png](_resources/Pasted%20image%2020231213151545.png)
 
 # Modelos de servidor
 - **Servidor independiente del proyecto**

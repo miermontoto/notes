@@ -31,7 +31,7 @@ La predicción del futuro es incierta.
 **MTU Ethernet:** 1500B
 
 ## Cabecera IPv6
-![[_resources/IPv6 2023-02-06 12.37.04.excalidraw]]
+![[_resources/IPv6 2023-02-06 12.37.04.excalidraw](_resources/IPv6%202023-02-06%2012.37.04.excalidraw.md)
 - Cabecera mejor organizada
 - 8 campos diferentes
 - Inclusión de *flow label*
@@ -54,11 +54,11 @@ La predicción del futuro es incierta.
 - IPsec encapsulating sec payload
 
 ## Direccionamiento IPv6
-![[_resources/IPv6 2023-02-06 12.42.20.excalidraw]]
+![[_resources/IPv6 2023-02-06 12.42.20.excalidraw](_resources/IPv6%202023-02-06%2012.42.20.excalidraw.md)
 
 ### Espacio de direccionamiento
 128 bits en campo de direcciones
-![[_resources/IPv6 2023-02-09 11.52.14.excalidraw]]*
+![[_resources/IPv6 2023-02-09 11.52.14.excalidraw](_resources/IPv6%202023-02-09%2011.52.14.excalidraw.md)*
 
 ### Ámbito de direccionamiento
 - link-local

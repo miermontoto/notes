@@ -1,1 +1,1 @@
-![[_resources/prac01 2022-09-30 09.44.57.excalidraw]]
+![[_resources/prac01 2022-09-30 09.44.57.excalidraw](_resources/prac01%202022-09-30%2009.44.57.excalidraw.md)

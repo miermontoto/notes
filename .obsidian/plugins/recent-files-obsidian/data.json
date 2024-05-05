@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "6. Pruebas en el contexto de un proyecto",
+      "path": "y4t2/Pruebas/CEX/6. Pruebas en el contexto de un proyecto.md"
+    },
+    {
+      "basename": "5. Caminos",
+      "path": "y4t2/Pruebas/CEX/5. Caminos.md"
+    },
+    {
+      "basename": "2. Clases de equivalencia",
+      "path": "y4t2/Pruebas/CEX/2. Clases de equivalencia.md"
+    },
+    {
       "basename": "5 PDS - Técnicas - Caminos",
       "path": "y4t2/Pruebas/CEX/_resources/5 PDS - Técnicas - Caminos.pdf"
     },
@@ -69,20 +81,12 @@
       "path": "y4t2/Pruebas/Otros/Reporte de errores - TicketRun incremento 2.md"
     },
     {
-      "basename": "2. Clases de equivalencia",
-      "path": "y4t2/Pruebas/CEX/2. Clases de equivalencia.md"
-    },
-    {
       "basename": "2 PDS - Técnicas - ClasesEquivalencia (I)",
       "path": "y4t2/Pruebas/CEX/_resources/2 PDS - Técnicas - ClasesEquivalencia (I).pdf"
     },
     {
       "basename": "1. Introducción",
       "path": "y4t2/Pruebas/CEX/1. Introducción.md"
-    },
-    {
-      "basename": "6. Pruebas en el contexto de un proyecto",
-      "path": "y4t2/Pruebas/CEX/6. Pruebas en el contexto de un proyecto.md"
     },
     {
       "basename": "8. Proyectos en metodologías ágiles",
@@ -195,10 +199,6 @@
     {
       "basename": "Computación (CN)",
       "path": "y2t2/Computación (CN)/Computación (CN).md"
-    },
-    {
-      "basename": "Sketch 4-19-2022 3-46 PM",
-      "path": "y2t2/Bases/4. Normalización/_resources/Sketch 4-19-2022 3-46 PM.png"
     }
   ],
   "omittedPaths": [],

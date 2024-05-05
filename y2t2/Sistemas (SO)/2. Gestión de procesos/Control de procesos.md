@@ -71,7 +71,7 @@ _¿Puede el planificador a corto plazo devolver un PID no válido?_
 * Realiza el resto de acciones del grafo triviales.
 
 
-![[y2t2/Sistemas (SO)/_resources/Control_de_procesos.resources/image.png]]
+![[y2t2/Sistemas (SO)/_resources/Control_de_procesos.resources/image.png](../_resources/Control_de_procesos.resources/image.png)
 
 
 # Algoritmos de planficación a corto plazo

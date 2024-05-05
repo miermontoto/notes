@@ -26,7 +26,7 @@ Estándar de codificación binaria independiente de la arquitectura.
 bool_t xdr_tipo(XDR *operacion, tipo, *dato)
 ```
 
-![[_resources/La información (XDR) 2023-02-23 10.27.42.excalidraw]]
+![[_resources/La información (XDR) 2023-02-23 10.27.42.excalidraw](_resources/La%20informaci%C3%B3n%20(XDR)%202023-02-23%2010.27.42.excalidraw.md)
 
 ### Operación
 Para generar variables XDR, es necesario generar una variable `operación` primero:

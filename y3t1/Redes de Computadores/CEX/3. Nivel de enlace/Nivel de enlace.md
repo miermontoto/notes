@@ -150,7 +150,7 @@ Si se utilizan *k* bits para el número de secuencia, el tamaño máximo de la v
 Si se utilizan *k* bits para el número de secuencia, el tamaño máximo de la ventana es 2<sup>k-1</sup>.
 
 # Redes de área local
-[[../1. Introducción/Clasificación de las redes#Redes LAN|Redes LAN]]
+[[../1. Introducción/Clasificación de las redes#Redes LAN|Redes LAN](../1.%20Introducci%C3%B3n/Clasificaci%C3%B3n%20de%20las%20redes.md)
 
 
 ## Hubs y switches

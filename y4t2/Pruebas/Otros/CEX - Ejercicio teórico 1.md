@@ -1,2 +1,2 @@
-![[y4t2/Pruebas/Otros/_resources/CEX - Ejercicio teórico 1 2024-03-19 21.39.48.excalidraw]]
-![[y4t2/Pruebas/Otros/_resources/CEX - Ejercicio teórico 1 2024-03-19 22.28.47.excalidraw]]
+![[y4t2/Pruebas/Otros/_resources/CEX - Ejercicio teórico 1 2024-03-19 21.39.48.excalidraw](_resources/CEX%20-%20Ejercicio%20te%C3%B3rico%201%202024-03-19%2021.39.48.excalidraw.md)
+![[y4t2/Pruebas/Otros/_resources/CEX - Ejercicio teórico 1 2024-03-19 22.28.47.excalidraw](_resources/CEX%20-%20Ejercicio%20te%C3%B3rico%201%202024-03-19%2022.28.47.excalidraw.md)

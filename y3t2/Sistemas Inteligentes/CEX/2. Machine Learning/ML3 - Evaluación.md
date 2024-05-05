@@ -25,7 +25,7 @@ A entregar:
 - Modelo, código, función
 - Estimación de fiabilidad
 
-![[_resources/ML3 2023-02-02 13.24.42.excalidraw]]
+![[_resources/ML3 2023-02-02 13.24.42.excalidraw](_resources/ML3%202023-02-02%2013.24.42.excalidraw.md)
 
 ## Estrategias de división de datos de aprendizaje
 ### Estratificación

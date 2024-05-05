@@ -2,7 +2,7 @@
 
 # Ficheros
 
-![[05 Gestión de ficheros - Transparencias.pdf]]
+![[05 Gestión de ficheros - Transparencias.pdf](../_resources/Ficheros.resources/05%20Gesti%C3%B3n%20de%20ficheros%20-%20Transparencias.pdf)
 
 
 ## Índice

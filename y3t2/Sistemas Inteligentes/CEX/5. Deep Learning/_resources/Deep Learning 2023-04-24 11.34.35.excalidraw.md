@@ -20,9 +20,9 @@ se busca
 
 
 # Embedded files
-73a60810b5becf45b4011b21e5c2f5b204577d98: [[_resources/Pasted Image 20230424113438_408.png]]
-50e490084bc583e5a47b208e0246d1d2202efb76: [[_resources/Pasted Image 20230424113454_522.png]]
-1de13ef2755f366b5df4d885c6e32b2ee7d106be: [[_resources/Pasted Image 20230424114541_005.png]]
+73a60810b5becf45b4011b21e5c2f5b204577d98: [[_resources/Pasted Image 20230424113438_408.png](Pasted%20Image%2020230424113438_408.png)
+50e490084bc583e5a47b208e0246d1d2202efb76: [[_resources/Pasted Image 20230424113454_522.png](Pasted%20Image%2020230424113454_522.png)
+1de13ef2755f366b5df4d885c6e32b2ee7d106be: [[_resources/Pasted Image 20230424114541_005.png](Pasted%20Image%2020230424114541_005.png)
 
 %%
 # Drawing

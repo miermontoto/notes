@@ -1,10 +1,10 @@
 ### Ejercicio 7
-![[../Otros/_resources/Pasted image 20221103090552.png]]
+![[../Otros/_resources/Pasted image 20221103090552.png](_resources/Pasted%20image%2020221103090552.png)
 
 Falta etiquetar un eje, el eje de abscisas no debería sobrepasar el 100%, sería mejor utilizar lineas contínuas para representar la información, falta un título de gráfico
 
 ### Ejercicio 8
-![[../Otros/_resources/Pasted image 20221103090724.png]]
+![[../Otros/_resources/Pasted image 20221103090724.png](_resources/Pasted%20image%2020221103090724.png)
 Faltan la moneda (dólares), el tipo de gráfico no es el correcto, 
 
 

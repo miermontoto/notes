@@ -35,7 +35,7 @@ Cada activación implica la ejecución de varias instrucciones - programa.
 Los monitores software son adecuados si la cadencia de entrada es moderada.
 
 #### <mark style="background: #BBFABBA6;">Ejercicios sobrecarga</mark> 
-![[_resources/Monitores 2022-09-19 11.28.08.excalidraw]]
+![[_resources/Monitores 2022-09-19 11.28.08.excalidraw](_resources/Monitores%202022-09-19%2011.28.08.excalidraw.md)
 
 La monitorización es aceptable si **NO** se altera:
 - El camino de ejecución del programa.

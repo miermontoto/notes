@@ -2,7 +2,7 @@
   "readableLineLength": false,
   "spellcheck": false,
   "attachmentFolderPath": "./_resources",
-  "newLinkFormat": "absolute",
+  "newLinkFormat": "relative",
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "pdfExportSettings": {

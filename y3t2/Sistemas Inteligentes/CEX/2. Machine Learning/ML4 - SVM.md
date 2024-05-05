@@ -3,7 +3,7 @@
 ---
 ## Objetivo
 El objetivo es separar el espacio mediante una función. Se busca llevar el espacio lineal al polinomio que resuelva el espacio.
-![[_resources/ML4 - SVM 2023-02-06 10.24.52.excalidraw]]
+![[_resources/ML4 - SVM 2023-02-06 10.24.52.excalidraw](_resources/ML4%20-%20SVM%202023-02-06%2010.24.52.excalidraw.md)
 
 ## Notación
 - $y\in {-1, 1}$
@@ -23,7 +23,7 @@ Medir la distancia es importante porque la distancia es proporcional a la certez
 $$d(x, Hyperplane) = {<w,x>+b\over ||w||}$$
 
 ## Optimización y márgenes
-![[_resources/ML4 - SVM 2023-02-06 10.52.00.excalidraw]]
+![[_resources/ML4 - SVM 2023-02-06 10.52.00.excalidraw](_resources/ML4%20-%20SVM%202023-02-06%2010.52.00.excalidraw.md)
 
 
 ## Resolución
