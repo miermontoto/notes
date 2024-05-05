@@ -41,15 +41,18 @@ El resto de atributos estarán o no en las claves candidatas dependiendo si los 
 
 
 ### Ejemplo.
-![y2t2/Bases/4. Normalización/_resources/Sketch 4-19-2022 3-46 PM.png](_resources/Sketch%204-19-2022%203-46%20PM.png)
+
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-19-2022 3-46 PM.png]]
 
 
 ### Ejemplo CC de la definición de 2FN.
 
-![y2t2/Bases/4. Normalización/_resources/Sketch 4-19-2022 3-56 PM.png](_resources/Sketch%204-19-2022%203-56%20PM.png)![y2t2/Bases/4. Normalización/_resources/Sketch 4-26-2022 3-50 PM.png](_resources/Sketch%204-26-2022%203-50%20PM.png)
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-19-2022 3-56 PM.png]]
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-26-2022 3-50 PM.png]]
 
 # huec
-![y2t2/Bases/4. Normalización/_resources/Sketch 5-3-2022 3-36 PM.png](_resources/Sketch%205-3-2022%203-36%20PM.png)
+
+![[y2t2/Bases/4. Normalización/_resources/Sketch 5-3-2022 3-36 PM.png]]
 
 # 3ª forma normal("siendo más restrictivos y poniendo más restricciones")
 $R$ que cumple $F$ está en 3FN si cada dependencia cumple al menos una de las siguientes restricciones:
@@ -69,7 +72,7 @@ Existe otra definción que depende de la 2FN (peor)
 
 
 ### Ejercicio.
-![y2t2/Bases/4. Normalización/_resources/Sketch 4-21-2022 3-03 PM.png](_resources/Sketch%204-21-2022%203-03%20PM.png)![[y2t2/Bases/4. Normalización/_resources/Sketch 4-21-2022 3-09 PM.png](_resources/Sketch%204-21-2022%203-09%20PM.png)![[y2t2/Bases/4. Normalización/_resources/Sketch 4-26-2022 3-26 PM.png](_resources/Sketch%204-26-2022%203-26%20PM.png)
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-21-2022 3-03 PM.png]]![[y2t2/Bases/4. Normalización/_resources/Sketch 4-21-2022 3-09 PM.png]]![[y2t2/Bases/4. Normalización/_resources/Sketch 4-26-2022 3-26 PM.png]]
 
 
 
@@ -79,15 +82,16 @@ $R$ que cumple $F$ está en FNBC si cada relación cumple al menos una de las si
 * Que el antecedente contiene una clave de $R$.
 
 
-
-### Ejercicios
-![y2t2/Bases/4. Normalización/_resources/Sketch 4-28-2022 3-03 PM.png](_resources/Sketch%204-28-2022%203-03%20PM.png)![y2t2/Bases/4. Normalización/_resources/Sketch 4-28-2022 3-38 PM.png](_resources/Sketch%204-28-2022%203-38%20PM.png)![y2t2/Bases/4. Normalización/_resources/Sketch 4-28-2022 3-50 PM.png](_resources/Sketch%204-28-2022%203-50%20PM.png)
-
-
-### Ejercicio. TODAS LAS FORMAS
-![y2t2/Bases/4. Normalización/_resources/Sketch 5-3-2022 3-49 PM.png](_resources/Sketch%205-3-2022%203-49%20PM.png)
-![y2t2/Bases/4. Normalización/_resources/Sketch 5-5-2022 2-37 PM.png](_resources/Sketch%205-5-2022%202-37%20PM.png)
+## Ejercicio
+### Ejercicio random
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-28-2022 3-03 PM.png]]
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-28-2022 3-38 PM.png]]
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-28-2022 3-50 PM.png]]
 
 
-### Ejercicio extra :').
-![y2t2/Bases/4. Normalización/_resources/Sketch 5-5-2022 3-44 PM.png|1000](_resources/Sketch%205-5-2022%203-44%20PM.png)
+### Ejercicio: TODAS LAS FORMAS
+![[y2t2/Bases/4. Normalización/_resources/Sketch 5-3-2022 3-49 PM.png]]![[y2t2/Bases/4. Normalización/_resources/Sketch 5-5-2022 2-37 PM.png]]
+
+
+### Ejercicio extra :')
+![[y2t2/Bases/4. Normalización/_resources/Sketch 5-5-2022 3-44 PM.png]]

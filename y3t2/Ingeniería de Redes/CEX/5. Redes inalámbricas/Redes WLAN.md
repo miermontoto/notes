@@ -9,7 +9,7 @@
 ![[_resources/Pasted image 20230327123313.png]]
 
 ## Nivel de acceso al medio
-![[_resources/Redes WLAN 2023-04-10 12.09.19.excalidraw](_resources/Redes%20WLAN%202023-04-10%2012.09.19.excalidraw.md)
+![[_resources/Redes WLAN 2023-04-10 12.09.19.excalidraw]]
 
 - *Tramas **beacon***
 	- Transmitidas por el AP
@@ -39,7 +39,7 @@
 
 ## Nivel físico
 ![[_resources/Pasted image 20230417123217.png]]
-![[_resources/Redes WLAN 2023-04-17 12.41.09.excalidraw](_resources/Redes%20WLAN%202023-04-17%2012.41.09.excalidraw.md)
+![[_resources/Redes WLAN 2023-04-17 12.41.09.excalidraw]]
 
 - La velocidad de transmisión depende del rango.
 - Variación en la modulación

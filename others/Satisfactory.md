@@ -1,3 +1,3 @@
-![[../_resources/Satisfactory 2022-09-13 19.08.48.excalidraw](_resources/Satisfactory%202022-09-13%2019.08.48.excalidraw.md)
-![[../_resources/Satisfactory 2022-10-02 14.48.12.excalidraw](_resources/Satisfactory%202022-10-02%2014.48.12.excalidraw.md)
-![[../_resources/Satisfactory 2022-10-03 13.07.36.excalidraw](_resources/Satisfactory%202022-10-03%2013.07.36.excalidraw.md)![[../_resources/Satisfactory 2022-10-09 03.04.43.excalidraw](_resources/Satisfactory%202022-10-09%2003.04.43.excalidraw.md)
+![[../_resources/Satisfactory 2022-09-13 19.08.48.excalidraw]]
+![[../_resources/Satisfactory 2022-10-02 14.48.12.excalidraw]]
+![[../_resources/Satisfactory 2022-10-03 13.07.36.excalidraw]]![[../_resources/Satisfactory 2022-10-09 03.04.43.excalidraw]]

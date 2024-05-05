@@ -15,9 +15,9 @@ Razone que f(x) = x⁵ + x - 1 tiene una raíz real.
 
 _El Teorema de Bolzano dice si tiene o no tiene._
 f(x) es continua en todo R por ser polinómica.
-![[Sketch 2-7-2022 5-24 PM.png](../../_resources/M%C3%A9todos_que_usan_intervalos.resources/Sketch%202-7-2022%205-24%20PM.png)
+![[Sketch 2-7-2022 5-24 PM.png]]
 Por el Teorema de Bolzano, f tiene al menos una raíz real en (0, 1).
-![[Sketch 2-7-2022 5-27 PM.png](../../_resources/M%C3%A9todos_que_usan_intervalos.resources/Sketch%202-7-2022%205-27%20PM.png)
+![[Sketch 2-7-2022 5-27 PM.png]]
 Por el Teorema 2.2, f tiene, a lo sumo, una raíz real.
 
 Sea n el número de raíces de f, n≥ 1 ∧ n≤1  ⇒ **f tiene una única raíz real.**
@@ -42,7 +42,7 @@ Sea n el número de raíces de f, n≥ 1 ∧ n≤1  ⇒ **f tiene una única ra
 ### Teorema 2.3
 
 Sea f : [a,b] -> R continua con f(a)f(b) < 0. Entonces, la sucesión {Xn} generada por el método de bisección converge a alguna raíz r de f verificándose además:
-![[y2t2/Computación (CN)/_resources/Métodos_que_usan_intervalos.resources/image.png](../../_resources/M%C3%A9todos_que_usan_intervalos.resources/image.png)![[Sketch 2-7-2022 5-40 PM.png](../../_resources/M%C3%A9todos_que_usan_intervalos.resources/Sketch%202-7-2022%205-40%20PM.png)
+![[y2t2/Computación (CN)/_resources/Métodos_que_usan_intervalos.resources/image.png]]![[Sketch 2-7-2022 5-40 PM.png]]
 
 
 ### Ejemplo 2.1
@@ -53,22 +53,22 @@ Sea f(x) = x⁵ + x³ + x - 3
 * Razone que f tiene una raíz única en [0,3] y que el método de bisección, comenzando en [0,3], converge a dicha raíz.
 
 f es continua en [0,3] por ser polinómica.
-![[Sketch 2-7-2022 5-44 PM.png](../../_resources/M%C3%A9todos_que_usan_intervalos.resources/Sketch%202-7-2022%205-44%20PM.png)
+![[Sketch 2-7-2022 5-44 PM.png]]
 Por lo tanto, por Bolzano, existe al menos una raíz real en el intervalo [0,3].
 Es derivable (por polinómica, es de clase infinita).
-![[Sketch 2-7-2022 5-47 PM.png](../../_resources/M%C3%A9todos_que_usan_intervalos.resources/Sketch%202-7-2022%205-47%20PM.png)
+![[Sketch 2-7-2022 5-47 PM.png]]
 
 Al tener al menos una y como mucho una raíz, tiene exactamente una raíz en el intervalo [0,3].
 
 Se comprueba su convergencia mediante su error:
-![[Sketch 2-7-2022 5-52 PM.png](../../_resources/M%C3%A9todos_que_usan_intervalos.resources/Sketch%202-7-2022%205-52%20PM.png)
+![[Sketch 2-7-2022 5-52 PM.png]]
 
 Converge y tiene una sola raíz. ≥
 
 
 * Calcule el término x3 de la sucesión obtenida por la bisección.
 
-![[Sketch 2-7-2022 5-55 PM.png](../../_resources/M%C3%A9todos_que_usan_intervalos.resources/Sketch%202-7-2022%205-55%20PM.png)![[Sketch 2-11-2022 2-16 PM.png](../../_resources/M%C3%A9todos_que_usan_intervalos.resources/Sketch%202-11-2022%202-16%20PM.png)
+![[Sketch 2-7-2022 5-55 PM.png]]![[Sketch 2-11-2022 2-16 PM.png]]
 
 
 ## Método de Regula Falsi
@@ -80,4 +80,4 @@ Cambia la forma de elegir el valor xn:
 * Se define xn como la intersección de esta recta con el eje x.
 
 
-![[y2t2/Computación (CN)/_resources/Métodos_que_usan_intervalos.resources/image.1.png](../../_resources/M%C3%A9todos_que_usan_intervalos.resources/image.1.png)
+![[y2t2/Computación (CN)/_resources/Métodos_que_usan_intervalos.resources/image.1.png]]

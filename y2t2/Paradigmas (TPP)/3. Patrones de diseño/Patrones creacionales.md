@@ -14,7 +14,7 @@ Garantiza que una clase tenga una sola instancia y proporciona un punto global d
 * Necesario un acceso global a la instancia.
 
 
-![[y2t2/Paradigmas (TPP)/_resources/Patrones_creacionales.resources/image.png|900](../_resources/Patrones_creacionales.resources/image.png)
+![[y2t2/Paradigmas (TPP)/_resources/Patrones_creacionales.resources/image.png|900]]
 
 
 ## Consecuencias
@@ -34,12 +34,12 @@ Garantiza que una clase tenga una sola instancia y proporciona un punto global d
 * Define un constructor virtual.
 
 
-![[Sketch 2-18-2022 5-59 PM.png](../_resources/Patrones_creacionales.resources/Sketch%202-18-2022%205-59%20PM.png)
+![[Sketch 2-18-2022 5-59 PM.png]]
 
 
 ## Factory Method Parametrizado
 
-![[y2t2/Paradigmas (TPP)/_resources/Patrones_creacionales.resources/image.1.png|900](../_resources/Patrones_creacionales.resources/image.1.png)
+![[y2t2/Paradigmas (TPP)/_resources/Patrones_creacionales.resources/image.1.png|900]]
 
 
 ## Consecuencias
@@ -62,7 +62,7 @@ Proporciona una interfaz para crear familias de objetos, sin especificar clases 
 * Solo se quiere revelar las interfaces, no las implementaciones.
 
 
-![[Sketch 2-22-2022 2-19 PM.png](../_resources/Patrones_creacionales.resources/Sketch%202-22-2022%202-19%20PM.png)
+![[Sketch 2-22-2022 2-19 PM.png]]
 
 ## Consecuencias
 * Aisla las clases concretas del cliente que las usa.

@@ -7,7 +7,7 @@
 <mark style="background: #ADCCFFA6;">Tratamiento de datos para mejorar su calidad (errores, columnas irrelevantes, incongruencias...)</mark>
 
 ## Flujo
-![[_resources/Preprocesado de datos 2023-02-06 11.19.12.excalidraw](_resources/Preprocesado%20de%20datos%202023-02-06%2011.19.12.excalidraw.md)
+![[_resources/Preprocesado de datos 2023-02-06 11.19.12.excalidraw]]
 
 # Análisis y limpieza
 ## Análisis

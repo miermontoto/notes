@@ -41,7 +41,7 @@ Existe unos elementos que se conocen como *servidores infinitos* (IS), también 
 En estos centros, se supone que el usuario no tiene que esperar en la cola para recibir el servicio, por tanto todo el tiempo que pasa en el centro de servicio es tiempo recibiendo servicio.
 Por ejemplo, las terminales conectadas a un sistema multiusuario.
 
-![[_resources/Modelado analítico 2022-10-13 10.43.43.excalidraw](_resources/Modelado%20anal%C3%ADtico%202022-10-13%2010.43.43.excalidraw.md)
+![[_resources/Modelado analítico 2022-10-13 10.43.43.excalidraw]]
 
 
 ## Parámetros
@@ -163,7 +163,7 @@ peticiones E/S por segundo. Queremos calcular la productividad
 del sistema y la utilización de los dispositivos.
 Nota: cada paso por un dispositivo de E/S implica un paso por la
 CPU.</mark>
-![[_resources/Modelado analítico 2022-10-18 13.24.08.excalidraw](_resources/Modelado%20anal%C3%ADtico%202022-10-18%2013.24.08.excalidraw.md)
+![[_resources/Modelado analítico 2022-10-18 13.24.08.excalidraw]]
 
 ## 3ª Ley de Little
 Permite establecer una relación entre elementos y tiempo. La única consideración es que exista flujo equilibrado de las tareas.

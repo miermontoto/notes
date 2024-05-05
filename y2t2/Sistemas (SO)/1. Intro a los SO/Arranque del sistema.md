@@ -40,7 +40,7 @@ De la libertad que otorgue el firmware depende la libertad que se tiene del disp
         * En el caso de tener varios discos de los que arrancar, se escoge el orden en el que se arrancan los discos.
 
 
-![[Sketch 2-7-2022 2-35 PM.png](../_resources/Arranque_del_sistema.resources/Sketch%202-7-2022%202-35%20PM.png)
+![[Sketch 2-7-2022 2-35 PM.png]]
 __
 
 * Con UEFI:
@@ -50,7 +50,7 @@ __
   * El firmware tiene un **orden** de arranque.
 
 
-![[Sketch 2-7-2022 3-39 PM.png](../_resources/Arranque_del_sistema.resources/Sketch%202-7-2022%203-39%20PM.png)
+![[Sketch 2-7-2022 3-39 PM.png]]
 
 
 * **Ejecucción**: funciona igual en ambos tipos.

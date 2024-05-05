@@ -4,30 +4,30 @@
 **Sea cual sea el criterio de desempate, si al final existe un empate se escoge el proceso con el menor PID.**
 Estos ejercicios definen cómo de bueno es el algoritmo PCP.
 
-![[y2t2/Sistemas (SO)/_resources/Algoritmos_de_planificación_a_corto_plazo,_ejercicios,_parámetros.resources/image.png](../_resources/Algoritmos_de_planificaci%C3%B3n_a_corto_plazo,_ejercicios,_par%C3%A1metros.resources/image.png)
+![[y2t2/Sistemas (SO)/_resources/Algoritmos_de_planificación_a_corto_plazo,_ejercicios,_parámetros.resources/image.png]]
 
 
 # FIFO
-![[Sketch 2-28-2022 2-45 PM.png](../_resources/Algoritmos_de_planificaci%C3%B3n_a_corto_plazo,_ejercicios,_par%C3%A1metros.resources/Sketch%202-28-2022%202-45%20PM.png)
+![[Sketch 2-28-2022 2-45 PM.png]]
 
 # Prioridades estáticas sin requisamiento
 Sin requisamiento = no se puede eliminar a un proceso de la CPU durante su ráfaga.
 
-![[Sketch 2-28-2022 3-34 PM.png](../_resources/Algoritmos_de_planificaci%C3%B3n_a_corto_plazo,_ejercicios,_par%C3%A1metros.resources/Sketch%202-28-2022%203-34%20PM.png)
+![[Sketch 2-28-2022 3-34 PM.png]]
 
 # Prioridades estáticas con requisamiento
-![[Sketch 2-28-2022 3-44 PM.png](../_resources/Algoritmos_de_planificaci%C3%B3n_a_corto_plazo,_ejercicios,_par%C3%A1metros.resources/Sketch%202-28-2022%203-44%20PM.png)
+![[Sketch 2-28-2022 3-44 PM.png]]
 
 
 # Round-Robin + FIFO
 Diseñado para sistemas con tiempo compartido → existe _quantum_.
 
 **_quantum = 3ud_**
-![[Sketch 2-28-2022 4-04 PM.png](../_resources/Algoritmos_de_planificaci%C3%B3n_a_corto_plazo,_ejercicios,_par%C3%A1metros.resources/Sketch%202-28-2022%204-04%20PM.png)
+![[Sketch 2-28-2022 4-04 PM.png]]
 
 
 # Colas multinivel SIN realimentación
-![[Sketch 3-4-2022 2-05 PM.png](../_resources/Algoritmos_de_planificaci%C3%B3n_a_corto_plazo,_ejercicios,_par%C3%A1metros.resources/Sketch%203-4-2022%202-05%20PM.png)
+![[Sketch 3-4-2022 2-05 PM.png]]
 - Cada cola va a utilizar un algoritmo diferente. Los procesos NO pueden cambiar de cola.
 - **Antes de que un proceso se ejecute, hay que decidir a qué cola va a ir.**
 - Cuanto más arriba esté una cola, más prioritaria con respecto a las otras es.
@@ -36,7 +36,7 @@ Diseñado para sistemas con tiempo compartido → existe _quantum_.
 
 
 # Colas multinivel CON realimentación
-![[Sketch 3-4-2022 2-15 PM.png](../_resources/Algoritmos_de_planificaci%C3%B3n_a_corto_plazo,_ejercicios,_par%C3%A1metros.resources/Sketch%203-4-2022%202-15%20PM.png)
+![[Sketch 3-4-2022 2-15 PM.png]]
 A medida que se ejecutan los procesos, se observa su comportamiento y se mueve a la cola correspondiente.
 
 
@@ -54,9 +54,9 @@ Los más habituales son:
 
 ### Ejercicio.
 
-![[y2t2/Sistemas (SO)/_resources/Algoritmos_de_planificación_a_corto_plazo,_ejercicios,_parámetros.resources/image.1.png](../_resources/Algoritmos_de_planificaci%C3%B3n_a_corto_plazo,_ejercicios,_par%C3%A1metros.resources/image.1.png)
+![[y2t2/Sistemas (SO)/_resources/Algoritmos_de_planificación_a_corto_plazo,_ejercicios,_parámetros.resources/image.1.png]]
 
-![[Sketch 3-4-2022 2-52 PM.png](../_resources/Algoritmos_de_planificaci%C3%B3n_a_corto_plazo,_ejercicios,_par%C3%A1metros.resources/Sketch%203-4-2022%202-52%20PM.png)![[Escáner - 2022-03-07 11_38_57.pdf](../_resources/Algoritmos_de_planificaci%C3%B3n_a_corto_plazo,_ejercicios,_par%C3%A1metros.resources/Esc%C3%A1ner%20-%202022-03-07%2011_38_57.pdf)
+![[Sketch 3-4-2022 2-52 PM.png]]![[Escáner - 2022-03-07 11_38_57.pdf]]
 
 
 ## Con varias CPUs

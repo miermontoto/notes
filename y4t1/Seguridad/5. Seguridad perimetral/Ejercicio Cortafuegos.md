@@ -1,1 +1,1 @@
-![[_resources/Ejercicio Cortafuegos 2023-12-14 16.31.09.excalidraw](_resources/Ejercicio%20Cortafuegos%202023-12-14%2016.31.09.excalidraw.md)
+![[_resources/Ejercicio Cortafuegos 2023-12-14 16.31.09.excalidraw]]

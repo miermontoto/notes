@@ -1,5 +1,5 @@
-![[_resources/PA1 2022-11-10 11.13.53.excalidraw](_resources/PA1%202022-11-10%2011.13.53.excalidraw.md)
-![[_resources/PA1 2022-11-10 11.29.19.excalidraw](_resources/PA1%202022-11-10%2011.29.19.excalidraw.md)
+![[_resources/PA1 2022-11-10 11.13.53.excalidraw]]
+![[_resources/PA1 2022-11-10 11.29.19.excalidraw]]
 
 ### Problema 4
 El `schedule(static)` en cada bucle hace que cada hilo calcule la misma cantidad de información de manera fija, de modo que en el siguiente bucle el hilo contiene justo la información que necesita. En caso de tener otra estructuración, o si los bucles tuvieran distintos tamaños, esto no funcionaría. El `nowait` hace que los bucles hagan la ejecución del tirón y sin esperar unos por los otros, que no es necesario porque todos tienen la información que necesitan gracias a la directiva anterior.

@@ -2,7 +2,7 @@
 
 # Accesibilidad
 
-![[../_resources/Accesibilidad.resources/T3-Accesibilidad.pdf]]
+![[T3-Accesibilidad.pdf]]
 
 # WCAG
 Web Content Accessibility Guidelines.

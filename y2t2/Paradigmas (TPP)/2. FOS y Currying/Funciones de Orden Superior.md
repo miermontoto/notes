@@ -170,7 +170,7 @@ the expected number of arguments does not match the given number
 
 ## Let(*) y Letrec
 
-![[y2t2/Paradigmas (TPP)/_resources/Funciones_de_Orden_Superior.resources/image.png](../_resources/Funciones_de_Orden_Superior.resources/image.png)
+![[y2t2/Paradigmas (TPP)/_resources/Funciones_de_Orden_Superior.resources/image.png]]
 
 
 ### Let

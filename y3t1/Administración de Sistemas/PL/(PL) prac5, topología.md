@@ -1,1 +1,1 @@
-![[_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw](_resources/Admin,%20prac5,%20topolog%C3%ADa%202022-10-28%2013.59.10.excalidraw.md)
+![[_resources/Admin, prac5, topología 2022-10-28 13.59.10.excalidraw]]

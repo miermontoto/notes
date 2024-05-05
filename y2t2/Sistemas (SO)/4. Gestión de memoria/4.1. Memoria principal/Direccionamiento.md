@@ -75,7 +75,7 @@ La MMU tiene un registro de la dirección física de inicio del proceso en ejecu
 
 ## Esquema general
 
-![[Sketch 3-25-2022 2-13 PM.png](../../_resources/Direccionamiento.resources/Sketch%203-25-2022%202-13%20PM.png)
+![[Sketch 3-25-2022 2-13 PM.png]]
 
 
 ## Programa / Proceso no reubicable

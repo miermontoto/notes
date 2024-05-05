@@ -28,7 +28,7 @@
 6. El socket de escucha queda libre. Otros procesos pueden intentar conexión.
 7. Cuando termina el diálogo, los sockets de datos se destruyen.
 
-![[_resources/2. Intercomunicación de procesos 2023-02-02 09.36.00.excalidraw](_resources/2.%20Intercomunicaci%C3%B3n%20de%20procesos%202023-02-02%2009.36.00.excalidraw.md)
+![[_resources/2. Intercomunicación de procesos 2023-02-02 09.36.00.excalidraw]]
 
 ### Orden de funciones de la API
 #### TCP

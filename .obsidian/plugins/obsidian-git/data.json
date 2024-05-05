@@ -4,7 +4,7 @@
   "autoSaveInterval": 55,
   "autoPushInterval": 0,
   "autoPullInterval": 0,
-  "autoPullOnBoot": true,
+  "autoPullOnBoot": false,
   "disablePush": false,
   "pullBeforePush": true,
   "disablePopups": false,
@@ -54,5 +54,5 @@
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
   },
-  "autoCommitMessage": "auto vault backup: {{date}} ({{hostname}})"
+  "autoCommitMessage": "vault backup: {{date}}"
 }

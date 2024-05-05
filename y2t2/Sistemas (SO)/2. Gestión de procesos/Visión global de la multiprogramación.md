@@ -3,7 +3,7 @@
 # Visión global de la multiprogramación
 ### Ejercicio multiprogramación
 
-![[Sketch 2-8-2022 4-54 PM.png](../_resources/Visi%C3%B3n_global_de_la_multiprogramaci%C3%B3n.resources/Sketch%202-8-2022%204-54%20PM.png)
+![[Sketch 2-8-2022 4-54 PM.png]]
 
 
 # Explicación
@@ -58,4 +58,4 @@ _Existe una llamada al sistema sin E/S 'exit' que finaliza el proceso._
 7. Al terminar el cuanto, se cambia el proceso. Suponiendo una ejecución por turnos, el SO escoge al proceso P2, prepara el contexto, etc.
 
 
-![[Sketch 2-14-2022 3-53 PM.png](../_resources/Visi%C3%B3n_global_de_la_multiprogramaci%C3%B3n.resources/Sketch%202-14-2022%203-53%20PM.png)
+![[Sketch 2-14-2022 3-53 PM.png]]

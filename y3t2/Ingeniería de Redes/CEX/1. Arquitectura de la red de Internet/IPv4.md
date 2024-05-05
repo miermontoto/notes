@@ -56,7 +56,7 @@ Para la MAC: 00:19:0E:0A:45:63 => 02:19:0E:FF:FE:0A:45:63
 
 Un <u>switch</u> trabaja a nivel de enlace.
 
-![[_resources/1. Arquitectura de la red de Internet 2023-02-02 11.22.14.excalidraw](_resources/1.%20Arquitectura%20de%20la%20red%20de%20Internet%202023-02-02%2011.22.14.excalidraw.md)
+![[_resources/1. Arquitectura de la red de Internet 2023-02-02 11.22.14.excalidraw]]
 
 ### MAC
 La capa de enlace MAC se encarga de monitorizar el acceso al medio. Se deben evitar en la medida de lo posible las colisiones entre comunicaciones y en caso que suceda una colisión, controlar la situación.

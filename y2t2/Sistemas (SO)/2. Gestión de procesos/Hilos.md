@@ -27,7 +27,7 @@ Los hilos ejecutan código, cada hilo tendrá:
   * Contexto de ejecución del hilo
 * Acceso a la memoria y recursos de su proceso, compartido con el resto de hilos del mismo.
 
-![[y2t2/Sistemas (SO)/_resources/Hilos.resources/image.png](../_resources/Hilos.resources/image.png)
+![[y2t2/Sistemas (SO)/_resources/Hilos.resources/image.png]]
 
 
 * * *
@@ -35,9 +35,9 @@ Los hilos ejecutan código, cada hilo tendrá:
 ## Creación de procesos e hilos
 
 EL SO (PLP) carga el programa y crea el proceso con UN hilo, el hilo principal.
-![[y2t2/Sistemas (SO)/_resources/Hilos.resources/image.1.png](../_resources/Hilos.resources/image.1.png)
+![[y2t2/Sistemas (SO)/_resources/Hilos.resources/image.1.png]]
 El programador es responsable de crear más hilos de ejecución con una llamada al sistema, ejecutada por el hilo principal.
-![[y2t2/Sistemas (SO)/_resources/Hilos.resources/image.2.png](../_resources/Hilos.resources/image.2.png)
+![[y2t2/Sistemas (SO)/_resources/Hilos.resources/image.2.png]]
 
 
 * ✅  Crear un hilo es muy rápido y eficiente.

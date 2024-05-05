@@ -32,9 +32,9 @@ Se puede conocer analizando los datos de entrada/salida.
 
 #### <mark style="background: #BBFABBA6;">Ejemplo</mark>
 
-![[_resources/Diseño de algoritmos paralelos 2022-09-22 12.14.06.excalidraw](_resources/Dise%C3%B1o%20de%20algoritmos%20paralelos%202022-09-22%2012.14.06.excalidraw.md)
+![[_resources/Diseño de algoritmos paralelos 2022-09-22 12.14.06.excalidraw]]
 
-![[_resources/Diseño de algoritmos paralelos 2022-09-22 12.28.28.excalidraw](_resources/Dise%C3%B1o%20de%20algoritmos%20paralelos%202022-09-22%2012.28.28.excalidraw.md)
+![[_resources/Diseño de algoritmos paralelos 2022-09-22 12.28.28.excalidraw]]
 
 ## Pipeline
 Conjunto ordenado de segmentos tales que la salida de uno es la entrada del siguiente.
@@ -44,7 +44,7 @@ Conjunto ordenado de segmentos tales que la salida de uno es la entrada del sigu
 - <mark style="background: #FFF3A3A6;">Importante: equidad en la granularidad de los segmentos.</mark>
 
 #### <mark style="background: #BBFABBA6;">Ejemplo: resolver un sistema triangular con pipeline</mark>
-![[_resources/Diseño de algoritmos paralelos 2022-09-22 12.36.22.excalidraw|600](_resources/Dise%C3%B1o%20de%20algoritmos%20paralelos%202022-09-22%2012.36.22.excalidraw.md)
+![[_resources/Diseño de algoritmos paralelos 2022-09-22 12.36.22.excalidraw|600]]
 
 ## Enfoque metodológico
 ![[_resources/Pasted image 20220922124639.png|1050]]
@@ -89,7 +89,7 @@ Las comunicaciones, en el dominio, es justo lo contrario.
 > No parece ser muy relevante para el examen, más allá de las locales. ("para nosotros son todas lo mismo")
 
 #### <mark style="background: #BBFABBA6;">Ejemplo Comunicaciones Locales</mark>
-![[_resources/Diseño de algoritmos paralelos 2022-09-27 09.27.36.excalidraw](_resources/Dise%C3%B1o%20de%20algoritmos%20paralelos%202022-09-27%2009.27.36.excalidraw.md)
+![[_resources/Diseño de algoritmos paralelos 2022-09-27 09.27.36.excalidraw]]
 
 #### <mark style="background: #BBFABBA6;">Ejemplo de problema de frente de onda</mark>
 ![[_resources/Pasted image 20220927094528.png|1000]]

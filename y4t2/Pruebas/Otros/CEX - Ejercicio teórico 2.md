@@ -1,3 +1,3 @@
-![[_resources/trazabilidad2.md]]
+![[y4t2/Pruebas/Otros/_resources/trazabilidad2]]
 
-![[_resources/trazabilidad3.md]]
+![[y4t2/Pruebas/Otros/_resources/trazabilidad3]]

@@ -1,4 +1,4 @@
-![[_resources/Analisis_y_Gestion _de_Riesgos.pdf](../1.%20Legislaci%C3%B3n%20y%20normativa%20sobre%20seguridad/_resources/Analisis_y_Gestion%20_de_Riesgos.pdf)
+![[_resources/Analisis_y_Gestion _de_Riesgos.pdf]]
 
 ---
 
@@ -12,7 +12,7 @@
 7. Determinar el riesgo
 8. Identificación y selección de las medidas de protección
 
-![[_resources/Pasted image 20230921163708.png](../1.%20Legislaci%C3%B3n%20y%20normativa%20sobre%20seguridad/_resources/Pasted%20image%2020230921163708.png)
+![[_resources/Pasted image 20230921163708.png]]
 
 ## Fase 1. Objetivos de riesgos y restricciones
 - **Identificación de objetivos**.
@@ -22,7 +22,7 @@
 - **Relación con los principales tipos de activos**
 
 - **Valoración de activos:** 
-![[_resources/Pasted image 20230921164229.png](../1.%20Legislaci%C3%B3n%20y%20normativa%20sobre%20seguridad/_resources/Pasted%20image%2020230921164229.png)
+![[_resources/Pasted image 20230921164229.png]]
 
 ### Fase 3. Identificación y valoración de amenazas
 > [!info] Amenaza
@@ -40,7 +40,7 @@ Medidas organizativas, de seguridad física, de seguridad lógica, medidas legal
 
 **Identificación de vulnerabilidades:** generales, específicas para cada activo, clasificación por categorías.
 
-**Valoración de vulnerabilidades:** ![[_resources/Pasted image 20230921170346.png](../1.%20Legislaci%C3%B3n%20y%20normativa%20sobre%20seguridad/_resources/Pasted%20image%2020230921170346.png)
+**Valoración de vulnerabilidades:** ![[_resources/Pasted image 20230921170346.png]]
 ### Fase 6. Evaluación del impacto
 > [!info] Incidente de seguridad
 > Cualquier evento que produce:
@@ -88,7 +88,7 @@ El nivel de riesgo depende de las amenazas, las vulnerabilidades y el impacto:
 
 
 # Ejercicio - análisis de riesgos
-![[_resources/Pasted image 20230921170551.png](../1.%20Legislaci%C3%B3n%20y%20normativa%20sobre%20seguridad/_resources/Pasted%20image%2020230921170551.png)
+![[_resources/Pasted image 20230921170551.png]]
 
 <mark style="background: #BBFABBA6;">Cada activo sufre N amenazas, ¿cuál es el riesgo total que sufre el activo?</mark>
 Opción 1. Sumar todos los riesgos en cada dimensión

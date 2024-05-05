@@ -17,13 +17,13 @@ El objetivo es encontrar la función no linear con la mayor consistencia de dato
 
 | ![[_resources/Pasted image 20230213114900.png]]  
 
-![[_resources/Deep Learning 2023-04-24 10.24.51.excalidraw](_resources/Deep%20Learning%202023-04-24%2010.24.51.excalidraw.md)
+![[_resources/Deep Learning 2023-04-24 10.24.51.excalidraw]]
 
-![[_resources/Deep Learning 2023-04-24 10.28.27.excalidraw](_resources/Deep%20Learning%202023-04-24%2010.28.27.excalidraw.md)
+![[_resources/Deep Learning 2023-04-24 10.28.27.excalidraw]]
 
 **¿Por qué hacerlo todo de manera no-lineal?:** Las funciones de pérdida son irresolubles, pero <u>compensa</u> porque la inconsistencia obtenida es muy buena, mejor que en humanos.
 Se aplica un algoritmo, normalmente el *gradiente del descenso estocrástico*, para hacer la función no lineal.
-![[_resources/5. Deep Learning 2023-02-20 10.17.03.excalidraw](_resources/5.%20Deep%20Learning%202023-02-20%2010.17.03.excalidraw.md)
+![[_resources/5. Deep Learning 2023-02-20 10.17.03.excalidraw]]
 
 ![[_resources/Pasted image 20230220102622.png|800]] 
 
@@ -35,7 +35,7 @@ Cuanto más profunda sea la red, más posible es que el problema sea aprendible.
 
 
 ## Funcionamiento
-![[_resources/Deep Learning 2023-04-24 11.12.55.excalidraw|800](_resources/Deep%20Learning%202023-04-24%2011.12.55.excalidraw.md)
+![[_resources/Deep Learning 2023-04-24 11.12.55.excalidraw|800]]
 - Se aprende la probabilidad de *y* condicionado a *x* (distribución).
 - Al aplicar este planteamiento, se aplica un planteamiento de "máxima verosimilitud".
 - Se utilizan logaritmos para simplificar la función de distribución (exponencial).
@@ -46,7 +46,7 @@ Cuanto más profunda sea la red, más posible es que el problema sea aprendible.
 
 
 ## Regresión
-![[_resources/Deep Learning 2023-04-24 11.22.50.excalidraw](_resources/Deep%20Learning%202023-04-24%2011.22.50.excalidraw.md)
+![[_resources/Deep Learning 2023-04-24 11.22.50.excalidraw]]
 
 ## Clasificación
-![[_resources/Deep Learning 2023-04-24 11.34.35.excalidraw](_resources/Deep%20Learning%202023-04-24%2011.34.35.excalidraw.md)
+![[_resources/Deep Learning 2023-04-24 11.34.35.excalidraw]]

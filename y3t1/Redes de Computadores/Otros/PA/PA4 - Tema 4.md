@@ -59,4 +59,4 @@ Nº dir. malgastadas
 - 3
 
 ### Ejercicio 5
-![[_resources/Tema 4 (PA4) 2022-11-28 13.14.02.excalidraw](_resources/Tema%204%20(PA4)%202022-11-28%2013.14.02.excalidraw.md)
+![[_resources/Tema 4 (PA4) 2022-11-28 13.14.02.excalidraw]]

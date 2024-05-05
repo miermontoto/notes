@@ -21,9 +21,9 @@ Dado un F, es posible encontrar recubrimientos canónicos dependiendo del orden 
 
 ### 1.
 
-![[y2t2/Bases/4. Normalización/_resources/Sketch 4-5-2022 3-33 PM.png](_resources/Sketch%204-5-2022%203-33%20PM.png)
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-5-2022 3-33 PM.png]]
 
 
 ### 2.
 
-![[y2t2/Bases/4. Normalización/_resources/Sketch 4-5-2022 3-40 PM.png](_resources/Sketch%204-5-2022%203-40%20PM.png)
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-5-2022 3-40 PM.png]]

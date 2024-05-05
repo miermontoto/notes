@@ -37,7 +37,7 @@ Copia de otro proceso ya existente (sin cargar ningún programa). Al copiar, hay
 EL SO necesita poder acceder a la información de TODOS los procesos en cualquier momento, lo más rápido posible:
 
 **Tabla de preocesos del sistema: almacena el PCB de TODOS los procesos.**
-![[Sketch 2-15-2022 4-42 PM.png](../_resources/Procesos.resources/Sketch%202-15-2022%204-42%20PM.png)
+![[Sketch 2-15-2022 4-42 PM.png]]
 Puede ser un vector indexado por el PID del proceso. Suele apuntar al PCB, en vez de contenerlo.
 Reside siempre en memoria principal, al igual que los PCB.
 
@@ -120,12 +120,12 @@ Además, se añaden dos nuevos estados:
 
 ### En multiprogramación
 
-![[y2t2/Sistemas (SO)/_resources/Procesos.resources/image.1.png](../_resources/Procesos.resources/image.1.png)
+![[y2t2/Sistemas (SO)/_resources/Procesos.resources/image.1.png]]
 No existe la transición entre ejecución y listo porque al proceso agota la ráfaga de CPU de cada proceso SIEMPRE, aunque ocurran interrupciones de por medio. El SO siempre le devuelve el control al mismo proceso.
 
 ### En tiempo compartido
 
-![[y2t2/Sistemas (SO)/_resources/Procesos.resources/image.png](../_resources/Procesos.resources/image.png)
+![[y2t2/Sistemas (SO)/_resources/Procesos.resources/image.png]]
 
 
 ## Modelo de siete estados
@@ -133,7 +133,7 @@ No existe la transición entre ejecución y listo porque al proceso agota la rá
 Si el sistema operativo se queda sin memoria o si así lo indica, se pueden salvar procesos bloqueados o poco prioritarios a memoria secundaria y se descargan de memoria principal, es decir, **_se suspende el proceso_**. En memoria principal se conserva únicamente el PCB.
 Esto requiere un estado nuevo.
 
-![[y2t2/Sistemas (SO)/_resources/Procesos.resources/image.2.png](../_resources/Procesos.resources/image.2.png)
+![[y2t2/Sistemas (SO)/_resources/Procesos.resources/image.2.png]]
 Los proceos más idóneos para suspender son los que están en estado bloqueado, porque se ahorra memoria principal en procesos que no requieren usar la CPU en un tiempo comparativamente largo.
 
 

@@ -2,7 +2,7 @@
 
 # Prueba parcial
 
-![[Primer Parcial.pdf](_resources/Prueba_parcial.resources/Primer%20Parcial.pdf)
+![[Primer Parcial.pdf]]
 
 
 1. ¿Cuál de las siguientes componentes de un sistema informático tiene un MAYOR nivel de abstracción?

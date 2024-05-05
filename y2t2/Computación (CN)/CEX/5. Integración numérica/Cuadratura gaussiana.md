@@ -4,7 +4,7 @@ Upgraded:
 # Cuadratura gaussiana
 # Optimización de los nodos
 La elección óptima de los nodos conduce a las raíces de los polinomios de Legendre definidos por:
-![[y2t2/Computación (CN)/_resources/Cuadratura_gaussiana.resources/image.png](../../_resources/Cuadratura_gaussiana.resources/image.png)
+![[y2t2/Computación (CN)/_resources/Cuadratura_gaussiana.resources/image.png]]
 La fórmula de cuadratura gaussiana con n nodos en un intervalo [a, b] es exacta para todo polinomio de grado k <= 2n - 1.
 
 
@@ -13,4 +13,4 @@ La fórmula de cuadratura gaussiana con n nodos en un intervalo [a, b] es exacta
 
 
 ### <mark style="background: #BBFABBA6;">Ejercicio 5.6</mark>
-![[Sketch 4-22-2022 2-53 PM.png|800](../../_resources/Cuadratura_gaussiana.resources/Sketch%204-22-2022%202-53%20PM.png)
+![[Sketch 4-22-2022 2-53 PM.png|800]]

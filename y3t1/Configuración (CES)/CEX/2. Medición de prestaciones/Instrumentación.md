@@ -5,7 +5,7 @@
 
 ---
 ### Prácticas
-![[_resources/Instrumentación 2022-09-22 10.06.27.excalidraw](_resources/Instrumentaci%C3%B3n%202022-09-22%2010.06.27.excalidraw.md)
+![[_resources/Instrumentación 2022-09-22 10.06.27.excalidraw]]
 
 ## Tecnologías de medición de tiempos
 Dos problemas a resolver:

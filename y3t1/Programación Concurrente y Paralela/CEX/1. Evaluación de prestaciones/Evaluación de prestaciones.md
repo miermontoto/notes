@@ -77,7 +77,7 @@ $$S(n,p) = \frac{T(n)}{T(n,p)}$$
 
 ### Eficiencia
 <mark style="background: #ADCCFFA6;">El speedup partido por p, para que se acote entre 0 y 1.</mark> $$0 \leq E(n,p) = \frac{S(n,p)}{p} \leq 1$$
-### [[Ejemplos y ejercicios#Ejercicios Speedup|Ejercicios de speedup](Ejemplos%20y%20ejercicios.md)
+### [[Ejemplos y ejercicios#Ejercicios Speedup|Ejercicios de speedup]]
 
 ## Modelos de rendimiento
 ### Ley de Amdahl
@@ -128,7 +128,7 @@ $$RE_{dp}=\frac{1}{(1-PF)+\frac{PF}{p}}\times clock_{GHz}\times\frac{nºflop}{ci
 #### Procedimiento de cálculo #2:
 ![[_resources/Pasted image 20220920092539.png]]
 
-### [[Ejemplos y ejercicios#Ejercicios Escalabilidad|Ejercicios de escalabilidad](Ejemplos%20y%20ejercicios.md)
+### [[Ejemplos y ejercicios#Ejercicios Escalabilidad|Ejercicios de escalabilidad]]
 
 ### Eficiencia escalable
 Como el objetivo es mantener la eficiencia constante, se hacen crecer a las dos variables en la misma proporción.
@@ -152,4 +152,4 @@ pide:
 
 Se envía y se recibe la misma cantidad de datos de la GPU, no hay dependencias externas y reparto balanceado de tiempo de cálculo entre CPU y GPU.<sup>*</sup>
 
-![[_resources/Evaluación de prestaciones 2022-09-20 10.12.07.excalidraw](_resources/Evaluaci%C3%B3n%20de%20prestaciones%202022-09-20%2010.12.07.excalidraw.md)
+![[_resources/Evaluación de prestaciones 2022-09-20 10.12.07.excalidraw]]

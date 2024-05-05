@@ -19,59 +19,59 @@ Son polinomios de grado _n_ igualados a cero con coeficientes reales.
 
 ## Teorema 2.7.
 
-![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/image.png)
+![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.png]]
 
 ### Ejercicio 2.3.
 
-![[Sketch 2-18-2022 3-32 PM.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/Sketch%202-18-2022%203-32%20PM.png)
-![[_resources/Ecuaciones algebráicas 2022-06-04 21.20.22.excalidraw](_resources/Ecuaciones%20algebr%C3%A1icas%202022-06-04%2021.20.22.excalidraw.md)
+![[Sketch 2-18-2022 3-32 PM.png]]
+![[_resources/Ecuaciones algebráicas 2022-06-04 21.20.22.excalidraw]]
 
 # Algoritmo de Horner
 
 ## Procedimiento
 
-![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.1.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/image.1.png)
+![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.1.png]]
 
 
 ## Programación
 
-![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.2.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/image.2.png)
+![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.2.png]]
 
 
 ### Ejemplo 2.4.
 
-![[Sketch 2-18-2022 3-51 PM.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/Sketch%202-18-2022%203-51%20PM.png)
+![[Sketch 2-18-2022 3-51 PM.png]]
 
 
 ## Teorema 2.8
 
-![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.3.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/image.3.png)
+![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.3.png]]
 
 
 ### Ejemplo 2.5.
 
-![[Sketch 2-18-2022 4-10 PM.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/Sketch%202-18-2022%204-10%20PM.png)
+![[Sketch 2-18-2022 4-10 PM.png]]
 
 
 ## Cálculo de raíces por deflacción
 
-![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.4.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/image.4.png)
+![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.4.png]]
 
 ### Ejemplo 2.6.
 
-![[Sketch 2-18-2022 4-24 PM.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/Sketch%202-18-2022%204-24%20PM.png)
+![[Sketch 2-18-2022 4-24 PM.png]]
 
 
 # Método de Muller
 
 ## Procedimiento
 
-![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.5.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/image.5.png)
+![[y2t2/Computación (CN)/_resources/Ecuaciones_algebráicas.resources/image.5.png]]
 
 
 ### Problema 2.6.
 
-![[Sketch 2-18-2022 4-56 PM.png](../../_resources/Ecuaciones_algebr%C3%A1icas.resources/Sketch%202-18-2022%204-56%20PM.png)
+![[Sketch 2-18-2022 4-56 PM.png]]
 En el último punto, si la cota inferior es cero HAY que aplicar el método de bisección que reduzca el intervalo, ya que al calcular el error resultaría en una división por cero.
 
 [Computación Numérica (CEX)](https://www.google.com/calendar/event?eid=XzhkOWxjZ3JmZHByNmFzamtjNHAzNHBiNmNjcm02ZHI1NnNvNjJjajI2OHJqOG9wajYwcTZjY3I2NmdyajBkMzE2ZGlnIHVuZGVyc2NvcmViaXNAbQ)

@@ -14,7 +14,7 @@ PE (*Provider Edge*): el nodo de la red que sirve de enlace entre otras redes, q
 El protocolo de routing externo (*ERP*) más utilizado es BGP.
 
 ## Tablas de routing
-![[_resources/2. Interconexión de redes 2023-02-10 12.27.28.excalidraw](_resources/2.%20Interconexi%C3%B3n%20de%20redes%202023-02-10%2012.27.28.excalidraw.md)
+![[_resources/2. Interconexión de redes 2023-02-10 12.27.28.excalidraw]]
 
 ## Tiempo de convergencia
 La convergencia se produce cuando todos los routers de la red operan con el mismo conocimiento.
@@ -63,7 +63,7 @@ Los provoca un tiempo de convergencia excesivo. Cuando falla un enlace, la infor
 Se deriva del problema anterior. Actualizaciones erróneas continuarán generando bucles hasta que algún otro proceso lo detenga.
 Para evitar esto, se limita la distancia máxima de saltos de la red.
 
-![[_resources/2. Interconexión de redes 2023-02-13 12.14.07.excalidraw](_resources/2.%20Interconexi%C3%B3n%20de%20redes%202023-02-13%2012.14.07.excalidraw.md)
+![[_resources/2. Interconexión de redes 2023-02-13 12.14.07.excalidraw]]
 
 #### Soluciones para el problema de la cuenta al infinito
 - **Horizonte dividido**
@@ -89,7 +89,7 @@ Se basan en:
 - Una tabla de encaminamiento.
 
 **Árbol SPF aplicando Dijkstra**
-![[_resources/2. Interconexión de redes 2023-02-13 12.42.33.excalidraw](_resources/2.%20Interconexi%C3%B3n%20de%20redes%202023-02-13%2012.42.33.excalidraw.md)
+![[_resources/2. Interconexión de redes 2023-02-13 12.42.33.excalidraw]]
 
 #### OSPF: Áreas
 Para gestionar una interconexión de redes muy grandes, se divide la red en áreas más una red troncal.

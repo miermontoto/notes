@@ -36,7 +36,7 @@
 		- int
 		- long
 
-![[_resources/Desigualdad_del_triángulo.svg|250]]
+![[y4t2/Pruebas/Otros/_resources/Desigualdad_del_triángulo.svg|250]]
 ## Casos de prueba
 
 | CASO                                                                | Naturales | Decimales | Decimales (separación) | Decimales (aproximación) | decimales (truncamiento) | Negativo | Letras | Raros | Vacío | Cero | Equilátero | Isósceles | Escaleno | Desigualdad  (mayor 1) | Desigualdad  (mayor 2) | Desigualdad (mayor 3) | UF short | UF int | UF long | OF short | OF int | OF long | esperada   | resultado                                                    |

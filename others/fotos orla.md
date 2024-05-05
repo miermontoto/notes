@@ -1,1 +1,1 @@
-![[others/_resources/fotos orla 2024-04-24 13.04.10.excalidraw](_resources/fotos%20orla%202024-04-24%2013.04.10.excalidraw.md)
+![[others/_resources/fotos orla 2024-04-24 13.04.10.excalidraw]]

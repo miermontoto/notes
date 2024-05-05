@@ -11,7 +11,7 @@ Se calcula el producto escalar de las funciones f(x) y r(x).
 
 
 ## Polinomios de Legendre
-![[y2t2/Computación (CN)/_resources/Aproximación_continua.resources/image.png](../../_resources/Aproximaci%C3%B3n_continua.resources/image.png)
+![[y2t2/Computación (CN)/_resources/Aproximación_continua.resources/image.png]]
 
 ## Polinomios de Chebyshev
 Igual que los polinomios de Legendre, pero en lugar de tener peso 1 tienen otro peso.

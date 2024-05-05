@@ -2,7 +2,7 @@
 
 # Coordinación y sincronización de procesos (Intro)
 PDF:
-![[03 Coordinación y sincronización de procesos - Tra.pdf](../_resources/Coordinaci%C3%B3n_y_sincronizaci%C3%B3n_de_procesos_(Intro).resources/03%20Coordinaci%C3%B3n%20y%20sincronizaci%C3%B3n%20de%20procesos%20-%20Tra.pdf)
+![[03 Coordinación y sincronización de procesos - Tra.pdf]]
 
 
 | Q    | A    |
@@ -23,9 +23,9 @@ PDF:
 ## Índice
 
 1. Introducción
-2. [[El problema de la exclusión mutua|El problema de la exclusión mutua](El%20problema%20de%20la%20exclusi%C3%B3n%20mutua.md)
-3. [[Soluciones hardware a la exclusión mutua|Soluciones hardware a la exclusión mutua](Soluciones%20hardware%20a%20la%20exclusi%C3%B3n%20mutua.md)
-4. [[Semáforos.md|Semáforos]]
+2. [[El problema de la exclusión mutua|El problema de la exclusión mutua]]
+3. [[Soluciones hardware a la exclusión mutua|Soluciones hardware a la exclusión mutua]]
+4. [[Semáforos|Semáforos]]
 
 
 

@@ -105,7 +105,7 @@ Dicho polinomio se puede caluclar utilizando la fórmula de Lagrange:
 `p(x) = y1l1(x) + y2l2(x) + · · · + yn+1ln+1(x)`
 
 Para construirlo se utilizan los polinomios de Lagrange (ln):
-![[y2t2/Computación (CN)/PL/_resources/image.png](_resources/image.png)
+![[y2t2/Computación (CN)/PL/_resources/image.png]]
 Se utiliza `lagrange.m`  para construir la matriz de Lagrange.
 
 ~~~MATLAB
@@ -146,7 +146,7 @@ legend(’f(x)’,’Polinomio interpolador’,’location’,’south’)
 
 ### Error cometido
 Donde n+1 es el número de nodos y n es el grado del polinomio resultante.
-![[y2t2/Computación (CN)/PL/_resources/image.1.png](_resources/image.1.png)
+![[y2t2/Computación (CN)/PL/_resources/image.1.png]]
 El productorio es un polinomio, que lo vamos a llamar `q(x)`.
 Como se quiere acotar el error, se escoge el máximo del error obtenido con la función de arriba, que es el máximo del valor absoluto del productorio por el máximo del valor absoluto de la derivada n+1-ésima de c.
 
@@ -174,7 +174,7 @@ error = K*M / factorial(5)
 
 
 ### Nodos de Chebyshev
-![[y2t2/Computación (CN)/PL/_resources/image.2.png](_resources/image.2.png)
+![[y2t2/Computación (CN)/PL/_resources/image.2.png]]
 
 
 # Práctica 8

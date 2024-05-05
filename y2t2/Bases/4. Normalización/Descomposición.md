@@ -21,7 +21,7 @@ Comprobar si la intersección de los dos es la superclave de uno de ellos.
 
 Conocida la información de una tupla, ser capaz de reproducir la tupla.
 Igualar valores del antecedente → Igualar valores del consecuente.
-![[y2t2/Bases/4. Normalización/_resources/image.png](_resources/image.png)![[y2t2/Bases/4. Normalización/_resources/Sketch 4-7-2022 3-00 PM.png](_resources/Sketch%204-7-2022%203-00%20PM.png)
+![[y2t2/Bases/4. Normalización/_resources/image.png]]![[y2t2/Bases/4. Normalización/_resources/Sketch 4-7-2022 3-00 PM.png]]
 
 
 ## Conservación de dependencias
@@ -32,14 +32,14 @@ Con todas las dependencias de F, se mantienen solo las que tengan atributos en r
 ### Esquema 1 de descomposiciones.
 
 Risannen
-![[y2t2/Bases/4. Normalización/_resources/Sketch 4-7-2022 3-17 PM.png](_resources/Sketch%204-7-2022%203-17%20PM.png)
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-7-2022 3-17 PM.png]]
 
 
 ### Esquema 2 de descomposiciones.
 
-![[y2t2/Bases/4. Normalización/_resources/Sketch 4-7-2022 3-25 PM.png](_resources/Sketch%204-7-2022%203-25%20PM.png)
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-7-2022 3-25 PM.png]]
 
 
 ### Ejercicio 3 de descomposiciones.
 
-![[y2t2/Bases/4. Normalización/_resources/Sketch 4-7-2022 3-32 PM.png](_resources/Sketch%204-7-2022%203-32%20PM.png)
+![[y2t2/Bases/4. Normalización/_resources/Sketch 4-7-2022 3-32 PM.png]]

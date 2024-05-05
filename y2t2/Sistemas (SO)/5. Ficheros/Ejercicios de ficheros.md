@@ -2,7 +2,7 @@
 
 # Ejercicios de ficheros
 
-![[Ejercicios de ficheros.pdf](../_resources/Ejercicios_de_ficheros.resources/Ejercicios%20de%20ficheros.pdf)
+![[Ejercicios de ficheros.pdf]]
 
 ## Tres tipos de problemas
 
@@ -19,7 +19,7 @@
 
 ### Ejercicio 3, lista enlazada.
 
-![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.png](../_resources/Ejercicios_de_ficheros.resources/image.png)![[Sketch 5-9-2022 2-29 PM.png](../_resources/Ejercicios_de_ficheros.resources/Sketch%205-9-2022%202-29%20PM.png)
+![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.png]]![[Sketch 5-9-2022 2-29 PM.png]]
 **PROCESO PARA LEER LA INFORMACIÓN REQUERIDA:**
 
 1. Calcular el bloque a leer.
@@ -33,7 +33,7 @@
 
 ### Ejercicio 2, lista enlazada por tabla.
 
-![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.1.png](../_resources/Ejercicios_de_ficheros.resources/image.1.png)![[Sketch 5-9-2022 2-41 PM.png](../_resources/Ejercicios_de_ficheros.resources/Sketch%205-9-2022%202-41%20PM.png)
+![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.1.png]]![[Sketch 5-9-2022 2-41 PM.png]]
 **PROCESO PARA LEER LA INFORMACIÓN REQUERIDA**
 
 1. Calcular el bloque y desplazamiento dentro de él que se quiere acceder (arriba).
@@ -47,7 +47,7 @@
 
 ### Ejercicio 1, asignación indexada.
 
-![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.2.png](../_resources/Ejercicios_de_ficheros.resources/image.2.png)
+![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.2.png]]
 
 * 7 entradas directas
 * 1 indirecta doble
@@ -66,7 +66,7 @@
 
 ### Ejercicio 4.
 
-![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.3.png](../_resources/Ejercicios_de_ficheros.resources/image.3.png)
+![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.3.png]]
 **En cada paso:** Si no lo encuentra, se acaba el proceso y error de ruta no válida.
 
 1. Obtener el BDF del directorio raíz desde la RAM.
@@ -83,7 +83,7 @@
 
 ### Ejercicio random.
 
-![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.4.png](../_resources/Ejercicios_de_ficheros.resources/image.4.png)![[Sketch 5-22-2022 6-21 PM.png](../_resources/Ejercicios_de_ficheros.resources/Sketch%205-22-2022%206-21%20PM.png)
+![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.4.png]]![[Sketch 5-22-2022 6-21 PM.png]]
 **En cada paso:** si no se encuentra, se acaba el proceso y error de ruta no válida.
 
 1. Calcular el bloque y su desplazamiento a través de la posición que se quiere acceder.
@@ -99,7 +99,7 @@
 
 ### Ejercicio 5, corrupción A.
 
-![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.5.png](../_resources/Ejercicios_de_ficheros.resources/image.5.png)
+![[y2t2/Sistemas (SO)/_resources/Ejercicios_de_ficheros.resources/image.5.png]]
 **Nº bloq. dentro de un bloque:** 4KiB / 4 bytes = 2¹⁰
 **Total bloques:** 5 + 2*2¹⁰ + 2²⁰ = 1050629
 **Total tamaño:** 1050629 * 4*2¹⁰ = 4303376384 bytes
