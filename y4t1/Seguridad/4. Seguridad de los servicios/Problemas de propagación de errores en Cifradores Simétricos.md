@@ -3,7 +3,7 @@
 ---
 
 # CBC
-![[_resources/Problemas de propagación de errores en Cifradores Simétricos 2023-10-19 16.06.29.excalidraw]]
+![[_resources/Problemas de propagación de errores en Cifradores Simétricos 2023-10-19 16.06.29.excalidraw](_resources/Problemas%20de%20propagaci%C3%B3n%20de%20errores%20en%20Cifradores%20Sim%C3%A9tricos%202023-10-19%2016.06.29.excalidraw.md)
 
 # OFB
 a) Se constriñe al bloque en el que se está trabajando.
@@ -25,8 +25,8 @@ Respuesta: es imposible discernir entre el final del mensaje y el comienzo del p
 
 ![[_resources/Ejercicio CadenaCerts.pdf]]
 
-![[_resources/Problemas de propagación de errores en Cifradores Simétricos 2023-10-19 16.27.06.excalidraw]]
+![[_resources/Problemas de propagación de errores en Cifradores Simétricos 2023-10-19 16.27.06.excalidraw](_resources/Problemas%20de%20propagaci%C3%B3n%20de%20errores%20en%20Cifradores%20Sim%C3%A9tricos%202023-10-19%2016.27.06.excalidraw.md)
 
 
 ## Otro problema del esquema de teoría de resumen y cifrado
-![[_resources/Problemas de propagación de errores en Cifradores Simétricos 2023-10-19 16.41.12.excalidraw]]
+![[_resources/Problemas de propagación de errores en Cifradores Simétricos 2023-10-19 16.41.12.excalidraw](_resources/Problemas%20de%20propagaci%C3%B3n%20de%20errores%20en%20Cifradores%20Sim%C3%A9tricos%202023-10-19%2016.41.12.excalidraw.md)

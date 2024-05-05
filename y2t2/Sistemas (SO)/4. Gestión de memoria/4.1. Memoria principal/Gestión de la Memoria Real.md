@@ -2,7 +2,7 @@
 
 # Gestión de la Memoria Real
 PDF:
-![[04 Gestión de la memoria real - Transparencias.pdf]]
+![[04 Gestión de la memoria real - Transparencias.pdf](../../_resources/Gesti%C3%B3n_de_la_Memoria_Real.resources/04%20Gesti%C3%B3n%20de%20la%20memoria%20real%20-%20Transparencias.pdf)
 
 
 |     |     |
@@ -45,7 +45,7 @@ _Eficiencia, transparencia, compartición entre hilos, protección contra acceso
 
 # Jerarquía de memoria
 
-![[y2t2/Sistemas (SO)/_resources/Gestión_de_la_Memoria_Real.resources/image.png]]
+![[y2t2/Sistemas (SO)/_resources/Gestión_de_la_Memoria_Real.resources/image.png](../../_resources/Gesti%C3%B3n_de_la_Memoria_Real.resources/image.png)
 
 
 ## Principio de localidad

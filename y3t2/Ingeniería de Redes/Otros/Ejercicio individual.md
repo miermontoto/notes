@@ -1,1 +1,1 @@
-![[_resources/Ejercicio individual 2023-03-30 11.15.47.excalidraw]]
+![[_resources/Ejercicio individual 2023-03-30 11.15.47.excalidraw](_resources/Ejercicio%20individual%202023-03-30%2011.15.47.excalidraw.md)

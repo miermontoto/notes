@@ -15,7 +15,7 @@ Cuanto más rápido converga, más rápido es el método.
 
 # Hub de métodos
 
-* [[Métodos que usan intervalos|Métodos que usan intervalos]]
-* [[Métodos de punto fijo|Métodos de punto fijo]]
-* [[Método de Newton|Método de Newton]]
-* [[Ecuaciones algebráicas|Ecuaciones algebráicas]]
+* [[Métodos que usan intervalos|Métodos que usan intervalos](M%C3%A9todos%20que%20usan%20intervalos.md)
+* [[Métodos de punto fijo|Métodos de punto fijo](M%C3%A9todos%20de%20punto%20fijo.md)
+* [[Método de Newton|Método de Newton](M%C3%A9todo%20de%20Newton.md)
+* [[Ecuaciones algebráicas|Ecuaciones algebráicas](Ecuaciones%20algebr%C3%A1icas.md)

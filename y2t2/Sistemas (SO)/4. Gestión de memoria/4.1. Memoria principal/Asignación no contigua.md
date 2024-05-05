@@ -13,7 +13,7 @@
 # Paginación
 
 Funciona en base al particionamiento fijo.
-![[y2t2/Sistemas (SO)/_resources/Asignación_no_contigua.resources/image.png]]
+![[y2t2/Sistemas (SO)/_resources/Asignación_no_contigua.resources/image.png](../../_resources/Asignaci%C3%B3n_no_contigua.resources/image.png)
 
 
 * ### **Organización física de la memoria principal**
@@ -41,9 +41,9 @@ Funciona en base al particionamiento fijo.
     * Si el tamaño de página es de 32 bytes, se necesitan 5 bits.
     * Por lo tanto, los 5 bits de la derecha es el desplazamiento, el resto de bits es el número de página.
     * Al obtener el número de página, se saca el comienzo del marco en el que se encuentra la dirección y se le añade el desplazamiento.
-    * ![[Sketch 4-4-2022 3-09 PM.png]]
+    * ![[Sketch 4-4-2022 3-09 PM.png](../../_resources/Asignaci%C3%B3n_no_contigua.resources/Sketch%204-4-2022%203-09%20PM.png)
     * Se añaden tantos ceros a la izquierda para que el tamaño de la dirección física sea igual.
-    * ![[y2t2/Sistemas (SO)/_resources/Asignación_no_contigua.resources/image.1.png]]
+    * ![[y2t2/Sistemas (SO)/_resources/Asignación_no_contigua.resources/image.1.png](../../_resources/Asignaci%C3%B3n_no_contigua.resources/image.1.png)
 * **Compartición / protección**
   * Compartición
     * Dos o más páginas apuntan a un solo marco (se comparte, sin duplicar).

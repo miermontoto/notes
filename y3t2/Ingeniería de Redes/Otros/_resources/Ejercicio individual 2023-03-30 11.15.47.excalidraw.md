@@ -21,7 +21,7 @@ infraestructura usada para unir dichos elementos. ^CfD9GXa2
 
 
 # Embedded files
-d6ca9b716a6d1ca744dd973c45360126e9ad120a: [[_resources/Pasted Image 20230330115758_719.png]]
+d6ca9b716a6d1ca744dd973c45360126e9ad120a: [[_resources/Pasted Image 20230330115758_719.png](Pasted%20Image%2020230330115758_719.png)
 
 %%
 # Drawing

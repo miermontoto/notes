@@ -14,10 +14,10 @@
 				f(x0) + f'(x0)(x - x0) = 0 ⇒ x = x0 - ( f(x0) / f'(x0))
 
 Cada elemento de la sucesión se calula como el elemento anterior menos la imágen del elemento anterior partido de la imagen de la derivada del elemento anterior.
-![[y2t2/Computación (CN)/_resources/Método_de_Newton.resources/image.png]]
+![[y2t2/Computación (CN)/_resources/Método_de_Newton.resources/image.png](../../_resources/M%C3%A9todo_de_Newton.resources/image.png)
 
 Es un método de punto fijo para la función:
-![[y2t2/Computación (CN)/_resources/Método_de_Newton.resources/image.1.png]]
+![[y2t2/Computación (CN)/_resources/Método_de_Newton.resources/image.1.png](../../_resources/M%C3%A9todo_de_Newton.resources/image.1.png)
 Además, esta función verifica que g'(r) = 0.
 
 Si f'(xn) = 0 para algún n, el método no puede ser implementado.
@@ -25,12 +25,12 @@ Si f'(xn) = 0 para algún n, el método no puede ser implementado.
 
 ## Convergencia local del método de Newton-Raphson
 
-![[y2t2/Computación (CN)/_resources/Método_de_Newton.resources/image.2.png]]
+![[y2t2/Computación (CN)/_resources/Método_de_Newton.resources/image.2.png](../../_resources/M%C3%A9todo_de_Newton.resources/image.2.png)
 
 
 ### Problema 2.4.
 
-![[Sketch 2-14-2022 5-45 PM.png]]
+![[Sketch 2-14-2022 5-45 PM.png](../../_resources/M%C3%A9todo_de_Newton.resources/Sketch%202-14-2022%205-45%20PM.png)
 
 
 * La convergencia es cuadrática.
@@ -54,13 +54,13 @@ La deriviada f'(xn) solo se actualiza cada cierto número de iteraciones. Cuando
 ## Cálculo apriximado de la derivada
 
 Se realiza la aproximación por la definición de la derivada.
-![[y2t2/Computación (CN)/_resources/Método_de_Newton.resources/image.3.png]]
+![[y2t2/Computación (CN)/_resources/Método_de_Newton.resources/image.3.png](../../_resources/M%C3%A9todo_de_Newton.resources/image.3.png)
 
 
 ## Método de la Secante
 
 Dados x0 y x1, se plantea el método:
-![[y2t2/Computación (CN)/_resources/Método_de_Newton.resources/image.4.png]]
+![[y2t2/Computación (CN)/_resources/Método_de_Newton.resources/image.4.png](../../_resources/M%C3%A9todo_de_Newton.resources/image.4.png)
 
 Geométricamente, consiste en aproximar la curva por la secante en dos puntos y calcular la raíz generada por esta secante.
 TIene convergencia local de orden ≈ 1.62 bajo las mismas hipótesis del método de Newton.

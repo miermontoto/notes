@@ -12,7 +12,7 @@
 <div style="page-break-after: always;"></div>
 
 ## Diagrama de despliegue
-![[_resources/PA2 2022-11-30 11.28.16.excalidraw]]
+![[_resources/PA2 2022-11-30 11.28.16.excalidraw](_resources/PA2%202022-11-30%2011.28.16.excalidraw.md)
 
 
 

@@ -1,1 +1,1 @@
-![[../_resources/Untitled 2022-09-16 15.12.45.excalidraw]]
+![[../_resources/Untitled 2022-09-16 15.12.45.excalidraw](_resources/Untitled%202022-09-16%2015.12.45.excalidraw.md)

@@ -2,7 +2,7 @@
 
 # Programación orientada a eventos
 
-![[POE.pdf]]
+![[../_resources/Programación_orientada_a_eventos.resources/POE.pdf]]
 
 
 # Índice
@@ -62,7 +62,7 @@ Si A queda esperando por la respuesta, es una petición bloqueante o síncrona. 
 
 ### Petición-Respuesta / Cliente-Servidor / Client-Server / Master-Slave
 Una interacción petición-respuesta se encuentra entre dos agentes. La petición incluye detalles.
-![[y2t2/Paradigmas (TPP)/_resources/Programación_orientada_a_eventos.resources/image.png]]
+![[y2t2/Paradigmas (TPP)/_resources/Programación_orientada_a_eventos.resources/image.png](../_resources/Programaci%C3%B3n_orientada_a_eventos.resources/image.png)
 En estos casos se producen cuatro eventos:
 
 1. Petición de A
@@ -71,7 +71,7 @@ En estos casos se producen cuatro eventos:
 4. Recogida de la respuesta por A
 
 ### Paso de mensaje
-![[y2t2/Paradigmas (TPP)/_resources/Programación_orientada_a_eventos.resources/image.1.png]]
+![[y2t2/Paradigmas (TPP)/_resources/Programación_orientada_a_eventos.resources/image.1.png](../_resources/Programaci%C3%B3n_orientada_a_eventos.resources/image.1.png)
 
 
 ### Publicación - Subscripción
@@ -167,7 +167,7 @@ Los eventos se procesan en lapsos de tiempos superpuestos.
 
 
 ## Bucle de eventos
-![[y2t2/Paradigmas (TPP)/_resources/Programación_orientada_a_eventos.resources/image.2.png]]
+![[y2t2/Paradigmas (TPP)/_resources/Programación_orientada_a_eventos.resources/image.2.png](../_resources/Programaci%C3%B3n_orientada_a_eventos.resources/image.2.png)
 
 
 ## Registro de eventos

@@ -12,7 +12,7 @@ Encapsulan "lo que varía". Cuando un comportamiento varía con frecuencia se en
   * El objeto _(emisor)_ que crea la petición no es el que lo ejecuta.
   * El emisor pasa la solucitud a otro objeto _(receptor)_
 
-![[y2t2/Paradigmas (TPP)/_resources/Patrones_de_comportamiento.resources/image.png]]
+![[y2t2/Paradigmas (TPP)/_resources/Patrones_de_comportamiento.resources/image.png](../_resources/Patrones_de_comportamiento.resources/image.png)
 
 ```Java
 public class static void main() {
@@ -37,7 +37,7 @@ public class static void main() {
 
 
 ### UML
-![[y2t2/Paradigmas (TPP)/_resources/Patrones_de_comportamiento.resources/image.1.png|1050]]
+![[y2t2/Paradigmas (TPP)/_resources/Patrones_de_comportamiento.resources/image.1.png|1050](../_resources/Patrones_de_comportamiento.resources/image.1.png)
 
 
 * * *
@@ -48,7 +48,7 @@ Define una dependencia de 1:N entre objetos. Al cambiar un objeto se notifica a 
 
 ## Estructura
 
-![[y2t2/Paradigmas (TPP)/_resources/Patrones_de_comportamiento.resources/image.2.png]]
+![[y2t2/Paradigmas (TPP)/_resources/Patrones_de_comportamiento.resources/image.2.png](../_resources/Patrones_de_comportamiento.resources/image.2.png)
 
 
 ## Consecuencias

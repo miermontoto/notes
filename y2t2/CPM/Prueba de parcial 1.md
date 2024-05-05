@@ -2,7 +2,7 @@
 
 # Prueba de examen
 
-![[Escáner - 2022-03-09 15_01_36.pdf]]
+![[Escáner - 2022-03-09 15_01_36.pdf](_resources/Prueba_de_examen.resources/Esc%C3%A1ner%20-%202022-03-09%2015_01_36.pdf)
 
 [Comunicación Persona Máquina (PA1)](https://www.google.com/calendar/event?eid=NzE1dXFpM21uY3ZnYTJhNnE1cXQ0c2tsazAgdW5kZXJzY29yZWJpc0Bt)
 

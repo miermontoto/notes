@@ -17,7 +17,7 @@ Dada una matriz real A de orden n x n y un vector b→ (matriz columna de orden 
 
 ### Problema 3.1.
 
-![[Sketch 2-21-2022 5-26 PM.png]]
+![[Sketch 2-21-2022 5-26 PM.png](../../_resources/M%C3%A9todos_directos.resources/Sketch%202-21-2022%205-26%20PM.png)
 
 
 ## Teorema 3.1.
@@ -62,13 +62,13 @@ Ax→ = LUx→ = L(Ux→) = Ly→ = b→
 
 ### Problema 3.3.
 
-![[Sketch 2-21-2022 5-59 PM.png]]
+![[Sketch 2-21-2022 5-59 PM.png](../../_resources/M%C3%A9todos_directos.resources/Sketch%202-21-2022%205-59%20PM.png)
 
 
 ### Definición 3.1.
 
 Una matriz es de diagonal estrictamente dominante si verifica que:
-![[y2t2/Computación (CN)/_resources/Métodos_directos.resources/image.png]]
+![[y2t2/Computación (CN)/_resources/Métodos_directos.resources/image.png](../../_resources/M%C3%A9todos_directos.resources/image.png)
 Si una matriz es de diagonal estrictamente dominante, entonces la factorización LU y la eliminación de Gauss son estables frente a errores de redondeo.
 
 
@@ -79,7 +79,7 @@ Se realiza para elegir filas que tengan pivote no nulo con el objetivo de reduci
 
 ### Problema 3.5.
 
-![[Sketch 2-25-2022 2-26 PM.png]]
+![[Sketch 2-25-2022 2-26 PM.png](../../_resources/M%C3%A9todos_directos.resources/Sketch%202-25-2022%202-26%20PM.png)
 
 
 ### Pivoteo parcial mediante factor de escala
@@ -93,12 +93,12 @@ Se realiza para elegir filas que tengan pivote no nulo con el objetivo de reduci
 
 ### Ejemplo 3.1.
 
-![[Sketch 2-25-2022 2-44 PM.png]]
+![[Sketch 2-25-2022 2-44 PM.png](../../_resources/M%C3%A9todos_directos.resources/Sketch%202-25-2022%202-44%20PM.png)
 
 
 ### Problema 3.6.
 
-![[Sketch 2-25-2022 2-54 PM.png]]
+![[Sketch 2-25-2022 2-54 PM.png](../../_resources/M%C3%A9todos_directos.resources/Sketch%202-25-2022%202-54%20PM.png)
 
 
 * La realización de pivoteo aumenta el coste del método.
@@ -124,7 +124,7 @@ Si A es cuadrada, es equivalente que:
 
 ### Problema 3.7.
 
-![[Sketch 2-28-2022 5-25 PM.png]]
+![[Sketch 2-28-2022 5-25 PM.png](../../_resources/M%C3%A9todos_directos.resources/Sketch%202-28-2022%205-25%20PM.png)
 
 
 # Factorización QR
@@ -139,7 +139,7 @@ Gram-Schmidt
 
 ### Ejemplo 3.2.
 
-![[Sketch 2-28-2022 5-41 PM.png]]
+![[Sketch 2-28-2022 5-41 PM.png](../../_resources/M%C3%A9todos_directos.resources/Sketch%202-28-2022%205-41%20PM.png)
 
 
 # Número de condición de una matriz
@@ -163,7 +163,7 @@ Así, _λ_ es valor porpio de A <-> P(_λ_) = 0
 ### Definición 3.5
 
 En ℝ n se definen las **normas 1, 2 e infinito** como:
-![[y2t2/Computación (CN)/_resources/Métodos_directos.resources/image.1.png]]
+![[y2t2/Computación (CN)/_resources/Métodos_directos.resources/image.1.png](../../_resources/M%C3%A9todos_directos.resources/image.1.png)
 La norma 1 es por columnas, la norma infinito por filas.
 
 Si una sucesión converge a un punto en una norma, converge a dicho punto con cualquier otra norma.
@@ -171,13 +171,13 @@ Si una sucesión converge a un punto en una norma, converge a dicho punto con cu
 
 ### Problema 3.8
 
-![[Sketch 2-28-2022 5-56 PM.png]]
+![[Sketch 2-28-2022 5-56 PM.png](../../_resources/M%C3%A9todos_directos.resources/Sketch%202-28-2022%205-56%20PM.png)
 
 **RESUMEN DEL RESTO:** para valores experimentales, el mínimo cambio puede producir resultados completamente diferentes.
 
 ### Problema 3.9
 
-![[Sketch 3-4-2022 3-19 PM.png]]
+![[Sketch 3-4-2022 3-19 PM.png](../../_resources/M%C3%A9todos_directos.resources/Sketch%203-4-2022%203-19%20PM.png)
 
 
 ## Número de condición
@@ -194,18 +194,18 @@ Sea A una matriz cuadrada e invertible, b un vector no nulo, x el vetor solució
 
 * Para una perturbación de b, entonces:
 
-![[y2t2/Computación (CN)/_resources/Métodos_directos.resources/image.2.png]]
+![[y2t2/Computación (CN)/_resources/Métodos_directos.resources/image.2.png](../../_resources/M%C3%A9todos_directos.resources/image.2.png)
 
 
 * Para una perturbación de A, entonces:
 
-![[y2t2/Computación (CN)/_resources/Métodos_directos.resources/image.3.png]]
+![[y2t2/Computación (CN)/_resources/Métodos_directos.resources/image.3.png](../../_resources/M%C3%A9todos_directos.resources/image.3.png)
 
 
 ### Proposición
 
 Sea A una matriz simétrica e invertible, se verifica:
-![[y2t2/Computación (CN)/_resources/Métodos_directos.resources/image.4.png]]
+![[y2t2/Computación (CN)/_resources/Métodos_directos.resources/image.4.png](../../_resources/M%C3%A9todos_directos.resources/image.4.png)
 
 
 [Computación Numérica (CEX)](https://www.google.com/calendar/event?eid=XzhkOWxjZ3JmZHByNmFzamtjbGltNHAxajY4b21hYzloYzhvNjJwOWc2Z3NqNGViMWM0c2o4Y3I0NjRvajBwOWg2OWkwIHVuZGVyc2NvcmViaXNAbQ)

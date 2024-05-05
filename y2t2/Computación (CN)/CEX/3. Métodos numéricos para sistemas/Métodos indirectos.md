@@ -19,20 +19,20 @@ Sea a una matriz A, A = D + L + U, donde:
 # Método de Jacobi
 
 SI yo tengo un sist. de ecuaciones, se despeja el elemento i de la ecuación i-ésima.
-![[y2t2/Computación (CN)/_resources/Métodos_indirectos.resources/image.png]]
+![[y2t2/Computación (CN)/_resources/Métodos_indirectos.resources/image.png](../../_resources/M%C3%A9todos_indirectos.resources/image.png)
 A debe de tener elementos no nulos en su diagonal principal para que se le pueda aplicar el Método de Jacobi.
 SI la matriz A es hueca, también lo es la matriz BJ.
 
 
 ### Problema 3.11
 
-![[Sketch 3-4-2022 3-47 PM.png]]
+![[Sketch 3-4-2022 3-47 PM.png](../../_resources/M%C3%A9todos_indirectos.resources/Sketch%203-4-2022%203-47%20PM.png)
 
 
 # Método de Gauss-Seidel
 
 Se despeja el elemento i en la i-ésima ecuación.
-![[Sketch 3-4-2022 4-06 PM.png]]
+![[Sketch 3-4-2022 4-06 PM.png](../../_resources/M%C3%A9todos_indirectos.resources/Sketch%203-4-2022%204-06%20PM.png)
 
 
 # Resultados de convergencia
@@ -44,7 +44,7 @@ Se despeja el elemento i en la i-ésima ecuación.
 
 ### Problema 3.14
 
-![[Sketch 3-4-2022 4-21 PM.png]]
+![[Sketch 3-4-2022 4-21 PM.png](../../_resources/M%C3%A9todos_indirectos.resources/Sketch%203-4-2022%204-21%20PM.png)
 
 
 ## Sobre la matriz A

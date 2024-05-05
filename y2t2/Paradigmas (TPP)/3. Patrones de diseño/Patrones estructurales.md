@@ -6,9 +6,9 @@
 ## Esquemas
 
 ### Herencia
-![[Sketch 2-22-2022 3-19 PM.png]]
+![[Sketch 2-22-2022 3-19 PM.png](../_resources/Patrones_estructurales.resources/Sketch%202-22-2022%203-19%20PM.png)
 ### Composición
-![[Sketch 2-22-2022 3-26 PM.png]]
+![[Sketch 2-22-2022 3-26 PM.png](../_resources/Patrones_estructurales.resources/Sketch%202-22-2022%203-26%20PM.png)
 
 ## Definiciones y consecuencias
 
@@ -17,7 +17,7 @@
 * Adaptador, como subclase de Adaptable, puede redefinir parte de la clase heredada.
 * Introduce un solo objeto, no necesita ninguna referencia a un objeto por composición.
 
-![[y2t2/Paradigmas (TPP)/_resources/Patrones_estructurales.resources/image.2.png|1050]]
+![[y2t2/Paradigmas (TPP)/_resources/Patrones_estructurales.resources/image.2.png|1050](../_resources/Patrones_estructurales.resources/image.2.png)
 
 
 ### De objetos (por composición)
@@ -26,7 +26,7 @@
 * Introduce un objeto aparte del Adaptable.
 
 
-![[y2t2/Paradigmas (TPP)/_resources/Patrones_estructurales.resources/image.3.png|1050]]
+![[y2t2/Paradigmas (TPP)/_resources/Patrones_estructurales.resources/image.3.png|1050](../_resources/Patrones_estructurales.resources/image.3.png)
 
 
 * * *
@@ -35,7 +35,7 @@
 Proporciona una interfaz unificada a un conjunto de interfaces en un subsistema. Es una intrefaz de alto nivel que facilita el uso del subsistema.
 Puede haber facades dentro del subsistema que a su vez manejen subsistemas dentro.
 
-![[y2t2/Paradigmas (TPP)/_resources/Patrones_estructurales.resources/image.png|1050]]
+![[y2t2/Paradigmas (TPP)/_resources/Patrones_estructurales.resources/image.png|1050](../_resources/Patrones_estructurales.resources/image.png)
 
 
 * * *
@@ -43,8 +43,8 @@ Puede haber facades dentro del subsistema que a su vez manejen subsistemas dentr
 # Composite
 Compone objetos en estructuras de árbol para representar jerarquías parte-todo. Permite que los clientes traten de manera uniforme a los objetos individuales y a los compuestos.
 
-![[y2t2/Paradigmas (TPP)/_resources/Patrones_estructurales.resources/image.1.png|1050]]
-![[y2t2/Paradigmas (TPP)/_resources/Patrones_estructurales.resources/image.4.png|1050]]
+![[y2t2/Paradigmas (TPP)/_resources/Patrones_estructurales.resources/image.1.png|1050](../_resources/Patrones_estructurales.resources/image.1.png)
+![[y2t2/Paradigmas (TPP)/_resources/Patrones_estructurales.resources/image.4.png|1050](../_resources/Patrones_estructurales.resources/image.4.png)
 
 ## Consecuencias
 * Define jerarquías de clases formadas por objetos primitivos y compuestos.

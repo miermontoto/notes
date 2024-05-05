@@ -1,7 +1,7 @@
 
 
 # Memoria virtual
-![[04 Gestion de la memoria virtual - Transparencias.pdf]]
+![[04 Gestion de la memoria virtual - Transparencias.pdf](../../_resources/Memoria_virtual.resources/04%20Gestion%20de%20la%20memoria%20virtual%20-%20Transparencias.pdf)
 **Objetivo:** aumentar el grado de multiprogramación.
 _Nota:_ solo se va a ver mem. virtual con paginación.
 
