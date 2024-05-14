@@ -1,12 +1,80 @@
 {
   "recentFiles": [
     {
-      "basename": "trazabilidad2",
-      "path": "y4t2/Pruebas/Otros/_resources/trazabilidad2.md"
+      "basename": "2. Viabilidad",
+      "path": "y4t2/Proyectos/CEX/2. Viabilidad.md"
+    },
+    {
+      "basename": "1. Conceptos",
+      "path": "y4t2/Proyectos/CEX/1. Conceptos.md"
+    },
+    {
+      "basename": "6. Contratación",
+      "path": "y4t2/Proyectos/CEX/6. Contratación.md"
+    },
+    {
+      "basename": "5. Pliego",
+      "path": "y4t2/Proyectos/CEX/5. Pliego.md"
+    },
+    {
+      "basename": "4. Planificación",
+      "path": "y4t2/Proyectos/CEX/4. Planificación.md"
+    },
+    {
+      "basename": "3. Documentación",
+      "path": "y4t2/Proyectos/CEX/3. Documentación.md"
+    },
+    {
+      "basename": "7. Despliegue",
+      "path": "y4t2/Proyectos/CEX/7. Despliegue.md"
+    },
+    {
+      "basename": "2. viabilidad de los proyectos",
+      "path": "y4t2/Proyectos/CEX/_resources/2. viabilidad de los proyectos.pdf"
+    },
+    {
+      "basename": "Pasted image 20240206155738",
+      "path": "y4t2/Proyectos/CEX/_resources/Pasted image 20240206155738.png"
+    },
+    {
+      "basename": "Pasted image 20240206155447",
+      "path": "y4t2/Proyectos/CEX/_resources/Pasted image 20240206155447.png"
+    },
+    {
+      "basename": "Pasted image 20240206155403",
+      "path": "y4t2/Proyectos/CEX/_resources/Pasted image 20240206155403.png"
+    },
+    {
+      "basename": "Pasted image 20240206155312",
+      "path": "y4t2/Proyectos/CEX/_resources/Pasted image 20240206155312.png"
+    },
+    {
+      "basename": "Pasted image 20240202154540",
+      "path": "y4t2/Proyectos/CEX/_resources/Pasted image 20240202154540.png"
+    },
+    {
+      "basename": "2. Viabilidad 2024-03-08 16.18.05.excalidraw",
+      "path": "y4t2/Proyectos/CEX/_resources/2. Viabilidad 2024-03-08 16.18.05.excalidraw.md"
+    },
+    {
+      "basename": "1.Concepto de proyecto",
+      "path": "y4t2/Proyectos/CEX/_resources/1.Concepto de proyecto.pdf"
+    },
+    {
+      "basename": "4. Planificación 2024-04-23 15.09.00.excalidraw",
+      "path": "y4t2/Proyectos/CEX/_resources/4. Planificación 2024-04-23 15.09.00.excalidraw.md"
+    },
+    {
+      "basename": "4. Planificación 2024-04-05 16.44.14.excalidraw",
+      "path": "y4t2/Proyectos/CEX/_resources/4. Planificación 2024-04-05 16.44.14.excalidraw.md"
     },
     {
       "basename": "6. Pruebas en el contexto de un proyecto",
       "path": "y4t2/Pruebas/CEX/6. Pruebas en el contexto de un proyecto.md"
+    },
+    {
+      "basename": "trazabilidad2",
+      "path": "y4t2/Pruebas/Otros/_resources/trazabilidad2.md"
     },
     {
       "basename": "5. Caminos",
@@ -105,26 +173,6 @@
       "path": "y4t2/Proyectos/CEX/_resources/4. Planificación 2024-04-23 15.29.46.excalidraw.md"
     },
     {
-      "basename": "4. Planificación",
-      "path": "y4t2/Proyectos/CEX/4. Planificación.md"
-    },
-    {
-      "basename": "4. Planificación 2024-04-23 15.09.00.excalidraw",
-      "path": "y4t2/Proyectos/CEX/_resources/4. Planificación 2024-04-23 15.09.00.excalidraw.md"
-    },
-    {
-      "basename": "5. Pliego",
-      "path": "y4t2/Proyectos/CEX/5. Pliego.md"
-    },
-    {
-      "basename": "6. Contratación",
-      "path": "y4t2/Proyectos/CEX/6. Contratación.md"
-    },
-    {
-      "basename": "7. Despliegue",
-      "path": "y4t2/Proyectos/CEX/7. Despliegue.md"
-    },
-    {
       "basename": "Ejercicio PA",
       "path": "y4t2/Proyectos/Otros/Ejercicio PA.md"
     },
@@ -151,54 +199,6 @@
     {
       "basename": "Redes jerárquicas",
       "path": "y3t2/Ingeniería de Redes/Otros/Redes jerárquicas.md"
-    },
-    {
-      "basename": "MEGAESCENARIO",
-      "path": "y3t2/Ingeniería de Redes/Otros/MEGAESCENARIO.md"
-    },
-    {
-      "basename": "IPv4",
-      "path": "y3t2/Ingeniería de Redes/CEX/1. Arquitectura de la red de Internet/IPv4.md"
-    },
-    {
-      "basename": "2. Introducción a ITIL4",
-      "path": "y4t1/Gestión de Tecnologías de la Información/2. Introducción a ITIL4.md"
-    },
-    {
-      "basename": "1. Introducción a la Gestión de Servicios e ITIL v3",
-      "path": "y4t1/Gestión de Tecnologías de la Información/1. Introducción a la Gestión de Servicios e ITIL v3.md"
-    },
-    {
-      "basename": "Actividades y situaciones",
-      "path": "y2t2/Bases/1. Modelo E-R/Actividades y situaciones.md"
-    },
-    {
-      "basename": "4. Planificación 2024-04-16 15.19.30.excalidraw",
-      "path": "y4t2/Proyectos/CEX/_resources/4. Planificación 2024-04-16 15.19.30.excalidraw.md"
-    },
-    {
-      "basename": "Ejercicio PA 2024-04-16 15.16.47.excalidraw",
-      "path": "y4t2/Proyectos/Otros/_resources/Ejercicio PA 2024-04-16 15.16.47.excalidraw.md"
-    },
-    {
-      "basename": "Gestión y planificación de la capacidad",
-      "path": "y3t1/Configuración (CES)/CEX/7. Planificación de sistemas/Gestión y planificación de la capacidad.md"
-    },
-    {
-      "basename": "4. Planificación 2024-04-05 16.44.14.excalidraw",
-      "path": "y4t2/Proyectos/CEX/_resources/4. Planificación 2024-04-05 16.44.14.excalidraw.md"
-    },
-    {
-      "basename": "React",
-      "path": "y4t1/Tecnologías Web/PA/React.md"
-    },
-    {
-      "basename": "Modelos de Negocio",
-      "path": "y4t1/Tecnologías Web/PA/Modelos de Negocio.md"
-    },
-    {
-      "basename": "Computación (CN)",
-      "path": "y2t2/Computación (CN)/Computación (CN).md"
     }
   ],
   "omittedPaths": [],
