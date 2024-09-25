@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Introducción",
+      "path": "y3t1/Configuración (CES)/CEX/1. Introducción/Introducción.md"
+    },
+    {
+      "basename": "2. Introducción a ITIL4",
+      "path": "y4t1/Gestión de Tecnologías de la Información/2. Introducción a ITIL4.md"
+    },
+    {
       "basename": "2. viabilidad de los proyectos",
       "path": "y4t2/Proyectos/CEX/_resources/2. viabilidad de los proyectos.pdf"
+    },
+    {
+      "basename": "1.Concepto de proyecto",
+      "path": "y4t2/Proyectos/CEX/_resources/1.Concepto de proyecto.pdf"
     },
     {
       "basename": "2. Viabilidad",
@@ -35,10 +47,6 @@
     {
       "basename": "4 doc",
       "path": "y4t2/Proyectos/CEX/_resources/4 doc.pdf"
-    },
-    {
-      "basename": "1.Concepto de proyecto",
-      "path": "y4t2/Proyectos/CEX/_resources/1.Concepto de proyecto.pdf"
     },
     {
       "basename": "1. Conceptos",
@@ -191,14 +199,6 @@
     {
       "basename": "PL 2024-04-23 11.43.19.excalidraw",
       "path": "y4t2/Proyectos/Otros/_resources/PL 2024-04-23 11.43.19.excalidraw.md"
-    },
-    {
-      "basename": "PL 2024-02-19 17.10.00.excalidraw",
-      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw.md"
-    },
-    {
-      "basename": "Ejercicio individual",
-      "path": "y3t2/Ingeniería de Redes/Otros/Ejercicio individual.md"
     }
   ],
   "omittedPaths": [],
