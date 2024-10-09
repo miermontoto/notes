@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "4. Servicios web",
+      "path": "y4t1/Tecnologías Web/4. Servicios web/4. Servicios web.md"
+    },
+    {
       "basename": "Introducción",
       "path": "y3t1/Configuración (CES)/CEX/1. Introducción/Introducción.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "PL 2024-02-19 17.10.00.excalidraw 1",
       "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw 1.md"
-    },
-    {
-      "basename": "PL 2024-04-23 11.43.19.excalidraw",
-      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-04-23 11.43.19.excalidraw.md"
     }
   ],
   "omittedPaths": [],
