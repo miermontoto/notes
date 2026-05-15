@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "IPv6",
+      "path": "y3t2/Ingeniería de Redes/CEX/1. Arquitectura de la red de Internet/IPv6.md"
+    },
+    {
+      "basename": "IPv4",
+      "path": "y3t2/Ingeniería de Redes/CEX/1. Arquitectura de la red de Internet/IPv4.md"
+    },
+    {
+      "basename": "Ajax",
+      "path": "y4t1/Tecnologías Web/3. Seguridad y aspectos legales en la Web/Ajax.md"
+    },
+    {
+      "basename": "1.Concepto de proyecto",
+      "path": "y4t2/Proyectos/CEX/_resources/1.Concepto de proyecto.pdf"
+    },
+    {
       "basename": "4. Servicios web",
       "path": "y4t1/Tecnologías Web/4. Servicios web/4. Servicios web.md"
     },
@@ -15,10 +31,6 @@
     {
       "basename": "2. viabilidad de los proyectos",
       "path": "y4t2/Proyectos/CEX/_resources/2. viabilidad de los proyectos.pdf"
-    },
-    {
-      "basename": "1.Concepto de proyecto",
-      "path": "y4t2/Proyectos/CEX/_resources/1.Concepto de proyecto.pdf"
     },
     {
       "basename": "2. Viabilidad",
@@ -183,25 +195,12 @@
     {
       "basename": "fotos orla",
       "path": "others/fotos orla.md"
-    },
-    {
-      "basename": "4. Planificación 2024-04-23 15.29.46.excalidraw",
-      "path": "y4t2/Proyectos/CEX/_resources/4. Planificación 2024-04-23 15.29.46.excalidraw.md"
-    },
-    {
-      "basename": "Ejercicio PA",
-      "path": "y4t2/Proyectos/Otros/Ejercicio PA.md"
-    },
-    {
-      "basename": "PL",
-      "path": "y4t2/Proyectos/Otros/PL.md"
-    },
-    {
-      "basename": "PL 2024-02-19 17.10.00.excalidraw 1",
-      "path": "y4t2/Proyectos/Otros/_resources/PL 2024-02-19 17.10.00.excalidraw 1.md"
     }
   ],
   "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false,
   "maxLength": null,
   "openType": "tab"
 }

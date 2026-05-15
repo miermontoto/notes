@@ -4,13 +4,14 @@
 ---
 # Gestión de Internet
 **Internet**: Red de redes conectadas por encaminadores / enrutadores (routers).
-|Capas TCP/IP| |
-|-------| ---|
-|Aplicación | |
-|Transporte |Puertos| 
-|Internet |Direcciones IP| 
-|Enlace |Acceso a la red (MAC)|
-|Física |Medios físicos|
+
+| Capas TCP/IP |                       |
+| ------------ | --------------------- |
+| Aplicación   |                       |
+| Transporte   | Puertos               |
+| Internet     | Direcciones IP        |
+| Enlace       | Acceso a la red (MAC) |
+| Física       | Medios físicos        |
 
 Internet es un conjunto de redes, a esas redes se les llama "Sistemas autónomos".  Cada sistema autónomo está formado por redes y routers administrados por un operador. Los diferentes sistemas autónomos están conectados entre ellos por otros enrutadores.
 
